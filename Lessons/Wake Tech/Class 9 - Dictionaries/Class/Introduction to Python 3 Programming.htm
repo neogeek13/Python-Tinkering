@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- Google Tag Manager -->
+            <script async="true" type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/event.js" data-owner="criteo-tag"></script><script src="Introduction%20to%20Python%203%20Programming_files/2861.js" async="" type="text/javascript"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/ld.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/conversion.js">
+</script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag"></script><script type="text/javascript" async="" src="Introduction%20to%20Python%203%20Programming_files/ga.js"></script><script async="" src="Introduction%20to%20Python%203%20Programming_files/gtm.htm"></script><script>(function(w,d,s,l,i){try{w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            }catch(e){(console.error || console.log).call(console, e.stack || e);}
+            })(window,document,'script','dataLayer','GTM-P66CZH7');</script>
+            <!-- End Google Tag Manager --><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Python 3 Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-1.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-migrate-1.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom.css" media="all"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/global.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/course.htm"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/patch.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/patch.css" media="all"><link href="Introduction%20to%20Python%203%20Programming_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P66CZH7'
+            height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+    <noscript>
+        <div id="sansjs">
+            Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+        </div>
+    </noscript>
+    <form name="aspnetForm" method="post" action="./PrintLesson.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=9" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource_002.js" type="text/javascript"></script>
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource.js" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7" type="hidden">
+</div>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm('Are you sure you wish to log out?');" id="ctl00_lbLogout" tabindex="4" class="title-bar-login-button" href="javascript:__doPostBack('ctl00$lbLogout','')">
+                        <p role="heading">LOGOUT</p>
+                    </a>
+
+                    <a id="ctl00_hlkHelpInActive" tabindex="2" class="title-bar-help-button" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">
+                            <p role="heading">
+                                HELP
+                            </p>
+                    </a>
+                    
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" tabindex="1" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Introduction to Python 3 Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Mike Orsega
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            9: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Python Data Structures 2: Dictionaries</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        <span class="accessibility_hide">You are here: </span>
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=9">Lesson 9</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" checked="checked" onclick="showAllImagesPF()" type="radio"><label for="pfImagesOnBtn">Text, images and activities (IE users only)</label></p><p><input name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()" type="radio"><label for="pfInteractivityOffBtn">Text and images</label></p><p><input name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()" type="radio"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_chrome.png" alt="chrome icon" class="pf_visible pf_image" border="0"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_firefox.png" alt="Firefox icon" class="pf_visible pf_image" border="0"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" class="pf_visible pf_image" border="0"><br><span class="caption">IE 11</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_safari.png" alt="Safari icon" class="pf_visible pf_image" border="0"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input class="pf_hide_directions_btn" style="display:none;" value="Hide Directions" type="button"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input class="pf_hide_directions_btn" style="display:none;" value="Hide Directions" type="button"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p>
+<!-- ipy LESSON 09 CHAPTER 1 -->
+<!-- START CHAPTER CONTENT -->
+
+</p><p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/L09_header.jpg" galleryimg="no" alt="Lesson 9 header" class="pf_image" vspace="0" border="0"></p><br>
+<strong>Introduction</strong><p></p><p>Our topic for today's lesson is 
+dictionaries.  I'm not talking about the thick books filled with words 
+and definitions that you're used to.  Instead, this is another Python 
+structure we can use to store our data.  </p><p>In the last lesson, we 
+learned about lists and tuples, which, as you now know, are an ordered 
+list of values.  This means the first item we create goes into position 0
+ and any time we want access to that value we just use the list 
+variable's name and the number 0 to get it.  This is a very handy way to
+ keep track of our data.  However, you always need to keep track of the 
+position of a value in a list in order to access it.  </p><p>Dictionaries,
+ on the other hand, are set up so that the values aren't associated with
+ an index.  Instead, they're associated with a key, which is just some 
+unique value.  So, any time you want access to a value, you just have to
+ provide the key.  </p><p>In this lesson, I'll explain a little more 
+about keys and values and show you how to set up a dictionary structure 
+in your Python program.  Then you'll learn some of the dictionary 
+functions that are available and put these ideas to use in a program.</p><p>Let's get started in Chapter 2.<br>
+                </p></div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><!-- ipy LESSON 09 CHAPTER 2 --><!-- START CHAPTER CONTENT --><strong>Dictionary Basics</strong></p>
+<p>You may recall that when I first introduced the idea of a list in the
+ previous lesson, I included an image of how our list values might be 
+stored in memory. I had a nice little box for each of my elements and I 
+had exactly one value in each box. We then went on to say that any time 
+we wanted to access one of these items, we just needed to provide the 
+index or subscript.</p>
+<p>So while lists give us many useful features, one thing that remains 
+difficult is finding an item. I mean, we could write code to search 
+through a list, element by element, until we find what we're looking 
+for. This is known as <em>sequential searching</em>, and depending on the size of your list, it could take a while.</p>
+<p>There are also a number of different algorithms that could help us to
+ do searches more quickly. However, the fact remains that we'll still 
+have to write code to search through the list.</p>
+<p>Finding items is where a dictionary comes in really handy. It may 
+seem odd that it's easier to find an item in an unordered structure like
+ a dictionary, rather than in an ordered structure like a list. However,
+ this is a fact in Python.</p>
+<p>This ability to quickly and easily find an item comes from a special and unique value called a <em>key</em>. One is associated with each record in a dictionary. We'll often talk about each entry as a <em>key-value pair</em>. Now any time we want to get access to a record, we just provide the key. Some other languages call these structures <em>hashes</em> or <em>associative arrays</em>.</p>
+<p>Let's try a little example so that you can see how dictionaries work.
+ First things first: creating a dictionary. Just as lists and tuples 
+have special symbols associated with them, [ ] and ( ) respectively, 
+dictionaries always work with curly braces { }. </p>
+<p>Here's the code to create the dictionary variable we'll be working with today. It's called <em>my_dictionary</em>:</p>
+<div class="noscroll">
+<pre>my_dictionary = { }</pre>
+</div>
+<p>See how it's similar to how we create an empty list or tuple? But if 
+you want to create this dictionary and place an item into it initially, 
+there's a difference. Since dictionaries require that the item have a 
+key associated with it, you'll need to specify two things: the key, 
+followed by the value. </p>
+<p>For example, the following code will create a dictionary named <em>days_in_month</em> that contains a single item, 31, whose key is "Jan":</p>
+<div class="noscroll">
+<pre>days_in_month = {'Jan':31}</pre>
+</div>
+<p>Notice that I've listed the key first, followed by a colon and then 
+the value I want stored. Probably the hardest part of learning 
+dictionaries is getting used to remembering to put the key followed by 
+the value when adding an item.</p>
+<p>Please be aware that although my key in this example is a string, I'm
+ allowed to use numbers as my key values as well. In fact, Python even 
+allows us to mix and match key data types within the same dictionary. 
+That is, I can put one item in the dictionary with a key that's a string
+ and another item in the same dictionary whose key is a number. For our 
+days_in_month dictionary, it doesn't make sense to use different data 
+types, so we won't. But the fact remains that it's possible.</p>
+<p>Now when I want to print the number of days in January, I can simply do this:</p>
+<div class="noscroll">
+<pre>print (days_in_month ['Jan'] )</pre>
+</div>
+<p>Notice how this statement looks similar to what we did when we wanted
+ to print an item out of a list. The only difference now is that we're 
+providing the key instead of an index to gain access to the value.</p>
+<p>As you can see, adding a single key-value pair is easy; you just 
+separate them with a colon. But what if you want to start your 
+dictionary with multiple values? To do this, you just need to separate 
+each pair with a comma. For example, let's store the first 3 months of 
+the year in our dictionary:</p>
+<div class="noscroll">
+<pre>days_in_month = {'Jan':31, 'Feb':28, 'Mar':31}</pre>
+</div>
+<p>One tip that may help you to keep things straight when you're 
+creating dictionaries with multiple items like this is to split the 
+pairs up so that there's one per line. For example, you can achieve the 
+same result as above by typing this:</p>
+<div class="noscroll">
+<pre>days_in_month = {'Jan':31,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Feb':28,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Mar':31}</pre>
+</div>
+<p>For items with short keys and values, this isn't as helpful. However,
+ in cases where these values take more characters, splitting the code up
+ like this really increases readability.</p>
+<p>I have one final note about printing dictionaries. You saw that it's 
+easy to print a single item. And you're probably wondering if it's 
+possible to print the entire dictionary as well. The answer is yes. You 
+print the dictionary just like you printed your lists and tuples. Simply
+ use the variable name like this:</p>
+<div class="noscroll">
+<pre>print (days_in_month)</pre>
+</div>
+<p>You need to remember though that the dictionary is an unordered list.
+ This means that you aren't guaranteed the output order of your items. 
+In fact, when I try this example on my machine, this is what I get:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt; days_in_month = {'Jan':31, 'Feb':28, 'Mar':31}
+&gt;&gt;&gt; print (days_in_month)
+{'Jan': 31, 'Mar': 31, 'Feb': 28}</pre>
+</div>
+<p>Notice how I added my items in calendar order, yet the output has 
+ordered differently. Again, Python is using certain features of your 
+keys in an effort to improve the speed at which we can get access to 
+them. It's not important to know why the order is the way it is, just 
+that it's done to help us.</p>
+<p>You now know how to create and print a dictionary. In the next 
+chapter, we'll further explore these useful structures by learning about
+ some of the methods Python uses with them.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><!-- ipy LESSON 09 CHAPTER 3 --><!-- START CHAPTER CONTENT --><strong>More Dictionary Features</strong></p>
+<p>Similar to lists and tuples, Python has provided you with some 
+helpful methods to make it easier to work with dictionaries. You've 
+already seen how to print individual items or the entire dictionary. But
+ what about printing all of the keys in your dictionary? Or how about 
+getting all of the values? Well, for that Python gives us the <em>keys( )</em> and <em>values( )</em>
+ methods. For example, here's what you'd do to print the keys and values
+ of the days_in_month dictionary from the previous chapter:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt; days_in_month = {'Jan':31, 'Feb':28, 'Mar':31}<br>&gt;&gt;&gt; print (days_in_month.keys())
+dict_keys(['Jan', 'Mar', 'Feb']) 
+&gt;&gt;&gt; print (days_in_month.values())
+dict_values([31, 31, 28])</pre>
+</div>
+<p>There are two things to notice with these methods. First, each one returns a list structure, as noted by the square brackets in the output. This is useful when you want to store the list in a variable for future use, instead of just printing the list to the screen. The second thing to notice is the order of the returned lists. Note that, once again, their order is not necessarily going to be the same as the order in which the items were added to the dictionary.</p>
+<p>One final method that may come in handy is <em>items( )</em>. This method is similar to keys( ) and values( ), except that it returns a list of key-value tuples. Remember from our previous lesson that tuples are immutable and they're displayed inside parentheses. So, to use the items method, we'd use the following code:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;print (days_in_month.items())
+dict_items([('Jan', 31), ('Mar', 31), ('Feb', 28)])</pre>
+</div>
+<p>Now that we've learned how to get a full listing of everything in our dictionaries, let's tackle accessing individual items. If you attempt to access an item with a key that isn't present in the dictionary, you'll get a <em>KeyError</em>. So, I want to show you how you can avoid this by testing to see if a key is in the dictionary before you attempt to access it. </p>
+<p>To test if a key is present in the dictionary list the key, the keyword <em>in</em>, and the dictionary name. Continuing with our months example, this would be:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;'Feb' in days_in_month<br>True</pre>
+</div>
+<p>As you can see, this will return either True or False depending on whether the key is in the dictionary.</p>
+<p><strong>Adding Values</strong></p>
+<p>In the last chapter, we talked about creating a dictionary variable and assigning values up front. But what if you want to add items later? </p>
+<p>Take, for instance, our days_in_month example. It only has three months in it. Let's add a few more. Do this by listing the dictionary name with the key inside square brackets, an equal sign, and the value you want stored:</p>
+<div class="noscroll">
+<pre>days_in_month ['Apr'] = 20</pre>
+</div>
+<p>Note that since we're just assigning a value to our dictionary, Python isn't going to give us any output. Instead, it'll just assign the value and then give you the interpreter's prompt back. </p>
+<p>And please don't panic about the inaccuracy of the number of days in the statement above. I wrote this line to show you that you can make a change to a value already in the dictionary. Lucky for us, the syntax is exactly the same! So now I can fix my mistake above by typing this:</p>
+<blockquote>days_in_month ['Apr'] = 30</blockquote>
+<p>Something else that is common is putting together two different dictionaries. For this, you can use the <em>update( )</em> method. The following code will create a second dictionary, days_in_month2, and then add the items from this second dictionary to our original:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;days_in_month2 = {'May':31, 'Jun':30, 'Jul':31}
+&gt;&gt;&gt;days_in_month.update(days_in_month2)
+&gt;&gt;&gt;print (days_in_month.keys())
+dict_keys(['Jan', 'May', 'Mar', 'Feb', 'Apr', 'Jun', 'Jul')]
+&gt;&gt;&gt;print (days_in_month2.keys())
+dict_keys(['May', 'Jun', 'Jul'] )</pre>
+</div>
+<p>I added a couple extra lines of code to show you that this method call updates the dictionary variable before the dot and not the one inside the parentheses.</p>
+<p>So now you have the tools to get your dictionary created and populated. You've even learned how to add items or make changes after creation. But what if you need to remove something later? For this, you'll need to use the <em>del</em> keyword, followed by the dictionary name, and then the key of the item you want removed inside square brackets. For example, here's how you'd remove the key-value pair of 'Apr', 30:</p>
+<div class="noscroll">
+<pre>del days_in_month ['Apr']</pre>
+</div>
+<p>Of course, if you provide a key that isn't present in the dictionary, you'll once again get a KeyError message. This means that you should first check to see if the key is present using the keyword <em>in</em> before you try to delete anything.</p>
+<p>It's also likely that at some point, you might want to remove all of the items in your dictionary. For that, there's the <em>clear( )</em> method. This method will leave you with an empty dictionary variable, as opposed to using del, which removes a single value. Let me show you the difference with a short example:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;odds = {1:'one', 3:'three', 5:'five'}
+&gt;&gt;&gt;evens = {2:'two', 4:'four', 6:'six'}
+&gt;&gt;&gt;odds.clear()
+&gt;&gt;&gt;print (odds)
+{}
+&gt;&gt;&gt;del evens
+&gt;&gt;&gt;print (evens)
+
+Traceback (most recent call last):
+File "&lt;pyshell#33&gt;", line 1, in &lt;module&gt;
+print (evens)
+NameError: name 'evens' is not defined</pre>
+</div>
+<p>The empty curly braces that I received when I printed the contents of my odds dictionary shows that I still have a dictionary named odds. However, there are no key-value pairs inside. On the other hand, the code that deleted evens removes the entire variable from memory altogether. It's as if I never created evens.</p>
+<p>One final, very important method is the <em>get( )</em> method. When I first introduced you to dictionaries, I showed you how you can access individual items by placing the dictionary name and a set of square brackets with the key inside. The problem is that if the key doesn't exist in the dictionary, the program crashes and you get a KeyError message. </p>
+<p>However, if you use the get method, this won't happen. Instead, if the key isn't in the dictionary, you'll get <em>None</em>. Try out this code:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;print (days_in_month.get('January'))
+None</pre>
+</div>
+<p>The other interesting thing about get is that you can provide a default value, instead of None, to be returned if the key isn't present. You do this by putting a comma and the default value inside the parentheses. So you might want to do something like this:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;print (days_in_month.get('January', 'January not present'))
+January not present</pre>
+</div>
+<p>So that's our overview of a Python dictionary. You're now able to create one of these and use some methods to manipulate it. In the remainder of the lesson, I want to give you a few examples of how you might use a dictionary in your programs.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><!-- ipy LESSON 09 CHAPTER 4 --><!-- START CHAPTER CONTENT --><strong>Dictionary Examples</strong></p>
+<p>You've already seen parts of an example that uses a dictionary to keep track of the number of days in a given month. But this code could just as easily have been done with a list if we had been willing to use the month numbers as the subscripts for our values.</p>
+<p>Instead, let's try a program that will make use of the dictionary's ability to quickly look up values. It'll also prompt the user for words and keep track of the number of times a word is entered. To do this with a dictionary, we'll need to make the key be the user's word and have the value be the number of times it was entered. </p>
+<p>You'll need to have some sentinel value for the user to enter when they're done entering words. We used -999 in the previous lesson's assignment, so let's just stick with that one. When the user is done entering words, print the word and the number of times it was entered:</p>
+<div class="noscroll">
+<pre>words = {}
+value = input("Please enter a word (or -999 to quit): ")
+while (value != '-999'):
+&nbsp;&nbsp;&nbsp;if value in words:&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;words [value] = words [value] + 1
+&nbsp;&nbsp;&nbsp;else:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; words [value] = 1
+
+&nbsp;&nbsp;&nbsp;value = input("Please enter a word (or -999 to quit): ")
+
+for current_key in words.keys():
+&nbsp;&nbsp;&nbsp;print (current_key, '\t', words [current_key] )</pre>
+</div>
+<p>There are a few things I want to point out in this example. First, this program uses the keyword in to check if the word has been entered. If so, then the value is incremented by one. Otherwise, we create a new entry for the dictionary with this word as the key and the value 1.</p>
+<p>Second, after the user is finished entering words, the program starts in a for loop. So far, you've used loops that go through a range of numbers, but you haven't seen how this can be done with words. Earlier in the course, when you used the range function, Python simply created a list structure that had the values stored inside. The for loop then iterated through each of the items in the list. </p>
+<p>The same idea is at work here with our keys. When we use words.keys(), Python gives us a list with all the keys in it. The for loop then stores that key in the current_key variable. The print statement prints this key, a '\t', which is a tab in the output, and the value stored at that key. </p>
+<p>The last thing that I want to mention about this code is that once again the keys aren't stored in any particular order. This means that the output from this program won't list the words in alphabetical order nor in order of the number of times in which the words were entered.</p>
+<p>Perhaps this ordering issue doesn't bother you, but it bothers me. I guess I'm a little particular that way. As a user, I want to see some kind of order here. And honestly, it's not at all that difficult. Can you think of how we might be able to do this? </p>
+<p>As a hint, think about the previous example and our for loop. Since the keys method is going to give us a list of keys, what do you think about storing that list, sorting it, and then going through the new list, each time printing the key and using the key to get access to the value in the dictionary? It'd be something like this:</p>
+<div class="noscroll">
+<pre>my_keys = list(words.keys())
+my_keys.sort()
+for current_key in my_keys:
+&nbsp;&nbsp;&nbsp;print (current_key, '\t', words [current_key] )</pre>
+</div>
+<p>Please note that here we need to make use of the Python function <i>list,</i> which will take the keys returned to us by the <i>keys()</i> function and allow us to store them as an actual list, without the leading dict_keys.&nbsp; We can then make use of the <i>sort()</i> function to sort those keys.</p>
+<p>Of course, if you want your words sorted in the order of the number of times a word is entered, you're going to have a bit more of a problem. That's because while you're able to pull out the values and sort them just fine, there's no way to get access to the word, the key, using only the value. </p>
+<p>Instead, to do something like this, you'll need to write a little bit of code. There are plenty of different ways to do this, but I'm going to show you how you can do this by doing a manual sort on our values and keeping track of a list of keys in the correct order.</p>
+<p>First, create an empty list to hold our keys. Then, write a loop that goes through each key in the dictionary. Next, figure out where in the list this key should be added. To do this, I've written a while loop that starts at index 0 and stops when the counter reaches the length of the list. </p>
+<p>Inside the loop, the code simply gets the word out of the sorted list and then compares the number associated with that word to the number associated with the current word. If the list's word number is greater, then we've found where the current word should go, so we stop looping and insert this word into the list at that position. This gets a little complicated in words, but in code, I hope it makes more sense:</p>
+<div class="noscroll">
+<pre>temp_list = []
+# Select a key in the dictionary
+for current_key in words.keys():
+&nbsp;&nbsp;&nbsp;# determine the number of words in the sorted list
+&nbsp;&nbsp;&nbsp;list_length = len(temp_list)
+
+&nbsp;&nbsp;&nbsp;# start looking at position 0
+&nbsp;&nbsp;&nbsp;placeholder = 0
+
+&nbsp;&nbsp;&nbsp;# As long as there are still items in the list
+&nbsp;&nbsp;&nbsp;while placeholder &lt; list_length:
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;# Get the word in the sorted list
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;list_key = temp_list [placeholder] 
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;# Determine if this word has been entered
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;# more times than the current word
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;if words [list_key] &gt; words [current_key] :
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;break
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;# It wasn't, so let's look at the next word
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;# in the sorted list
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;placeholder = placeholder + 1
+
+&nbsp;&nbsp;&nbsp;# We found the location in the sorted list for
+&nbsp;&nbsp;&nbsp;# this word, insert it 
+&nbsp;&nbsp;&nbsp;temp_list.insert(placeholder, current_key)
+
+for current_key in temp_list:
+&nbsp;&nbsp;&nbsp;print (current_key, '\t', words [current_key] )</pre>
+</div>
+<p>Boy, that ended up being a little bit of work. But the good news is that this code should work to sort any set of values for any dictionary. Again, all it's doing is using the values associated with the keys in order to sort the keys.</p>
+<p>After reading that last statement, you might be wondering why we didn't just create a new dictionary and use our keys as values and values as keys. We could then sort the keys as we did the first time and print the values there.</p>
+<p>This is actually a great idea and wouldn't take nearly as much effort or code to do what we want. The problem with this approach is that a dictionary can't have duplicate keys. This means that if my user enters two different words the same number of times, we have a problem. </p>
+<p>For example, if the user enters the word 'me' three times and the word 'you' three times, then the original dictionary would be: {'me':3, 'you':3}, which is fine. But when you attempt to switch keys and values, you won't be able to because the key 3 would have to be used twice.</p>
+<p>At any rate, writing this code to sort our dictionary by values is a good exercise in working with nearly everything you've learned so far: decisions, loops, lists, and dictionaries. I hope this practice has helped you to better understand how each one works.</p>
+<p>Let's finish our lesson on dictionaries with a short review of what we covered.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p><!-- ipy LESSON 09 CHAPTER 5 --><!-- START CHAPTER CONTENT --><strong>Summary</strong></p>
+<p>In this lesson, you added to your knowledge of Python's data structures by working with dictionaries. You saw that these structures were extremely useful in that they gave you the ability to associate a key with your value. </p>
+<p>The example I worked with throughout the bulk of the lesson was with a dictionary associating the month abbreviations with the number of days in that month. So now when I want to get the number of days in July, I can just provide 'Jul' to my dictionary and I get access to the value.</p>
+<p>This quick and easy access to the values in the dictionary was a great feature. However, you learned of dictionary's biggest drawback. They store an unordered set of values. So when you learned how to print all of the values in the dictionary or even to print all the keys or values, you could never be sure what order they would be shown.</p>
+<p>However, after you learned some of the important methods that add and remove items from the dictionary, I showed you a handy way to print the keys and values in a dictionary in sorted order. You saw that sorting by key was fairly straightforward, but sorting by value took a little more work.</p>
+<p>Now that we've covered all of Python's data structures, I want to turn your attention to data files. Chances are you've already started wondering how we can get our data from a file instead of from a keyboard or how to write output to a file instead of to the screen. It may have even crossed your mind during this lesson when we wrote the program to count words. </p>
+<p>That is, instead of counting the user's words as they're entered, wouldn't it be nice to simply open a text file and count the words there? So, in the next lesson, I'll show you all about data files, both reading from them and writing to them. See you then!</p>
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.diveintopython3.net/native-datatypes.html#dictionaries" target="_blank">
+                                Python Dictionaries</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.diveintopython3.net/native-datatypes.html#dictionaries</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This page from Mark Pilgrim's online text, <em>Dive Into Python</em>, gives you the concepts and ideas of a dictionary from a different point of view.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/py3-0/PY3_wordCounter.py" target="_blank">
+                                Word Counter Code</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/py3-0/PY3_wordCounter.py</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This is the completed word counter program that is created by going through the lesson.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <strong>Q:</strong> I like that you've given us code to sort our dictionaries by increasing key order or increasing value order. Is it possible to sort them in decreasing order as well?<br>
+<br>
+<strong>A:</strong> Yes. Actually, again this is pretty easy. If you want to sort the dictionary by keys, then you can use the code that I've provided, and immediately following the line that sorts the keys, add this: <br>
+<br>
+<div class="noscroll">
+<pre>my_keys.reverse( )</pre>
+</div>
+<br>
+As you'll recall from the material on lists, this method will reverse the items in the list. Now you're ready to print the dictionary as I showed you in the lesson.<br>
+<br>
+As far as sorting the values in decreasing order, all you need to do there is take my code and replace the greater than sign (&gt;) with a less than sign (&lt;) when you do the comparison.<br>
+<br>
+Give it a try and see it work.
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            Write a program that stores information about student test grades in a dictionary. Your program should prompt the user for the student's name and score. Once the user is finished entering grades, allow him or her to search the dictionary for a particular student and print his or her score.<br>
+<br>
+<a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/py3-0/PY3_L09_Solution.py" target="_blank">Click here</a> if you would like to download my solution to this assignment: PY3_L09_Solution.py.
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2016
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                py3-0
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB04P (1.2.99.4) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/IncludeResource.js"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.eVar4='';
+s.prop4='';
+s.eVar5='introduction to python 3 programming';
+s.prop5='introduction to python 3 programming';
+s.prop6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.eVar6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.prop7='9';
+s.eVar7='9';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=9';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=9';
+s.prop15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.eVar15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.hier1=',,introduction to python 3 programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript><a href='http://www.Adobe.com' title='Web Analytics'><img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/></a></noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript><iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="jb-overlay" style="opacity: 0.7; display: none;"></div><div id="jb-window" style="display: none;"><div id="jb-window-inner" style="position: fixed; top: 301px; left: 503.5px;"><div id="jb-window-content" style="width: auto; height: auto; overflow: hidden; display: none;" tabindex="0"></div></div></div><span id="text-resize" style="position: absolute; left: -9999px; font-size: 100%; font-family: Courier New, mono; margin: 0; padding: 0;">&nbsp;</span><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?random=1481492720693&amp;cv=8&amp;fst=1481492720693&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=920&amp;u_w=1472&amp;u_ah=897&amp;u_aw=1472&amp;u_cd=24&amp;u_his=50&amp;u_tz=-300&amp;u_java=true&amp;u_nplug=9&amp;u_nmime=60&amp;frm=0&amp;url=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FPrintLesson.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26lesson%3D9&amp;ref=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FLessons.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26bc%3DLessons%26lesson%3D9&amp;tiba=Introduction%20to%20Python%203%20Programming" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" width="300" height="13" frameborder="0"></iframe><div id="criteo-tags-div" style="display: none;"><iframe style="display: none;" src="Introduction%20to%20Python%203%20Programming_files/dis.htm" width="0" height="0"></iframe></div></body></html>

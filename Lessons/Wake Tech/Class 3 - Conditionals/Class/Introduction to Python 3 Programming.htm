@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- Google Tag Manager -->
+            <script async="true" type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/event.js" data-owner="criteo-tag"></script><script src="Introduction%20to%20Python%203%20Programming_files/2861.js" async="" type="text/javascript"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/ld.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/conversion.js">
+</script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag"></script><script type="text/javascript" async="" src="Introduction%20to%20Python%203%20Programming_files/ga.js"></script><script async="" src="Introduction%20to%20Python%203%20Programming_files/gtm.htm"></script><script>(function(w,d,s,l,i){try{w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            }catch(e){(console.error || console.log).call(console, e.stack || e);}
+            })(window,document,'script','dataLayer','GTM-P66CZH7');</script>
+            <!-- End Google Tag Manager --><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Python 3 Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-1.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-migrate-1.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom.css" media="all"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/global.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/course.htm"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/patch.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/patch.css" media="all"><link href="Introduction%20to%20Python%203%20Programming_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P66CZH7'
+            height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+    <noscript>
+        <div id="sansjs">
+            Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+        </div>
+    </noscript>
+    <form name="aspnetForm" method="post" action="./PrintLesson.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=3" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource_002.js" type="text/javascript"></script>
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource.js" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7" type="hidden">
+</div>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm('Are you sure you wish to log out?');" id="ctl00_lbLogout" tabindex="4" class="title-bar-login-button" href="javascript:__doPostBack('ctl00$lbLogout','')">
+                        <p role="heading">LOGOUT</p>
+                    </a>
+
+                    <a id="ctl00_hlkHelpInActive" tabindex="2" class="title-bar-help-button" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">
+                            <p role="heading">
+                                HELP
+                            </p>
+                    </a>
+                    
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" tabindex="1" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Introduction to Python 3 Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Mike Orsega
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            3: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Decisions, Decisions</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        <span class="accessibility_hide">You are here: </span>
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=3">Lesson 3</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" onclick="showAllImagesPF()" type="radio"><label for="pfImagesOnBtn">Text, images and activities (IE users only)</label></p><p><input name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()" checked="checked" type="radio"><label for="pfInteractivityOffBtn">Text and images</label></p><p><input name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()" type="radio"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_chrome.png" alt="chrome icon" class="pf_visible pf_image" border="0"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_firefox.png" alt="Firefox icon" class="pf_visible pf_image" border="0"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" class="pf_visible pf_image" border="0"><br><span class="caption">IE 11</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_safari.png" alt="Safari icon" class="pf_visible pf_image" border="0"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input class="pf_hide_directions_btn" style="display:none;" value="Hide Directions" type="button"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input class="pf_hide_directions_btn" style="display:none;" value="Hide Directions" type="button"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p><!-- ipy LESSON 03 CHAPTER 1 --><!-- START CHAPTER CONTENT --></p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 0px; margin-bottom: 0px; border: 0px solid;" alt="Lesson 3 header" src="Introduction%20to%20Python%203%20Programming_files/L03_header.jpg" galleryimg="no" class="pf_image"></p>
+
+<p><strong>Introduction</strong></p>
+<p>So far, you've learned how to do input and output, as well as some 
+interesting calculations with numbers and words. While these types of 
+programs are useful, they don't even begin to tap into what is possible 
+with Python and your computer. </p>
+<p>Specifically, your programs haven't taken advantage of the computer's
+ ability to choose which set of statements to execute based on some 
+condition. Think about a bank ATM. It allows you to access your account 
+and withdraw money. But before you can do so, the computer needs to 
+check your account to be sure you have enough money to cover the 
+transaction. </p>
+<p>That's a pretty important decision! Of course, if you ever find an 
+ATM that doesn't do this, please let me know, maybe we can arrange a 
+field trip. </p>
+<p>At any rate, in this lesson, we'll learn all about making decisions in Python with the <em>if statement</em>.
+ We'll cover its basic syntax, and I'll show you the different kinds of 
+operators used to make our conditions. By the end of the lesson, your 
+programs are going to select which statements are executed as the 
+program runs, making things far more interesting for your users.</p>
+<p>Let's get started and move on to Chapter 2!</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><!-- ipy LESSON 03 CHAPTER 2 --><!-- START CHAPTER CONTENT --><strong>The if Statement</strong></p>
+<p>We make decisions based on <em>ifs</em> in our lives every day. For 
+example, maybe you're driving home and you decide to treat yourself to a
+ little snack. There are many ways that you may drive home, so that's 
+your first decision. Once you decide on a route, then you choose where 
+to stop for a bite to eat.</p>
+<p>Maybe how your meal tastes isn't as important as how fast you can get
+ it. So as you drive down the road, you make a decision about stopping 
+based on how big the crowd is at each restaurant. The ones that are 
+crowded, you skip. But if one isn't busy, you'll stop in.</p>
+<p>Your decisions about your route and where you'll eat are essentially 
+yes or no questions. "Should I drive home on the interstate?" "Should I 
+stop there to eat?" Okay, so now you might be thinking that an answer 
+could be "maybe." I'd agree with you there, but ultimately, it's either 
+yes or no.</p>
+<p>Similarly, our Python programs are able to evaluate a condition and 
+then either perform a set of instructions or not. It's very important to
+ note that the computer can only handle yes-or-no questions. Of course, 
+when we talk about computers, we usually say that the conditions 
+evaluate to either true or false.</p>
+<p>One great thing about the if statement in Python is that it works 
+pretty much like an if statement in real life. That is, we'll basically 
+write the code so that if some condition is true, then we'll have the 
+computer execute the lines of code that follow. First, let's look at 
+Python's syntax:</p>
+<div class="noscroll">
+<pre>if &lt; condition &gt; :
+&nbsp;&nbsp;&nbsp;&lt; true statements &gt;
+&lt; statements outside the if structure &gt;</pre>
+</div>
+<p>This statement starts with the keyword <em>if</em>, followed by some 
+condition. Please be aware that I've used the &lt; and &gt; signs and 
+the word condition to show where you'll put your condition. You don't 
+actually use these symbols or write the word condition in your code. 
+You'll see what I mean when we begin writing if statements shortly.</p>
+<p>The condition that you put in your code is known as a <em>Boolean condition</em>.
+ This just means that the condition must evaluate to either true or 
+false. There are no maybes to the computer. If the condition evaluates 
+to true, then the next statements will be run. Otherwise, the program 
+will continue with the statements that aren't part of the if. We'll talk
+ more about the Boolean conditions in a moment.</p>
+<p>Another very important part of this first line is the colon (:) at 
+the end. It's very common for beginning Python programmers to forget 
+this colon at the end of the line. However, be aware that it is 
+necessary, because it separates the condition from the statements to be 
+performed if the condition is true. Actually, you'll see as the course 
+continues that this colon shows up in quite a few situations, so I think
+ you'll get used to it pretty quickly.</p>
+<p>The next line of code is where you'll put the statements that you 
+want executed if the condition is true. In Python, you can list as many 
+statements to be run here as you want. The key is that these statements 
+must be indented. </p>
+<p>Python allows you to indent using a tab or a few blank spaces. The 
+choice is up to you . However, it must remain consistent within the 
+structure. For example, if you indent the first statement in your true 
+path with 5 spaces, then the remaining statements in your true path must
+ also be indented by exactly 5 spaces. Otherwise, the program won't run.</p>
+<p>The final line in my sample above is the statement that I've called 
+being outside of the if statement. Simply put, these statements will 
+always be executed, whether the condition is true or not.</p>
+<p>So now let's go back and talk about the Boolean condition a little 
+more. If we're going to write a condition, then we need to know some of 
+the operators that are used for comparison, right? The table below shows
+ the six <em>comparison</em> or <em>relational operators</em>:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img galleryimg="no" src="Introduction%20to%20Python%203%20Programming_files/L03-01.gif" alt="Python comparison operators" style="margin-top: 5px; margin-bottom: 5px; border: 0px solid;" class="pf_image"><br>
+<font size="1">Python comparison operators</font></p>
+<p>While the first four listed in the table might be familiar from your 
+math class, the last two, equal to and not equal to, may not be. Just 
+keep in mind that when testing for equality, or inequality, you always 
+need to have two symbols and make sure that there is no space between 
+them. So for equality, you need two equal signs, and for inequality, you
+ use the exclamation point and an equal sign.</p>
+<p>Now that we have the general idea of how this is going to work, let's
+ look at a few examples. Go ahead, open IDLE, use the menu system to 
+create a new Python file, and then type this program in so that you can 
+see it for yourself.</p>
+<div class="noscroll">
+<pre>age = 10
+if age == 10:
+&nbsp;&nbsp;&nbsp;&nbsp;print ("ten")
+print ("how's that?")</pre>
+</div>
+<p>Now it's pretty obvious here that the condition we've written, which 
+is comparing the value of the variable age to 10, is going to evaluate 
+to true. Therefore, the next line of code is run and the word <em>ten</em> is printed on the screen. And since the final line of code is outside of the if statement, you'll also see <em>how's that</em> as well.</p>
+<p>But maybe you aren't convinced that the last statement will always 
+run. That's pretty easy to test, just change the if statement so that it
+ tests to see if age is not equal to 10:</p>
+<div class="noscroll">
+<pre>if age != 10:</pre>
+</div>
+<p>Now run the program and you'll see that you don't get the <em>ten</em> output on the screen because the condition evaluated to false. However, the <em>how's that</em> line runs and shows its output.</p>
+<p>At this point, you might be thinking, "Sure, this makes complete 
+sense for numbers, but what about strings?" Well, the good news is that 
+in Python, comparing strings is done exactly the same way. Try it out 
+for yourself:</p>
+<div class="noscroll">
+<pre>name = "me"
+if name == "me":
+&nbsp;&nbsp;&nbsp;&nbsp;print ("the same")</pre>
+</div>
+<p>If this doesn't convince you, then change the value of name to "you" 
+and run the program again. This time you won't get any output.</p>
+<p>This should make sense, but what about the other operators? What does
+ it mean for one string to be less than another? In Python, these 
+operators work on strings too, only they're compared in alphabetical 
+order. Try this code out:</p>
+<div class="noscroll">
+<pre>letter = "C"
+if letter &lt; "D":
+&nbsp;&nbsp;&nbsp;&nbsp;print ("less than D")<br>
+if letter &gt; "B":
+&nbsp;&nbsp;&nbsp;&nbsp;print ("greater than B")</pre>
+</div>
+<p>And if there is more than one character, then Python just does the comparison like a dictionary. But there's one trick to be mindful of here. You see, the comparison of each character is based on the value that is used to store it. Python uses Unicode values for this.</p>
+<p>In case you aren't familiar with Unicode, it's just a table that correlates numbers to characters. You may have heard of ASCII, which is a subset of Unicode. Basically put, ASCII can handle 128 different characters. This works fine for the English language, but what about other languages? Well, in response, Unicode was developed.</p>
+<p>At any rate, the thing you need to always remember when comparing strings is that all of the capital letters come before any of the lowercase letters. Change your program above to the following:</p>
+<div class="noscroll">
+<pre>letter = "C"
+if letter &lt; "a":
+&nbsp;&nbsp;&nbsp;&nbsp;print ("less than a")
+</pre>
+</div>
+<p>You'll find that the line <em>less than a</em> will print. Again, this is because the uppercase 'C' comes before the lowercase 'a' in Unicode.</p>
+<p>Now that you're up to speed on the basic form of the if statement, including simple comparisons, let's move on and learn how to handle more complicated decisions in Chapter 3.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><!-- ipy LESSON 03 CHAPTER 3 --><!-- START CHAPTER CONTENT --><strong>The else Clause</strong></p>
+<p>You just learned how to get the computer to do something if some condition is true. This is sometimes called the <em>one-way if statement</em>. However, what happens if you want the computer to do one thing if the condition is true and something different if the condition is false? </p>
+<p>Going back to our example about driving home, you first needed to decide if you wanted to take the interstate. If you decided not to, then you needed to take the smaller roads. Notice how there was only one question, yet there were two possible paths. Or take our last two programming examples. If the letter wasn't less than "D", then it was greater than or equal to "D". </p>
+<p>To handle such a situation, we'll add an <em>else clause</em> to our code and create a <em>two-way if statement</em>. One thing to keep in mind is that you can have an if without an else but never an else without an if. So the general format of the if else statement is this:</p>
+<div class="noscroll">
+<pre>if &lt; condition &gt; :
+&nbsp;&nbsp;&nbsp;&lt; true statements &gt;
+else:
+&nbsp;&nbsp;&nbsp;&lt; false statements &gt;
+&lt; statements outside the if structure &gt;</pre>
+</div>
+<p>Notice once again that after the keyword else, we have a colon (:). Again, this is to tell the computer that the next statements are to be done when the condition is false. Also notice how once again the statements that are part of the else are indented. The reason is the same as it is for statements in the true path.</p>
+<p>Below is a simple if else statement for you to test. Try it out and let's examine it:</p>
+<div class="noscroll">
+<pre>if age &gt;= 18:
+&nbsp;&nbsp;&nbsp;print ("You are old enough to vote.")
+else:
+&nbsp;&nbsp;&nbsp;print ("You are not old enough to vote.")</pre>
+</div>
+<p>Let's say this code segment is part of a program that prompts users to enter their age. This code could then be run to print the appropriate message. The first line is going to compare the value stored in the age variable to 18. If that value is greater than or equal to 18, then the first message is printed telling the user that he or she is old enough. But if the user's age is less than 18, the second message is displayed.</p>
+<p>Before we go further, I want to stress that you can have multiple lines of code in either your true or false path. My examples so far have only shown a single statement. So to drive the point home, consider the following program:</p>
+<div class="noscroll">
+<pre>if age &gt;= 18:
+&nbsp;&nbsp;&nbsp;print ("Congratulations!")
+&nbsp;&nbsp;&nbsp;print ("You are old enough to vote.")
+else:
+&nbsp;&nbsp;&nbsp;print ("I'm sorry.")
+&nbsp;&nbsp;&nbsp;print ("You are not old enough to vote.")</pre>
+</div>
+<p>Again, pay close attention to the indenting because this is necessary in order for Python to tell the difference between the code that is part of the if structure and the code that isn't.</p>
+<p>These voting examples were pretty easy to understand and code. However, you might be wondering what happens if there are several possible choices. For example, what if you're writing a program that prints the term that describes a student's status during each year of school? </p>
+<p>So, freshman describes first-year students, sophomore describes them during the second year, and so on. For this, a program like the following would do the trick:</p>
+<div class="noscroll">
+<pre>year = eval(input("Enter year: "))
+if year == 1:
+&nbsp;&nbsp;&nbsp;print ("Freshman")
+if year == 2:
+&nbsp;&nbsp;&nbsp;print ("Sophomore")
+if year == 3:
+&nbsp;&nbsp;&nbsp;print ("Junior")
+if year == 4:
+&nbsp;&nbsp;&nbsp;print ("Senior")</pre>
+</div>
+<p>Although this program runs just fine and will print the correct word, it isn't very efficient. Think about it this way, once the computer has determined that the user's year is "Freshman," there's no real need to check any of the other values for year. Doing those comparisons just wastes time. The <em>nested</em> structure is an easy fix. With it, we'll put an if statement inside another if statement.</p>
+<p><strong>Nested if Statements</strong></p>
+<p>The term nesting refers to the fact that you're putting one thing inside another. Maybe you've seen hand carved, hollow dolls that fit inside one another known as Russian nesting dolls. Each doll is cut in half and slightly smaller than the next. When you take the top off of one, you see another similar doll underneath. </p>
+<p>The same sort of thing works here with if statements. The idea is that on the outside you have an if statement. However, if you look in the true or false path statements, you'll once again see another if statement. Using the year in school example from before, our statement now looks like this:</p>
+<div class="noscroll">
+<pre>year = eval(input("Enter year: "))
+if year == 1:
+&nbsp;&nbsp;print ("Freshman")
+else:
+&nbsp;&nbsp;if year == 2:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print ("Sophomore")
+&nbsp;&nbsp;else:
+&nbsp;&nbsp; &nbsp;&nbsp;if year == 3:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print ("Junior")
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;if year == 4:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print ("Senior")</pre>
+</div>
+<p>Because there are multiple paths that the program can take, this is known as a <em>multiway if statement</em>. The beauty of coding multiway ifs with nested loops is that once a condition evaluates to true, you break out of the if structure completely. This means that you'll stop comparing values, which is going to save a little processing time.</p>
+<p>Of course, because of the way Python is set up, you have to be very careful to watch your indenting in this situation. Remember, Python uses the indenting to determine where the ifs and elses line up. If you're using Tabs to indent, this can get a little worrisome because you'll quickly run out of space. For this reason, Python has given us the ability to use another keyword, <em>elif</em>.</p>
+<p><strong>The elif Statement</strong></p>
+<p>As you might guess, elif is just a combination of the words else and if. So, our program above becomes this:</p>
+<div class="noscroll">
+<pre>year = eval(input("Enter year: "))
+if year == 1:
+&nbsp;&nbsp;&nbsp;print ("Freshman")
+elif year == 2:
+&nbsp;&nbsp;&nbsp;print ("Sophomore")
+elif year == 3:
+&nbsp;&nbsp;&nbsp;print ("Junior")
+elif year == 4:
+&nbsp;&nbsp;&nbsp;print ("Senior")</pre>
+</div>
+<p>If you compare this code to the previous example, you'll see that the indenting here is much easier to read and doesn't take up so much room. Many people argue that this makes the code easier to read. But of course, the functionality of the code is exactly the same as in the previous example. So, once the computer makes a match between the value of year and the number, the output will be displayed and it'll stop comparing values. </p>
+<p>There's one last advantage of the nested if and elif statements that I want to point out. It's the ability to add a final else statement that will reveal invalid entries. With the code above, notice that if my user enters a number other than 1, 2, 3, or 4, nothing is printed. So, if my user enters a 5 and nothing happens, the user or I might think there is a problem with the program, and I'd have to spend time figuring out what went wrong. But now I can add the following:</p>
+<div class="noscroll">
+<pre>else:
+&nbsp;&nbsp;&nbsp;print ("Not a valid year")</pre>
+</div>
+<p>Now when you run the program and enter something that isn't between 1 and 4, you'll still get a message. This is quite helpful for debugging your programs because if you leave out this final else statement, you might have invalid input and never know it or have invalid input and think your program has broken down somewhere when in actuality the input is the problem, not the code.</p>
+<p>Doing multiway if statements makes your programs easier to write and quicker to run. But what if you want to check two or more conditions in your if statement? For that, you'll need some <em>logic operators</em>, which we'll tackle in Chapter 4.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><!-- ipy LESSON 03 CHAPTER 4 --><!-- START CHAPTER CONTENT --><strong>Logic Operators</strong></p>
+<p>There are lots of situations where you might want to make a decision based on more than one condition. For example, imagine that it's raining outside and it's cold. Then, based on these two conditions, you may decide to wear a warm overcoat. </p>
+<p>In our voting example, checking multiple conditions might look like this: A program that checks that users are at least 18 years old and registered to vote. To do this you could certainly just put one if statement inside another like this:</p>
+<div class="noscroll">
+<pre>age = eval(input("How old are you? "))
+registered = input("Are you registered? (y/n) ")
+
+if age &gt;= 18:
+&nbsp;&nbsp;&nbsp;&nbsp;if registered == "y":
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print ("You are ready to vote!")
+else:
+&nbsp;&nbsp;&nbsp;&nbsp;print ("You are not ready to vote.")</pre>
+</div>
+<p>This code will ask users for their age and if they're registered to vote. It will even give the correct response if the user happens to be old enough and registered. However, there's a small problem. </p>
+<p>Notice what happens if you're old enough but not registered to vote. In this case, no message is printed on the screen. You might want to type this code in and give it a try for yourself. </p>
+<p>Do you see why it works this way? It's because the else clause that I've written is matched up with the first if. So if the user is over 18, then the true path runs, and we always skip the else.</p>
+<p>By the way, the reason the else matches up this way is the indenting. Because the else is lined up with the first if, Python associates the two with each other. Of course, you could do something like this:</p>
+<div class="noscroll">
+<pre>age = eval(input("How old are you? "))
+registered = input("Are you registered? (y/n) ")
+
+if age &gt;= 18:
+&nbsp;&nbsp;&nbsp;&nbsp;if registered == "y":
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print ("You are ready to vote!")
+&nbsp;&nbsp;&nbsp;&nbsp;else:
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;print ("You are not ready to vote.")</pre>
+</div>
+<p>This now gives the correct responses when users are over 18 and registered and when they're over 18 and not registered. But, if your user is under 18, then you don't get a response at all. </p>
+<p>Now you might wonder if you could just put a second else statement in the program to fix this. Absolutely! But instead, let me show you how to evaluate two conditions at once with <em>compound conditions</em>.</p>
+<p>In order to create a compound condition, you need to use a logic operator. The most common operators in Python are <em>And</em> and <em>Or</em>. Compound conditions with the And operator require that both individual conditions are true in order for the overall compound condition to be true. Conditions that use an Or operator require that at least one of the individual conditions be true for the overall condition to be true.</p>
+<p>So in our voting example, we'd want to use the And operator to require that the user be at least 18 and registered to vote. Here's what the code looks like now:</p>
+<div class="noscroll">
+<pre>age = eval(input("How old are you? "))
+registered = input("Are you registered? (y/n) ")
+
+if age &gt;= 18 and registered == "y":
+&nbsp;&nbsp;&nbsp;&nbsp;print ("You are ready to vote!")
+else:
+&nbsp;&nbsp;&nbsp;&nbsp;print ("You are not ready to vote.")</pre>
+</div>
+<p>You'll find that the Or operator works exactly the same. For example, maybe you want to write an if statement to test whether your user has entered either "Y" or "y". Your statement could look like this:</p>
+<div class="noscroll">
+<pre>if choice == "Y" or choice == "y":</pre>
+</div>
+<p>One thing to note with statements like these is that some of you will try to do:</p>
+<div class="noscroll">
+<pre>if choice == "Y" or "y":</pre>
+</div>
+<p>While this makes sense if you read this in English, it won't give you what you want in Python. It seems that a line of code like this will want to compare choice to either "Y" or "y"; however, Python won't do this. Instead, keep in mind that this is a compound condition. This means that there are two conditions here. The first condition is when choice == "Y" but the second condition is "y".</p>
+<p>The thing about Python is that it won't give you an error if you try to do this. Instead, it'll just interpret "y" as the Boolean value true. Go ahead and try it out. No matter the value of choice, it'll always evaluate to true and run the next statement:</p>
+<div class="noscroll">
+<pre>answer = input("Please enter a letter ")
+if answer == 'y' or 'Y':
+&nbsp;&nbsp;&nbsp; print ("You entered 'y' or 'Y'")</pre>
+</div>
+<p>At this point, you've worked with a long list of if statements. Let's go ahead and put all of this together into a single program that is somewhat useful. Let's create one that will ask users for their hourly rate and the number of hours they've worked. </p>
+<p>Based on that information, we'll calculate their weekly pay. Of course, we'll need to do some testing to see if users have worked more than 40 hours because the hourly rate for overtime is going to be time and a half or 1 1/2 times the regular hourly wage.</p>
+<p>Try to do this one on your own first and then look over my code and see if it matches up. The best way to learn this stuff is to get something working and then make small changes to the code to see how the computer reacts.</p>
+<div class="noscroll">
+<pre>rate = eval(input("What is your hourly wage? "))
+hours = eval(input("How many hours did you work? "))
+
+if hours &lt; 40:
+&nbsp;&nbsp;&nbsp;&nbsp;pay = hours * rate
+else:
+&nbsp;&nbsp;&nbsp;&nbsp;pay = hours * rate
+&nbsp;&nbsp;&nbsp;&nbsp;overtimeHours = hours - 40
+&nbsp;&nbsp;&nbsp;&nbsp;overtimePay = overtimeHours * (rate * 0.5)
+&nbsp;&nbsp;&nbsp;&nbsp;pay = pay + overtimePay
+
+print ("Your weekly pay is:", pay)</pre>
+</div>
+<p>How does this code look? Notice the final line of the program that I slipped in:</p>
+<div class="noscroll">
+<pre>print ("Your weekly pay is:", pay)</pre>
+</div>
+<p>I have a comma separating my literal string and my variable. This is going to allow me to put both of these pieces of output on the same line. You should note that by using that comma, Python is going to place a single blank space between the last letter of the literal string and the first character in your variable's value. </p>
+<p>Now let's move on to our final chapter.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p>
+<!-- ipy LESSON 03 CHAPTER 5 -->
+<!-- START CHAPTER CONTENT -->
+
+<strong>Summary</strong></p><p>This lesson was all about decisions.  Python only gives us one way to do decisions in our programs with the if statement.  However, as you've seen, even with only one decision structure, there are a lot of ways you can arrange your code.  There are else clauses and elif statements.  You also learned about the logic operators and how they create compound conditions.</p><p>Now that you're an expert on decision making, next we'll take a look at having our programs repeat themselves with looping structures.  Unlike decisions, Python has given us a couple of different ways to put loops into our programs.  </p><p>This is going to let you save yourself from extra, redundant typing. And you're going to gain the ability to do things with your programs that you wouldn't be able to do otherwise, like continue executing statements as long as the user wants to for a never-ending experience.</p><p>See you in Lesson 4!
+                </p></div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.openbookproject.net/books/bpp4awd/ch04.html" target="_blank">
+                                The Python if Statement</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.openbookproject.net/books/bpp4awd/ch04.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This page gives another review of the if statement in Python, including a couple of examples.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <strong>Q:</strong> When I run my program, I get the following error message: "There's an error in your program: invalid syntax". I went ahead and took all of the code out of my program and then added it back in, in small segments. I ended up getting stuck with the error in this line:<br>
+<br>
+<div class="noscroll">
+<pre>if year == 1
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print ("Freshman")</pre>
+</div>
+<br>
+I don't understand what's wrong with my syntax here. <br>
+<br>
+<strong>A:</strong> The problem with this code is that you're missing the colon (:) at the end of the line with the if statement on it. This is a very common thing for new Python programmers to forget. Just try changing that line to:<br>
+<br>
+<div class="noscroll">
+<pre>if year == 1:</pre>
+</div>
+<br>
+It should work just fine.<br>
+<br>
+<br>
+<p><strong>Q: </strong>I’ve worked in other languages that provide a "switch" or "case" structure for making decisions.&nbsp; Does Python have such a structure?</p>
+<strong>A:</strong> No, Python does not support such a structure.&nbsp; The only way to do decisions is with the if statement.
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            Meteorologists use the Saffir-Simpson Scale to classify the strength of hurricanes. The intensity is based on the maximum sustained wind speed of a storm as follows:<br>
+<br>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px; border: 0px solid;" alt="Saffir-Simpson Scale" src="Introduction%20to%20Python%203%20Programming_files/L03-02%2520Update.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Saffir-Simpson Scale</font></p>
+Write a Python program that will prompt the user for a wind speed. The program should use this wind speed to display a message telling the user the hurricane's intensity based on the table above.<br>
+<br>
+<a target="_blank" href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/py3-0/PY3_L03_Solution.py">Click here</a> to download the solution file: PY3_L03_Solution.py.
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2016
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                py3-0
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB04P (1.2.99.4) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/IncludeResource.js"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.eVar4='';
+s.prop4='';
+s.eVar5='introduction to python 3 programming';
+s.prop5='introduction to python 3 programming';
+s.prop6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.eVar6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.prop7='3';
+s.eVar7='3';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=3';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=3';
+s.prop15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.eVar15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.hier1=',,introduction to python 3 programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript><a href='http://www.Adobe.com' title='Web Analytics'><img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/></a></noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript><iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="jb-overlay" style="opacity: 0.7; display: none;"></div><div id="jb-window" style="display: none;"><div id="jb-window-inner" style="position: fixed; top: 280px; left: 469px;"><div id="jb-window-content" style="width: auto; height: auto; overflow: hidden; display: none;" tabindex="0"></div></div></div><span id="text-resize" style="position: absolute; left: -9999px; font-size: 100%; font-family: Courier New, mono; margin: 0; padding: 0;">&nbsp;</span><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?random=1481492454956&amp;cv=8&amp;fst=1481492454956&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=860&amp;u_w=1376&amp;u_ah=839&amp;u_aw=1376&amp;u_cd=24&amp;u_his=50&amp;u_tz=-300&amp;u_java=true&amp;u_nplug=9&amp;u_nmime=60&amp;frm=0&amp;url=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FPrintLesson.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26lesson%3D3&amp;ref=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FLessons.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26bc%3DLessons%26lesson%3D3&amp;tiba=Introduction%20to%20Python%203%20Programming" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" width="300" height="13" frameborder="0"></iframe><div id="criteo-tags-div" style="display: none;"><iframe style="display: none;" src="Introduction%20to%20Python%203%20Programming_files/dis.htm" width="0" height="0"></iframe></div></body></html>

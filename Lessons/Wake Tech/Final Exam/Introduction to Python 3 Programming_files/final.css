@@ -1,0 +1,11 @@
+﻿/* CSS Document */
+
+/*==============
+1)Final Exam
+=================*/
+
+.final { /*margin-top: -10px;*/ }
+
+.final_please_note { width: 90%; max-width: 450px; min-width: 50px; background-color: #fde1ce; /*background-color: #f3f3f3;*/ border: 2px solid #f99d60; text-align: left; padding: 5px 15px; margin: 25px auto; /* top and bottom are 10px, sides are auto */ }
+
+.main-paragraph-text { margin-top: -10px; }

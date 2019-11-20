@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- Google Tag Manager -->
+            <script async="true" type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/event.js" data-owner="criteo-tag"></script><script src="Introduction%20to%20Python%203%20Programming_files/2861.js" async="" type="text/javascript"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/ld.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/conversion.js">
+</script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag"></script><script type="text/javascript" async="" src="Introduction%20to%20Python%203%20Programming_files/ga.js"></script><script async="" src="Introduction%20to%20Python%203%20Programming_files/gtm.htm"></script><script>(function(w,d,s,l,i){try{w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            }catch(e){(console.error || console.log).call(console, e.stack || e);}
+            })(window,document,'script','dataLayer','GTM-P66CZH7');</script>
+            <!-- End Google Tag Manager --><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Python 3 Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-1.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-migrate-1.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom.css" media="all"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/global.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/course.htm"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/patch.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/patch.css" media="all"><link href="Introduction%20to%20Python%203%20Programming_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P66CZH7'
+            height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+    <noscript>
+        <div id="sansjs">
+            Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+        </div>
+    </noscript>
+    <form name="aspnetForm" method="post" action="./PrintLesson.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=12" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource_002.js" type="text/javascript"></script>
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource.js" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7" type="hidden">
+</div>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm('Are you sure you wish to log out?');" id="ctl00_lbLogout" tabindex="4" class="title-bar-login-button" href="javascript:__doPostBack('ctl00$lbLogout','')">
+                        <p role="heading">LOGOUT</p>
+                    </a>
+
+                    <a id="ctl00_hlkHelpInActive" tabindex="2" class="title-bar-help-button" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">
+                            <p role="heading">
+                                HELP
+                            </p>
+                    </a>
+                    
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" tabindex="1" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Introduction to Python 3 Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Mike Orsega
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            12: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            GUIs With Tkinter</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        <span class="accessibility_hide">You are here: </span>
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=12">Lesson 12</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" checked="checked" onclick="showAllImagesPF()" type="radio"><label for="pfImagesOnBtn">Text, images and activities (IE users only)</label></p><p><input name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()" type="radio"><label for="pfInteractivityOffBtn">Text and images</label></p><p><input name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()" type="radio"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_chrome.png" alt="chrome icon" class="pf_visible pf_image" border="0"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_firefox.png" alt="Firefox icon" class="pf_visible pf_image" border="0"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" class="pf_visible pf_image" border="0"><br><span class="caption">IE 11</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_safari.png" alt="Safari icon" class="pf_visible pf_image" border="0"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input class="pf_hide_directions_btn" style="display:none;" value="Hide Directions" type="button"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input class="pf_hide_directions_btn" style="display:none;" value="Hide Directions" type="button"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p>
+<!-- ipy LESSON 12 CHAPTER 1 -->
+<!-- START CHAPTER CONTENT -->
+
+</p><p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/L12_header.jpg" galleryimg="no" alt="Lesson 12 header" class="pf_image" vspace="0" border="0"></p><br>
+<strong>Introduction</strong><p></p><p>For our last lesson, let's 
+revisit Python graphics. Earlier in the course, you wrote programs to 
+plot lines and shapes on a Frame.  Well, we can also use that same 
+library to add other common graphical user interface (GUI) components to
+ the Frame, such as, buttons and labels.  Although you may not have 
+written programs to develop programs with these components before, you 
+certainly have experience with them. So, I think you'll find this look 
+at how it's all done very interesting.</p><p>To start, we'll have a 
+quick review of creating a Frame for our graphical program.  Then, we'll
+ explore some common Python GUI components like the Button, Label, 
+Entry, Checkbutton, and Radiobutton widgets.  You'll also learn how each
+ of these creates a graphical interface that makes your programs easier 
+to use.  Along the way, we'll discuss events and event-driven 
+programming.</p><p>So, let's get back into the world of graphics and start tapping into your creative side again.<br>
+                </p></div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><!-- ipy LESSON 12 CHAPTER 2 --><!-- START CHAPTER CONTENT --><strong>Frames, Buttons, and Labels</strong></p>
+<p>Before I show you the different GUI components available to us from 
+the Tkinter library, I want to give a brief review of graphical 
+programs. Let's just look at a simple program that creates a single 
+Frame and displays it:</p>
+<div class="noscroll">
+<pre>from&nbsp;tkinter import *
+
+class MyFrame(Frame):
+&nbsp;&nbsp;&nbsp;def __init__(self):
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Frame.__init__(self)
+
+frame01 = MyFrame()
+frame01.mainloop()</pre>
+</div>
+<p>Remember that the first line allows us to import all of the graphical
+ elements available to us in the Tkinter library. Next, we create a 
+subclass of the Frame class. The Frame is the window that shows up on 
+the screen. Inside the class, we define our constructor, __init__, whose
+ first task is always to call on the constructor from the superclass, 
+Frame. Now, if we had any other GUI components to add to our Frame, we'd
+ do it here. </p>
+<p>That's it for our class, so the only thing left for us to do is to 
+create an object from this class type. In this case, it's the variable 
+named <em>frame01</em>. Finally, we use this object to call on mainloop(
+ ), which is going to keep our program running until the user closes the
+ window. Go ahead and write this program in Python and make sure it runs
+ before proceeding. Then I'll have you add your first component—a Label.</p>
+<p><strong>The Label Component</strong></p>
+<p>Now you're ready to add a <em>Label</em>. Labels display text or an 
+image to the user. I typically think of these things as a way to get 
+output into my interface. Just like the Frame and Canvas widgets that 
+you've used in the past, the Label widget has many different options for
+ you to customize it. </p>
+<p>For now, let's just create a basic Label with text and display it. To
+ specify the Label's text, you simply set the text property. The 
+following program will add a Label with the text "Hello World!":</p>
+<div class="noscroll">
+<pre>from&nbsp;tkinter import *
+
+class MyFrame(Frame):
+&nbsp;&nbsp;&nbsp;def __init__(self):
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Frame.__init__(self)
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.grid()
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.message = Label(self, text = "Hello World!")
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.message.grid()
+
+frame01 = MyFrame()
+frame01.mainloop()</pre>
+</div>
+<p>The resulting program should look like this:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px;border: 0px solid;" alt="Frame with Label component" src="Introduction%20to%20Python%203%20Programming_files/L12-01.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Frame with Label component</font></p>
+<p>Be sure to note here that I'm calling on the grid( ) method twice. 
+Once for the Frame and once for the Label. Earlier in the course, you 
+learned that you need this call to grid( ) in order to get the 
+components added to and drawn on the Frame.</p>
+<p>Now when you run this, you'll end up with a Frame that's just large 
+enough to hold the components in the Frame. So let's change the Frame to
+ make it bigger. Right after the line that calls the __init__ 
+constructor, add the following line of code:</p>
+<div class="noscroll">
+<pre>self.master.geometry("200x200")</pre>
+</div>
+<p>Here you're using the keyword <em>master</em> to access the master or
+ base class that your class is inheriting from. In this case, you're 
+accessing the Frame class. This class has an attribute named <em>geometry</em>
+ that controls the size of the Frame. To use this method, you need to 
+pass it a string that lists the width, then a lowercase letter x, 
+followed by the height. Note that you can also add a title to your 
+window's title bar by setting the master's <em>title property</em>. Just pass in the text that you want displayed to this method like so:</p>
+<div class="noscroll">
+<pre>self.master.title("My GUI")</pre>
+</div>
+<p>Go ahead and make the changes to set the master's geometry and title 
+attributes and run your program. Now it should look like this:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px;border: 0px solid;" alt="Larger Frame with Label component" src="Introduction%20to%20Python%203%20Programming_files/L12-02.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Larger Frame with Label component</font></p>
+<p>Now that you have a Label in a reasonably sized Frame, let's add a Button and make this program more interactive.</p>
+<p><strong>The Button Component</strong></p>
+<p>As you can probably guess, you'll use a <em>Button</em> so that users have something to click when they're ready for something to happen. This is called <em>event-driven programming</em>
+ because the program just sits there doing nothing until the user does 
+something to generate an event. Events are things like typing at the 
+keyboard, moving the mouse, or clicking one of the mouse's buttons.</p>
+<p>Once again, Button components have a wide variety of options. But 
+we'll just stick with some of the basic ones. When you create a Button, 
+you'll want to specify two things: the text displayed and what you want 
+done when the button is pressed.</p>
+<p>The first option is really easy. This is exactly what we did with the
+ Label. When we create the Button, we just use the text option and set 
+it equal to whatever text we want displayed. And setting the second 
+option is just as simple. Set the <em>command option</em> equal to the 
+name of a method. Of course, you'll also have to define that method, but
+ that's easy too because you've done it before.</p>
+<p>Remember, to define a method, you list the keyword <em>def</em>, 
+followed by the name of the method and the list of parameters that this 
+method needs. Inside the method body, list the code that you want 
+executed when the method runs.</p>
+<p>For example, the following code will create a Frame containing a 
+Button. When the user clicks the button, a message will show up on the 
+console window:</p>
+<div class="noscroll">
+<pre>from&nbsp;tkinter&nbsp;import *
+
+class MyFrame(Frame):
+&nbsp;&nbsp;&nbsp;def __init__(self):
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Frame.__init__(self)
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.master.geometry("200x200")
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.master.title("My GUI")
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.grid()
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.button_click_here = Button( self, text = "Click Here",
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;command = self.click_here_click )
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.button_click_here.grid()
+
+&nbsp;&nbsp;&nbsp;def click_here_click(self):
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;print&nbsp;("You did it!" )
+
+frame02 = MyFrame()
+frame02.mainloop()</pre>
+</div>
+<p>Notice here how the Button is created with the text and command 
+options set. The command option specifies that the Button is to run the 
+code contained in the click_here_click method, which is defined after 
+the constructor in our class. Run this program and make sure you can get
+ it working before moving on.</p>
+<p>Now, you may be wondering why we're spending so much time creating 
+our graphical interface just to print a message on the console. Seems 
+like a lot of work for what we're getting in return? After all, why not 
+just put the message into the interface itself?</p>
+<p>Of course, this is a perfectly legitimate concern. So we'll tackle 
+that problem next. And while it may seem like an easy thing to do, it 
+does require some explanation. So that's what we'll tackle in Chapter 3.
+ So when you're ready, let's move on and learn about control variables 
+and how to set the text in a Label during runtime.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><!-- ipy LESSON 12 CHAPTER 3 --><!-- START CHAPTER CONTENT --><strong>Updating Text</strong></p>
+<p>In the last example, your program printed a message on the console 
+when you clicked a graphical Button. A natural thing to do is to place a
+ Label on the Frame so that when the Button is clicked, the Label's 
+message changes. Unfortunately, it's not as easy as simply changing the 
+text property of the Label. Instead, we'll need to make use of a <em>control variable</em>.
+ A control variable is just like any other Python variable, except that 
+when you change its value during execution, any GUI component that uses 
+this value will also be updated.</p>
+<p>In order for this to work for our Label, you'll need to set the Label's <em>textvariable option</em> equal to the control variable you create. Additionally, this variable needs to be a <em>StringVar object</em>.
+ This is a special data type that allows the value of the string 
+contained in the Label control to be changed at runtime. The following 
+lines of code will create a class control variable named my_text and 
+then make a Label whose textvariable option is equal to this new 
+variable:</p>
+<div class="noscroll">
+<pre>self.my_text = StringVar()
+self.message = Label(self, textvariable = self.my_text)</pre>
+</div>
+<p>Now, any time you want to make a change to the text stored in this 
+variable, you just call the set( ) method and pass the new text to this 
+method inside the parentheses. </p>
+<p>Let's use this new information to create a program where there's a 
+Button and a Label. When the user clicks the Button, the Label's text is
+ updated:</p>
+<div class="noscroll">
+<pre>from tkinter import *
+
+class MyFrame(Frame):
+&nbsp;&nbsp;&nbsp;def __init__(self):
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Frame.__init__(self)
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.master.geometry("200x200")
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.master.title("My GUI")
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.grid()
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.button_click_here = Button( self, text = "Click Here",
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;command = self.click_here_click )
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.button_click_here.grid()
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.my_text = StringVar()
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.message = Label(self, textvariable = self.my_text)
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.message.grid()
+
+&nbsp;&nbsp;&nbsp;def click_here_click(self):
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.my_text.set("You did it!")
+
+frame03 = MyFrame()
+frame03.mainloop()</pre>
+</div>
+<p>Once again, I want to point out that the code creates a control 
+variable named my_text. We set the textvariable property of the Label to
+ be the control variable. Then, when the button is clicked, the code 
+calls the set( ) method and passes the new text that we want displayed 
+as a parameter. Run your program. After clicking the Button, your Frame 
+should look like the following:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px;border: 0px solid;" alt="Program with updating Label text" src="Introduction%20to%20Python%203%20Programming_files/L12-03.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Program with updating Label text</font></p>
+<p>I hope you're getting excited about being able to create interactive 
+programs. They're so much more fun for users. So, let's keep going with 
+this idea and add an Entry component so that our users can enter text to
+ the program.</p>
+<p><strong>The Entry Component</strong></p>
+<p>While the Label component displays text that users can't edit, the 
+Entry component allows them to type in one line of text for input into 
+the program. The idea is that your users type their text into the 
+Entry's text area. Then, anytime you want your program to get the 
+information out, you simply call on that Entry's <em>get( )</em> method. This method returns the text in the form of a string.</p>
+<p>Let's try this out with a little example. Create a program that will 
+prompt users for their name in a Label. Then place an Entry so that they
+ can enter it. Finally, put a Button for users to click and a second 
+Label for the output. The program will take the text entered in the 
+Entry and display a hello message using the user's name.</p>
+<p>Here's the code to get the ball rolling. Most of it is already familiar to you:</p>
+<div class="noscroll">
+<pre>from&nbsp;tkinter import *
+
+class MyFrame(Frame):
+&nbsp;&nbsp;&nbsp;def __init__(self):
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Frame.__init__(self)
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.master.geometry("300x200")
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.master.title("My GUI")
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.grid()
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.prompt = Label(self, text = "What's your name?")
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.prompt.grid()
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.input = Entry(self)
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.input.grid()
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.button_submit = Button( self, text = "Submit",
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;command = self.submit_click )
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.button_submit.grid()
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.my_text = StringVar()
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.message = Label(self, textvariable = self.my_text)
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.message.grid()
+
+&nbsp;&nbsp;&nbsp;def submit_click(self):
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;output_message = "Hi " + self.input.get()
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.my_text.set(output_message)
+
+frame04 = MyFrame()
+frame04.mainloop()</pre>
+</div>
+<p>Run this program, put your name into the Entry component, and then click the Button. You should see something like this:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px;border: 0px solid;" alt="Program using the Entry component" src="Introduction%20to%20Python%203%20Programming_files/L12-04.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Program using the Entry component</font></p>
+<p>One thing you'll notice about this program is the layout of your 
+components. Each one is laid out, line by line, as they were added to 
+the Frame. But maybe you didn't want to have them laid out this way. 
+Instead, let's say that you want the first Label and the Entry next to 
+each other at the top, followed by the Button, and then the second 
+Label. </p>
+<p>To figure out what's going on here, we need to discuss the grid layout manager.</p>
+<p><strong>The Grid Layout Manager</strong></p>
+<p>Back in Lesson 7, I said we'd stick with the grid layout manager, and
+ that's just what we've been doing. By default, a grid layout places the
+ components on the Frame from top to bottom. However, we can specify a 
+different setup by using the grid method's <em>row</em> and <em>column</em> options. </p>
+<p>As you know, the grid layout manager lays out a grid on the Frame. 
+When you leave out the row and column options, the components are put 
+onto the grid as if there's only one column. Then, each new component 
+goes onto its own row.</p>
+<p>To fix the layout in your program so that the prompt Label and the 
+Entry component are on the same line, just change your grid( ) calls so 
+that each specifies to place the component on row 0. You'll then place 
+the Label in column 0 and the Entry in column 1. The lines to add the 
+Label and Entry components now look like this:</p>
+<div class="noscroll">
+<pre>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.prompt = Label(self, text = "What's your name?")
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.prompt.grid(row = 0, column = 0)
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.input = Entry(self)
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.input.grid(row = 0, column = 1)</pre>
+</div>
+<p>If you make this specification and run the program now, you'll find 
+that these components look &nbsp;as they did previously. However, the 
+prompt Label and the Entry are now on the same line.&nbsp; That's 
+because you specified that they both be placed in row 0, but in columns 0
+ and 1, respectively.&nbsp; Because the Button and output Label still 
+used grid( ) with no options, they were placed just as before.</p>
+<p>One thing you probably noticed is that the Button and output Label 
+are shown below the prompt Label.&nbsp; The reason is because they've 
+been placed in column 0 as well.&nbsp; But what if we wanted these 
+widgets placed in the exact center below the prompt Label and Entry 
+widgets?&nbsp; To do this, simply use the <i>columnspan</i> option when 
+you call grid. This option specifies the number of columns that this 
+component should occupy in the grid. For this example, you'll need to 
+set columnspan to 2 for both the Button's and the output Label's call to
+ grid.</p>
+<p>Your code should now look like the following:</p>
+<div class="noscroll">
+<pre>from tkinter import *
+
+<p><font face="Courier New">class MyFrame(Frame):
+&nbsp;&nbsp;&nbsp;def __init__(self):
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Frame.__init__(self)
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.master.geometry("300x200")
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.master.title("My GUI")
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.grid()
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.prompt = Label(self, text = "What's your name?")
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.prompt.grid(row = 0, column = 0)
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.input = Entry(self)
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.input.grid(row = 0, column = 1)
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.button_submit = Button( self, text = "Submit",
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;command = self.submit_click )
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.button_submit.grid(columnspan = 2)
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.my_text = StringVar()
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.message = Label(self, textvariable = self.my_text)
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.message.grid(columnspan = 2)
+
+&nbsp;&nbsp;&nbsp;def submit_click(self):
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;output_message = "Hi " + self.input.get()
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;self.my_text.set(output_message)
+
+frame04 = MyFrame()
+frame04.mainloop()</font></p></pre>
+</div>
+<p>And if you run the program and enter a name, this is what you'll see:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px;border: 0px solid;" alt="Frame using extra grid options" src="Introduction%20to%20Python%203%20Programming_files/L12-05.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Frame using extra grid options</font></p>
+<p>There's only one more issue that I have with this program. 
+Personally, I don't like how all of my components are jammed together 
+with no space between them. Instead, I think it'd be nice to see a 
+little bit of space between each of the 3 rows.</p>
+<p>You can add this extra space by using the grid option, <em>pady</em>.
+ One thing to note about pady is it adds pixels of blank space you 
+specify between both the top and bottom of the component. And since your
+ Button is in between the other two rows, you can just change the call 
+to grid( ) for the button, and it'll fix everything. Make your grid( ) 
+call look like the following:</p>
+<div class="noscroll">
+<pre>self.button_submit.grid(columnspan = 2, pady = 10)</pre>
+</div>
+<p>Run your program again, and you'll see a little bit of space between 
+each row. I like this a lot better. Hopefully you do too. Of course, if 
+you don't, you're always free to adjust the spacing.</p>
+<p>One last thing to note about this extra space. Perhaps you also 
+wanted to add a little bit of space between the prompt and the Entry 
+component on the first line. No problem. The grid( ) method also has an 
+option for <em>padx</em> that works just like pady, except that the space is added to the left and the right of the component.</p>
+<p>Now that the layout of your components is looking good, let's learn about a couple more in Chapter 4.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><!-- ipy LESSON 12 CHAPTER 4 --><!-- START CHAPTER CONTENT --><strong>The Checkbutton and Radiobutton Components</strong></p>
+<p>Chances are pretty good that you've worked with Checkbuttons in other
+ GUI programs before. These are the little boxes that you can click to 
+put a check mark inside or click a second time to remove a check mark. 
+Think of them as options that you can select while running a program.</p>
+<p>Just like the other Tkinter widgets, Checkbuttons have a wide variety
+ of options available. The ones you'll be working with the most will be 
+the text option. This allows you to set the text displayed next to the 
+Checkbutton's box. There's also a command option, which is similar to a 
+Button's command option. This option allows you to specify which method 
+is to be run when the user clicks the Checkbutton.</p>
+<p>One option that's a little different from the other components is the Checkbutton's <em>variable</em>
+ option. This option keeps track of the current state of the 
+Checkbutton; whether it is checked or unchecked. Typically, you'll use a
+ <em>IntVar</em> object to keep track of this value. </p>
+<p>As you may have guessed, IntVar's are just like the StringVar control
+ variables that you worked with in the previous chapter, except that 
+they store integers instead of strings. The reason you need to keep 
+track of an integer here is because when your Checkbutton is selected, 
+the variable value stored will be 1. And when it isn't selected, it'll 
+store a 0. </p>
+<p>Let's try a simple program to help you practice working with these 
+Checkbuttons. The program has a Label with a few words in it. Below the 
+Label, we'll include two Checkbuttons. </p>
+<p>The first one allows the user to change the Label's font so that it's
+ bold. The second Checkbutton allows the user to underline the Label's 
+text. The interface might look something like the following:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px; border: 0px solid;" alt="Frame Text format sampler program" src="Introduction%20to%20Python%203%20Programming_files/L12-06.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Text format sampler program</font></p>
+<p>Although adding a Checkbutton is just like adding the Buttons and 
+Labels that you've done in the past, I'd still like to show you this 
+code and explain it. To create and add the bold Checkbutton, you'd do 
+this:</p>
+<div class="noscroll">
+<pre>self.bold_on = IntVar()
+self.check_bold = Checkbutton(self, text = "Bold",
+&nbsp;&nbsp;&nbsp;variable = self.bold_on, command = self.set_font)
+self.check_bold.grid(row = 1, column = 0)</pre>
+</div>
+<p>The first line of code creates my IntVar object. Notice how it looks 
+exactly like the code you used in the previous chapter for the StringVar
+ that stored the message Label's text. Next, I create the Checkbutton 
+itself. I've specified the new IntVar object as the variable option and 
+set the command to a method called set_font.</p>
+<p>You'll do the same thing when you create the underline Checkbutton, 
+except that you'll need a second IntVar object to keep track of this 
+Checkbutton's state. Be aware that for this example, we'll use the same 
+method for both components, set_font. That's because these options can 
+be added over one another, making the text both bold and underlined.</p>
+<p>Let's write that method next:</p>
+<div class="noscroll">
+<pre>def set_font(self):
+&nbsp;&nbsp;&nbsp;new_font = "Courier 10"
+
+&nbsp;&nbsp;&nbsp;if self.bold_on.get() == 1:
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;new_font = new_font + " bold"
+&nbsp;&nbsp;&nbsp;if self.underline_on.get() == 1:
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;new_font = new_font + " underline"
+
+&nbsp;&nbsp;&nbsp;self.sample_label.config( font = new_font)</pre>
+</div>
+<p>The first thing this method does is create a variable to hold the 
+name of the font. In this case, "Courier 10". The next set of if 
+statements determines which other options should be added by examining 
+the Checkbuttons. </p>
+<p>Notice that the code uses the IntVar's get method to get the value 
+stored. If that value is 1, then the Checkbutton is selected, so we'll 
+add the appropriate word to the end of our font string. When both 
+options have been considered, we'll use the sample Label's <em>config( )</em> method to update the font option.</p>
+<p>Do you think you can put the rest of the code into place and get the 
+program working properly? Give it a shot and if you have problems, you 
+can always click the link below to see the entire program as I've 
+written it.</p>
+<p><a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/py3-0/PY3_L12_1.py" target="_blank">Click here</a> to download PY3_L12_1.py.</p>
+<p>After you get your Checkbutton program up and running, let's finish by talking about the Radiobutton widget.</p>
+<p><strong>Radiobuttons</strong></p>
+<p>A Radiobutton is similar to a Checkbutton in that you'll use it in 
+your programs to allow your users to select from certain options. The 
+difference is that the options specified by Radiobuttons are mutually 
+exclusive. That is, if I decide to make my font 10 point, then it can't 
+be 12 point at the same time</p>
+<p>In fact, Radiobutton options are not limited to only two choices. 
+Actually, you can have as many choices as possible. However, only one 
+value can be selected at a time. The way the program determines this is 
+through the use of the Radiobutton's control variable.</p>
+<p>So let's consider the program you were just working on that changed 
+the font styles. Let's go ahead and give users the option to change the 
+font size as well. To keep things simple, let's just give them the 
+option to make their font point-size either 10 or 12. </p>
+<p>The first thing we'll need to do is to create the StringVar object to
+ hold the value for the selected Radiobutton. Additionally, it's a good 
+idea to call the set( ) method next to give this variable a value. This 
+will select the appropriate Radiobutton when the program is first run. 
+These two lines of code look like the following:</p>
+<div class="noscroll">
+<pre>self.point_size = StringVar()
+self.point_size.set("10")</pre>
+</div>
+<p>Next, you'll need to make your Radiobuttons. The statement to create a
+ Radiobutton is nearly identical to the one to create a Checkbutton. 
+You'll again specify the text you want displayed, the control variable 
+that's going to keep track of which button is selected, and the command 
+to be run when the button is clicked. However, this time, you'll also 
+include a value for the <em>value option</em>. </p>
+<p>With the Checkbutton, it made sense to simply have our widget store a
+ 0 if it wasn't selected or a 1 if it was. But because there are a 
+variety of mutually exclusive options with our Radiobuttons, you'll need
+ to give each a value so that you can determine which one is selected.</p>
+<p>The statement to create the 10 point Radiobutton looks like this:</p>
+<div class="noscroll">
+<pre>self.ten_point = Radiobutton(self, text = "10 point",
+&nbsp;&nbsp;&nbsp;variable = self.point_size, value = "10",
+&nbsp;&nbsp;&nbsp;command = self.set_font)</pre>
+</div>
+<p>The last change you'll make to this program is to update the set_font
+ method so that it accounts for a user's font size. Don't forget to 
+remove the "10" from the line of code that sets the initial value of 
+new_font. After that, you'll just need to call the get( ) method for 
+your self.point_size StringVar variable. If it's storing "10", then 
+you'll add " 10" to new_font, otherwise add "12".</p>
+<p>Again, I'd like for you to try creating this code on your own first. 
+Don't forget to create the Radiobutton for 12 point font. When you're 
+finished and you run the program, it should look something like this:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px; border: 0px solid;" alt="Text sampler with font-size options" src="Introduction%20to%20Python%203%20Programming_files/L12-07.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Text sampler with font-size options</font></p>
+<p>If you need help getting this program running, you can click the link below to see the full program.</p>
+<p><a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/py3-0/PY3_L12_2.py" target="_blank">Click here</a> to download PY3_L12_2.py.</p>
+<p>The final thing I want to mention about Radiobuttons is what to do if
+ you have two different groups of mutually exclusive options. For 
+example, maybe you want to give users the option to select not only the 
+point-size, but also the actual font. Perhaps you want to let them 
+choose either Courier or Times. In this case, you'd want two different 
+groups of Radiobuttons.</p>
+<p>In order to make this happen in your program, just proceed as you did
+ with the point-size buttons, but you create a different control 
+variable and set the font family Radiobutton's variable option to this 
+new control variable. For example, you might have what's below:</p>
+<div class="noscroll">
+<pre>self.family = StringVar()
+self.times = Radiobutton(self, text = "Times",
+&nbsp;&nbsp;&nbsp;variable = self.family, value = "times",
+&nbsp;&nbsp;&nbsp;command = self.set_font)
+self.times.grid(row = 3, column = 0)</pre>
+</div>
+<p>Well, it looks like we've run out of time for this lesson. Let's look at what we covered in our final chapter.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p><!-- ipy LESSON 12 CHAPTER 5 --><!-- START CHAPTER CONTENT --><strong>Summary</strong></p>
+<p>This lesson took us back to the graphical world of Tkinter. But 
+instead of drawing lines and shapes, you learned how to make a graphical
+ interface for your Python programs. You learned about some common 
+components like the Button, Label, and Entry widgets. You've certainly 
+used these many times in other programs, but perhaps this is the first 
+time you've written code to program what these things do. You also 
+learned a little about the Checkbutton and Radiobutton components and 
+how you can use them to allow your users to make choices.</p>
+<p>Unfortunately, we can't spend more time going through more of these 
+components and their options. But now you have a good foundation that 
+you can build on. Because once you get the basics down, learning how new
+ widgets and options work is fairly easy.</p>
+<p>Now you're prepared to use all of the knowledge from our time 
+together to create the program you want. Whether it be writing one that 
+interacts with the user at the command prompt or a program with a 
+graphical interface that handles data entry into a database file. You 
+now have the tools to get started. </p>
+<p>I hope you've enjoyed the course. I did. And keep on coding!</p>
+<div style="text-align: center;">
+<div class="oldFinalSteps finalstepsrounded_global">
+<p style="display: none;"><strong>Final Steps</strong></p>
+<p style="display: none;">You still have a quiz and an assignment for 
+this last lesson, so before diving into the final exam for the course, 
+please allow some time to do those first. Also, if you haven't already 
+checked out the book recommendations under the <strong>Resources</strong>
+ link, I would encourage you to do that as well. One of the exciting 
+things about Python programming is that there's always something more to
+ learn!</p>
+<p style="text-align: center; display: none;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img alt="Classroom navigation bar" src="Introduction%20to%20Python%203%20Programming_files/finalsteps.gif" galleryimg="no" class="pf_image" style="display: none;" width="400" height="110"></p>
+<p style="display: none;">When you feel you're ready to take the final exam, click the <strong>Completion</strong>
+ link at the top or bottom of any page in this classroom. The exam is 
+open-book, so feel free to print your notes or have the classroom open 
+in another window for easy reference. Also, you may print the final exam
+ before taking it for additional study. Please take your time, because 
+you get only one chance at the final. When you finish, be sure to print 
+your completion letter.</p>
+<p style="display: none;">Last, I would appreciate it very much if you 
+would take some time to evaluate this course. I pay close attention to 
+my students' feedback; your input helps me tremendously as I continually
+ fine-tune and improve this course material. So if you have any 
+suggestions, comments, or concerns, please include those in your 
+evaluation. If you'd like a response, please also post your comments or 
+questions in the Discussion Area for this lesson.</p>
+<div id="finalSteps_item_intro"><p class="finalstepsroundedtitle_global"><img class="final_steps_icon" src="Introduction%20to%20Python%203%20Programming_files/steps_icon.png" alt="" align="right"><strong>Final Steps</strong></p><p>Now that you've finished the last lesson, is there anything else to do? Yes, several things!</p></div><ul><li id="finalSteps_item_quiz_assignment_faqs"><strong>Quiz, assignment, and FAQs:</strong>
+ You still have a quiz for this lesson, as well as an assignment, so be 
+sure to do these. Also, check out the FAQs for this lesson—you might 
+find the answer to something you're wondering about here.</li><li id="finalSteps_item_resources"><strong>Resources for further learning:</strong>
+ If you haven't already checked out the Recommended Books and Resources,
+ now would be a great time. When it comes to a topic like <em>Introduction to Python 3 Programming</em>, there's always more to learn. To access these, just click the <strong>Resources</strong> link. </li><li id="finalSteps_item_exam"><strong>Final exam:</strong>
+ Here's the moment all those quizzes have been preparing you for—the 
+cumulative final for this course. Let me give you a tip: Print the final
+ before taking it so you can study and relieve any test anxiety you 
+might have. (You can have the classroom open when you take the final 
+too.) You only get one chance at the final, so you'll want to do your 
+best. To access it, click the <strong>Completion</strong> link and then click <strong>Final Exam</strong>. Good luck!</li><li id="finalSteps_item_evaluation"><strong>Course evaluation:</strong>
+ I'd love to know what you thought of this course and if you have any 
+suggestions for improvement. So please take some time, either before or 
+after you take the final, to fill out a brief evaluation. I appreciate 
+your feedback, and future students will too! You'll find the link to 
+this by clicking <strong>Completion</strong>, and then clicking <strong>Evaluation</strong>.</li><li id="finalSteps_item_discussion"><strong>Discussion Area:</strong>
+ The Discussion Area will be open for two more weeks after Lesson 12's 
+release, so please feel free to stop by and ask any questions (except 
+about the final exam) and share your thoughts.</li></ul><p class="otherCoursesBar_global"><strong>Other Courses</strong></p><img class="otherCoursesIcon_global" src="Introduction%20to%20Python%203%20Programming_files/other_courses_icon.png" alt="" align="right">
+<p>If you enjoyed this course, here are a few other online courses you might be interested in:</p>
+<p><strong>Introduction to Java Programming</strong></p>
+<p>If you want to learn computer programming but don't have any prior 
+experience, you'll enjoy a tour of Java, one of the most widely used 
+computer languages in the world. It's a breeze to learn in a friendly 
+and supportive environment. Start with the basics of program design and 
+go on to write your own programs and integrate input and output, 
+calculations, decision-making, and loops. Build your knowledge and 
+confidence with easy-to-understand examples and plenty of skill-building
+ exercises. So whether you just want to try it out to see if you like it
+ or plan on doing more with Java, this is a great place to start!</p>
+<p><strong>Introduction to PHP and MySQL</strong></p>
+<p>Learn how to create an interactive Web site, allowing visitors to 
+post and retrieve information provided by you or your site's visitors. 
+You'll see how to use the PHP programming language to generate dynamic 
+Web sites that automatically change as your data changes. You'll also 
+learn how to use the popular MySQL database server with PHP to store and
+ retrieve data over the Web.</p>
+<p><strong>Introduction to C# Programming</strong></p>
+<p>Learn the fundamentals of computer programming with the hot new C# 
+programming language. You'll begin with an exploration of input/output 
+operations, decision-making, looping, and object-oriented programming 
+principles. Then, you'll gain hands-on experience using sequential data 
+files, and you'll build your very own graphical user interface (GUI) 
+application. Learn to program the right way: by using a state-of-the-art
+ language to build impressive and professional-looking applications on 
+your schedule and on your very own computer.</p>
+</div>
+</div>
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://infohost.nmt.edu/tcc/help/pubs/tkinter.pdf" target="_blank">
+                                Tkinter Reference
+        </a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://infohost.nmt.edu/tcc/help/pubs/tkinter.pdf</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This is the large PDF file that I linked to 
+in Lesson 7.  It's a complete reference for the Tkinter module and 
+includes information about all of the widgets we discussed in this 
+lesson and more.
+        </p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <strong>Q:</strong> Why did you use a StringVar object with your font size Radiobuttons. Couldn't you have just used an IntVar here as well?<br>
+<br>
+<strong>A:</strong> Yes, an IntVar would have worked in this situation 
+just as easily as a StringVar. I just wanted to demonstrate that either 
+one is possible.<br>
+<br>
+<br>
+<strong>Q:</strong> My program ran just fine with the Checkbuttons for 
+bold and underline. However, when I added the font size Radiobuttons, 
+the size never changed. Also, now when I attempt to use the bold or 
+underline Checkbuttons, I get the following error: <br>
+<br>
+<div class="noscroll">
+<pre>Exception in Tkinter callback
+Traceback (most recent call last):
+&nbsp; File "C:\Python32\lib\tkinter\__init__.py", line 1399, in __call__
+&nbsp;&nbsp;&nbsp; return self.func(*args)
+&nbsp; File "C:/Users/Another User/Desktop/PY3 Revision/L12/PY3_L12_2.py", line 49, in set_font
+&nbsp;&nbsp;&nbsp; self.sample_label.config( font = new_font)
+&nbsp; File "C:\Python32\lib\tkinter\__init__.py", line 1193, in configure
+&nbsp;&nbsp;&nbsp; return self._configure('configure', cnf, kw)
+&nbsp; File "C:\Python32\lib\tkinter\__init__.py", line 1184, in _configure
+&nbsp;&nbsp;&nbsp; self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: expected integer but got "bold"</pre>
+</div>
+<p>Do you know what might be happening?<br>
+<br>
+<strong>A:</strong> When you're building the string that contains the 
+font information in your method's nested if statements, you need to be 
+sure to have a blank space as the first character in the string. Here's 
+an example:<br>
+<br>
+</p>
+<div class="noscroll">
+<pre>if self.point_size.get() == "10":
+&nbsp;&nbsp;&nbsp;new_font = new_font + " 10"</pre>
+</div>
+<br>
+By doing this, you'll create a string that eventually looks something like, "Courier 10 bold", as opposed to "Courier10bold".<br>
+<br>
+<br>
+<p><b>Q:</b> How can I set things up so that my widgets are centered inside the frame?</p>
+<b>A:</b> There are a couple ways to get the widgets centered.&nbsp; 
+First, you can use the padx and pady properties discussed in the lesson 
+text to adjust the amount of space between the widget and the edge of 
+the cell.&nbsp; Also, the frame contains methods <i>columnconfigure</i> and <i>rowconfigure</i>
+ that can be used to specify certain properties, including pad (the 
+number of pixels to be added to the column or row) and minsize (the 
+minimum size in pixels).&nbsp; You can read more about layout management
+ in the Tkinter reference document in the Supplementary Material 
+section.
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            Use your knowledge of the GUI widgets you learned about in 
+this lesson to create a program that allows users to enter any text they
+ want. When finished, users will click a Button to display the text in a
+ Label. Then they'll be able to control the font style and size. Be sure
+ to give your users the options to make their text bold and underlined 
+and provide at least three different font sizes.<br>
+<br>
+Although your program isn't required to look this way, you might consider creating it to look like the following:<br>
+<br>
+<br>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px;border: 0px solid;" alt="Possible interface for assignment" src="Introduction%20to%20Python%203%20Programming_files/L12-08.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Possible interface for assignment</font></p>
+<a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/py3-0/PY3_L12_Solution.py" target="_blank"><br>
+Click here</a> if you would like to download my solution to this assignment: PY3_L12_Solution.py.
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2016
+                            All rights reserved. The material on this 
+site cannot be reproduced or redistributed unless you have obtained 
+prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                py3-0
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB04P (1.2.99.4) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/IncludeResource.js"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.eVar4='';
+s.prop4='';
+s.eVar5='introduction to python 3 programming';
+s.prop5='introduction to python 3 programming';
+s.prop6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.eVar6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.prop7='12';
+s.eVar7='12';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=12';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=12';
+s.prop15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.eVar15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.hier1=',,introduction to python 3 programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript><a href='http://www.Adobe.com' title='Web Analytics'><img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/></a></noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript><iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="jb-overlay" style="opacity: 0.7; display: none;"></div><div id="jb-window" style="display: none;"><div id="jb-window-inner" style="position: fixed; top: 294.5px; left: 484.5px;"><div id="jb-window-content" style="width: auto; height: auto; overflow: hidden; display: none;" tabindex="0"></div></div></div><span id="text-resize" style="position: absolute; left: -9999px; font-size: 100%; font-family: Courier New, mono; margin: 0; padding: 0;">&nbsp;</span><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?random=1482738360447&amp;cv=8&amp;fst=1482738360447&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=920&amp;u_w=1472&amp;u_ah=897&amp;u_aw=1472&amp;u_cd=24&amp;u_his=9&amp;u_tz=-300&amp;u_java=true&amp;u_nplug=9&amp;u_nmime=60&amp;frm=0&amp;url=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FPrintLesson.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26lesson%3D12&amp;ref=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FLessons.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26bc%3DLessons%26lesson%3D12&amp;tiba=Introduction%20to%20Python%203%20Programming" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" width="300" height="13" frameborder="0"></iframe><div id="criteo-tags-div" style="display: none;"><iframe style="display: none;" src="Introduction%20to%20Python%203%20Programming_files/dis.htm" width="0" height="0"></iframe></div></body></html>

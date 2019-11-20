@@ -1,0 +1,42 @@
+﻿/* CSS Document */
+
+/*==============
+1)Lesson Components Landing Page
+-Used for each lesson's landing page, 1-12
+-Lists Chapters, FAQ, Assignment, Quiz, Supplementary Material, Discussion Area, Printer-Friendly, and Full-Screen View
+=================*/
+
+/*==============
+Main Styles
+=================*/
+.main-paragraph-text { margin-top: -10px; }
+/* ==== This block holds all Lesson Components on the landing page ==== */
+.lesson-components { margin-bottom: 25px; /* adds some extra space at the bottom to hold open the main content window*/ }
+
+/* ==== Styles all h3s on the landing page, within #lesson-components ==== */
+.lesson-components h3 { border-top: 1px solid #CCC; padding-top: 5px; }
+
+/* ==== Style for a thicker line above one of the h3s ====*/
+.lesson-components .lesson-components-link-thick-line { /* applied to an h3 to make the top border thicker */ border-top: 3px solid #CCC; padding-top: 8px; }
+
+/* ==== Styles all paragraphs on the landing page, within #lesson-components ==== */
+.lesson-components p { margin-bottom: 0px; }
+
+/* ==== Holds the main link only, not the description ==== */
+.lesson-components-link { /* reduces space below main link and above description */ margin-bottom: -10px; }
+
+/* ==== Styles any link inside of .lesson-componenets-link ==== */
+.lesson-components-link a { /* makes main link font larger */ font-size: 16px; }
+
+/* ==== Styles the description under the main link ==== */
+.lesson-components-link-description { /* removes any margin/space above the link description, and creates a space under it, to separate each block of link + description */ margin-top: 0px; margin-bottom: 10px; }
+
+/*==============
+Styles for "Views" such as Printer-Friendly and Full-Screen
+=================*/
+
+.lesson-components-views h3 { /* lesson views link */ padding-left: 10px; padding-right: 10px; padding-bottom: 10px; margin-bottom: 0px; }
+
+.lesson-components-views p { /* lesson views description */ padding-left: 10px; padding-right: 10px; padding-bottom: 5px; margin-top: 0px; padding-top: 3px; }
+
+.lesson-components-views { /* color behind lesson views box */ background-color: #f5f5f5; padding-bottom: 3px; }

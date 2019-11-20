@@ -1,0 +1,23 @@
+/*////////////////// START Update to course_faq.css START //////////////////*/
+.course-faq-title h3 {
+font-size: 16px;
+margin-top: -10px;
+margin-left: 0px;
+}
+.course-faq-block p {
+margin-left: 0px;
+}
+.course-faq-block {
+border-top: 1px solid rgb(197, 197, 197);
+margin-top: 25px;
+padding-left: 0px;
+}
+/*////////////////// STOP Update to course_faq.css STOP //////////////////*/
+
+/*////////////////// START Update to ILC_quiz_IE_8_and_up.css START //////////////////*/
+
+.quizList label {
+  vertical-align:middle;/* Chrome Fix for <sup> and <sub> in Final exam section*/
+}
+
+/*////////////////// STOP Update to ILC_quiz_IE_8_and_up.css STOP //////////////////*/

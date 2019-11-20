@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- Google Tag Manager -->
+            <script async="true" type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/event.js" data-owner="criteo-tag"></script><script src="Introduction%20to%20Python%203%20Programming_files/2861.js" async="" type="text/javascript"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/ld.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/conversion.js">
+</script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag"></script><script type="text/javascript" async="" src="Introduction%20to%20Python%203%20Programming_files/ga.js"></script><script async="" src="Introduction%20to%20Python%203%20Programming_files/gtm.htm"></script><script>(function(w,d,s,l,i){try{w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            }catch(e){(console.error || console.log).call(console, e.stack || e);}
+            })(window,document,'script','dataLayer','GTM-P66CZH7');</script>
+            <!-- End Google Tag Manager --><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Python 3 Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-1.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-migrate-1.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/lesson_components.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom.css" media="all"></head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P66CZH7'
+            height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+    <noscript>
+        <div id="sansjs">
+            Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+        </div>
+    </noscript>
+    <form name="aspnetForm" method="post" action="./Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;bc=Lessons&amp;lesson=6" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyD2QWAmYPZBYGAgEPFgIeBFRleHQFmQI8IS0tIEdvb2dsZSBUYWcgTWFuYWdlciAobm9zY3JpcHQpIC0tPg0KICAgICAgICAgICAgPG5vc2NyaXB0PjxpZnJhbWUgc3JjPSdodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbS9ucy5odG1sP2lkPUdUTS1QNjZDWkg3Jw0KICAgICAgICAgICAgaGVpZ2h0PScwJyB3aWR0aD0nMCcgc3R5bGU9J2Rpc3BsYXk6bm9uZTt2aXNpYmlsaXR5OmhpZGRlbic+PC9pZnJhbWU+PC9ub3NjcmlwdD4NCiAgICAgICAgICAgIDwhLS0gRW5kIEdvb2dsZSBUYWcgTWFuYWdlciAobm9zY3JpcHQpIC0tPmQCAg9kFhICAQ8PFgIeB1Zpc2libGVoZGQCAw8WBB4JaW5uZXJodG1sZR8BaGQCBQ8PFgIeC05hdmlnYXRlVXJsBXRodHRwczovL3d3dy5lZDJnby5jb20vQ2xhc3Nyb29tL0hlbHAuYXNweD9jbGFzc3Jvb209ZW9tM1pnSVdURGd6M2RYbGNpb3luQkJtTFdVR2RvQ0xuR1lHSHd2Nnd2c3ZFWmdRNFRmcjJsbVZXWHAxMEJvTGRkAgYPDxYCHwMFdGh0dHBzOi8vd3d3LmVkMmdvLmNvbS9DbGFzc3Jvb20vSGVscC5hc3B4P2NsYXNzcm9vbT1lb20zWmdJV1REZ3ozZFhsY2lveW5CQm1MV1VHZG9DTG5HWUdId3Y2d3ZzdkVaZ1E0VGZyMmxtVldYcDEwQm9MZGQCBw9kFgICAQ8PFgQfAAUkSW50cm9kdWN0aW9uIHRvIFB5dGhvbiAzIFByb2dyYW1taW5nHwMFf2h0dHBzOi8vd3d3LmVkMmdvLmNvbS9DbGFzc3Jvb20vTGVzc29uc092ZXJ2aWV3LmFzcHg/Y2xhc3Nyb29tPWVvbTNaZ0lXVERnejNkWGxjaW95bkJCbUxXVUdkb0NMbkdZR0h3djZ3dnN2RVpnUTRUZnIybG1WV1hwMTBCb0xkZAIID2QWAgIBDxYCHwAFJEludHJvZHVjdGlvbiB0byBQeXRob24gMyBQcm9ncmFtbWluZ2QCCQ8WAh8ABQtNaWtlIE9yc2VnYWQCCw9kFgICAQ9kFgJmD2QWAmYPZBYGAgEPZBYEAgEPFgIfAAU1TGVzc29uIDY6IEludHJvZHVjdGlvbiB0byBPYmplY3QtT3JpZW50ZWQgUHJvZ3JhbW1pbmdkAgMPZBYCZg8WAh4FVmFsdWUFlwFodHRwczovL3d3dy5lZDJnby5jb20vQ2xhc3Nyb29tL0Rpc2N1c3Npb24uYXNweD9jbGFzc3Jvb209ZW9tM1pnSVdURGd6M2RYbGNpb3luQkJtTFdVR2RvQ0xuR1lHSHd2Nnd2c3ZFWmdRNFRmcjJsbVZXWHAxMEJvTCZhbXA7UGFnZT1TZWFyY2gmYW1wO3Rlcm09LS0tZAIDD2QWAgIBD2QWCAIBDxYCHgtfIUl0ZW1Db3VudAICFgRmD2QWAmYPFQGVATxhIGhyZWY9J2h0dHBzOi8vd3d3LmVkMmdvLmNvbS9DbGFzc3Jvb20vTGVzc29uc092ZXJ2aWV3LmFzcHg/Y2xhc3Nyb29tPWVvbTNaZ0lXVERnejNkWGxjaW95bkJCbUxXVUdkb0NMbkdZR0h3djZ3dnN2RVpnUTRUZnIybG1WV1hwMTBCb0wnPkxlc3NvbnM8L2E+ZAICD2QWAmYPFQExPHNwYW4gY2xhc3M9J2JyZWFkY3J1bWItaW5hY3RpdmUnPkxlc3NvbiA2PC9zcGFuPmQCAw8PFgIfAWhkZAIFDw8WAh8BaGRkAgYPDxYCHwFoZGQCBw9kFgpmD2QWAmYPFQKHAWh0dHBzOi8vd3d3LmVkMmdvLmNvbS9DbGFzc3Jvb20vTGVzc29ucy5hc3B4P2NsYXNzcm9vbT1lb20zWmdJV1REZ3ozZFhsY2lveW5CQm1MV1VHZG9DTG5HWUdId3Y2d3ZzdkVaZ1E0VGZyMmxtVldYcDEwQm9MJmxlc3Nvbj02JmNocHQ9MQExZAIBD2QWAmYPFQKHAWh0dHBzOi8vd3d3LmVkMmdvLmNvbS9DbGFzc3Jvb20vTGVzc29ucy5hc3B4P2NsYXNzcm9vbT1lb20zWmdJV1REZ3ozZFhsY2lveW5CQm1MV1VHZG9DTG5HWUdId3Y2d3ZzdkVaZ1E0VGZyMmxtVldYcDEwQm9MJmxlc3Nvbj02JmNocHQ9MgEyZAICD2QWAmYPFQKHAWh0dHBzOi8vd3d3LmVkMmdvLmNvbS9DbGFzc3Jvb20vTGVzc29ucy5hc3B4P2NsYXNzcm9vbT1lb20zWmdJV1REZ3ozZFhsY2lveW5CQm1MV1VHZG9DTG5HWUdId3Y2d3ZzdkVaZ1E0VGZyMmxtVldYcDEwQm9MJmxlc3Nvbj02JmNocHQ9MwEzZAIDD2QWAmYPFQKHAWh0dHBzOi8vd3d3LmVkMmdvLmNvbS9DbGFzc3Jvb20vTGVzc29ucy5hc3B4P2NsYXNzcm9vbT1lb20zWmdJV1REZ3ozZFhsY2lveW5CQm1MV1VHZG9DTG5HWUdId3Y2d3ZzdkVaZ1E0VGZyMmxtVldYcDEwQm9MJmxlc3Nvbj02JmNocHQ9NAE0ZAIED2QWAmYPFQKHAWh0dHBzOi8vd3d3LmVkMmdvLmNvbS9DbGFzc3Jvb20vTGVzc29ucy5hc3B4P2NsYXNzcm9vbT1lb20zWmdJV1REZ3ozZFhsY2lveW5CQm1MV1VHZG9DTG5HWUdId3Y2d3ZzdkVaZ1E0VGZyMmxtVldYcDEwQm9MJmxlc3Nvbj02JmNocHQ9NQE1ZAIMDxYCHwAFBXB5My0wZAIDDw8WAh8BaGRkZEPCxWS5SVRdJngzZCCUMphDkQS6lULFhFS4m6iXiSC0" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource.js" type="text/javascript"></script>
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource_002.js" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="42E9FC25" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAALzNSW0pA8OMJC2vKHtE7WqOX+dEEEO/5YcOBANMTmI2blGNwAkYH2c6+W9StTf02nzVUDv4wkUhsTx+V3bIGNg" type="hidden">
+</div>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm('Are you sure you wish to log out?');" id="ctl00_lbLogout" tabindex="4" class="title-bar-login-button" href="javascript:__doPostBack('ctl00$lbLogout','')">
+                        <p role="heading">LOGOUT</p>
+                    </a>
+
+                    <a id="ctl00_hlkHelpInActive" tabindex="2" class="title-bar-help-button" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">
+                            <p role="heading">
+                                HELP
+                            </p>
+                    </a>
+                    
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" tabindex="1" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Introduction to Python 3 Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Mike Orsega
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    <div id="ctl00_cphMain_ctl00_pnlReleased" class="lesson-components">
+	
+    <!-- Start lesson-components CSS -->
+    
+<!-- ==== Start h2 header block  ==== -->
+<div class="classroom-section-title">
+    <h2>
+        Lesson 6: Introduction to Object-Oriented Programming
+    </h2>
+    
+</div>
+<!-- ==== End h2 header block  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+		
+    <div id="breadcrumbs">
+        <span class="accessibility_hide">You are here: </span>
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Lesson 6</span>
+            
+    </div>
+    
+    
+
+	</div>
+<!-- ==== End nav top block  ==== -->
+    <!-- ==== End h2 header block  ==== -->
+    <div class="main-paragraph-text">
+        <!-- Start main paragraph text -->
+        <div id="ctl00_cphMain_ctl00_pnlObjective" class="lesson-components-link-description">
+		
+            <p>
+                <strong>Lesson Objectives:</strong>
+                Learn how to create Python class files as well as objects from those classes.
+            </p>
+        
+	</div>
+        <!-- ==== Start h3's ==== -->
+        <div class="lesson-components">
+            
+                    <div class="lesson-components-link">
+                        <h3>
+                            <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=6&amp;chpt=1">Chapter
+                                1
+                            </a>
+                        </h3>
+                    </div>
+                
+                    <div class="lesson-components-link">
+                        <h3>
+                            <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=6&amp;chpt=2">Chapter
+                                2
+                            </a>
+                        </h3>
+                    </div>
+                
+                    <div class="lesson-components-link">
+                        <h3>
+                            <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=6&amp;chpt=3">Chapter
+                                3
+                            </a>
+                        </h3>
+                    </div>
+                
+                    <div class="lesson-components-link">
+                        <h3>
+                            <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=6&amp;chpt=4">Chapter
+                                4
+                            </a>
+                        </h3>
+                    </div>
+                
+                    <div class="lesson-components-link">
+                        <h3>
+                            <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=6&amp;chpt=5">Chapter
+                                5
+                            </a>
+                        </h3>
+                    </div>
+                
+            <div id="ctl00_cphMain_ctl00_pnlFAQs" class="lesson-components-link">
+		
+                <h3>
+                    <a id="ctl00_cphMain_ctl00_hlkFAQs" href="https://www.ed2go.com/Classroom/FAQ.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=6&amp;bc=Lessons">FAQs</a>
+                </h3>
+            
+	</div>
+            <div id="ctl00_cphMain_ctl00_pnlAssignment" class="lesson-components-link">
+		
+                <h3>
+                    <a id="ctl00_cphMain_ctl00_hlkAssignment" href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=6&amp;bc=Lessons">Assignment</a>
+                </h3>
+            
+	</div>
+            <div id="ctl00_cphMain_ctl00_pnlQuiz" class="lesson-components-link">
+		
+                <h3>
+                    <a id="ctl00_cphMain_ctl00_hlkQuiz" href="https://www.ed2go.com/Classroom/Quiz.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=6&amp;bc=Lessons">Quiz</a>
+                </h3>
+            
+	</div>
+            <!-- section double divider line start -->
+            <!--<div class="lesson-components-link">
+            <h3></h3>
+          </div>-->
+            <!-- section double divider line stop -->
+            <div id="ctl00_cphMain_ctl00_pnlSupplementary" class="lesson-components-link">
+		
+                <h3 class="lesson-components-link-thick-line">
+                    <a id="ctl00_cphMain_ctl00_hlkSupplementary" href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=6&amp;chpt=sup">Supplementary Material </a></h3>
+            
+	</div>
+            <div id="ctl00_cphMain_ctl00_pnlSupplementary2" class="lesson-components-link-description">
+		
+                <p>
+                    Investigate Internet links for learning more about this lesson’s topics.</p>
+            
+	</div>
+            <div id="ctl00_cphMain_ctl00_pnlDiscussion" class="lesson-components-link">
+		
+                <h3 id="ctl00_cphMain_ctl00_h3Discussion">
+                    <a id="ctl00_cphMain_ctl00_hlkDiscussion" href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;Page=ThreadList&amp;ID=490447">Lesson 6 Discussion Area</a>
+                </h3>
+            
+	</div>
+            <div id="ctl00_cphMain_ctl00_pnlDiscussion2" class="lesson-components-link-description">
+		
+                <p>
+                    Have a question about this lesson for your instructor or classmates? Want to answer
+                    another student's question? This is the place!</p>
+            
+	</div>
+            <!-- section double divider line start -->
+            <!--<div class="lesson-components-link">
+            <h3></h3>
+          </div>-->
+            <!-- section double divider line stop -->
+            <div class="lesson-components-views">
+                <div id="ctl00_cphMain_ctl00_pnlPrinter" class="lesson-components-link">
+		
+                    <h3>
+                        <a id="ctl00_cphMain_ctl00_hlkPrinterFriendly" href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=6">Print, Save or View Entire Lesson</a></h3>
+                
+	</div>
+                <div id="ctl00_cphMain_ctl00_pnlPrinter2" class="lesson-components-link-description">
+		
+                    <p>
+                        Download the entire lesson so you can print or save it for off-line viewing later.</p>
+                
+	</div>
+                <div id="ctl00_cphMain_ctl00_pnlMobilePrinter" class="lesson-components-link">
+		
+                    <h3>
+                        <a id="ctl00_cphMain_ctl00_hlkMobilePrinter" href="https://www.ed2go.com/Classroom/PrintLesson.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=6&amp;fullscreen=True" target="_blank">Full-Screen View</a></h3>
+                
+	</div>
+                <div id="ctl00_cphMain_ctl00_pnlMobilePrinter2" class="lesson-components-link-description">
+		
+                    <p>
+                        Opens a new window. Use this view if you're on a device with a small screen or want
+                        to resize the browser window on your desktop.</p>
+                
+	</div>
+            </div>
+        </div>
+        <!-- ==== End h3's ==== -->
+    </div>
+    <!-- End main paragraph text -->
+
+</div>
+
+<!-- End lesson-components CSS -->
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2016
+                            All rights reserved. The material on this 
+site cannot be reproduced or redistributed unless you have obtained 
+prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                py3-0
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB04P (1.2.99.4) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/IncludeResource.js"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom lessons';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.eVar4='';
+s.prop4='';
+s.eVar5='introduction to python 3 programming';
+s.prop5='introduction to python 3 programming';
+s.prop6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.eVar6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.prop7='6';
+s.eVar7='6';
+s.prop8='';
+s.eVar8='';
+s.eVar11='https://www.ed2go.com/classroom/lessons.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&bc=lessons&lesson=6';
+s.prop11='https://www.ed2go.com/classroom/lessons.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&bc=lessons&lesson=6';
+s.prop15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.eVar15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.hier1=',,introduction to python 3 programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript><a href='http://www.Adobe.com' title='Web Analytics'><img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/></a></noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript><iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></noscript>
+<!-- //**** End BrightTag **** -->
+
+<!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?random=1481492562754&amp;cv=8&amp;fst=1481492562754&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;eid=376635471&amp;u_h=920&amp;u_w=1472&amp;u_ah=897&amp;u_aw=1472&amp;u_cd=24&amp;u_his=50&amp;u_tz=-300&amp;u_java=true&amp;u_nplug=9&amp;u_nmime=60&amp;frm=0&amp;url=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FLessons.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26bc%3DLessons%26lesson%3D6&amp;ref=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FLessonsOverview.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;tiba=Introduction%20to%20Python%203%20Programming" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" width="300" height="13" frameborder="0"></iframe><iframe name="google_cookie_match_frame" title="Google cookie match frame" src="Introduction%20to%20Python%203%20Programming_files/pixel.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" style="display:none" scrolling="no" width="1" height="1" frameborder="0"></iframe><div id="criteo-tags-div" style="display: none;"><iframe style="display: none;" src="Introduction%20to%20Python%203%20Programming_files/dis.htm" width="0" height="0"></iframe></div></body></html>

@@ -1,0 +1,1323 @@
+﻿/* CSS Document */
+
+/*****************************************
+Copyright © 1997 - 2013 Education To Go. All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Education To Go. Education To Go and ed2go are registered trademarks of Education To Go, a part of Cengage Learning.
+*****************************************/
+
+/*****************************************
+
+CSS style sheet for ed2go classroom
+
+===================================
+
+Standards-based style sheet for:
+
+IE8+, modern browsers, and mobile devices
+
+*****************************************/
+
+/*****************************************
+
+CSS color guide
+
+===================================
+
+ed2go blue = #2C5A92
+
+ed2go orange = #EC6409
+
+Navigation light color(non-hover) = #e9e9e9
+
+Navigation dark color(hover) = #c5c5c5
+
+Border/line color = #c5c5c5
+
+Background color = #f3f3f3
+
+Paragraph and header text color (very dark gray almost black) = #232323
+
+*****************************************/
+
+/*****************************************
+
+Table of Contents
+
+===================================
+
+1. CSS Reset (not implemented yet)
+
+2. Overall styles
+
+3. Top log-in bar (not implemented yet)
+
+4. Header and title bar
+
+5. Main container
+
+7. Left navigation
+
+8. Footer
+
+9. Web fonts (not implemented yet)
+
+10. Miscellaneous
+
+*****************************************/
+
+/*****************************************
+
+1. CSS Reset
+
+===================================
+
+-Reseting broswer default styling
+
+-Not implemented yet because could affect classroom content
+
+*****************************************/
+
+/*****************************************
+
+2. Overall styles
+
+===================================
+
+-Examples: body, paragraphs, headings, clearing floats
+
+-Not using any plain selectors for now because could affect classroom content - classes and ids on everything
+
+*****************************************/
+
+html, body, p, th, td, li, dd, dt
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+html, body, p, th, td, li, dd, dt, h1, h2, h3, h4, h5, h6
+{
+	color: #232323;
+	font-weight: normal;
+}
+
+/* li bottom margin that may or may not be in a course.css file -
+can un-comment if we want to add it globally - will not affect entire template */
+
+/* li {
+    margin-bottom: 1.2em;
+} */
+
+p
+{
+	line-height: 17px;
+}
+
+img
+{
+	border: 0;
+}
+
+/* Classes to be used throughout the template to style links */
+
+a:link
+{
+	color: #2c5a92; /*ed2go blue*/
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: #2c5a92; /*ed2go blue*/
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #ec6409; /*ed2go orange*/
+	text-decoration: underline; /*underline added on hover*/
+}
+
+a:active
+{
+	color: #ec6409; /*ed2go orange*/
+	text-decoration: none; /*underline is removed on press*/
+}
+
+.breadcrumb-inactive
+{
+	color: #c5c5c5;
+}
+
+.emphasized-link a
+{
+	font-size: 14px;
+}
+/*
+
+Body -
+
+-all text on the page is styled in Arial, even if it's not in a p tag
+
+-font size and color is not specified
+
+-the scroll bar is added so that blank scroll bar will always be on the right, even when not needed,
+
+so that they layout won't shift from page to page
+
+-margin and padding are zeroed out so there is no space on the sides */
+
+/*77777777 This rule has alternate values in the if lteIE7 style sheet 77777777*/
+
+body
+{
+	background-color: #f3f3f3;
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll; /* IE7 fix is in the conditional comments - we want to remove the scroll bar for IE7 and below - value is changed to hidden */
+}
+/*
+
+Clearing class for use if needed */
+
+.classroom-clear
+{
+	clear: both;
+}
+
+/*****************************************
+
+3. Top login/logout, account, my courses, etc. bar
+
+===================================
+
+-Not implemented yet
+
+*****************************************/
+
+/*#top-logout-bar {
+    background-image: url('ed2go_background_texture.png');
+
+    background-color: #666;
+
+    width: 100%;
+
+    height: 12px;
+
+    padding-bottom: 2px;
+
+    padding-top: 2px;
+
+    border-bottom: 2px #C5C5C5 solid;
+}
+
+#top-logout-bar p {
+    text-align: right;
+
+    font-size: 10px;
+
+    color: #CCC;
+
+    margin-top: 0px;
+
+    margin-right: 10px;
+}*/
+
+/*****************************************
+
+4. Header
+
+===================================
+
+-Bar with course title and instructor name
+
+-Contains logout and help buttons for now - they may be moved to a top bar later?
+
+*****************************************/
+
+/*
+
+title bar that stretches across the top  */
+
+/*QQQQQQQQQ This rule has a Quirks alternative in a separate style sheet === QQQQQQQQQ*/
+
+#title-bar
+{
+	width: 100%;
+	height: 60px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	border-bottom: 2px #C5C5C5 solid;
+	background-color: white;
+}
+
+.title-bar
+{
+	width: 100%;
+	height: 60px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	border-bottom: 2px #C5C5C5 solid;
+	background-color: white;
+}
+/* \/ \/ \/
+
+    Extra div for Quirks Mode centering workaround,
+
+    goes around #title-bar-text (below)*/
+
+#title-bar-centering-container-extra-IE5
+{
+	text-align: center;
+}
+
+.title-bar-centering-container-extra-IE5
+{
+	text-align: center;
+}
+/* /\ /\ /\
+
+    Centers text inside of title bar -
+
+    it centers along with the content */
+
+/*QQQQQQQQQ This rule has a Quirks alternative in a separate style sheet === QQQQQQQQQ*/
+
+#title-bar-centering-container
+{
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.title-bar-centering-container
+{
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#title-bar-centering-container, #classroom-main-container, #classroom-footer-text
+{
+	width: 825px;
+}
+
+.title-bar-centering-container, .classroom-main-container, .classroom-footer-text
+{
+	width: 825px;
+}
+/*div containing both the title and the instructor name-
+
+        no style for now but have it here in case we need it */
+
+#title-text-block
+{
+}
+
+.title-text-block
+{
+}
+/*
+
+        Styling for h1 text inside of header -
+
+        Title of the course*/
+
+h1#classroom-course-name
+{
+	margin-top: 15px;
+	margin-bottom: 0px;
+	font-size: 20px;
+	font-weight: normal;
+	color: #2C5A92;
+}
+
+h1.classroom-course-name
+{
+	margin-top: 15px;
+	margin-bottom: 0px;
+	font-size: 20px;
+	font-weight: normal;
+	color: #2C5A92;
+}
+/*
+
+        Styles the instructor name in the title bar */
+
+#classroom-course-instructor
+{
+	margin-top: 2px;
+	font-size: 14px;
+	color: #232323;
+}
+
+.classroom-course-instructor
+{
+	margin-top: 2px;
+	font-size: 14px;
+	color: #232323;
+}
+/*======================= Buttons upper right ======================== */
+
+/*=========== LOGIN ============ */
+
+/*77777777 This rule has alternate values in the if lteIE7 style sheet 77777777*/
+
+/*QQQQQQQQQ This rule has a Quirks alternative in a separate style sheet QQQQQQQQQ*/
+
+#title-bar-login-button
+{
+	float: right;
+	width: 70px;
+	height: 35px;
+	padding-top: 0px;
+	padding-bottom: 4px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	cursor: hand;
+	margin-left: 6px; /*Left margin only added to Login button at the moment -  	could really add to all buttons later, if we add more in this row.  	I used the left margin since these are aligned right, and I could apply 	the left margin to all buttons at once if I needed to*/
+}
+
+.title-bar-login-button
+{
+	float: right;
+	width: 70px;
+	height: 35px;
+	padding-top: 0px;
+	padding-bottom: 4px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: -2px;
+	border-radius: 5px;
+	cursor: pointer;
+	cursor: hand;
+	margin-left: 6px; /*Left margin only added to Login button at the moment -  	could really add to all buttons later, if we add more in this row.  	I used the left margin since these are aligned right, and I could apply 	the left margin to all buttons at once if I needed to*/
+}
+/*
+
+Hover state of the button (not the text itself)
+
+Button turns from no color to gray, retains all other properties above,
+
+like heigh, width, padding, etc.
+
+QQQQQQQQQ------------------------------------------------------------------
+
+NOTE: This rollover will need a JavaScript fallback for Quirks Mode as well
+
+-----------------------------------------------------------------QQQQQQQQQ*/
+
+#title-bar-login-button:hover
+{
+	background-color: #E9E9E9;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.title-bar-login-button:hover
+{
+	background-color: #E9E9E9;
+	cursor: hand;
+	cursor: pointer;
+}
+/*
+
+    Styles p tags inside of button - centering, line height
+
+    Properties that need to be applied to a paragraph to work, not just to a link */
+
+#title-bar-login-button p
+{
+	text-align: center;
+	font-size: 14px;
+	line-height: 12px;
+	color: #2C5A92; /*font-weight:bold;*/
+	cursor: pointer;
+	cursor: hand;
+}
+
+.title-bar-login-button p
+{
+	text-align: center;
+	font-size: 14px;
+	line-height: 12px;
+	color: #2C5A92; /*font-weight:bold;*/
+	cursor: pointer;
+	cursor: hand;
+}
+
+#title-bar-login-button
+{
+	text-decoration: none;
+}
+
+.title-bar-login-button
+{
+	text-decoration: none;
+}
+
+/*=========== HELP ============ */
+
+/*77777777 This rule has alternate values in the if lteIE7 style sheet 77777777*/
+
+/*QQQQQQQQQ This rule has a Quirks alternative in a separate style sheet QQQQQQQQQ*/
+
+#title-bar-help-button
+{
+	float: right;
+	width: 47px;
+	height: 35px;
+	padding-top: 0px;
+	padding-bottom: 4px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: -2px;
+	border-radius: 5px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.title-bar-help-button
+{
+	float: right;
+	width: 47px;
+	height: 35px;
+	padding-top: 0px;
+	padding-bottom: 4px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: -2px;
+	border-radius: 5px;
+	cursor: pointer;
+	cursor: hand;
+}
+/*
+
+Hover state of the button (not the text itself)
+
+Button turns from no color to gray, retains all other properties above,
+
+like heigh, width, padding, etc.
+
+QQQQQQQQQ------------------------------------------------------------------
+
+NOTE: This rollover will need a JavaScript fallback for Quirks Mode as well
+
+-----------------------------------------------------------------QQQQQQQQQ*/
+
+#title-bar-help-button:hover
+{
+	background-color: #E9E9E9;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.title-bar-help-button:hover
+{
+	background-color: #E9E9E9;
+	cursor: hand;
+	cursor: pointer;
+}
+/*
+
+    Styles p tags inside of button - centering, line height
+
+    Properties that need to be applied to a paragraph to work, not just to a link */
+
+#title-bar-help-button p
+{
+	text-align: center;
+	font-size: 14px;
+	line-height: 12px;
+	color: #2C5A92; /*font-weight:bold;*/
+	cursor: pointer;
+	cursor: hand;
+}
+
+.title-bar-help-button p
+{
+	text-align: center;
+	font-size: 14px;
+	line-height: 12px;
+	color: #2C5A92; /*font-weight:bold;*/
+	cursor: pointer;
+	cursor: hand;
+}
+
+#title-bar-help-button
+{
+	text-decoration: none;
+}
+
+.title-bar-help-button
+{
+	text-decoration: none;
+}
+
+/* Makes Help button blue and text white when active class is applied */
+
+.title-bar-button-active #title-bar-help-button
+{
+	background-color: #2C5A92;
+}
+
+	.title-bar-button-active #title-bar-help-button p
+	{
+		text-align: center;
+		font-size: 14px;
+		line-height: 12px;
+		color: #ffffff; /*font-weight:bold;*/
+		cursor: pointer;
+		cursor: hand;
+	}
+/*****************************************
+
+5. Main container
+
+===================================
+
+-Container that centers and holds all content
+
+EXCEPT the header/login bars on top and the footer bar on the bottom
+
+*****************************************/
+
+/* \/ \/ \/
+
+Extra div for Quirks Mode centering workaround
+
+Wraps around #classroom-main-container (below) */
+
+#classroom-centering-container
+{
+	text-align: center;
+}
+
+.classroom-centering-container
+{
+	text-align: center;
+}
+/* /\ /\ /\
+
+main container - holds left navigation panel and main content section
+
+900px - uses modern box model - takes into account padding, borders etc., in the total width */
+
+/*QQQQQQQQQ This rule has a Quirks alternative in a separate style sheet QQQQQQQQQ*/
+
+#classroom-main-container
+{
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto; /* Moved the width to the header section, above, since these width values will be the same and want to be able to change them at once */
+}
+
+.classroom-main-container
+{
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto; /* Moved the width to the header section, above, since these width values will be the same and want to be able to change them at once */
+}
+
+/*  main classroom content - 600px plus 40px padding and 2px of border left and border right = 642 total or about 73%  */
+
+/*QQQQQQQQQ This rule has a Quirks alternative in a separate style sheet QQQQQQQQQ*/
+
+#main-content
+{
+	float: right;
+	width: 73%; /* No height specified - content holds it open as high as it needs to go */
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: -20px;
+	padding-left: 20px; /* This padding is added into the width of the container per current box model */
+	padding-right: 20px; /* This padding is added into the width of the container per current box model */
+	border-left: 1px #C5C5C5 solid; /* This one pixel border is added into the width of the container per current box model*/
+	border-right: 1px #C5C5C5 solid; /* This one pixel border is added into the width of the container per current box model */
+	border-top: 1px #C5C5C5 solid;
+	border-bottom: 1px #C5C5C5 solid;
+	background-color: #ffffff;
+}
+
+.main-content
+{
+	min-height: 356px;
+	float: right;
+	width: 73%; /* No height specified - content holds it open as high as it needs to go */
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: -20px;
+	padding-left: 20px; /* This padding is added into the width of the container per current box model */
+	padding-right: 20px; /* This padding is added into the width of the container per current box model */
+	border-left: 1px #C5C5C5 solid; /* This one pixel border is added into the width of the container per current box model*/
+	border-right: 1px #C5C5C5 solid; /* This one pixel border is added into the width of the container per current box model */
+	border-top: 1px #C5C5C5 solid;
+	border-bottom: 1px #C5C5C5 solid;
+	background-color: #ffffff;
+}
+
+/*
+
+        Holds the classroom page headings (below) such as Lessons, Assignments, Resources, etc.
+
+        Adds a gray line across the bottom and space below*/
+
+#classroom-section-title
+{
+	margin-bottom: 8px;
+	padding-top: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+.classroom-section-title
+{
+	margin-bottom: 8px;
+	padding-top: 5px;
+	border-bottom: 1px solid #ccc;
+}
+/*
+
+            h2 - second level heading
+
+            Affects only h2's inside of the #classroom-section-title id
+
+            Controls font color, size, removes h2's default bold weight
+
+            Creates space below the h2 text and above the gray line*/
+
+#classroom-section-title h2
+{
+	margin-top: 10px;
+	margin-bottom: 7px;
+	font-size: 26px;
+}
+
+.classroom-section-title h2
+{
+	margin-top: 10px;
+	margin-bottom: 7px;
+	font-size: 26px;
+}
+
+#location_name h3
+{
+	font-size: 20px;
+}
+
+.location_name h3
+{
+	font-size: 20px;
+}
+/*
+
+            Carla's old breadcrumb and back/next styles - commmenting out*/
+
+/*#classroom-section-title-navigation-area {
+                height: 50px;
+            }
+
+                #classroom-section-title-navigation-area-breadcrumbs {
+                    font-size: 10px;
+
+                    font-family: Verdana, sans-serif;
+
+                    float: left;
+                }
+
+                #classroom-section-title-navigation-area-breadcrumbs p {
+                    margin-top: 7px;
+                }
+
+                #classroom-section-title-navigation-area-backnext {
+                    height: 30px;
+
+                    width: 150px;
+
+                    float: right;
+                }
+
+                    #classroom-section-title-navigation-area-back img, #classroom-section-title-navigation-area-next img {
+                        border: 0;
+
+                        float: right;
+
+                        margin-left: 5px;
+                    }*/
+
+/*======= Breadcrumbs and Back/Next button styles =======*/
+
+#nav-top
+{
+	height: 50px;
+}
+
+.nav-top
+{
+	height: 50px;
+}
+
+#nav-bottom
+{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-top: 1px solid #CCC;
+}
+
+.nav-bottom
+{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-top: 1px solid #CCC;
+}
+
+.template_back-next-buttons
+{
+	text-align: right;
+	margin-top: 0px;
+}
+
+	.template_back-next-buttons img
+	{
+		padding-right: 5px; /*puts space between buttons and to the right*/
+	}
+
+#breadcrumbs
+{
+	float: left;
+	padding-top: 7px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+}
+
+.breadcrumbs
+{
+	float: left;
+	padding-top: 7px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+}
+/*======= Styling h3 and p inside of the #main-paragraph h3 =======*/
+
+#main-paragraph-text
+{
+	margin-top: 27px;
+}
+
+.main-paragraph-text
+{
+	margin-top: 27px;
+}
+
+/*#main-paragraph-text h3 {
+    font-weight: normal;
+}*/
+/*#main-paragraph-text h4 {
+                color: #232323;
+            }*/
+
+/*=========NOTE: ===== all of these specific styles were moved to the top and are now general selector styles that apply to all, and are overridden as needed.*/
+
+#main-paragraph-text p, #main-paragraph-text ul li, #main-paragraph-text ol li
+{
+	/*margin-top: 10px; 	margin-bottom: 10px; */
+}
+
+#main-paragraph-text p
+{
+	/*line-height: 17px;	*/
+}
+
+#main-paragraph-text ul li, #main-paragraph-text ol li
+{
+}
+/*****************************************
+
+6. Left navigation panel
+
+===================================
+
+-Left navigation rollover bars
+
+-This panel sits INSIDE the main container
+
+*****************************************/
+
+/*
+
+Left navigation panel
+
+no set height, so the box can expand vertically with the content*/
+
+#left-navigation-panel
+{
+	float: left;
+	width: 20%;
+	margin-top: 15px;
+	margin-right: -20px;
+	background-color: #e9e9e9;
+}
+
+.left-navigation-panel
+{
+	float: left;
+	width: 20%;
+	margin-top: 15px;
+	margin-right: -20px;
+	background-color: #e9e9e9;
+}
+/*
+
+    Box containing the links -
+
+    has a border on the top and bottom and a larger width percentage
+
+    so the white bars can overlap the right content section*/
+
+#left-navigation-links
+{
+	width: 110%;
+	border-top: 1px #C5C5C5 solid; /*border-bottom: 1px #C5C5C5 solid;*/ /* needed top border only */
+}
+
+.left-navigation-links
+{
+	width: 110%;
+	border-top: 1px #C5C5C5 solid; /*border-bottom: 1px #C5C5C5 solid;*/ /* needed top border only */
+}
+/* === NAVIGATION LINKS - LIST ITEMS/BARS === */
+
+/*
+
+Unordered list, which is styled to be the navigation by removing margins*/
+
+/*77777777 This rule has alternate values in the if lteIE7 style sheet 77777777*/
+
+#left-navigation-links ul
+{
+	margin-top: 0px; /* negates default list margin on the top */
+	margin-bottom: 0px; /* negates default list margin on the bottom */
+	margin-left: -40px; /* negates default list margin on the left */ /*margin-left: 0px;*/ /*IE7 fix - this is in the conditional comments*/
+}
+
+.left-navigation-links ul
+{
+	margin-top: 0px; /* negates default list margin on the top */
+	margin-bottom: 0px; /* negates default list margin on the bottom */
+	margin-left: -40px; /* negates default list margin on the left */ /*margin-left: 0px;*/ /*IE7 fix - this is in the conditional comments*/
+}
+
+/*
+
+    Removes default link underline, gives height, color, padding, etc. to each list item
+
+    This is the default state, the lighter gray, before the bars are hovered over or activated*/
+
+#left-navigation-links li
+{
+	width: 100%;
+	height: 40px;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px; /*border-top: 1px #C5C5C5 solid;*/ /* each list item has bottom border only*/
+	border-bottom: 1px #C5C5C5 solid;
+	border-left: 1px #C5C5C5 solid;
+	border-right: 1px #C5C5C5 solid;
+	font-size: 16px;
+	line-height: 40px;
+	list-style-type: none;
+	color: #2C5A92;
+	background-color: #e9e9e9;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.left-navigation-links li
+{
+	width: 100%;
+	height: 40px;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px; /*border-top: 1px #C5C5C5 solid;*/ /* each list item has bottom border only*/
+	border-bottom: 1px #C5C5C5 solid;
+	border-left: 1px #C5C5C5 solid;
+	border-right: 1px #C5C5C5 solid;
+	font-size: 16px;
+	line-height: 40px;
+	list-style-type: none;
+	color: #2C5A92;
+	background-color: #e9e9e9;
+	cursor: pointer;
+	cursor: hand;
+}
+/*
+
+    Hover state of the bar itself, not the link text -
+
+    bar turns a darker gray*/
+
+#left-navigation-links li:hover
+{
+	background-color: #c5c5c5;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.left-navigation-links li:hover
+{
+	background-color: #c5c5c5;
+	cursor: pointer;
+	cursor: hand;
+}
+/* === NAVIGATION LINKS - TEXT === */
+
+/*
+
+Removes default link underline*/
+
+#left-navigation-links ul a
+{
+	text-decoration: none;
+}
+
+.left-navigation-links ul a
+{
+	text-decoration: none;
+}
+/* a:L
+
+Styles the color of the link text,
+
+removes the defaut underline for links */
+
+#left-navigation-links li a:link
+{
+	color: #2C5A92;
+	text-decoration: none;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.left-navigation-links li a:link
+{
+	color: #2C5A92;
+	text-decoration: none;
+	cursor: pointer;
+	cursor: hand;
+}
+/* a:V
+
+Styles the color of the visited link text,
+
+removes the defaut underline for links */
+
+#left-navigation-links li a:visited
+{
+	color: #2C5A92;
+	text-decoration: none;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.left-navigation-links li a:visited
+{
+	color: #2C5A92;
+	text-decoration: none;
+	cursor: pointer;
+	cursor: hand;
+}
+/* a:H
+
+Styles the color of the hovered-over link text,
+
+removes the defaut underline for links*/
+
+#left-navigation-links li a:hover
+{
+	color: #2C5A92;
+	text-decoration: none;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.left-navigation-links li a:hover
+{
+	color: #2C5A92;
+	text-decoration: none;
+	cursor: pointer;
+	cursor: hand;
+}
+/* a:A
+
+Should add an active state here for when the mouse or finger is depressed
+
+*/
+
+/* === NAVIGATION LINKS - CURRENT PAGE CLASSES === */
+
+/*
+
+Current state class -
+gives currently selected nav item a white background and a white right border
+uses z-index to place wider white box on top of the main content window with a gray border  */
+
+#left-navigation-links li.current
+{
+	position: relative;
+	z-index: 10;
+	width: 88%;
+	border-top: 0px #C5C5C5 solid; /* Cancels out any border applied to the top */ /*border-bottom: 1px #C5C5C5 solid;*/ /* Don't need - inherits 1px border from regular li's */
+	border-right: 3px #ffffff solid; /* Adds a 3px border to the right which covers up the main border */
+	background-color: #ffffff;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.left-navigation-links li.current
+{
+	position: relative;
+	z-index: 10;
+	width: 88%;
+	border-top: 0px #C5C5C5 solid; /* Cancels out any border applied to the top */ /*border-bottom: 1px #C5C5C5 solid;*/ /* Don't need - inherits 1px border from regular li's */
+	border-right: 3px #ffffff solid; /* Adds a 3px border to the right which covers up the main border */
+	background-color: #ffffff;
+	cursor: pointer;
+	cursor: hand;
+}
+
+/* more styling for current state class -
+
+Styles the color of the hovered-over link box, so that when the current nav item is selected,
+
+and then you also roll over it, it turns white instead of the normal gray -
+
+so when your mouse is resting on it after you have selected it, it doens't turn it gray again  */
+
+#left-navigation-links li.current:hover
+{
+	background-color: #ffffff;
+}
+
+.left-navigation-links li.current:hover
+{
+	background-color: #ffffff;
+}
+/*****************************************
+
+7. Footer
+
+===================================
+
+-Stretches the length of the browser
+
+-Sits OUTSIDE the main container
+
+*****************************************/
+
+/*
+
+Footer bar that stretches across the bottom
+
+No background color for now */
+
+#classroom-footer
+{
+	clear: both;
+	width: 100%;
+	height: 60px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	bottom: 0px;
+	margin-top: 15px;
+}
+
+.classroom-footer
+{
+	clear: both;
+	width: 100%;
+	height: 60px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	bottom: 0px;
+	margin-top: 15px;
+}
+/*  \/ \/ \/
+
+    Extra div for Quirks Mode centering workaround
+
+    goes around div below */
+
+#classroom-footer-centering-text
+{
+	text-align: center;
+}
+
+.classroom-footer-centering-text
+{
+	text-align: center;
+}
+/* /\ /\ /\
+
+    Centers text inside of footer bar -
+
+    it centers along with the content */
+
+/*QQQQQQQQQ This rule has a Quirks alternative in a separate style sheet QQQQQQQQQ*/
+
+#classroom-footer-text
+{
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto; /* width is up with the main and top widths since they're all the same */
+}
+
+.classroom-footer-text
+{
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto; /* width is up with the main and top widths since they're all the same */
+}
+/*
+
+        Inside of the centering with the content, this right aligns
+
+        this div and reduces the width so that it matches the
+
+        width of the right classroom content only */
+
+/*QQQQQQQQQ This rule has a Quirks alternative in a separate style sheet QQQQQQQQQ*/
+
+#classroom-footer-text-right-align
+{
+	text-align: left;
+	float: right;
+	width: 78.3%;
+}
+
+.classroom-footer-text-right-align
+{
+	text-align: left;
+	float: right;
+	width: 78.3%;
+}
+/* Styles paragraph text within the footer */
+
+#classroom-footer-text-right-align p
+{
+	color: #5c5c5c;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	line-height: 13px;
+}
+
+.classroom-footer-text-right-align p
+{
+	color: #5c5c5c;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	line-height: 13px;
+}
+
+/*****************************************
+
+9. Web fonts
+
+===================================
+
+-Not implemented yet
+
+*****************************************/
+
+/*****************************************
+
+10. Misc.
+
+===================================
+
+xxx
+
+*****************************************/
+
+.hollow-arrow div
+{
+	display: inline-block;
+	height: 0;
+	border: 5px solid transparent;
+}
+
+.hollow-right-arrow
+{
+	display: inline-block;
+	padding: 0 3px;
+	margin-right: -7px;
+	position: relative;
+	left: -7px;
+}
+
+.hollow-left-arrow
+{
+	display: inline-block;
+	padding: 0 3px;
+	margin-left: -7px;
+	position: relative;
+	right: -7px;
+}
+
+	.hollow-left-arrow .first
+	{
+		border-left-width: 0;
+		border-right-color: black;
+	}
+
+	.hollow-left-arrow .second
+	{
+		border-left-width: 0;
+		border-right-color: white;
+		position: relative;
+		left: -7px;
+	}
+
+.hollow-right-arrow .first
+{
+	border-right-width: 0;
+	border-left-color: black;
+}
+
+.hollow-right-arrow .second
+{
+	border-right-width: 0;
+	border-left-color: white;
+	position: relative;
+	right: -7px;
+}
+
+a .hollow-left-arrow .first
+{
+	border-right-color: #2c5a92;
+}
+
+a:hover .hollow-left-arrow .second
+{
+	border-right-color: #e9e9e9;
+}
+
+a .hollow-right-arrow .first
+{
+	border-left-color: #2c5a92;
+}
+
+a:hover .hollow-right-arrow .second
+{
+	border-left-color: #e9e9e9;
+}
+
+/*****************************************
+
+END of CSS DOCUMENT
+
+*****************************************/

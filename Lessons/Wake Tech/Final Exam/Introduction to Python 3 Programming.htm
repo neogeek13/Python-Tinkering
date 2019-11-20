@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- Google Tag Manager -->
+            <script async="true" type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/event.js" data-owner="criteo-tag"></script><script src="Introduction%20to%20Python%203%20Programming_files/2861.js" async="" type="text/javascript"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/ld.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/conversion.js">
+</script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag"></script><script type="text/javascript" async="" src="Introduction%20to%20Python%203%20Programming_files/ga.js"></script><script async="" src="Introduction%20to%20Python%203%20Programming_files/gtm.htm"></script><script>(function(w,d,s,l,i){try{w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            }catch(e){(console.error || console.log).call(console, e.stack || e);}
+            })(window,document,'script','dataLayer','GTM-P66CZH7');</script>
+            <!-- End Google Tag Manager --><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Python 3 Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-1.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-migrate-1.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/final.css" media="all"><script>var IE_pre9 = false; var IE_pre8 = false;</script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/ILC_quiz_IE_8_and_up.css" media="all"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/quizButtons.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom.css" media="all"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/global.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/course.htm"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/patch.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/patch.css" media="all"></head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P66CZH7'
+            height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+    <noscript>
+        <div id="sansjs">
+            Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+        </div>
+    </noscript>
+    <form name="aspnetForm" method="post" action="./FinalExam.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyD2QWAmYPZBYGAgEPFgIeBFRleHQFmQI8IS0tIEdvb2dsZSBUYWcgTWFuYWdlciAobm9zY3JpcHQpIC0tPg0KICAgICAgICAgICAgPG5vc2NyaXB0PjxpZnJhbWUgc3JjPSdodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbS9ucy5odG1sP2lkPUdUTS1QNjZDWkg3Jw0KICAgICAgICAgICAgaGVpZ2h0PScwJyB3aWR0aD0nMCcgc3R5bGU9J2Rpc3BsYXk6bm9uZTt2aXNpYmlsaXR5OmhpZGRlbic+PC9pZnJhbWU+PC9ub3NjcmlwdD4NCiAgICAgICAgICAgIDwhLS0gRW5kIEdvb2dsZSBUYWcgTWFuYWdlciAobm9zY3JpcHQpIC0tPmQCAg9kFhICAQ8PFgIeB1Zpc2libGVoZGQCAw8WBB4JaW5uZXJodG1sZR8BaGQCBQ8PFgIeC05hdmlnYXRlVXJsBXRodHRwczovL3d3dy5lZDJnby5jb20vQ2xhc3Nyb29tL0hlbHAuYXNweD9jbGFzc3Jvb209ZW9tM1pnSVdURGd6M2RYbGNpb3luQkJtTFdVR2RvQ0xuR1lHSHd2Nnd2c3ZFWmdRNFRmcjJsbVZXWHAxMEJvTGRkAgYPDxYCHwMFdGh0dHBzOi8vd3d3LmVkMmdvLmNvbS9DbGFzc3Jvb20vSGVscC5hc3B4P2NsYXNzcm9vbT1lb20zWmdJV1REZ3ozZFhsY2lveW5CQm1MV1VHZG9DTG5HWUdId3Y2d3ZzdkVaZ1E0VGZyMmxtVldYcDEwQm9MZGQCBw9kFgICAQ8PFgQfAAUkSW50cm9kdWN0aW9uIHRvIFB5dGhvbiAzIFByb2dyYW1taW5nHwMFf2h0dHBzOi8vd3d3LmVkMmdvLmNvbS9DbGFzc3Jvb20vTGVzc29uc092ZXJ2aWV3LmFzcHg/Y2xhc3Nyb29tPWVvbTNaZ0lXVERnejNkWGxjaW95bkJCbUxXVUdkb0NMbkdZR0h3djZ3dnN2RVpnUTRUZnIybG1WV1hwMTBCb0xkZAIID2QWAgIBDxYCHwAFJEludHJvZHVjdGlvbiB0byBQeXRob24gMyBQcm9ncmFtbWluZ2QCCQ8WAh8ABQtNaWtlIE9yc2VnYWQCCw9kFgICAQ9k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IHN0cmluZyBpcyBhIGNvbW1lbnQgdXNlZCB0byBzdGF0ZSB0aGUgZ2VuZXJhbCBwdXJwb3NlIG9mIGEgZnVuY3Rpb24uZAIBD2QWAmYPFQUDYTE0BHExNGIGMzIxOTYzBHExNGJUQSBkb2N1bWVudGF0aW9uIHN0cmluZyBwcmludHMgYWxsIG9mIHRoZSBkZXRhaWxzIG9mIGEgZnVuY3Rpb24gb24gdGhlIG91dHB1dCBzY3JlZW4uZAICD2QWAmYPFQUDYTE0BHExNGMGMzIxOTY0BHExNGNhQSBkb2N1bWVudGF0aW9uIHN0cmluZyBpcyB1c2VkIGJ5IHRoZSBpbnRlcnByZXRlciB0byBkZXRlcm1pbmUgdGhlIG51bWJlciBvZiBwYXJhbWV0ZXJzIHJlcXVpcmVkLmQCAw9kFgJmDxUFA2ExNARxMTRkBjMyMTk2NQRxMTRkVkEgZG9jdW1lbnRhdGlvbiBzdHJpbmcgaXMgbmVlZGVkIHRvIHJlZ2lzdGVyIHRoZSBmdW5jdGlvbiB3aXRoIHRoZSBQeXRob24gaW50ZXJwcmV0ZXIuZAIPD2QWBGYPFQIIcXVpel9xMTVUV2hpY2ggb2YgdGhlIGZvbGxvd2luZyBpcyBhIHZhbGlkIGZpcnN0IGxpbmUgaW4gdGhlIGRlZmluaXRpb24gb2YgYSBQeXRob24gZnVuY3Rpb24/ZAIBD2QWCGYPZBYCZg8VBQNhMTUEcTE1YQYzMjE5NjYEcTE1YRJkZWYgbXlGdW5jdGlvbiggKTpkAgEPZBYCZg8VBQNhMTUEcTE1YgYzMjE5NjcEcTE1Yg5teUZ1bmN0aW9uKCApOmQCAg9kFgJmDxUFA2ExNQRxMTVjBjMyMTk2OARxMTVjEWRlZiBteUZ1bmN0aW9uKCApZAIDD2QWAmYPFQUDYTE1BHExNWQGMzIxOTY5BHExNWQNbXlGdW5jdGlvbiggKWQCEA9kFgRmDxUCCHF1aXpfcTE2S1doaWNoIG9mIHRoZSBmb2xsb3dpbmcgbGluZXMgb2YgY29kZSB3aWxsIGNyZWF0ZSBhIENhciBvYmplY3QgbmFtZWQsIG15Q2FyP2QCAQ9kFghmD2QWAmYPFQUDYTE2BHExNmEGMzIxOTk0BHExNmELbXlDYXIgPSBDYXJkAgEPZBYCZg8VBQNhMTYEcTE2YgYzMjE5OTUEcTE2Yg5teUNhciA9IENhciggKWQCAg9kFgJmDxUFA2ExNgRxMTZjBjMyMTk5NgRxMTZjCUNhciBteUNhcmQCAw9kFgJmDxUFA2ExNgRxMTZkBjMyMTk5NwRxMTZkCkNhcihteUNhcilkAhEPZBYEZg8VAghxdWl6X3ExN2RXaGljaCBvZiB0aGUgZm9sbG93aW5nIHN0YXRlbWVudHMgaXMgY29ycmVjdCByZWdhcmRpbmcgdGhlIHJlbGF0aW9uc2hpcCBiZXR3ZWVuIGNsYXNzZXMgYW5kIG9iamVjdHM/ZAIBD2QWCGYPZBYCZg8VBQNhMTcEcTE3YQYzMjE5OTgEcTE3YTlBIGNsYXNzIGFuZCBhbiBvYmplY3QgYm90aCBkZXNjcmliZSB0aGUgZXhhY3Qgc2FtZSB0aGluZy5kAgEPZBYCZg8VBQNhMTcEcTE3YgYzMjE5OTkEcTE3YkNBbiBvYmplY3QgaXMgYSBibHVlcHJpbnQgdGhhdCBpcyB1c2VkIHRvIGNyZWF0ZSBpbmRpdmlkdWFsIGNsYXNzZXMuZAICD2QWAmYPFQUDYTE3BHExN2MGMzIyMDAwBHExN2NBQSBjbGFzcyBpcyBhIGJsdWVwcmludCB0aGF0IGlzIHVzZWQgdG8gY3JlYXRlIGluZGl2aWR1YWwgb2JqZWN0cy5kAgMPZBYCZg8VBQNhMTcEcTE3ZAYzMjIwMDEEcTE3ZH5PYmplY3RzIHJlZmVyIHRvIGJsdWVwcmludHMgY3JlYXRlZCBmb3IgcmVhbC13b3JsZCB0aGluZ3MsIHdoaWxlIGNsYXNzZXMgcmVmZXIgdG8gYmx1ZXByaW50cyBjcmVhdGVkIGZvciBwcm9ncmFtbWluZyBjb25jZXB0cy5kAhIPZBYEZg8VAghxdWl6X3ExOFRXaGljaCBvZiB0aGUgZm9sbG93aW5nIGNvdWxkIGJlIHRoZSBmaXJzdCBsaW5lIG9mIGNvZGUgZm9yIGEgY2xhc3MgY2FsbGVkLCBFbXBsb3llZT9kAgEPZBYIZg9kFgJmDxUFA2ExOARxMThhBjMyMjAwMgRxMThhD2NsYXNzIEVtcGxveWVlOmQCAQ9kFgJmDxUFA2ExOARxMThiBjMyMjAwMwRxMThiE2RlZiBjbGFzcyBFbXBsb3llZTpk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bigndycpZAICD2QWAmYPFQUDYTMwBHEzMGMGMzIyMTQ4BHEzMGMebXlmaWxlID0gb3BlbignZGF0YS50eHQnLCAndycpZAIDD2QWAmYPFQUDYTMwBHEzMGQGMzIyMTQ5BHEzMGQcZGF0YS50eHQgPSBvcGVuKG15ZmlsZSwgJ3cnKWQCHw9kFgRmDxUCCHF1aXpfcTMxeVdoYXQgaGFwcGVucyBpZiB0aGUgY29kZSBpbiB5b3VyIHRyeSBibG9jayBkb2Vzbid0IGdlbmVyYXRlIGFuIGV4Y2VwdGlvbiBhbmQgdGhlcmUgYXJlIHR3byBibG9ja3MgdGhhdCBoYW5kbGUgZXhjZXB0aW9ucz9kAgEPZBYIZg9kFgJmDxUFA2EzMQRxMzFhBjMyMjE3NARxMzFhLU5vbmUgb2YgdGhlIGV4Y2VwdGlvbiBoYW5kbGluZyBjb2RlIHdpbGwgcnVuLmQCAQ9kFgJmDxUFA2EzMQRxMzFiBjMyMjE3NQRxMzFiQ09ubHkgdGhlIGNvZGUgaW4gdGhlIGZpcnN0IHNldCBvZiBleGNlcHRpb24gaGFuZGxpbmcgY29kZSB3aWxsIHJ1bi5kAgIPZBYCZg8VBQNhMzEEcTMxYwYzMjIxNzYEcTMxYzRUaGUgY29kZSBpbiBib3RoIGV4Y2VwdGlvbiBoYW5kbGluZyBibG9ja3Mgd2lsbCBydW4uZAIDD2QWAmYPFQUDYTMxBHEzMWQGMzIyMTc3BHEzMWQXVGhlIHByb2dyYW0gd2lsbCBjcmFzaC5kAiAPZBYEZg8VAghxdWl6X3EzMnFXaGljaCBvZiB0aGUgZm9sbG93aW5nIHN0YXRlbWVudHMgd2lsbCBiZSBwYXJ0IG9mIHRoZSBjb2RlIHRoYXQgaGFuZGxlcyBib3RoIGFuIElPRXJyb3IgYW5kIFZhbHVlRXJyb3IgZXhjZXB0aW9uP2QCAQ9kFghmD2QWAmYPFQUDYTMyBHEzMmEGMzIyMTc4BHEzMmEbZXhjZXB0IElPRXJyb3IsIFZhbHVlRXJyb3I6ZAIBD2QWAmYPFQUDYTMyBHEzMmIGMzIyMTc5BHEzMmIgZXhjZXB0aW9uIChJT0Vycm9yLCBWYWx1ZUVycm9yKTpkAgIPZBYCZg8VBQNhMzIEcTMyYwYzMjIxODAEcTMyYx1leGNlcHQgKElPRXJyb3IsIFZhbHVlRXJyb3IpOmQCAw9kFgJmDxUFA2EzMgRxMzJkBjMyMjE4MQRxMzJkHWV4Y2VwdDogKElPRXJyb3IsIFZhbHVlRXJyb3IpZAIhD2QWBGYPFQIIcXVpel9xMzNdV2hhdCBoYXBwZW5zIGlmIHlvdXIgcHJvZ3JhbSBnZW5lcmF0ZXMgYW4gZXhjZXB0aW9uIGFuZCB0aGVyZSdzIG5vIGNvZGUgd3JpdHRlbiB0byBoYW5kbGUgaXQ/ZAIBD2QWCGYPZBYCZg8VBQNhMzMEcTMzYQYzMjIxODIEcTMzYUROb3RoaW5nIGhhcHBlbnM7IHRoZSBleGNlcHRpb24gaXMgaWdub3JlZCBhbmQgdGhlIHByb2dyYW0gY29udGludWVzLmQCAQ9kFgJmDxUFA2EzMwRxMzNiBjMyMjE4MwRxMzNiSFB5dGhvbiBnaXZlcyB5b3UgYW4gZXJyb3Igd2hlbiB5b3UgYXR0ZW1wdCB0byBzYXZlIHRoZSBzb3VyY2UgY29kZSBmaWxlLmQCAg9kFgJmDxUFA2EzMwRxMzNjBjMyMjE4NARxMzNjcVB5dGhvbiBnaXZlcyB5b3UgYSB3YXJuaW5nIHdoZW4gdGhlIGV4Y2VwdGlvbiBvY2N1cnMgZHVyaW5nIHByb2dyYW0gZXhlY3V0aW9uLCBhbmQgdGhlIHByb2dyYW0gY29udGludWVzIHJ1bm5pbmcuZAIDD2QWAmYPFQUDYTMzBHEzM2QGMzIyMTg1BHEzM2RsUHl0aG9uIGdpdmVzIHlvdSBhbiBlcnJvciBtZXNzYWdlIHdoZW4gdGhlIGV4Y2VwdGlvbiBvY2N1cnMgZHVyaW5nIHByb2dyYW0gZXhlY3V0aW9uLCBhbmQgdGhlIHByb2dyYW0gc3RvcHMuZAIiD2QWBGYPFQIIcXVpel9xMzSRAVdoaWNoIG9mIHRoZSBmb2xsb3dpbmcgbGluZXMgb2YgY29kZSBjYW4gYmUgcGxhY2VkIGluc2lkZSB0aGUgX19pbml0X18gbWV0aG9kIHRvIHNldCB0aGUgc2l6ZSBvZiB0aGUgRnJhbWUgdG8gYSB3aWR0aCBvZiAzMDAgYW5kIGEgaGVpZ2h0IG9mIDE1MD9kAgEPZBYIZg9kFgJmDxUFA2EzNARxMzRhBjMyMjIxMARxMzRhG3NlbGYubWFzdGVyLnNpemUoIjMwMHgxNTAiKWQCAQ9kFgJmDxUFA2EzNARxMzRiBjMyMjIxMQRxMzRiH3NlbGYubWFzdGVyLmdlb21ldHJ5KCIzMDB4MTUwIilkAgIPZBYCZg8VBQNhMzQEcTM0YwYzMjIyMTIEcTM0YzBzZWxmLm1hc3Rlci5kaW1lbnNpb24od2lkdGggPSAzMDAsIGhlaWdodCA9IDE1MClkAgMPZBYCZg8VBQNhMzQEcTM0ZAYzMjIyMTMEcTM0ZCpzZWxmLm1hc3Rlci5zZXQod2lkdGggPSAzMDAsIGhlaWdodCA9IDE1MClkAiMPZBYEZg8VAghxdWl6X3EzNU9XaGljaCBHVUkgY29tcG9uZW50IHdvcmtzIGJlc3QgaWYgeW91IHdhbnQgdGhlIHVzZXIgdG8gZW50ZXIgaGlzIG9yIGhlciBnZW5kZXI/ZAIBD2QWCGYPZBYCZg8VBQNhMzUEcTM1YQYzMjIyMTQEcTM1YQdCdXR0b24uZAIBD2QWAmYPFQUDYTM1BHEzNWIGMzIyMjE1BHEzNWIMQ2hlY2tidXR0b24uZAICD2QWAmYPFQUDYTM1BHEzNWMGMzIyMjE2BHEzNWMMUmFkaW9idXR0b24uZAIDD2QWAmYPFQUDYTM1BHEzNWQGMzIyMjE3BHEzNWQGRW50cnkuZAIkD2QWBGYPFQIIcXVpel9xMzZFV2hpY2ggb2YgdGhlIGZvbGxvd2luZyBtZXRob2RzIHVwZGF0ZXMgYSBMYWJlbCdzIGZvbnQgZHVyaW5nIHJ1bnRpbWU/ZAIBD2QWCGYPZBYCZg8VBQNhMzYEcTM2YQYzMjIyMTgEcTM2YQpjb25maWcoICkuZAIBD2QWAmYPFQUDYTM2BHEzNmIGMzIyMjE5BHEzNmIIZm9udCggKS5kAgIPZBYCZg8VBQNhMzYEcTM2YwYzMjIyMjAEcTM2Ywp1cGRhdGUoICkuZAIDD2QWAmYPFQUDYTM2BHEzNmQGMzIyMjIxBHEzNmQMc2V0X2ZvbnQoICkuZAIMDxYCHwAFBXB5My0wZAIDDw8WAh8BaGRkZMcrnO1PErklgTfXXPY/Ep2D/YjLmcLWKWnk60A63icZ" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource_002.js" type="text/javascript"></script>
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource.js" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EF2CFE58" type="hidden">
+	<input name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="25wUFxc0OXaL88Q2RdvsI115rGqQQcm8OpySwtIojS2n1OOfd5a901lxPupIBcXAyZIfmCO5UpOWi97U3yWHJ7jHVUL16MJ-XTsr388z3qYKDty53XNggy7alfkkXUat0" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAANr2U+LA1LV9BYZXBtNlYdWOX+dEEEO/5YcOBANMTmI2a1i8LHCBZp3RAfDkL77qsM8KyUFtD9dObmobDPbVpD4MuY4V11/PCHTiIeLneT28A==" type="hidden">
+</div>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm('Are you sure you wish to log out?');" id="ctl00_lbLogout" tabindex="4" class="title-bar-login-button" href="javascript:__doPostBack('ctl00$lbLogout','')">
+                        <p role="heading">LOGOUT</p>
+                    </a>
+
+                    <a id="ctl00_hlkHelpInActive" tabindex="2" class="title-bar-help-button" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">
+                            <p role="heading">
+                                HELP
+                            </p>
+                    </a>
+                    
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" tabindex="1" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Introduction to Python 3 Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Mike Orsega
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li class="current">Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+
+<script language="javascript" type="text/javascript">
+<!--
+    function confirmSubmit() {
+        var agree = confirm("You only have one opportunity to submit the final exam. Are you sure you are ready to have your exam graded?");
+        if (agree)
+            return true;
+        else
+            return false;
+    }
+    // -->
+</script>
+
+<div class="final">
+    <!-- Start final.css -->
+    <!-- ==== Start h2 header block  ==== -->
+    <div class="classroom-section-title">
+        <h2>Final Exam</h2>
+    </div>
+    <!-- ==== End h2 header block  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        <span class="accessibility_hide">You are here: </span>
+        
+                <a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Completion</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Final Exam</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+    <div class="main-paragraph-text">
+        <!-- Start main paragraph text -->
+        
+                <p>
+                    <em><strong>Important: </strong>Please note that we do not use your quiz scores to determine
+                        your eligibility for a completion letter or to measure your success in meeting the
+                        objectives of this course. Our assessment of your performance in this course will
+                        rely exclusively on your final exam score. In order to obtain the highest possible
+                        score on the final exam, we strongly recommend that you make sure you have taken
+                        and passed every quiz. We also recommend that you print and review a copy of the
+                        final exam before you actually take the exam.</em>
+                </p>
+                <p>
+                    Please review your selections before submitting. You may only submit your final
+                    exam answers once. In order to qualify for the Completion Letter, you'll need to
+                    successfully complete the final exam with a score of <strong>
+                        70%</strong> or higher.
+                    Within 1-2 minutes, you will receive an evaluation of your answers.
+                </p>
+                
+                <div id="quizContainer">
+                    <ol class="quizList">
+            
+                <li id="quiz_q01">
+                    Which file extension should you use at the end of 
+your Python files to make the most of the IDLE environment?
+                    
+                            <p>
+                                <input name="a1" id="q1a" value="321814" type="radio"><label for="q1a">
+                                        .Python</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a1" id="q1b" value="321815" type="radio"><label for="q1b">
+                                        .py</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a1" id="q1c" value="321816" type="radio"><label for="q1c">
+                                        .IDLE</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a1" id="q1d" value="321817" type="radio"><label for="q1d">
+                                        .idl</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q02">
+                    If a language is case-sensitive, it means what?
+                    
+                            <p>
+                                <input name="a2" id="q2a" value="321818" type="radio"><label for="q2a">
+                                        The capitalization of each letter of output is important.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a2" id="q2b" value="321819" type="radio"><label for="q2b">
+                                        The capitalization of each letter of the file name is important.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a2" id="q2c" value="321820" type="radio"><label for="q2c">
+                                        The capitalization of each letter of source code is not important.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a2" id="q2d" value="321821" type="radio"><label for="q2d">
+                                        The capitalization of each letter of source code is important.</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q03">
+                    In Python, in order to print a literal string to the
+ screen, what must you do to the characters that make up the string?
+                    
+                            <p>
+                                <input name="a3" id="q3a" value="321822" type="radio"><label for="q3a">
+                                        Enclose them in double quotes (" ").</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a3" id="q3b" value="321823" type="radio"><label for="q3b">
+                                        Enclose them in curly braces ({ }).</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a3" id="q3c" value="321824" type="radio"><label for="q3c">
+                                        Enclose them in angle brackets (&lt; &gt;).</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a3" id="q3d" value="321825" type="radio"><label for="q3d">
+                                        Enclose them in parentheses.</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q04">
+                    What is the error in the following line of code that reads the city name from the user? <br>
+<blockquote>location = eval(input("Please enter the name of your city: "))</blockquote>
+                    
+                            <p>
+                                <input name="a4" id="q4a" value="321850" type="radio"><label for="q4a">
+                                        The eval function is used to 
+convert the input data to a number, but a city name is a string.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a4" id="q4b" value="321851" type="radio"><label for="q4b">
+                                        There is no function named input in Python 3.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a4" id="q4c" value="321852" type="radio"><label for="q4c">
+                                        You aren't allowed to pass the input function a string.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a4" id="q4d" value="321853" type="radio"><label for="q4d">
+                                        The variable name, location, is a reserved word.</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q05">
+                    Which of the following characters is used to tell Python that the remaining part of the line is a comment?
+                    
+                            <p>
+                                <input name="a5" id="q5a" value="321854" type="radio"><label for="q5a">
+                                        '</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a5" id="q5b" value="321855" type="radio"><label for="q5b">
+                                        //</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a5" id="q5c" value="321856" type="radio"><label for="q5c">
+                                        /</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a5" id="q5d" value="321857" type="radio"><label for="q5d">
+                                        #</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q06">
+                    Which of the following keywords is used to get access to a library file?
+                    
+                            <p>
+                                <input name="a6" id="q6a" value="321858" type="radio"><label for="q6a">
+                                        using.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a6" id="q6b" value="321859" type="radio"><label for="q6b">
+                                        import.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a6" id="q6c" value="321860" type="radio"><label for="q6c">
+                                        include.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a6" id="q6d" value="321861" type="radio"><label for="q6d">
+                                        library.</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q07">
+                    Which of the following statements about nested ifs is correct?
+                    
+                            <p>
+                                <input name="a7" id="q7a" value="321886" type="radio"><label for="q7a">
+                                        Python doesn't allow you to nest an if statement inside another if statement.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a7" id="q7b" value="321887" type="radio"><label for="q7b">
+                                        Python allows you to put an if 
+statement only inside the true path of another if statement.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a7" id="q7c" value="321888" type="radio"><label for="q7c">
+                                        Python allows you to put an if 
+statement only inside the false path of another if statement.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a7" id="q7d" value="321889" type="radio"><label for="q7d">
+                                        Python allows you to put an if 
+statement inside either the true or false path of another if statement.</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q08">
+                    Which of the following statements will determine if 
+the value in the letter variable comes before the letter "S"?
+                    
+                            <p>
+                                <input name="a8" id="q8a" value="321890" type="radio"><label for="q8a">
+                                        if letter isBefore "S":</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a8" id="q8b" value="321891" type="radio"><label for="q8b">
+                                        if letter &lt; "S":</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a8" id="q8c" value="321892" type="radio"><label for="q8c">
+                                        if letter &gt; "S":</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a8" id="q8d" value="321893" type="radio"><label for="q8d">
+                                        if letter != "S":</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q09">
+                    Which of the following statements will determine if 
+the playAgain variable contains the word "yes" and the maxTries variable
+ is less than the number 5?
+                    
+                            <p>
+                                <input name="a9" id="q9a" value="321894" type="radio"><label for="q9a">
+                                        if playAgain = "yes" and maxTries &lt; 5:</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a9" id="q9b" value="321895" type="radio"><label for="q9b">
+                                        if playAgain == "yes" and maxTries &lt; "5":</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a9" id="q9c" value="321896" type="radio"><label for="q9c">
+                                        if playAgain == yes and maxTries &lt; 5:</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a9" id="q9d" value="321897" type="radio"><label for="q9d">
+                                        if playAgain == "yes" and maxTries &lt; 5:</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q10">
+                    What is the output after running the following code segment?<br>
+<blockquote>for i in range(0, 5):<br>
+&nbsp;&nbsp; print(i)</blockquote>
+                    
+                            <p>
+                                <input name="a10" id="q10a" value="321922" type="radio"><label for="q10a">
+                                        The number 5 printed five times.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a10" id="q10b" value="321923" type="radio"><label for="q10b">
+                                        The values increasing from 0 to 4, inclusive.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a10" id="q10c" value="321924" type="radio"><label for="q10c">
+                                        The values decreasing from 4 to 0, inclusive.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a10" id="q10d" value="321925" type="radio"><label for="q10d">
+                                        The values increasing from 0 to 5, inclusive.</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q11">
+                    Which of the following while statements is valid and
+ will stop the loop when the value in the variable d is no longer equal 
+to 10?
+                    
+                            <p>
+                                <input name="a11" id="q11a" value="321926" type="radio"><label for="q11a">
+                                        while d = 10</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a11" id="q11b" value="321927" type="radio"><label for="q11b">
+                                        while d == 10</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a11" id="q11c" value="321928" type="radio"><label for="q11c">
+                                        while d = 10:</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a11" id="q11d" value="321929" type="radio"><label for="q11d">
+                                        while d == 10:</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q12">
+                    Which of the following statements forces the 
+computer to exit the current control structure and begin executing the 
+code following this structure?
+                    
+                            <p>
+                                <input name="a12" id="q12a" value="321930" type="radio"><label for="q12a">
+                                        break.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a12" id="q12b" value="321931" type="radio"><label for="q12b">
+                                        control.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a12" id="q12c" value="321932" type="radio"><label for="q12c">
+                                        skip.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a12" id="q12d" value="321933" type="radio"><label for="q12d">
+                                        continue</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q13">
+                    Which Python keyword is used to return a value from a
+ function back to the statement that called the function?
+                    
+                            <p>
+                                <input name="a13" id="q13a" value="321958" type="radio"><label for="q13a">
+                                        result.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a13" id="q13b" value="321959" type="radio"><label for="q13b">
+                                        return.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a13" id="q13c" value="321960" type="radio"><label for="q13c">
+                                        def.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a13" id="q13d" value="321961" type="radio"><label for="q13d">
+                                        None.</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q14">
+                    What is the purpose of the documentation string?
+                    
+                            <p>
+                                <input name="a14" id="q14a" value="321962" type="radio"><label for="q14a">
+                                        A documentation string is a comment used to state the general purpose of a function.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a14" id="q14b" value="321963" type="radio"><label for="q14b">
+                                        A documentation string prints all of the details of a function on the output screen.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a14" id="q14c" value="321964" type="radio"><label for="q14c">
+                                        A documentation string is used 
+by the interpreter to determine the number of parameters required.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a14" id="q14d" value="321965" type="radio"><label for="q14d">
+                                        A documentation string is needed to register the function with the Python interpreter.</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q15">
+                    Which of the following is a valid first line in the definition of a Python function?
+                    
+                            <p>
+                                <input name="a15" id="q15a" value="321966" type="radio"><label for="q15a">
+                                        def myFunction( ):</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a15" id="q15b" value="321967" type="radio"><label for="q15b">
+                                        myFunction( ):</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a15" id="q15c" value="321968" type="radio"><label for="q15c">
+                                        def myFunction( )</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a15" id="q15d" value="321969" type="radio"><label for="q15d">
+                                        myFunction( )</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q16">
+                    Which of the following lines of code will create a Car object named, myCar?
+                    
+                            <p>
+                                <input name="a16" id="q16a" value="321994" type="radio"><label for="q16a">
+                                        myCar = Car</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a16" id="q16b" value="321995" type="radio"><label for="q16b">
+                                        myCar = Car( )</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a16" id="q16c" value="321996" type="radio"><label for="q16c">
+                                        Car myCar</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a16" id="q16d" value="321997" type="radio"><label for="q16d">
+                                        Car(myCar)</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q17">
+                    Which of the following statements is correct regarding the relationship between classes and objects?
+                    
+                            <p>
+                                <input name="a17" id="q17a" value="321998" type="radio"><label for="q17a">
+                                        A class and an object both describe the exact same thing.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a17" id="q17b" value="321999" type="radio"><label for="q17b">
+                                        An object is a blueprint that is used to create individual classes.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a17" id="q17c" value="322000" type="radio"><label for="q17c">
+                                        A class is a blueprint that is used to create individual objects.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a17" id="q17d" value="322001" type="radio"><label for="q17d">
+                                        Objects refer to blueprints 
+created for real-world things, while classes refer to blueprints created
+ for programming concepts.</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q18">
+                    Which of the following could be the first line of code for a class called, Employee?
+                    
+                            <p>
+                                <input name="a18" id="q18a" value="322002" type="radio"><label for="q18a">
+                                        class Employee:</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a18" id="q18b" value="322003" type="radio"><label for="q18b">
+                                        def class Employee:</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a18" id="q18c" value="322004" type="radio"><label for="q18c">
+                                        class Employee(self):</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a18" id="q18d" value="322005" type="radio"><label for="q18d">
+                                        def class Employee(self):</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q19">
+                    Which of the following lines of code will create a 
+Canvas widget that is 100 pixels wide, 300 pixels tall, and has red as 
+the background color?
+                    
+                            <p>
+                                <input name="a19" id="q19a" value="322030" type="radio"><label for="q19a">
+                                        myCanvas = Canvas(width=100, height=300, bg="red")</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a19" id="q19b" value="322031" type="radio"><label for="q19b">
+                                        myCanvas = Canvas(width=100, height=300, bg=red)</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a19" id="q19c" value="322032" type="radio"><label for="q19c">
+                                        myCanvas = Canvas(100, 300, bg="red")</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a19" id="q19d" value="322033" type="radio"><label for="q19d">
+                                        myCanvas = Canvas(100 300 "red")</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q20">
+                    Which of the following lines of code starts a class named Car that inherits from the class Vehicle?
+                    
+                            <p>
+                                <input name="a20" id="q20a" value="322034" type="radio"><label for="q20a">
+                                        class Car( ) inherits from Vehicle:</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a20" id="q20b" value="322035" type="radio"><label for="q20b">
+                                        class Car( ) : Vehicle( ):</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a20" id="q20c" value="322036" type="radio"><label for="q20c">
+                                        class Car(Vehicle):</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a20" id="q20d" value="322037" type="radio"><label for="q20d">
+                                        class Vehicle(Car):</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q21">
+                    Which of the following lines of code creates a square starting at (10, 10) where each side has length 15?
+                    
+                            <p>
+                                <input name="a21" id="q21a" value="322038" type="radio"><label for="q21a">
+                                        myCanvas.create_rectangle(10, 10, 25, 25)</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a21" id="q21b" value="322039" type="radio"><label for="q21b">
+                                        myCanvas.create_rectangle(10, 10, 15, 15)</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a21" id="q21c" value="322040" type="radio"><label for="q21c">
+                                        myCanvas.create_rectangle(10, 10, 15)</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a21" id="q21d" value="322041" type="radio"><label for="q21d">
+                                        myCanvas.create_square(10, 10, 15)</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q22">
+                    Which of the following characters encloses the values of a tuple?
+                    
+                            <p>
+                                <input name="a22" id="q22a" value="322066" type="radio"><label for="q22a">
+                                        ( )</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a22" id="q22b" value="322067" type="radio"><label for="q22b">
+                                        [ ]</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a22" id="q22c" value="322068" type="radio"><label for="q22c">
+                                        { }</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a22" id="q22d" value="322069" type="radio"><label for="q22d">
+                                        &lt; &gt;</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q23">
+                    Which of the following lines of code will print the number of items in the list my_list?
+                    
+                            <p>
+                                <input name="a23" id="q23a" value="322070" type="radio"><label for="q23a">
+                                        count(my_list)</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a23" id="q23b" value="322071" type="radio"><label for="q23b">
+                                        len(my_list)</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a23" id="q23c" value="322072" type="radio"><label for="q23c">
+                                        length(my_list)</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a23" id="q23d" value="322073" type="radio"><label for="q23d">
+                                        my_list.length</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q24">
+                    Which of the following methods adds the individual elements of one list to another list?
+                    
+                            <p>
+                                <input name="a24" id="q24a" value="322074" type="radio"><label for="q24a">
+                                        append( )</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a24" id="q24b" value="322075" type="radio"><label for="q24b">
+                                        extend( )</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a24" id="q24c" value="322076" type="radio"><label for="q24c">
+                                        add( )</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a24" id="q24d" value="322077" type="radio"><label for="q24d">
+                                        insert( )</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q25">
+                    What does the dictionary method items( ) return?
+                    
+                            <p>
+                                <input name="a25" id="q25a" value="322102" type="radio"><label for="q25a">
+                                        A list containing all of the key-value pairs as tuples.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a25" id="q25b" value="322103" type="radio"><label for="q25b">
+                                        A list containing all of the key-value pairs as lists.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a25" id="q25c" value="322104" type="radio"><label for="q25c">
+                                        A tuple of all the keys.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a25" id="q25d" value="322105" type="radio"><label for="q25d">
+                                        A tuple of all the values.</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q26">
+                    If you had a dictionary used to associate students' 
+names with their test scores, which of the following lines of code would
+ print the test score for a student named Sam?
+                    
+                            <p>
+                                <input name="a26" id="q26a" value="322106" type="radio"><label for="q26a">
+                                        print (scores.get['Sam'] )</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a26" id="q26b" value="322107" type="radio"><label for="q26b">
+                                        print (scores.get(Sam) )</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a26" id="q26c" value="322108" type="radio"><label for="q26c">
+                                        print (scores.get('Sam') )</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a26" id="q26d" value="322109" type="radio"><label for="q26d">
+                                        print (scores.get(90) )</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q27">
+                    What does the dictionary method update( ) do?
+                    
+                            <p>
+                                <input name="a27" id="q27a" value="322110" type="radio"><label for="q27a">
+                                        It allows the programmer to 
+change the value stored at a particular key in the dictionary.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a27" id="q27b" value="322111" type="radio"><label for="q27b">
+                                        It allows the programmer to combine two dictionaries.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a27" id="q27c" value="322112" type="radio"><label for="q27c">
+                                        It allows the programmer to remove all values in the dictionary that don't have a key.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a27" id="q27d" value="322113" type="radio"><label for="q27d">
+                                        It allows the programmer to 
+remove all the keys in the dictionary that don't have a value.</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q28">
+                    <p>If you open an empty data file for writing and 
+execute the following lines of code, what would the contents of the file
+ look like?</p>
+<blockquote>colors = ['blue', 'white']<br>
+outfile.write("colors")<br>
+outfile.writelines(colors)<br>
+outfile.close( )</blockquote>
+                    
+                            <p>
+                                <input name="a28" id="q28a" value="322138" type="radio"><label for="q28a">
+                                        colors<br>
+blue<br>
+white</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a28" id="q28b" value="322139" type="radio"><label for="q28b">
+                                        colorsbluewhite</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a28" id="q28c" value="322140" type="radio"><label for="q28c">
+                                        colors<br>
+bluewhite</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a28" id="q28d" value="322141" type="radio"><label for="q28d">
+                                        colors blue white</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q29">
+                    Which of the following characters will move the output cursor to the next line?
+                    
+                            <p>
+                                <input name="a29" id="q29a" value="322142" type="radio"><label for="q29a">
+                                        \n</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a29" id="q29b" value="322143" type="radio"><label for="q29b">
+                                        \r</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a29" id="q29c" value="322144" type="radio"><label for="q29c">
+                                        \t</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a29" id="q29d" value="322145" type="radio"><label for="q29d">
+                                        \a</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q30">
+                    Which of the following lines of code will create an 
+object named, myfile and open an output file named, data.txt?
+                    
+                            <p>
+                                <input name="a30" id="q30a" value="322146" type="radio"><label for="q30a">
+                                        myfile = open('data.txt', 'r')</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a30" id="q30b" value="322147" type="radio"><label for="q30b">
+                                        data.txt = myfile.open('w')</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a30" id="q30c" value="322148" type="radio"><label for="q30c">
+                                        myfile = open('data.txt', 'w')</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a30" id="q30d" value="322149" type="radio"><label for="q30d">
+                                        data.txt = open(myfile, 'w')</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q31">
+                    What happens if the code in your try block doesn't 
+generate an exception and there are two blocks that handle exceptions?
+                    
+                            <p>
+                                <input name="a31" id="q31a" value="322174" type="radio"><label for="q31a">
+                                        None of the exception handling code will run.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a31" id="q31b" value="322175" type="radio"><label for="q31b">
+                                        Only the code in the first set of exception handling code will run.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a31" id="q31c" value="322176" type="radio"><label for="q31c">
+                                        The code in both exception handling blocks will run.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a31" id="q31d" value="322177" type="radio"><label for="q31d">
+                                        The program will crash.</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q32">
+                    Which of the following statements will be part of 
+the code that handles both an IOError and ValueError exception?
+                    
+                            <p>
+                                <input name="a32" id="q32a" value="322178" type="radio"><label for="q32a">
+                                        except IOError, ValueError:</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a32" id="q32b" value="322179" type="radio"><label for="q32b">
+                                        exception (IOError, ValueError):</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a32" id="q32c" value="322180" type="radio"><label for="q32c">
+                                        except (IOError, ValueError):</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a32" id="q32d" value="322181" type="radio"><label for="q32d">
+                                        except: (IOError, ValueError)</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q33">
+                    What happens if your program generates an exception and there's no code written to handle it?
+                    
+                            <p>
+                                <input name="a33" id="q33a" value="322182" type="radio"><label for="q33a">
+                                        Nothing happens; the exception is ignored and the program continues.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a33" id="q33b" value="322183" type="radio"><label for="q33b">
+                                        Python gives you an error when you attempt to save the source code file.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a33" id="q33c" value="322184" type="radio"><label for="q33c">
+                                        Python gives you a warning when 
+the exception occurs during program execution, and the program continues
+ running.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a33" id="q33d" value="322185" type="radio"><label for="q33d">
+                                        Python gives you an error 
+message when the exception occurs during program execution, and the 
+program stops.</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q34">
+                    Which of the following lines of code can be placed 
+inside the __init__ method to set the size of the Frame to a width of 
+300 and a height of 150?
+                    
+                            <p>
+                                <input name="a34" id="q34a" value="322210" type="radio"><label for="q34a">
+                                        self.master.size("300x150")</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a34" id="q34b" value="322211" type="radio"><label for="q34b">
+                                        self.master.geometry("300x150")</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a34" id="q34c" value="322212" type="radio"><label for="q34c">
+                                        self.master.dimension(width = 300, height = 150)</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a34" id="q34d" value="322213" type="radio"><label for="q34d">
+                                        self.master.set(width = 300, height = 150)</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q35">
+                    Which GUI component works best if you want the user to enter his or her gender?
+                    
+                            <p>
+                                <input name="a35" id="q35a" value="322214" type="radio"><label for="q35a">
+                                        Button.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a35" id="q35b" value="322215" type="radio"><label for="q35b">
+                                        Checkbutton.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a35" id="q35c" value="322216" type="radio"><label for="q35c">
+                                        Radiobutton.</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a35" id="q35d" value="322217" type="radio"><label for="q35d">
+                                        Entry.</label>
+                            </p>
+                        
+                </li>
+            
+                <li id="quiz_q36">
+                    Which of the following methods updates a Label's font during runtime?
+                    
+                            <p>
+                                <input name="a36" id="q36a" value="322218" type="radio"><label for="q36a">
+                                        config( ).</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a36" id="q36b" value="322219" type="radio"><label for="q36b">
+                                        font( ).</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a36" id="q36c" value="322220" type="radio"><label for="q36c">
+                                        update( ).</label>
+                            </p>
+                        
+                            <p>
+                                <input name="a36" id="q36d" value="322221" type="radio"><label for="q36d">
+                                        set_font( ).</label>
+                            </p>
+                        
+                </li>
+            
+                </ol>
+                <div class="final-submit-btn-container">
+                    <input id="FinalExam" name="FinalExam" value="true" style="display: none;" type="text">
+                    <input name="ctl00$cphMain$ctl00$rptFinal$ctl37$btnSubmit" value="Submit Final" onclick='if (!confirmSubmit()) { return false; };WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$cphMain$ctl00$rptFinal$ctl37$btnSubmit", "", false, "", "https://www.ed2go.com/Classroom/FinalExamResults.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL", false, false))' id="ctl00_cphMain_ctl00_rptFinal_ctl37_btnSubmit" class="quiz_submit_btn" type="submit">
+                </div>
+                </div>
+            
+        
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2016
+                            All rights reserved. The material on this 
+site cannot be reproduced or redistributed unless you have obtained 
+prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                py3-0
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB04P (1.2.99.4) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/IncludeResource.js"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom final exam';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.eVar4='';
+s.prop4='';
+s.eVar5='introduction to python 3 programming';
+s.prop5='introduction to python 3 programming';
+s.prop6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.eVar6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.eVar11='https://www.ed2go.com/classroom/finalexam.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.prop11='https://www.ed2go.com/classroom/finalexam.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.prop15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.eVar15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.hier1=',,introduction to python 3 programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript><a href='http://www.Adobe.com' title='Web Analytics'><img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/></a></noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript><iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="jb-overlay" style="opacity: 0.7; display: none;"></div><div id="jb-window" style="display: none;"><div id="jb-window-inner" style="position: fixed; top: 294.5px; left: 484.5px;"><div id="jb-window-content" style="width: auto; height: auto; overflow: hidden; display: none;" tabindex="0"></div></div></div><span id="text-resize" style="position: absolute; left: -9999px; font-size: 100%; font-family: Courier New, mono; margin: 0; padding: 0;">&nbsp;</span><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?random=1482740088642&amp;cv=8&amp;fst=1482740088642&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=920&amp;u_w=1472&amp;u_ah=897&amp;u_aw=1472&amp;u_cd=24&amp;u_his=25&amp;u_tz=-300&amp;u_java=true&amp;u_nplug=9&amp;u_nmime=60&amp;frm=0&amp;url=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FFinalExam.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;ref=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FCompletion.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;tiba=Introduction%20to%20Python%203%20Programming" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" width="300" height="13" frameborder="0"></iframe><div id="criteo-tags-div" style="display: none;"><iframe style="display: none;" src="Introduction%20to%20Python%203%20Programming_files/dis.htm" width="0" height="0"></iframe></div></body></html>

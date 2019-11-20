@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- Google Tag Manager -->
+            <script async="true" type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/event.js" data-owner="criteo-tag"></script><script src="Introduction%20to%20Python%203%20Programming_files/2861.js" async="" type="text/javascript"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/ld.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/conversion.js">
+</script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag"></script><script type="text/javascript" async="" src="Introduction%20to%20Python%203%20Programming_files/ga.js"></script><script async="" src="Introduction%20to%20Python%203%20Programming_files/gtm.htm"></script><script>(function(w,d,s,l,i){try{w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            }catch(e){(console.error || console.log).call(console, e.stack || e);}
+            })(window,document,'script','dataLayer','GTM-P66CZH7');</script>
+            <!-- End Google Tag Manager --><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Python 3 Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-1.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-migrate-1.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom.css" media="all"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/global.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/course.htm"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/patch.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/patch.css" media="all"><link href="Introduction%20to%20Python%203%20Programming_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P66CZH7'
+            height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+    <noscript>
+        <div id="sansjs">
+            Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+        </div>
+    </noscript>
+    <form name="aspnetForm" method="post" action="./PrintLesson.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=1" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource_002.js" type="text/javascript"></script>
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource.js" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7" type="hidden">
+</div>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm('Are you sure you wish to log out?');" id="ctl00_lbLogout" tabindex="4" class="title-bar-login-button" href="javascript:__doPostBack('ctl00$lbLogout','')">
+                        <p role="heading">LOGOUT</p>
+                    </a>
+
+                    <a id="ctl00_hlkHelpInActive" tabindex="2" class="title-bar-help-button" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">
+                            <p role="heading">
+                                HELP
+                            </p>
+                    </a>
+                    
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" tabindex="1" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Introduction to Python 3 Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Mike Orsega
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            1: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Welcome to Python!</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        <span class="accessibility_hide">You are here: </span>
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=1">Lesson 1</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" onclick="showAllImagesPF()" type="radio"><label for="pfImagesOnBtn">Text, images and activities (IE users only)</label></p><p><input name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()" checked="checked" type="radio"><label for="pfInteractivityOffBtn">Text and images</label></p><p><input name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()" type="radio"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer; opacity: 0.22;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_chrome.png" alt="chrome icon" class="pf_visible pf_image" border="0"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer; opacity: 1;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_firefox.png" alt="Firefox icon" class="pf_visible pf_image" border="0"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer; opacity: 0.22;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" class="pf_visible pf_image" border="0"><br><span class="caption">IE 11</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer; opacity: 0.22;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_safari.png" alt="Safari icon" class="pf_visible pf_image" border="0"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input class="pf_hide_directions_btn" style="" value="Hide Directions" type="button"></div><div id="pf_notebox_browser_directions_container" style="display: block;"><p><strong>Firefox</strong></p><p>If
+ you'd like to access the lessons of this course when you're offline, as
+ well as after the course has ended, it's easy to download them. First, 
+you may want to create a folder to put all the lessons in so you have 
+them in one place at the end of the course. Next, just follow the 
+downloading instructions below. </p><ol><li style="margin-bottom: 10px;">Click the <strong>Command</strong> button <span class="NumberedList"><img src="Introduction%20to%20Python%203%20Programming_files/image001a.jpg" alt=""></span> in the upper-right corner, and choose <strong>Save Page</strong>.</li><p align="center"><img src="Introduction%20to%20Python%203%20Programming_files/image002a.jpg" alt=""><br><span class="caption">Choose <strong>Save Page</strong></span></p><!--<li>Choose <strong>Firefox</strong> ><strong>Save Page As</strong>. </li><p align='center'><img src='https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/global/printer_friendly/FF_files/image001a.jpg' alt=''><br><span class='caption'> Choose <strong>Save Page As</strong></span></p>--><li style="margin-bottom: 10px;">Specify the folder you want to save the file in, as you would with any other document.</li><li style="margin-bottom: 10px;">Type
+ a name for the lesson. You can use the long suggested name or make up a
+ shorter name of your own. However, do not add your own extension to 
+that filename.</li><li style="margin-bottom: 10px;">Choose <strong>Web Page, complete</strong> as the file type.</li><p align="center"><img src="Introduction%20to%20Python%203%20Programming_files/image002.jpg" alt=""><br><span class="caption"> Use <strong>Web Page, complete</strong> as the file type</span></p><li style="margin-bottom: 10px;">Click <strong>Save</strong>.</li></ol><p><strong>Viewing Downloaded Lessons</strong></p><p>After
+ you've downloaded a lesson, you can use these steps at any time to 
+open, view, or print it. You don't need to be connected to the Internet.</p><ol><li style="margin-bottom: 10px;">Open the folder you saved the lesson in.</li><li style="margin-bottom: 10px;">You'll likely see two icons per downloaded lesson, as in the example below.</li><p align="center"><img src="Introduction%20to%20Python%203%20Programming_files/image003.jpg" alt=""><br><span class="caption"> Icons for one lesson saved as <strong>Web Page, complete</strong></span></p><li style="margin-bottom: 10px;">To
+ view the lesson, double-click the file with the *.htm extension (the 
+one that looks like a dog-eared piece of paper). Opening the folder icon
+ won't show you the lesson; it will only display icons for extra files 
+that the lesson needs to display properly.</li><li style="margin-bottom: 10px;">If
+ you have multiple programs for opening *.htm files, you can right-click
+ the icon (or CONTROL + click the icon if you're using a Mac) and choose
+ <strong>Open With</strong>. You'll be able to select Firefox to open and view the lesson.</li></ol><p><strong>Missing Pictures</strong></p><p>If
+ you open a downloaded lesson and some pictures are missing, you might 
+not have waited long enough for the pictures to download before clicking
+ Save. Interactive content, such as videos or games, may not save. 
+Another possibility is that you may have downloaded using one browser 
+(like Firefox) but opened using a different browser (like Internet 
+Explorer). Try opening the downloaded lesson with the same browser you 
+used to download the lesson (please see step #4 above).</p></div><div align="center"><input class="pf_hide_directions_btn" style="" value="Hide Directions" type="button"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p><!-- ipy LESSON 01 CHAPTER 1 --><!-- START CHAPTER CONTENT --></p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="border: 0px solid;" alt="Lesson 1 header" src="Introduction%20to%20Python%203%20Programming_files/L01_header.jpg" galleryimg="no" class="pf_image"></p>
+<p><strong>Introduction</strong></p>
+<p>Hello! Welcome to <em>Introduction to Python&nbsp;3 Programming</em>. My name is Mike Orsega, and I'll be working with you over the next few weeks as we learn the art of charming a Python.</p>
+<p><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img alt="python" src="Introduction%20to%20Python%203%20Programming_files/python-logo.gif" style="float: right;" galleryimg="no" class="pf_image">This
+ class, of course, has nothing to do with charming a snake. Python, as 
+you know, is software. Although many believe Python got its name from 
+the snake known for constricting its prey, the origin of its name is 
+much less ominous. The name actually comes from the British comedy 
+group, Monty Python. </p>
+<p>The official Python website describes the software as "a dynamic 
+object-oriented programming language that can be used for many kinds of 
+software development." One thing that is fantastic about Python is its 
+power when working with data. Python's creators really made it quick and
+ easy to do fairly complex things. You can use it to write simple, short
+ scripts that consist of a few lines of instructions to perform some 
+action. And you can use it to write larger, more complex programs that 
+resemble those written in languages such as C or Java. </p>
+<p>Plus, Python code can be run on a wide variety of machines, including
+ Windows, Linux/Unix, Macintosh, and even certain personal digital 
+assistants (PDAs) and mobile phones. The possibilities of places to run 
+your code seem nearly endless. All of this makes Python a powerful 
+programming tool. So, my job is tough because there's just so much 
+material. I can't cover everything (although I'd like to). </p>
+<p>So, before we get too far into this, I want to give you an idea of 
+who this course is designed for. I'm really gearing this course for 
+those of you who want an introduction to the basics of Python and what 
+it has to offer. That means we'll cover basic decision and repetition 
+structures and functions. We'll also hit on some of the object-oriented 
+parts of Python, as well as files, exceptions, lists, tuples, and 
+dictionaries. We're even going to throw in some graphics to keep things 
+interesting.</p>
+<p>I'm excited about what we're going to cover. It may seem like a lot, 
+but I know we can do this together. I say this with confidence because 
+I've been working as a programmer and teaching others about programming 
+languages for years. </p>
+<p>My background is pretty much in the traditional programming 
+languages. I've programmed in Java, C++, C#, and Visual Basic. I also 
+have experience with MPI (a multiprocessor programming language) and 
+Alice (a tool used to help teach introductory programming concepts to 
+new students). In fact, I have three other online courses. They are: <em>Introduction to C# Programming</em>, <em>Intermediate C# Programming</em>, and <em>Introduction to Alice Programming</em>. </p>
+<p>At any rate, this course won't be about the logic of programming. 
+Instead, I'll assume that you've either had some of this in a prior 
+course or that you've programmed before in another language. This will 
+give us the opportunity to really focus on the unique features of Python
+ and learn its syntax.</p>
+<p>We'll start by going through a brief overview of programming 
+languages, so that you'll get an idea of where Python fits in. Next, 
+we'll talk about IDLE, the development environment that comes along with
+ the Python download. I'll show you some of its important features and 
+where you'll write your code and where you'll run it. Finally, we'll 
+finish up this lesson by writing a small Python program.</p>
+<p>One piece of advice before we begin is to be aware that my goal in 
+this course is to teach you the fundamentals of Python—the building 
+blocks. This means two things. First, the programs we'll create during 
+the lessons and for the assignments may not be exactly what you'd find 
+in the real world. These are problems that are designed to let you 
+practice what you learn in each lesson.</p>
+<p>Second, you're more likely to learn this material if you have your 
+own ideas of how to apply the concepts. That is, I'll do my best to give
+ you ideas for interesting programs that use this material, but what's 
+interesting to me may not be interesting to you. So, as you read through
+ the text, I challenge you to try to think of programs that you might 
+like to write that use what we discuss. The more you practice, the 
+easier this will be and the better at charming Python you'll become.</p>
+<p>Now it's time we move on to Chapter 2 and take a closer look at Python.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><!-- ipy LESSON 01 CHAPTER 2 --><!-- START CHAPTER CONTENT --><strong>What Is Python?</strong></p>
+<p>The software's creator, Guido van Rossum, developed Python as a 
+higher-level language that allows programmers to use commands that look 
+like human language. Of course, since the computer can't understand the 
+language that we use, other programs exist that reduce a high-level 
+language to something computers can understand. </p>
+<p>There are two types of programs that do this translation. One type, called <em>interpreters</em>, translates the high-level code, one line at a time, as the program is running. This is different from a <em>compiler</em>, which will go through the entire program and translate everything at once. </p>
+<p>Many common programming languages today use a compiler such as Java, 
+C++, C#, and Visual Basic. Others use an interpreter. For the most part,
+ Python is an interpreted language. Unfortunately, this definition can 
+get a little muddy when it comes to Python, and this can lead to a long 
+discussion, which I'd prefer not to get into in this course. Instead, 
+let's just keep in mind that Python code can be run one line at a time 
+through an interpreter.</p>
+<p>So now you might be thinking, "What makes Python so special and so 
+different?" To answer that question, we need to head back to the origins
+ of Python. Remember Mr. van Rossum? The short story is that he wanted a
+ simple, easy to use programming language. So, Python uses English-like 
+syntax, and it doesn't use curly braces { } to block out its code. 
+Instead it favors simple white space indenting.</p>
+<p>Now, the last couple of sentences make me realize that we're getting 
+ahead of ourselves a bit already. Just remember, Python was intended to 
+be easy to read and easy to write. However, in addition to being simple,
+ it also gives programmers the ability to implement more complex 
+concepts, such as object-oriented programming and exception handling. </p>
+<p>There are also some really nice built-in types for us to use in our 
+code. But again, let's not get too far ahead of ourselves. We need to 
+lay a solid foundation of the basics before we start into the more 
+advanced topics.</p>
+<p>With that in mind, let's turn our attention to the development environment that you'll be working with: IDLE.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><!-- ipy LESSON 01 CHAPTER 3 --><!-- START CHAPTER CONTENT --><strong>IDLE</strong></p>
+<p>While there are a few different versions of Python, the one we'll use
+ in this class comes from the Python Software Foundation (PSF) at 
+www.python.org. This is sometimes called CPython because the interpreter
+ is written in the C programming language. Although, lately folks have 
+taken the C to stand for <em>classic</em>. Instead of going into a long 
+discussion about this, let's just say that we're using the Python from 
+PSF and go about the business of learning how to program with it.</p>
+<p>One nice feature in the Python download is that it comes with an <em>Integrated Development Environment (IDE)</em>.
+ The IDE is a program that will allow us to write and run our Python 
+code within the same application. In Python, this environment is called <em>IDLE</em>. Some claim the term IDLE actually comes from Eric Idle, one of the members of the comedy group Monty Python. </p>
+<p>No matter where the name comes from, the upshot is that we'll be 
+using IDLE in here for development. However, if you have another IDE 
+that you think is better than IDLE, please feel free to use it. I've 
+used a few others myself, but I've found that for teaching purposes, 
+IDLE works best for me. It's clean, simple, and fairly easy to work 
+with, just like Python. Plus, it comes with the language's download.</p>
+<p>I think it's time we get started! If you haven't already visited the Python site at <a href="http://www.python.org/download/" target="_blank">http://www.python.org/download/</a>
+ and downloaded Python, do so now. This course was developed using 
+Python 3.2, so you should consider using the most recent 3.2 release 
+when working through this material.</p>
+<p>The first thing you'll note when you get to the download page is the 
+wide range of choices for downloads. There are multiple choices 
+depending on your operating system (OS) and processor. Like most people,
+ I suspect you'll want the Windows download for x86 processors. But of 
+course, if you have a Macintosh or are running Linux on your computer, 
+you can certainly get Python for these operating systems as well. After 
+all, this is one of the nice features of Python—you can develop Python 
+programs on different platforms.</p>
+<p>Once you have your file downloaded, run it and complete the 
+installation. For those of you Windows folks out there, you should now 
+have an item called Python 3.2 in the list of items in your Start Menu.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px; border: 0px solid;" alt="Windows Start Menu item for Python 2.5" src="Introduction%20to%20Python%203%20Programming_files/L01-01.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Windows Start Menu item for Python 3.2</font></p>
+<p>You'll notice that in addition to having links for documentation and 
+to uninstall Python, there seem to be two different Pythons: IDLE, which
+ we've discussed, and the <em>command line</em>. As I've said, this 
+course is going to work exclusively with IDLE. But just for fun, let's 
+spend a minute or two with the command line. And in case you don't have 
+experience working with an interpreter, this little exercise will 
+highlight how one works.</p>
+<p>Open Python (command line) and you'll be presented with that old, 
+boring black window with the white text. Here, you'll see a couple of 
+interesting things. First is the exact version of Python you're using. 
+Also, you'll see three greater than signs (&gt;&gt;&gt;). This is the 
+Python prompt. When you see this, it means you can enter Python code to 
+be run. Let's try it out by typing this classic code:</p>
+<div class="noscroll">
+<pre>print("Hello world!")</pre>
+</div>
+<p>Please note, Python is a <em>case-sensitive</em> language. Therefore, typing <em>print</em> is different from typing <em>Print</em>. Only the all-lowercase print will work here.</p>
+<p>Press ENTER and you'll see the words <em>Hello world!</em> printed on
+ the next line, followed by another prompt. Okay, maybe not too 
+exciting. But it does demonstrate that Python is an interpreted 
+language. That is, we're only translating one line of code at a time. 
+Don't believe me? Well, try typing this:</p>
+<div class="noscroll">
+<pre>phrase = "Hello world!"<br>print(phrase)</pre>
+</div>
+<p>You'll note that the first line is storing those words in a variable named phrase. The second line tells the computer to print out the value of that variable. </p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px; border: 0px solid;" alt="Command window after executing statements" src="Introduction%20to%20Python%203%20Programming_files/L01-02.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Command window after executing statements</font></p>
+<p>At this point, you may have lots of questions about output, variables, and syntax. Again, there's going to be plenty of time to explore these topics in the coming weeks. For now, we're just getting a little practice playing with the interpreter. </p>
+<p>Be sure to keep this tool in mind as the course progresses. There may be times you won't want to type out a complete program. Instead you'll want to try a couple things just to see the results. The command line interpreter is a great place to go for this.</p>
+<p>Now that you've gotten your feet wet with the Python language, let's move on to Chapter 4 where we'll create more short programs and get acquainted with IDLE.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><!-- ipy LESSON 01 CHAPTER 4 --><!-- START CHAPTER CONTENT --><strong>Python Programming in IDLE</strong></p>
+<p>Now we're ready to play with IDLE a little bit. If you haven't already shut down your command line window, do it now by clicking the X in the upper-right corner of the window. Next, open IDLE.</p>
+<p>You're probably thinking this is the same thing we saw in Chapter 3, except now we're looking at a white background with black text, instead of the other way around. And this is somewhat true. After all, once again there are those three greater than signs that are our prompt. In fact, if you go back and type those statements I had you type in the last chapter, you'll see that you get the exact same result.</p>
+<p>Ah, but IDLE is so much more. For one thing, you'll notice at the top of the window there's a list of menu items. We won't talk about most of these items in this course, but one of them is very important. </p>
+<p>Go ahead and select <strong>File &gt; New File&nbsp;</strong>(those using a version before Python 3.3 should select <strong>File &gt; New Window</strong>). You'll now get a very uninspiring new window that looks nearly identical to the first, with one major exception—there's no prompt. In fact, you'll find that it looks very similar to Microsoft's built-in text editor, Notepad. But then again, that's all this is. It's a place to type in plain text. It's just that our plain text has a special syntax. Python syntax. </p>
+<p>To get some practice with this, let's go ahead and type the classic Hello World! program code again. Simply go to your blank file and type the following:</p>
+<div class="noscroll">
+<pre>print("Hello world!")</pre>
+</div>
+<p>Did you notice anything special? The letters in your words changed colors. The word <em>print</em> should have turned purple and the text <em>Hello World!</em> should have turned green. This is one of the nice features of our editor here in IDLE. It's going to give us visual cues to help us with our programs.</p>
+<p>The reason print turned purple is because it's a <em>keyword</em>, or a <em>reserved word</em>, in Python. That means it has a special meaning, and we won't be able to use it as a variable name. Otherwise, Python will get confused and won't be able to run the code.</p>
+<p>The Hello World! turned green to designate that the text is a <em>literal string</em>. In general, a string is just a collection of letters. The reason we're calling this a literal string is because we want to literally see the phrase Hello World! on the screen. </p>
+<p>By coloring these letters green, it makes it a lot easier to tell what's in the string. I think this is going to be a feature that'll come in handy for you as you write your programs. It helps me a lot.</p>
+<p>So, now you have your very first Python program written. Let's run it and see what it does. You might think at this point that all you have to do is click <strong>Run &gt; Run Module</strong>, which makes complete sense to me. The problem is that Python requires that you save your program before running it. Go ahead and double check me on this. Try to run the file and you should get a dialog box that looks like this:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px; border: 0px solid;" alt="Save Before Run dialog box" src="Introduction%20to%20Python%203%20Programming_files/L01-03.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Save Before Run dialog box</font></p>
+<p>Click <strong>OK</strong> so that you can save the file. Python will give you another dialog box that allows you to choose the file name and where it is to be saved. My suggestion is to create a new folder someplace where you'll easily find it, perhaps the Desktop or My Documents. Then inside that folder, create a new folder for each of our lessons in this course. </p>
+<p>There is one thing that is very important to note. When you're naming your file, be sure to include the .py file extension in the filename. If you don't, you'll still be able to run the Python program, however, IDLE will think it's just a regular file and not a Python file. So, you'll lose the coloring and some of the other nice visual cues that IDLE provides. </p>
+<p>As soon as you've saved the file, IDLE will run the code for you. Notice now how control switches back over to the original window that we saw when we first opened IDLE. This should make sense though. After all, this is where the prompt was, right? Going back and forth between the window where your program source code is located and the window where your program runs may seem strange at first, but as our time together goes by, you'll get used to it.</p>
+<p>Let's turn our attention to our last chapter and wrap things up.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p><!-- ipy LESSON 01 CHAPTER 5 --><!-- START CHAPTER CONTENT --><strong>Summary</strong></p>
+<p>Today, you gained some insight into the world of Python. You entered code on the command line interpreter and had a chance to work with IDLE a bit. Hopefully, you're excited to learn more because I'm eager to move forward! </p>
+<p>In our next lesson, we'll continue our work in Python by learning about variables and how to perform mathematical operations. Variables are extremely important because there are many times when you'll want to keep track of some data while your program runs. This is especially important if you plan to get input from your users, because that input data needs to be stored somewhere for use later. We'll also touch on math because there are sure to be times when you'll need to do a little bit of math in your programs. So, we'll take some time to practice. </p>
+<p>Don't forget to post any questions you might have in the Discussion Area. In fact, I'd love it if you took the time to say hello and introduce yourself. My hope is that you'll use the Discussion Area often and that we'll learn a lot together. To get to the Discussion Area, click the <strong>Discussion</strong> link.</p>
+<p>See you in Lesson 2!</p>
+<p>
+</p><div style="text-align: center;">
+<div class="nextstepsrounded" style="display: none;"><p>
+</p><p><strong>Next Steps</strong></p>
+<p>After every lesson in this course, you can test your knowledge by taking a short, multiple-choice quiz. To access your first quiz, click the word <strong>Quizzes</strong> at the top or bottom of any page in this classroom. When the quiz form comes up, select <strong>Lesson 1 Quiz</strong>.</p>
+<p>Once you've taken the quiz, apply what you've learned by doing this lesson's assignment. The assignments that accompany every lesson in this course will reinforce and expand your learning. To access your first one, click <strong>Assignments</strong> at the top or bottom of any page in the classroom. Then, scroll down to the section for Lesson 1.</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img alt="Classroom navigation bar" src="Introduction%20to%20Python%203%20Programming_files/nextsteps.gif" class="pf_image" width="400" height="110"></p>
+<p>Also, since learning something new usually raises questions, every lesson in this course comes with an FAQs section. You'll find the link that goes to this lesson's Frequently Asked Questions by clicking the <strong>Resources</strong> link at the top or bottom of any page in this classroom.</p>
+<p>Within the <strong>Resources</strong> link, you'll also find the course index, which many students like to print and use as a detailed table of contents. Also, you'll find books and other resources that I've found helpful and would like to pass along to you in the book recommendations and recommended resources sections. These aren't required, but they're excellent sources for further learning.</p>
+<p>By the way, feel free to print the course material for future reference. You can do this by accessing the printer-friendly version of each lesson. To get to the printer-friendly version, just click <strong>Lessons</strong> at the top or bottom of any page in the classroom, click a lesson number or title, and then click <strong>Download Printer-Friendly Version</strong>. That way, you'll get all five chapters, the Supplementary Material, the FAQs, and the assignments for each lesson all in one pass.</p>
+<p></p></div><div id="nextStepsBox"><div style="text-align: center;"><div class="nextstepsrounded_global"><div id="nextSteps_item_intro"><p class="nextstepsroundedtitle_global"><img class="next_steps_icon" src="Introduction%20to%20Python%203%20Programming_files/steps_icon.png" alt="" align="right"><strong>Next Steps</strong></p><p>Okay, you've finished your first lesson. Now what do you do?</p><p>You'll want to take the following steps, in any particular order you like:</p></div><ul><li id="nextSteps_item_quiz"><strong>Take the quiz</strong>. Reinforce what you learned in the lesson by testing yourself with a short five-question quiz. You can access the quiz for each lesson by clicking the <strong>Quizzes</strong> link. </li><li id="nextSteps_item_assignment"><strong>Do the assignment.</strong> Want some hands-on practice applying what you've just learned? Then roll up your sleeves and dig into the assignment! Just click the <strong>Assignments</strong> link to get to each lesson's assignment.</li><li id="nextSteps_item_faqs"><strong>Check out the FAQs</strong>. Since learning something new usually raises questions, every lesson in this course comes with an FAQs section. To get to the FAQs, click the <strong>Resources</strong> link, and then click <strong>FAQs</strong>.</li><li id="nextSteps_item_discussion"><strong>Drop by the Discussion Area</strong>. Come talk with me and your fellow students in the Discussion Area! Ask questions about anything that came up in the lesson, and share your insights with everyone. This is where we'll create a learning community.</li><li id="nextSteps_item_index"><strong>View the index</strong>. If you want to find a topic but can't quite remember where it was, then the index is the place to go. You'll find it by clicking the <strong>Resources</strong> link, and then clicking <strong>Course Index</strong>.</li><li id="nextSteps_item_resources"><strong>Browse resources for further learning</strong>. I've included a list of recommendations for books so you can continue learning more about this topic long after our time together ends. You'll find these&nbsp;by clicking the <strong>Resources</strong> link.</li></ul></div></div></div>
+</div>
+<p></p>
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://www.python.org/download/releases/" target="_blank">
+                                Python Download Page        </a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://www.python.org/download/releases/</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This page, from the Python Software Foundation, has a variety of download links, depending on your computer and the OS you're using.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.python.org/py3k/faq/general" target="_blank">
+                                General Python Programming FAQs        </a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.python.org/py3k/faq/general</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            Visit this site for some background information about the Python language.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <strong>Q:</strong> I followed your instructions in the text and saved my Hello World! program file with the name, <em>hello.py</em>.  However, when I double-click this file on my computer's Desktop, a black window appears for a fraction of a second and then disappears.  How come it doesn't stay up long enough for me to read it?<br>
+<br>
+<strong>A:</strong> The reason that this black window appears and disappears so quickly is because when the program is run this way, the computer will open a new command window, put the output text there and then close the window immediately.<br>
+<br>
+Even though it's perfectly acceptable to run your Python programs by double-clicking the file on your computer, this isn't something that I recommend doing for this course.  Instead, you should start IDLE and use File &gt; Open to locate the .py file and run it from there.<br>
+<br>
+<br>
+<strong>Q:</strong> When I type my Python code in IDLE, the words don't change colors.  Have I done something wrong?<br>
+<br>
+<strong>A:</strong> Most likely, the reason that your letters aren't changing colors is because you haven't saved your file with the file extension .py.  Just choose <strong>File &gt; Save As</strong> and be sure to type out the full file name.  For example, <em>Hello.py</em>.<br>
+<br>
+<br>
+<strong>Q:</strong> Are we required to submit our assignments to you for grading? If so, how and where do we do that?<br>
+<br>
+<strong>A:</strong> There's no requirement, and really no mechanism, for you to submit your work to me for grading. Instead, these exercises are sort of self-grading; your programs will either work or they won't. The only requirement for you to get your Completion Certificate is to pass the final exam.<br>
+<br>
+Actually, you'll find as you get into the course that I've included <em>sample solutions</em> along the way. Please do not view these programs as the way I expect you to solve the problems; each sample solution is just one possible way. Many times I learn so much by viewing other people's code, which is why I've included these programs.
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            Write a short Python program that prints multiple lines of text using two or more print statements.  You might consider printing your name and the names of five of your favorite movies or songs.
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2016
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                py3-0
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB04P (1.2.99.4) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/IncludeResource.js"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.eVar4='';
+s.prop4='';
+s.eVar5='introduction to python 3 programming';
+s.prop5='introduction to python 3 programming';
+s.prop6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.eVar6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.prop7='1';
+s.eVar7='1';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=1';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=1';
+s.prop15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.eVar15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.hier1=',,introduction to python 3 programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript><a href='http://www.Adobe.com' title='Web Analytics'><img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/></a></noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript><iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="jb-overlay" style="opacity: 0.7; display: none;"></div><div id="jb-window" style="display: none;"><div id="jb-window-inner" style="position: fixed; top: 280px; left: 469px;"><div id="jb-window-content" style="width: auto; height: auto; overflow: hidden; display: none;" tabindex="0"></div></div></div><span id="text-resize" style="position: absolute; left: -9999px; font-size: 100%; font-family: Courier New, mono; margin: 0; padding: 0;">&nbsp;</span><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?random=1481492128294&amp;cv=8&amp;fst=1481492128294&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=860&amp;u_w=1376&amp;u_ah=839&amp;u_aw=1376&amp;u_cd=24&amp;u_his=50&amp;u_tz=-300&amp;u_java=true&amp;u_nplug=9&amp;u_nmime=60&amp;frm=0&amp;url=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FPrintLesson.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26lesson%3D1&amp;ref=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FLessons.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26bc%3DLessons%26lesson%3D1&amp;tiba=Introduction%20to%20Python%203%20Programming" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" width="300" height="13" frameborder="0"></iframe><div id="criteo-tags-div" style="display: none;"><iframe style="display: none;" src="Introduction%20to%20Python%203%20Programming_files/dis.htm" width="0" height="0"></iframe></div></body></html>

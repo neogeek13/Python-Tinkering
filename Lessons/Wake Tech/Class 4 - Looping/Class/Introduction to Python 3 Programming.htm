@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- Google Tag Manager -->
+            <script async="true" type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/event.js" data-owner="criteo-tag"></script><script src="Introduction%20to%20Python%203%20Programming_files/2861.js" async="" type="text/javascript"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/ld.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/conversion.js">
+</script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag"></script><script type="text/javascript" async="" src="Introduction%20to%20Python%203%20Programming_files/ga.js"></script><script async="" src="Introduction%20to%20Python%203%20Programming_files/gtm.htm"></script><script>(function(w,d,s,l,i){try{w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            }catch(e){(console.error || console.log).call(console, e.stack || e);}
+            })(window,document,'script','dataLayer','GTM-P66CZH7');</script>
+            <!-- End Google Tag Manager --><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Python 3 Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-1.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-migrate-1.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom.css" media="all"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/global.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/course.htm"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/patch.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/patch.css" media="all"><link href="Introduction%20to%20Python%203%20Programming_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P66CZH7'
+            height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+    <noscript>
+        <div id="sansjs">
+            Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+        </div>
+    </noscript>
+    <form name="aspnetForm" method="post" action="./PrintLesson.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=4" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource_002.js" type="text/javascript"></script>
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource.js" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7" type="hidden">
+</div>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm('Are you sure you wish to log out?');" id="ctl00_lbLogout" tabindex="4" class="title-bar-login-button" href="javascript:__doPostBack('ctl00$lbLogout','')">
+                        <p role="heading">LOGOUT</p>
+                    </a>
+
+                    <a id="ctl00_hlkHelpInActive" tabindex="2" class="title-bar-help-button" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">
+                            <p role="heading">
+                                HELP
+                            </p>
+                    </a>
+                    
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" tabindex="1" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Introduction to Python 3 Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Mike Orsega
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            4: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Looping (and Looping and Looping)</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        <span class="accessibility_hide">You are here: </span>
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=4">Lesson 4</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" onclick="showAllImagesPF()" type="radio"><label for="pfImagesOnBtn">Text, images and activities (IE users only)</label></p><p><input name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()" checked="checked" type="radio"><label for="pfInteractivityOffBtn">Text and images</label></p><p><input name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()" type="radio"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_chrome.png" alt="chrome icon" class="pf_visible pf_image" border="0"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_firefox.png" alt="Firefox icon" class="pf_visible pf_image" border="0"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" class="pf_visible pf_image" border="0"><br><span class="caption">IE 11</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_safari.png" alt="Safari icon" class="pf_visible pf_image" border="0"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input class="pf_hide_directions_btn" style="display:none;" value="Hide Directions" type="button"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input class="pf_hide_directions_btn" style="display:none;" value="Hide Directions" type="button"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p>
+<!-- ipy LESSON 04 CHAPTER 1 -->
+<!-- START CHAPTER CONTENT -->
+
+</p><p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/L04_header.jpg" galleryimg="no" alt="Lesson 4 header" class="pf_image" vspace="0" border="0"></p><p></p><p><strong>Introduction</strong></p><p>The
+ last lesson was all about using the combined intelligence of the 
+computer and your program to make decisions. Now we're going to turn our
+ attention to the repetition structure, which is going to make your 
+programs flexible and useful too.</p><p>How? Imagine a simple task such 
+as printing a word 10 times.  Or maybe printing all of the letters of 
+the alphabet.  Perhaps you want to let your user enter a list of 10 
+numbers and then have your program calculate the average.  </p><p>Each 
+of these tasks can be done without the use of loops. But without them, 
+you're going to spend a lot of time writing lines of code that look 
+identical or nearly identical to one another.  Use the loop structure 
+and you'll save yourself a lot of time and effort.</p><p>Then there are 
+other times when there's just no way to handle a specific task without a
+ loop.  For example, what if instead of forcing your users to enter 10 
+numbers to be averaged, you let them enter as many numbers as they want?
+  Or how about letting users launch your program once and then run it 
+over and over until <em>they</em> decide to quit?  </p><p>In both cases,
+ your user is deciding how many times something is happening inside your
+ program.  Since this is done at run time, there's no way for you to 
+guess what this number will be at design time.  But with loops, you'll 
+be able to handle the situation.</p><p>In this lesson, we'll learn about
+ Python's two looping structures: while loops and for loops.  We'll talk
+ about how they're similar and how they're different.  Then, I'm going 
+to show you some things you can use in conjunction with these structures
+ to give you more options with your programs.</p><p>So let's head over to Chapter 2 where we'll look at the while structure.<br>
+                </p></div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><!-- ipy LESSON 04 CHAPTER 2 --><!-- START CHAPTER CONTENT --><strong>The while Loop</strong></p>
+<p>Of all the different concepts I teach in programming, looping 
+structures is by far my favorite. I think it's because they're just so 
+useful and make our lives as programmers so much easier. Let's imagine 
+the simple example of printing the numbers 1 through 5. You could just 
+use five print statements, each of which prints a different number. 
+That's pretty easy.</p>
+<p>But what if you want to print the numbers 1 through 10? Or 1 to 100? 
+Or 1 to 10,000? Even with the ability to copy and paste code, are you 
+really going to want to create 10,000 lines of print statements? 
+Personally, I wouldn't. But with a loop structure, we have another 
+option.</p>
+<p>Let's look at the while structure, our first loop. The Python syntax for this follows:</p>
+<div class="noscroll">
+<pre>while &lt; condition &gt;:
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt; statements &gt;</pre>
+</div>
+<p>Remember, any time you see a word inside the angle brackets, &lt; 
+&gt;, it means that this is where you'll put something. For example, the
+ &lt; condition &gt; is going to be replaced by some condition.</p>
+<p>So as you look at the general pattern of the while statement above, 
+does it remind you of anything? The syntax is very similar to that of 
+the if statement. You have a Boolean condition and then one or more 
+indented statements that are executed if the condition evaluates to 
+true. </p>
+<p>So what's the difference between these two? The only difference in syntax is the keyword <em>while</em>.
+ And just like you might expect, this code is going to continue to run 
+over and over until the condition becomes false. With the if statement, 
+the code only runs once. Let's look at an example to get a better idea 
+of how this works:</p>
+<div class="noscroll">
+<pre>number = 1
+while number &lt;= 5:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print (number)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number = number + 1
+print ("goodbye!")</pre>
+</div>
+<p>This code is going to print the numbers 1 through 5 for us. Go ahead and give it a try for yourself. Initially, the variable <em>number</em>
+ is storing 1. When we get to the while statement the first time, 1 is 
+compared to 5. Since 1 is less than or equal to 5, we enter the <em>loop body</em>. The program prints the value of the number variable, this time 1, and the increment number. </p>
+<p>Control then moves back up to the while statement and the condition 
+is tested again. This time, the program compares 2 to 5. This process 
+continues until <em>number</em> becomes 6. At that time, the condition 
+becomes false because 6 is not less than or equal to 5. So we exit the 
+loop and move to the first statement after the loop that isn't indented.
+ This statement is our goodbye to the user.</p>
+<p>Do you see how powerful this little bit of code is? Sure, printing 1 
+though 5 isn't that big of a deal. But what if I ask you to make the 
+necessary changes to your code so that you print 1 through 100? You'll 
+only need to change the condition in the while statement so that instead
+ of comparing <em>number</em> to 5, you'll compare it to 100. </p>
+<p>Remember, if you don't use a loop, you'll need to add in 95 new print
+ statements. With your loop, you're changing a single number in a single
+ line of code. Pretty cool, don't you think?</p>
+<p>There's one critical thing to note about while loops: you need to 
+provide some way of making it possible for your condition to become 
+false. If you don't, you'll be stuck in an <em>infinite loop</em>. This 
+might seem pretty obvious when I explain it this way, but be aware that 
+you're very likely at some point to write a program that looks something
+ like this:</p>
+<div class="noscroll">
+<pre>number = 1
+while number &lt;= 5:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print (number)</pre>
+</div>
+<p>Notice how I didn't make any changes to my number variable. Since 
+number never changes, it'll always be 1 and the condition will always 
+evaluate to true. If this ever happens to you in IDLE, just remember 
+that you can exit out of a program while it's running by holding down 
+the CTRL key and pressing the letter C. </p>
+<p>Try it right now. It might help you remember this in the future. Now 
+don't get me wrong. I'm a positive person. But writing infinite loops is
+ just something that everyone does. I still do it myself every once in a
+ while.</p>
+<p>Also notice that the while loop we just wrote used a variable that 
+essentially was counting for us. That is, we used the number variable to
+ keep track of the number of times we went through the loop. This is 
+known as a <em>counter controlled loop</em>. There are also loops called <em>conditional loops</em>. These loops will execute an undetermined number of times until some condition is met.</p>
+<p>For example, maybe you want to print a number and then ask users if 
+they want to see the next higher number. If they answer yes, you'll 
+print the next number and ask them that same question again. If they say
+ no, then you'll just stop the program. This code might look something 
+like this:</p>
+<div class="noscroll">
+<pre>number = 1
+answer = 'y'
+while answer == 'y':
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print (number)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;number = number + 1
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;answer = input(
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "Do you want the next number? ")</pre>
+</div>
+<p>When you're writing the code for this condition, you have no idea how
+ many numbers your users will want to see. Instead, the users themselves
+ are going to determine how many times the loop code runs.</p>
+<p>Now that you have a little bit of experience with basic counter and 
+conditional controlled while loops, let's move on and learn a little bit
+ about Python's other looping structure, the for loop.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><!-- ipy LESSON 04 CHAPTER 3 --><!-- START CHAPTER CONTENT --><strong>The for Loop</strong></p>
+<p>The for loop is an interesting structure. As a programmer, the 
+majority of loops that I write are for loops. However, it seems that 
+they're harder for students to learn. I'm not exactly sure why that is, 
+except that it seems that for loops are a shorthand version of the while
+ loop. </p>
+<p>The shorthand comes because we don't have to worry about updating our
+ counting variable. Instead, this is done for us inside the for 
+statement. Also, you'll find that the Boolean condition isn't explicitly
+ written in the for statement the way it is in a while statement.</p>
+<p>Of course, you might find that for loops are easier for you than the 
+while loops. That's probably what makes teaching programming so much fun
+ for me. Everyone is different and thinks differently. Hard things for 
+one person are easy for another. This is fantastic and really makes our 
+time in class very interesting.</p>
+<p>So just like we've done for if statements and while loops, let's start with the general syntax of the for loop:</p>
+<div class="noscroll">
+<pre>for &lt; variable &gt; in &lt; sequence &gt;:
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt; statements &gt;</pre>
+</div>
+<p>As you'll discover in this course, the for loop is a very powerful 
+tool that you use in a variety of situations with a lot of different 
+structures. For now, we'll start simple and use it to go through a range
+ of numbers. In fact, Python has a built-in function called <em>range</em>.</p>
+<p>To use the range function, you'll need two numbers: the starting 
+value and the ending value. It's always important to keep in mind that 
+the range function works similar to slicing strings in other programs in
+ that the last number that you provide will never be used. This may seem
+ counterintuitive. However, the more practice you get with it, the more 
+it'll make sense. This means that if you want the numbers between 1 and 
+5, you'll use the following range:</p>
+<div class="noscroll">
+<pre>range(1, 6)</pre>
+</div>
+<p>So let's look at an example that has a for loop printing the numbers 1 through 5, just like we did with our while loop earlier:</p>
+<div class="noscroll">
+<pre>for number in range(1, 6):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print (number)</pre>
+</div>
+<p>So what's happening here? Basically, when Python gets to the for 
+statement the first time, it's going to look at the range statement to 
+create a list of values from 1 to 5. Note that in Python, there is a 
+data structure called a list that we're going to talk about later in the
+ course. For now, just think of this as a simple list of values: 1, 2, 
+3, 4, 5.</p>
+<p>So Python creates this list and takes the first number (the value 1) 
+out and stores it in the number variable. Next, control enters into the 
+body of the for loop and the print statement is executed. Since we're at
+ the end of the loop, Python goes back to the for statement and takes 
+the next value (the number 2) out of the list and stores it in the 
+number variable. This pattern continues until there are no more items in
+ the list.</p>
+<p>Unlike the while loop, notice how we don't need to worry about 
+updating our variable so that some condition eventually becomes false. 
+Instead, we just go through every element in the list. Most important, 
+we can't get stuck in an infinite loop.</p>
+<p>In addition to passing range the start and end numbers, we can also 
+pass this function the number of numbers we want printed. Note that 
+range will always start at 0 and go through one less than the value we 
+pass it.&nbsp;Consider the following code:</p>
+<div class="noscroll">
+<pre>for number in range(6):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print (number)</pre>
+</div>
+<p>While this looks very similar to the previous example (except that we
+ only pass one number to range), the output will be different; this code
+ will produce the following values each on a different line: 0, 1, 2, 3,
+ 4, 5.</p>
+<p>Now you might be thinking that this is great if you want to print 
+consecutive numbers in increasing order. But what if you want to print 
+them in decreasing order? And what if you just want to print every other
+ number? How will the range function handle such a task?</p>
+<p>Well, the good news is that range is a very versatile function. In 
+fact, the example that I just provided is only one possibility. If you 
+provide range with two numbers, it will generate the list by starting 
+with the first value as the first item and then add 1 to it to get the 
+second and so on.</p>
+<p>However, if you provide range with three numbers, it will do things a
+ little differently. In this case, the first number will still be the 
+starting value and the second number remains the ending value. But the 
+third number now represents the value to use as an increment. This means
+ that if you wanted to get a list of every other number between 1 and 
+10, you'd use the following range:</p>
+<div class="noscroll">
+<pre>range(1, 10, 2)</pre>
+</div>
+<p>This gives you the values: 1, 3, 5, 7, and 9.</p>
+<p>Using this third parameter also gives you the ability to create the 
+list of descending values. For example, to get the numbers from 5 to 1, 
+you would use this:</p>
+<div class="noscroll">
+<pre>range(5, 0, -1)</pre>
+</div>
+<p>Does this make sense? You may be looking at the last example and 
+thinking that the 5 makes sense. It's where we want to start. Also the 
+-1 makes sense because we want to decrease the value by 1 each time. But
+ why are we using 0 as our second value? </p>
+<p>Just remember the ending value is never used. Because we want the 1 
+to be the last number printed, we'll need to make the ending value less 
+than 1. Therefore, we use 0. Give this a try for yourself.</p>
+<p>Now let's put some of these ideas together and write a program that's
+ going to get some numbers from our user and compute the average. Our 
+program needs to be flexible enough to handle any number of numbers. 
+While it may seem that a while loop is appropriate here, I want to show 
+you that this can be done with a for loop just as easily. Plus, it'll 
+give us more practice with the for loop structure. </p>
+<p>First, I'll prompt the user for the number of numbers that he or she 
+wants to average. Once I know that value, I can set up my for loop to 
+run this many times. Each time through the loop, I'll ask the user for a
+ value and I'll add this to some <em>accumulator variable</em>. This is just going to be a variable that holds the sum of all of the numbers entered. </p>
+<p>Once the user enters the appropriate number of values, I'll stop 
+looping, compute the average, and then display the result. If you have 
+the time, you should go ahead and try this one on your own before 
+looking below to see my program.</p>
+<p>This is your last chance not to peek ahead . . . And here's the code:</p>
+<div class="noscroll">
+<pre>num_of_nums = eval(input(
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"How many numbers do you want to average? "))
+
+sum = 0.0
+for count in range (num_of_nums):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value = eval(input("Enter a value: "))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum = sum + value
+
+average = sum / num_of_nums
+print ("The average is:", average)</pre>
+</div>
+<p>It's interesting to note that even though Python creates a list of 
+numbers from 0 to (num_of_nums - 1) for me, I'm never really using any 
+of these values. Instead, I'm just using the fact that there are 
+num_of_nums values in the list, which controls the number of times I 
+loop. Does this make sense? If not, consider changing the for statement 
+to this:</p>
+<div class="noscroll">
+<pre>for count in range (num_of_nums, 0, -1):</pre>
+</div>
+<p>Now I'm creating a whole different list of numbers. Specifically, 
+this is a list of values starting from num_of_nums and going down to 1. 
+Again, because we aren't actually using these values inside our loop, 
+everything works just fine. Make this change in your program and prove 
+it to yourself.</p>
+<p>These basic versions of while and for loops are really useful and 
+probably the way you'll use them most of the time. However, like most 
+programming concepts, Python doesn't just stop with basic versions of 
+these structures. Instead, there are a few extras that Python provides. 
+When you're ready, flip over to Chapter 4, and we'll talk about some of 
+these extras.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><!-- ipy LESSON 04 CHAPTER 4 --><!-- START CHAPTER CONTENT --><strong>Python Looping Extras</strong></p>
+<p>Python gives you all of the same extras for loops as other languages,
+ plus more. That means, you can nest your loops. It's the same idea as 
+nesting if statements. You simply place one loop inside another. And 
+you're free to do this as many times as you want. The key is to watch 
+your indenting in Python because this is what determines the statements 
+that are inside each loop.</p>
+<p>Python also gives you the ability to write compound conditions with 
+your while statements. But be careful when you do this. Just like with 
+compound conditions in if statements, sometimes you can accidentally 
+create these conditions incorrectly, but Python will still attempt to 
+run them. Take a look at the following example:</p>
+<div class="noscroll">
+<pre>while answer == 'y' or 'Y':</pre>
+</div>
+<p>This statement will always evaluate to true because the second part 
+of the compound statement, 'Y' evaluates to the Boolean value true. This
+ can be confusing, so just remember that you want to have a Boolean 
+condition on each side of your <em>Or</em> operator. The correct version of this code looks like this:</p>
+<div class="noscroll">
+<pre>while answer == 'y' or answer == 'Y':</pre>
+</div>
+<p>But Python doesn't stop there with its extras. The next one we'll talk about is the <em>break statement</em>.</p>
+<p><strong>The break Statement</strong></p>
+<p>Like many programming languages, Python provides a break statement. By placing the word <em>break</em>
+ inside your loop, you'll force the program to stop at that exact point 
+and exit the loop. The program will then continue with the first 
+statement following the loop. Consider the following program:</p>
+<div class="noscroll">
+<pre>for number in range(1, 11):
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if number == 4:
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;break
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print (number)
+print ("Thanks!")</pre>
+</div>
+<p>This example is similar to what we saw in the last chapter. Python 
+creates a list of numbers from 1 to 10 for us. It then selects each 
+number, one by one and executes the statements inside the body of the 
+loop. Finally, there's an output statement that is outside of the loop 
+that prints "Thanks!"</p>
+<p>However, the difference now is that there's an if statement there. 
+This says that when the number variable has the value 4, we're going to 
+break out of the loop. So if you type this code in and run it, you'll 
+see only the values 1, 2, and 3 printed on the screen, followed by 
+"Thanks!" </p>
+<p>That's because when number is equal to 4, the condition in the if 
+statement is true. Since this condition is true, Python will encounter 
+the break statement, which says to stop immediately and exit the loop. 
+The program continues executing with the first statement following the 
+for loop, in this case, the statement that prints "Thanks!"</p>
+<p>Next, we'll look at the <em>continue statement</em>, which is similar to break.</p>
+<p><strong>The continue Statement</strong></p>
+<p>The continue statement will allow you to skip the remaining 
+statements in your loop and start a new one. Again, I think this makes a
+ lot more sense if you look at an example. Take the program code that 
+you used in the previous example and replace the word <em>break</em> with <em>continue</em>. Here's your new program code:</p>
+<div class="noscroll">
+<pre>for number in range(1, 11):
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if number == 4:
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;continue
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print (number)
+print ("Thanks!")</pre>
+</div>
+<p>This program will go through each number in the list from 1 to 10. 
+Except this time, when number holds the value 4, the if condition 
+becomes true. This means the continue statement runs, and we skip the 
+remaining iteration of this loop, meaning we'll skip the print 
+statement. So if you run this program, you'll find that all of the 
+numbers between 1 and 10, with the exception of 4, are seen on screen 
+and then the word "Thanks!"</p>
+<p>Now these concepts of break and continue are pretty easy to 
+understand, and I realize that many programmers make use of these 
+features in their programs. Myself, I have a hard time getting used to 
+using them and rarely do so. However, I do want to be sure to give you 
+the opportunity to know about as many of Python's tools as possible. </p>
+<p>Now let's examine a feature that Python gives you that other languages don't: the <em>else clause</em>.</p>
+<p><strong>The else Clause</strong></p>
+<p>At first, you might think that this section is out of place. You 
+probably remember the else clause from when we did the if statement. 
+There we said that when the condition listed in the if line was false, 
+we'd run the code that followed the else clause.</p>
+<p>Well, the same sort of idea happens here except that now we're 
+running the else clause only when the loop exits normally. When I say 
+exits normally, I mean that it completed executing by going through all 
+items in the for loop or that the Boolean condition of the while 
+statement finally evaluated to false. On the other hand, if a loop exits
+ because it encounters the break statement, then it wasn't a normal 
+exit. Please note that even though the following example works with a 
+for loop, the same idea holds for a while loop. </p>
+<p>Go ahead and give this a shot with the looping program we've been using:</p>
+<div class="noscroll">
+<pre>for number in range(1, 11):
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if number == 4:
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;continue
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print (number)
+else:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print ("Exited normally")</pre>
+</div>
+<p>Notice how this program doesn't have a break statement inside the 
+loop. Therefore, when you run it, you'll see that final note saying that
+ the program exited normally. Now go back and replace the continue 
+statement with a break statement and run it again. This time, you won't 
+see that final message printed.</p>
+<p>Having a hard time thinking of a time when you'd actually want to use
+ this in a program? That's fair. I'll admit that I needed someone to 
+show me why I'd want to use it. So here's that example for you.</p>
+<p>Imagine you want to create a program with a search component. When 
+users get to a value they're searching for, you want the program to stop
+ searching and do something else. Maybe you want to ask the user for a 
+phrase and a letter. You then want your program to determine if that 
+letter is somewhere in the phrase and tell this to the user. Take a look
+ below:</p>
+<div class="noscroll">
+<pre>phrase = input("Enter a phrase: ")
+letter = input("Enter a letter: ")
+length = len(phrase)
+
+for index in range(0, length):
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if phrase [index] == letter:
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;break
+else:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print ("Your letter wasn't found")</pre>
+</div>
+<p>This is a great example of using an else clause. Now if the program 
+finds the specified letter, we'll execute the break statement, leading 
+for an exit that isn't normal. This means that the last message saying 
+that the letter wasn't found won't print. On the other hand, if we go 
+through each and every character in the phrase and never find the 
+specified letter, the loop exits normally, and we print the not found 
+message.</p>
+<p>So, armed with your new knowledge of loops, let's move on to Chapter 
+5, where we'll go over a brief summary of what we've learned today and 
+talk about what's coming next.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p>
+<!-- ipy LESSON 04 CHAPTER 5 -->
+<!-- START CHAPTER CONTENT -->
+<strong>Summary</strong></p>
+<p>This lesson was all about repeating your code.  While many times, the
+ use of a loop is merely to make your life as a programmer easier, there
+ are also many times when the only way you make your program function 
+properly is to use a loop.  So we learned about the while and for loops 
+in Python.  </p>
+<p>You saw how the while statement is very similar to the if statement. 
+However, the while structure will let you execute a statement as many 
+times as necessary, until your condition becomes false.</p>
+<p>You also learned about the for loop.  For the most part, this is the 
+same idea as the while loop, except that it's kind of a shorthand 
+version.  Additionally, it creates a list of values.</p>
+<p>We finished up with a discussion of the break and continue keywords. 
+ These gave you a lot more control over the execution of your Python 
+loops.  You also learned about how Python gives you the option of 
+creating an else clause for your loops.  This ability isn't possible in 
+other languages, so I gave you an example of when you might use it.</p>
+<p>Now you're all set up with the knowledge to create some really 
+powerful programs.  After all, every program uses only three control 
+structures: sequence, decisions, and loops.  Based on that fact, you now
+ have the ability to write any program that you want.</p>
+<p>So you might be wondering what we'll do for the remainder of the 
+course.  I mean, there are still eight more lessons to go!  Well have no
+ fear. You might have learned all of the possible programming 
+structures, but we've only scratched the surface of the possible 
+programming concepts.</p>
+<p>So, in the next lesson, we'll explore functions. You've used two 
+already: input and range. Functions are useful because they allow you to
+ organize and make your code more modular.  That is, you can write a 
+group of code to do some calculation once and then reuse this code in a 
+variety of other places in your program without typing it in again.  
+Instead, you simply call on the function to run.  </p>
+<p>Being able to do this is really going to make your programming life 
+easier because you won't have to rewrite the same statements over and 
+over in different settings.  It's also going to let you organize your 
+code so that you won't have to look at every little detail in certain 
+segments.  Instead, you'll just stick all the details inside a function 
+and any time you want those statements run, you'll just call that 
+function.</p>
+<p>It's really pretty easy once you get the hang of it. I can't wait! See you there!</p>
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://en.wikibooks.org/wiki/Python_Programming/Loops" target="_blank">
+                                WikiBooks Entry for Python Loops
+        </a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://en.wikibooks.org/wiki/Python_Programming/Loops</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This page from the WikiBooks collection 
+describes the while and for loops in Python and gives some examples of 
+each.
+        </p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <strong>Q:</strong> Is it okay to nest loops in Python the same way that we nested if statements?<br>
+<br>
+<strong>A:</strong> Yes, it is and oftentimes, it's necessary to nest 
+loops in your Python programs. For example, if you want to print the 
+multiplication table for all of the numbers between 0 and 10, you could 
+just do this:<br>
+<br>
+<div class="noscroll">
+<pre>for i in range(0, 10):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print ("~~~", i, "~~~")
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for j in range(0, 10):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print (i*j)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print ( )</pre>
+</div>
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            Write a program that reads in a list of numbers from the 
+users and displays the sum and average of this list. Your program should
+ allow the users to enter as many numbers as they wish. When the users 
+are finished entering numbers, they'll enter the value -1. Be sure not 
+to include the -1 in your calculations for the sum and average.<br>
+<br>
+<a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/py3-0/PY3_L04_Solution.py" target="_blank">Click here</a> to download the solution file: PY3_L04_Solution.py.
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2016
+                            All rights reserved. The material on this 
+site cannot be reproduced or redistributed unless you have obtained 
+prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                py3-0
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB04P (1.2.99.4) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/IncludeResource.js"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.eVar4='';
+s.prop4='';
+s.eVar5='introduction to python 3 programming';
+s.prop5='introduction to python 3 programming';
+s.prop6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.eVar6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.prop7='4';
+s.eVar7='4';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=4';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=4';
+s.prop15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.eVar15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.hier1=',,introduction to python 3 programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript><a href='http://www.Adobe.com' title='Web Analytics'><img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/></a></noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript><iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="jb-overlay" style="opacity: 0.7; display: none;"></div><div id="jb-window" style="display: none;"><div id="jb-window-inner" style="position: fixed; top: 301px; left: 503.5px;"><div id="jb-window-content" style="width: auto; height: auto; overflow: hidden; display: none;" tabindex="0"></div></div></div><span id="text-resize" style="position: absolute; left: -9999px; font-size: 100%; font-family: Courier New, mono; margin: 0; padding: 0;">&nbsp;</span><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?random=1481492477191&amp;cv=8&amp;fst=1481492477191&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=920&amp;u_w=1472&amp;u_ah=897&amp;u_aw=1472&amp;u_cd=24&amp;u_his=50&amp;u_tz=-300&amp;u_java=true&amp;u_nplug=9&amp;u_nmime=60&amp;frm=0&amp;url=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FPrintLesson.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26lesson%3D4&amp;ref=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FLessons.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26bc%3DLessons%26lesson%3D4&amp;tiba=Introduction%20to%20Python%203%20Programming" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" width="300" height="13" frameborder="0"></iframe><div id="criteo-tags-div" style="display: none;"><iframe style="display: none;" src="Introduction%20to%20Python%203%20Programming_files/dis.htm" width="0" height="0"></iframe></div></body></html>

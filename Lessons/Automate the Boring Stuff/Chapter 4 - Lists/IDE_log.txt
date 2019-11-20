@@ -1,0 +1,8338 @@
+Python 3.5.2 (v3.5.2:4def2a2901a5, Jun 25 2016, 22:01:18) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> print('What is your age?') # ask for their age
+What is your age?
+>>> 
+ RESTART: C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\Lessons\CheekyQuestions.py 
+Hello world!
+What is your name?
+Tina
+It is good to meet you, Tina
+The length of your name is:
+4
+What is your age?
+48
+You will be 49 in a year!
+>>> len('Christina Wickenkamp')
+20
+>>> float(10)
+10.0
+>>> float(01)
+SyntaxError: invalid token
+>>> spam = input()
+101
+>>> spam
+'101'
+>>> spam = int(spam)
+>>> spam
+101
+>>> spam *100 + 5
+10105
+>>> bacon = 20
+>>> bacon + 1
+21
+>>> bacon
+20
+>>> 'spam' + 'spamspam'
+'spamspamspam'
+>>> 'spam' *3
+'spamspamspam'
+>>> 'I have eaten
+SyntaxError: EOL while scanning string literal
+>>> 'I have eaten ' + str(99) + 'burritos'
+'I have eaten 99burritos'
+>>> round(758.34355, 3)
+758.344
+>>> spam = True
+>>> spam
+True
+>>> true
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    true
+NameError: name 'true' is not defined
+>>> True = 2 + 2
+SyntaxError: can't assign to keyword
+>>> 4 ==4
+True
+>>> 4 ==2
+False
+>>> 2!=3
+True
+>>> 2!=2
+False
+>>> 4 <5
+True
+>>> (4<5) and (5<6)
+True
+>>> (4<5) or (5<6)
+True
+>>> (4<5) or (5<3)
+True
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/InfiniteLoop.py 
+Please type your name
+tina
+Please type your name
+your name
+Thank you!
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/InfiniteLoop.py 
+Please type your name
+Tina
+Please type your name
+your name
+Try again...
+Please type your name
+your name
+Try again...
+Please type your name
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/InfiniteLoop.py", line 3, in <module>
+    name = input()
+  File "C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\lib\idlelib\PyShell.py", line 1386, in readline
+    line = self._line_buffer or self.shell.readline()
+KeyboardInterrupt
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/InfiniteLoop.py 
+Please type your name
+T
+Try again...
+Please type your name
+your name
+Thank you!
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/Swordfish.py 
+Who are you?
+Tina
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/Swordfish.py", line 4, in <module>
+    if name != Tina:
+NameError: name 'Tina' is not defined
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/Swordfish.py 
+Who are you?
+Tina
+Hello, Tina. What is the password? (It is a fish.)
+swordfish
+Access granted.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/Swordfish.py 
+Who are you?
+Boo
+Who are you?
+Boo
+Who are you?
+Tina
+Hello, Tina. What is the password? (It is a fish.)
+dd
+Who are you?
+Tina
+Hello, Tina. What is the password? (It is a fish.)
+swordfish
+Access granted.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/Swordfish.py 
+Who are you?
+Tina
+Hello, Tina. What is the password? (It is a fish.)
+bugger
+Start over...
+Who are you?
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/Swordfish.py", line 3, in <module>
+    name = input()
+  File "C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\lib\idlelib\PyShell.py", line 1386, in readline
+    line = self._line_buffer or self.shell.readline()
+KeyboardInterrupt
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/FiveTimesForLoop.py 
+My name is
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/FiveTimesForLoop.py", line 3, in <module>
+    print('Tina Five Times (' + stri(i) + ')')
+NameError: name 'stri' is not defined
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/FiveTimesForLoop.py 
+My name is
+Tina Five Times 
+Tina Five Times 
+Tina Five Times 
+Tina Five Times 
+Tina Five Times 
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/FiveTimesForLoop.py 
+My name is
+Tina Five Times (0) 
+Tina Five Times (1) 
+Tina Five Times (2) 
+Tina Five Times (3) 
+Tina Five Times (4) 
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/FiveTimesForLoop.py 
+My name is
+Tina Five Times (0) 
+Tina Five Times (1) 
+Tina Five Times (2) 
+Tina Five Times (3) 
+Tina Five Times (4) 
+5050
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/FiveTimesForLoop.py 
+My name is
+Tina Five Times (0) 
+Tina Five Times (1) 
+Tina Five Times (2) 
+Tina Five Times (3) 
+Tina Five Times (4) 
+5050
+My name is
+Tina Five Times (0) 
+Tina Five Times (1) 
+Tina Five Times (2) 
+Tina Five Times (3) 
+Tina Five Times (4) 
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/Range.py 
+12
+13
+14
+15
+0
+2
+4
+6
+8
+5
+4
+3
+2
+1
+0
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/RandomModule.py 
+4
+8
+7
+3
+2
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/RandomModule.py 
+5
+3
+3
+6
+6
+Type exit to exit
+d
+You typed d,
+Type exit to exit
+
+You typed ,
+Type exit to exit
+
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/RandomModule.py 
+7
+1
+4
+3
+1
+Type exit to exit
+df
+You typed df.
+Type exit to exit
+exit
+>>> abs(fdf)
+Traceback (most recent call last):
+  File "<pyshell#29>", line 1, in <module>
+    abs(fdf)
+NameError: name 'fdf' is not defined
+>>> abs(5478.454895)
+5478.454895
+>>> abs(1)
+1
+>>> 4 / 2 == True
+False
+>>> 4 % 2 == 0
+True
+>>> number = 23
+>>> print str(number) + ' // 2'
+SyntaxError: invalid syntax
+>>> print (str(number) + ' // 2')
+23 // 2
+>>> print (number / 2)
+11.5
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 9, in <module>
+    collatz(input())
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 2, in collatz
+    if number % 2 == 0:
+TypeError: not all arguments converted during string formatting
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+4
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 9, in <module>
+    collatz(input())
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 2, in collatz
+    if number % 2 == 0:
+TypeError: not all arguments converted during string formatting
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 10, in <module>
+    collatz()
+TypeError: collatz() missing 1 required positional argument: 'number'
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+3
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 11, in <module>
+    collatz(gNumber)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 2, in collatz
+    if number % 2 == 0:
+NameError: name 'number' is not defined
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+79
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 11, in <module>
+    collatz(gNumber)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 2, in collatz
+    if l_number % 2 == 0:
+TypeError: not all arguments converted during string formatting
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+35
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 11, in <module>
+    collatz(gNumber)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 2, in collatz
+    if l_number % 2 == 0:
+TypeError: not all arguments converted during string formatting
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+45
+3 * 45 // 2136
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+55
+3 * 55 + 1 = 166
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+44
+44 // 2 =  = Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 11, in <module>
+    collatz(gNumber)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 4, in collatz
+    print (str(l_number / 2))
+TypeError: unsupported operand type(s) for /: 'str' and 'int'
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+54
+54 // 2 =  = 27.0
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+54
+54 // 2 = 27.0
+>>> 
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+56
+56 // 2 = 28.0
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+56
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+56 // 2 = 28.0
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 12, in <module>
+    collatz(g_Number)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 5, in collatz
+    print (str(int(l_number) / 2))
+  File "C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\lib\idlelib\PyShell.py", line 1344, in write
+    return self.shell.write(s, self.tags)
+KeyboardInterrupt
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 12, in <module>
+    g_Number = input()
+  File "C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\lib\idlelib\PyShell.py", line 1386, in readline
+    line = self._line_buffer or self.shell.readline()
+KeyboardInterrupt
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+45
+3 * 45 + 1 = 136
+136 // 2 = 68.0
+68.0 // 2 = 34.0
+34.0 // 2 = 17.0
+3 * 17.0 + 1 = 52
+52 // 2 = 26.0
+26.0 // 2 = 13.0
+3 * 13.0 + 1 = 40
+40 // 2 = 20.0
+20.0 // 2 = 10.0
+10.0 // 2 = 5.0
+3 * 5.0 + 1 = 16
+16 // 2 = 8.0
+8.0 // 2 = 4.0
+4.0 // 2 = 2.0
+2.0 // 2 = 1.0
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+fgdsf
+Please enter a numeric value.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+56
+56 // 2 = 28.0
+28 // 2 = 14.0
+14 // 2 = 7.0
+3 * 7.0 + 1 = 22
+22 // 2 = 11.0
+3 * 11.0 + 1 = 34
+34 // 2 = 17.0
+3 * 17.0 + 1 = 52
+52 // 2 = 26.0
+26 // 2 = 13.0
+3 * 13.0 + 1 = 40
+40 // 2 = 20.0
+20 // 2 = 10.0
+10 // 2 = 5.0
+3 * 5.0 + 1 = 16
+16 // 2 = 8.0
+8 // 2 = 4.0
+4 // 2 = 2.0
+2 // 2 = 1.0
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+56
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 17, in <module>
+    collatz(g_Number)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 5, in collatz
+    l_result = l_number / 2
+TypeError: unsupported operand type(s) for /: 'str' and 'int'
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+45
+3 * 45 + 1 = 136
+136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = 136 // 2 = Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 17, in <module>
+    collatz(g_Number)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 6, in collatz
+    print (str(l_number) + ' // 2', end=' = ')
+  File "C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\lib\idlelib\PyShell.py", line 1344, in write
+    return self.shell.write(s, self.tags)
+KeyboardInterrupt
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+454
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 17, in <module>
+    collatz(g_Number)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 5, in collatz
+    l_result = l_number / 2
+TypeError: unsupported operand type(s) for /: 'str' and 'int'
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+354
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 17, in <module>
+    collatz(g_Number)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 5, in collatz
+    l_result = l_number / 2
+TypeError: unsupported operand type(s) for /: 'str' and 'int'
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+45
+3 * 45 + 1 = 136
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+136 // 2 = 68
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 17, in <module>
+    collatz(g_Number)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py", line 7, in collatz
+    print (int(l_result))
+  File "C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\lib\idlelib\PyShell.py", line 1344, in write
+    return self.shell.write(s, self.tags)
+KeyboardInterrupt
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+
+Please enter a numeric value.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+45
+3 * 45 + 1 = 136
+136 // 2 = 68
+68.0 // 2 = 34
+34.0 // 2 = 17
+3 * 17.0 + 1 = 52
+52 // 2 = 26
+26.0 // 2 = 13
+3 * 13.0 + 1 = 40
+40 // 2 = 20
+20.0 // 2 = 10
+10.0 // 2 = 5
+3 * 5.0 + 1 = 16
+16 // 2 = 8
+8.0 // 2 = 4
+4.0 // 2 = 2
+2.0 // 2 = 1
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+45
+3 * 45 + 1 = 136
+136 / 2 = 68
+68.0 / 2 = 34
+34.0 / 2 = 17
+3 * 17 + 1 = 52
+52 / 2 = 26
+26.0 / 2 = 13
+3 * 13 + 1 = 40
+40 / 2 = 20
+20.0 / 2 = 10
+10.0 / 2 = 5
+3 * 5 + 1 = 16
+16 / 2 = 8
+8.0 / 2 = 4
+4.0 / 2 = 2
+2.0 / 2 = 1
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+45
+3 * 45 + 1 = 136
+136 / 2 = 68
+68 / 2 = 34
+34 / 2 = 17
+3 * 17 + 1 = 52
+52 / 2 = 26
+26 / 2 = 13
+3 * 13 + 1 = 40
+40 / 2 = 20
+20 / 2 = 10
+10 / 2 = 5
+3 * 5 + 1 = 16
+16 / 2 = 8
+8 / 2 = 4
+4 / 2 = 2
+2 / 2 = 1
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+45
+3 * 45 + 1 = 136
+136 / 2 = 68
+68 / 2 = 34
+34 / 2 = 17
+3 * 17 + 1 = 52
+52 / 2 = 26
+26 / 2 = 13
+3 * 13 + 1 = 40
+40 / 2 = 20
+20 / 2 = 10
+10 / 2 = 5
+3 * 5 + 1 = 16
+16 / 2 = 8
+8 / 2 = 4
+4 / 2 = 2
+2 / 2 = 1
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+45
+3 * 45 + 1 = 136
+136 // 2 = 68
+68 // 2 = 34
+34 // 2 = 17
+3 * 17 + 1 = 52
+52 // 2 = 26
+26 // 2 = 13
+3 * 13 + 1 = 40
+40 // 2 = 20
+20 // 2 = 10
+10 // 2 = 5
+3 * 5 + 1 = 16
+16 // 2 = 8
+8 // 2 = 4
+4 // 2 = 2
+2 // 2 = 1
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+45
+3 * 45 + 1 = 136
+136 / 2 = 68
+68 / 2 = 34
+34 / 2 = 17
+3 * 17 + 1 = 52
+52 / 2 = 26
+26 / 2 = 13
+3 * 13 + 1 = 40
+40 / 2 = 20
+20 / 2 = 10
+10 / 2 = 5
+3 * 5 + 1 = 16
+16 / 2 = 8
+8 / 2 = 4
+4 / 2 = 2
+2 / 2 = 1
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+45
+3 * 45 + 1 = 136
+136 / 2 = 68
+68 / 2 = 34
+34 / 2 = 17
+3 * 17 + 1 = 52
+52 / 2 = 26
+26 / 2 = 13
+3 * 13 + 1 = 40
+40 / 2 = 20
+20 / 2 = 10
+10 / 2 = 5
+3 * 5 + 1 = 16
+16 / 2 = 8
+8 / 2 = 4
+4 / 2 = 2
+2 / 2 = 1
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/collatz.py 
+Please enter an integer...
+3
+3 * 3 + 1 = 10
+10 / 2 = 5
+3 * 5 + 1 = 16
+16 / 2 = 8
+8 / 2 = 4
+4 / 2 = 2
+2 / 2 = 1
+>>> [1,2,3]
+[1, 2, 3]
+>>> spam = ['cat','bat','rat','elephant']
+>>> spam[1]
+'bat'
+>>> spam[3]
+'elephant'
+>>> len(spam>
+
+    
+KeyboardInterrupt
+>>> len(spam)
+4
+>>> spam(-1)
+Traceback (most recent call last):
+  File "<pyshell#46>", line 1, in <module>
+    spam(-1)
+TypeError: 'list' object is not callable
+>>> spam
+['cat', 'bat', 'rat', 'elephant']
+>>> spam[-1]
+'elephant'
+>>> spam[:1]
+['cat']
+>>> spam[:2]
+['cat', 'bat']
+>>> spam = spam + [1,2,3]
+>>> spam
+['cat', 'bat', 'rat', 'elephant', 1, 2, 3]
+>>> spam[3] = 'gnat'
+>>> spam
+['cat', 'bat', 'rat', 'gnat', 1, 2, 3]
+>>> del spam[5]
+>>> spam
+['cat', 'bat', 'rat', 'gnat', 1, 3]
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/allMyCats2.py 
+Enter the name of cat 1 (Or enter nothing to stop.):
+Kit Kat
+Enter the name of cat 2 (Or enter nothing to stop.):
+
+The cat names are:
+ Kit Kat
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/allMyCats2.py 
+Enter the name of cat 1 (Or enter nothing to stop.):
+Kit Kat
+Enter the name of cat 2 (Or enter nothing to stop.):
+Nelly
+Enter the name of cat 3 (Or enter nothing to stop.):
+Handsome
+Enter the name of cat 4 (Or enter nothing to stop.):
+Puddin'
+Enter the name of cat 5 (Or enter nothing to stop.):
+D'abby
+Enter the name of cat 6 (Or enter nothing to stop.):
+
+The cat names are:
+ Kit Kat
+ Nelly
+ Handsome
+ Puddin'
+ D'abby
+>>> restart
+Traceback (most recent call last):
+  File "<pyshell#57>", line 1, in <module>
+    restart
+NameError: name 'restart' is not defined
+>>> 
+=============================== RESTART: Shell ===============================
+>>> 
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/intro.py 
+My name is Tina.
+I am married to Ian.
+We are owned by a cat named, Kit Kat.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/intro.py 
+My name is Tina.
+I am married to Ian.
+We are owned by a cat named, Kit Kat.
+test
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/magic8ball.py 
+<function getAnswer at 0x02AA1738>
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/magic8ball.py 
+<function getAnswer at 0x02A81738>
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/magic8ball.py 
+Reply hazy try again
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/magic8ball.py 
+It is certain
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/magic8ball.py 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/magic8ball.py", line 27, in <module>
+    print(fortune(getAnswer(r= random.randint(1,9))))
+NameError: name 'fortune' is not defined
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/magic8ball.py 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/magic8ball.py", line 27, in <module>
+    print(getAnswer(r= random.randint(1,9)))
+TypeError: getAnswer() got an unexpected keyword argument 'r'
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/magic8ball.py 
+My reply is no
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/magic8ball2.py 
+None
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/magic8ball2.py 
+None
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/magic8ball2.py 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/magic8ball2.py", line 17, in <module>
+    print(messages(random.randint(1,9)))
+TypeError: 'list' object is not callable
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/magic8ball2.py 
+Outlook not so good
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/magic8ball2.py 
+Concentrate and ask again
+>>> tuple('hello')
+('h', 'e', 'l', 'l', 'o')
+>>> tuple(['hello'])
+('hello',)
+>>> spam = [0,1,2,3,4,5]
+>>> cheese = spam
+>>> cheese
+[0, 1, 2, 3, 4, 5]
+>>> spam
+[0, 1, 2, 3, 4, 5]
+>>> cheese[1] = 'Hello!'
+>>> cheese
+[0, 'Hello!', 2, 3, 4, 5]
+>>> spam
+[0, 'Hello!', 2, 3, 4, 5]
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/passingReference.py 
+[1, 2, 3, 'Hello']
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me a list of stuff to add commas to...
+fdfdf
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me a list of stuff to add commas to...
+RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/passingReference.py
+RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/passingReference.py
+>>> typed_spam = input()
+dsadd
+>>> print(typed_spam)
+dsadd
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me a list of stuff to add commas to...
+dsadadacsxac
+dsadadacsxac
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me a list of stuff to add commas to...
+'apples','bananas','tofu','cats'
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 7, in <module>
+    print(typed_spam)
+NameError: name 'typed_spam' is not defined
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me a list of stuff to add commas to...
+'apples','bananas','tofu','cats'
+'apples','bananas','tofu','cats'
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me a list of stuff to add commas to...
+'apples','bananas','tofu','cats'
+'apples','bananas','tofu','cats'
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me a list of stuff to add commas to...
+'apples','bananas','tofu','cats'
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me a list of stuff to add commas to...
+'apples','bananas','tofu','cats'
+['a']
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me a list of stuff to add commas to...
+[]
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me a list of stuff to add commas to...
+['apples','bananas','tofu','cats']
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+["['apples','bananas','tofu','cats']"]
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me a list of stuff to add commas to...
+'apples','bananas','tofu','cats'
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+["'apples','bananas','tofu','cats'"]
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+[['apples', 'bananas', 'tofu', 'cats']]
+[['apples', 'bananas', 'tofu', 'cats']]
+[['apples', 'bananas', 'tofu', 'cats']]
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+[['apples', 'bananas', 'tofu', 'cats']]
+[['apples', 'bananas', 'tofu', 'cats']]
+[['apples', 'bananas', 'tofu', 'cats']]
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 12, in <module>
+    pause
+NameError: name 'pause' is not defined
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+f
+[['apples', 'bananas', 'tofu', 'cats']]
+[['apples', 'bananas', 'tofu', 'cats']]
+[['apples', 'bananas', 'tofu', 'cats']]
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+[['apples', 'bananas', 'tofu', 'cats']]
+['apples']
+['apples']
+['apples']
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+
+['apples']
+['bananas']
+['tofu']
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+f
+apples
+bananas
+tofu
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+d
+apples, 
+bananas, 
+tofu, 
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+apples,f
+apples, 
+bananas, 
+tofu, 
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 13, in <module>
+    commaAnd(g_typed_spam)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 3, in commaAnd
+    fullList = fullList + l_typed_spam[i]  + ', '
+UnboundLocalError: local variable 'fullList' referenced before assignment
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+f
+tofu, 
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+g
+apples, 
+bananas, 
+tofu, 
+tofu, 
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+e
+tofu, 
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+ 
+apples, 
+bananas, 
+tofu, 
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+ 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 15, in <module>
+    commaAnd(g_typed_spam)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 3, in commaAnd
+    fullList = (fullList + l_typed_spam[i]  + ', ' )
+UnboundLocalError: local variable 'fullList' referenced before assignment
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+ 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 16, in <module>
+    commaAnd(g_typed_spam)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 4, in commaAnd
+    fullList = (fullList + l_typed_spam[i]  + ', ' )
+TypeError: can only concatenate tuple (not "str") to tuple
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+ 
+apples, 
+bananas, 
+tofu, 
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+ 
+apples, 
+bananas, 
+tofu, 
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+ 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 16, in <module>
+    commaAnd(g_typed_spam)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 4, in commaAnd
+    fullList = fullList   + ', ' (l_typed_spam[i+1])
+TypeError: 'str' object is not callable
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+ 
+apples, bananas
+bananas, tofu
+tofu, cats
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+ 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 16, in <module>
+    commaAnd(g_typed_spam)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 4, in commaAnd
+    fullList = fullList + ', ' + l_typed_spam[i+1]
+UnboundLocalError: local variable 'fullList' referenced before assignment
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+ 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 17, in <module>
+    commaAnd(g_typed_spam)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 5, in commaAnd
+    fullList = fullList + ', ' + l_typed_spam[i+1]
+TypeError: can only concatenate tuple (not "str") to tuple
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+ 
+apples, bananas
+apples, bananas, tofu
+apples, bananas, tofu, cats
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+apples, bananas, tofu, cats 
+apples, bananas, tofu, cats
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+ 
+apples, bananas, tofu, cats
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+ 
+apples, bananas, tofu
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+ 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 16, in <module>
+    commaAnd(g_typed_spam)
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 6, in commaAnd
+    fullList = fullList + ' ana ' + l_typed_spam[:-1]
+TypeError: Can't convert 'list' object to str implicitly
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+ 
+apples, bananas, tofu and ['apples', 'bananas', 'tofu']
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Starting with the following preset list...
+['apples', 'bananas', 'tofu', 'cats']
+ 
+apples, bananas, tofu and cats
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me a list of stuff to add commas to...
+['bugger', 'junk', 'hollyfeld', 'hero', 'knight', 'batman']
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 19, in <module>
+    commaAnd(input())
+  File "C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\lib\idlelib\PyShell.py", line 1386, in readline
+    line = self._line_buffer or self.shell.readline()
+KeyboardInterrupt
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me a list of stuff to add commas to...
+['bugger', 'junk', 'hollyfeld', 'hero', 'knight', 'batman']
+[, ', b, u, g, g, e, r, ', ,,  , ', j, u, n, k, ', ,,  , ', h, o, l, l, y, f, e, l, d, ', ,,  , ', h, e, r, o, ', ,,  , ', k, n, i, g, h, t, ', ,,  , ', b, a, t, m, a, n, ' and ]
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me a list of stuff to add commas to...
+[]
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 19, in <module>
+    commaAnd(input([]))
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py", line 2, in commaAnd
+    fullList = (l_typed_spam[0])
+IndexError: string index out of range
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me an entry to add to the list of stuff to add commas to...(Or enter nothing to stop.)
+booger
+Give me an entry to add to the list of stuff to add commas to...(Or enter nothing to stop.)
+junk
+Give me an entry to add to the list of stuff to add commas to...(Or enter nothing to stop.)
+hollyfeld
+Give me an entry to add to the list of stuff to add commas to...(Or enter nothing to stop.)
+hero
+Give me an entry to add to the list of stuff to add commas to...(Or enter nothing to stop.)
+knight
+Give me an entry to add to the list of stuff to add commas to...(Or enter nothing to stop.)
+batman
+Give me an entry to add to the list of stuff to add commas to...(Or enter nothing to stop.)
+
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me an entry to add to the list of stuff to add commas to...(Or enter nothing to stop.)
+d
+Give me an entry to add to the list of stuff to add commas to...(Or enter nothing to stop.)
+f
+Give me an entry to add to the list of stuff to add commas to...(Or enter nothing to stop.)
+g
+Give me an entry to add to the list of stuff to add commas to...(Or enter nothing to stop.)
+s
+Give me an entry to add to the list of stuff to add commas to...(Or enter nothing to stop.)
+a
+Give me an entry to add to the list of stuff to add commas to...(Or enter nothing to stop.)
+
+d, f, g, s and a
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me an entry to add to the list... (Or enter nothing to stop.)
+booger
+Give me an entry to add to the list... (Or enter nothing to stop.)
+junk
+Give me an entry to add to the list... (Or enter nothing to stop.)
+hollyfeld
+Give me an entry to add to the list... (Or enter nothing to stop.)
+hero
+Give me an entry to add to the list... (Or enter nothing to stop.)
+knight
+Give me an entry to add to the list... (Or enter nothing to stop.)
+batman
+Give me an entry to add to the list... (Or enter nothing to stop.)
+
+booger, junk, hollyfeld, hero, knight and batman
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me an entry to add to the list... (Or enter nothing to stop.)
+t
+Give me an entry to add to the list... (Or enter nothing to stop.)
+s
+Give me an entry to add to the list... (Or enter nothing to stop.)
+f
+Give me an entry to add to the list... (Or enter nothing to stop.)
+b
+Give me an entry to add to the list... (Or enter nothing to stop.)
+
+t, s, f, b and b
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/commacode.py 
+Give me an entry to add to the list... (Or enter nothing to stop.)
+asd
+Give me an entry to add to the list... (Or enter nothing to stop.)
+das
+Give me an entry to add to the list... (Or enter nothing to stop.)
+f
+Give me an entry to add to the list... (Or enter nothing to stop.)
+v
+Give me an entry to add to the list... (Or enter nothing to stop.)
+
+asd, das, f, and v
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+[['.', '.', '.', '.', '.', '.'], ['.', '0', '0', '.', '.', '.'], ['0', '0', '0', '0', '.', '.'], ['0', '0', '0', '0', '0', '.'], ['.', '0', '0', '0', '0', '0'], ['0', '0', '0', '0', '0', '.'], ['0', '0', '0', '0', '.', '.'], ['.', '0', '0', '.', '.', '.'], ['.', '.', '.', '.', '.', '.']]
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+['.', '0', '0', '.', '.', '.']
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 12, in <module>
+    print(grid[1(0)])
+TypeError: 'int' object is not callable
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 12, in <module>
+    print(grid[i])
+TypeError: list indices must be integers or slices, not list
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+['.', '0', '0', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+['.', '.', '.', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['0', '0', '0', '0', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['0', '0', '0', '0', '0', '.']
+['.', '0', '0', '.', '.', '.']
+['.', '0', '0', '0', '0', '0']
+['.', '0', '0', '.', '.', '.']
+['0', '0', '0', '0', '0', '.']
+['.', '0', '0', '.', '.', '.']
+['0', '0', '0', '0', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+['.', '.', '.', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['0', '0', '0', '0', '.', '.']
+['0', '0', '0', '0', '0', '.']
+['.', '0', '0', '0', '0', '0']
+['0', '0', '0', '0', '0', '.']
+['0', '0', '0', '0', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.
+.
+.
+.
+.
+.
+.
+0
+0
+.
+.
+.
+0
+0
+0
+0
+.
+.
+0
+0
+0
+0
+0
+.
+.
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+.
+0
+0
+0
+0
+.
+.
+.
+0
+0
+.
+.
+.
+.
+.
+.
+.
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 12, in <module>
+    for j in i(0):
+TypeError: 'list' object is not callable
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.
+.
+0
+0
+.
+0
+0
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 13, in <module>
+    print(j) + end
+NameError: name 'end' is not defined
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+..00.00..
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+......00..0000.00000.0000000000000..00.......
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 12, in <module>
+    while i < 9:
+TypeError: unorderable types: list() < int()
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+['.', '.', '.', '.', '.', '.']
+.....['.', '0', '0', '.', '.', '.']
+.00..['0', '0', '0', '0', '.', '.']
+0000.['0', '0', '0', '0', '0', '.']
+00000['.', '0', '0', '0', '0', '0']
+.0000['0', '0', '0', '0', '0', '.']
+00000['0', '0', '0', '0', '.', '.']
+0000.['.', '0', '0', '.', '.', '.']
+.00..['.', '.', '.', '.', '.', '.']
+.....
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+['.', '.', '.', '.', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['0', '0', '0', '0', '.', '.']
+['0', '0', '0', '0', '0', '.']
+['.', '0', '0', '0', '0', '0']
+['0', '0', '0', '0', '0', '.']
+['0', '0', '0', '0', '.', '.']
+['.', '0', '0', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+......00..0000.00000.0000000000000..00.......
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 14, in <module>
+    for j[0:5] in i:    # j = 0-5
+NameError: name 'j' is not defined
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.......00...0000..00000..0000000000.0000...00.........
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.
+.
+.
+.
+.
+.
+.
+0
+0
+.
+.
+.
+0
+0
+0
+0
+.
+.
+0
+0
+0
+0
+0
+.
+.
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+.
+0
+0
+0
+0
+.
+.
+.
+0
+0
+.
+.
+.
+.
+.
+.
+.
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.......00...0000..00000..0000000000.0000...00.........
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.
+.
+.
+.
+.
+.
+.
+0
+0
+.
+.
+.
+0
+0
+0
+0
+.
+.
+0
+0
+0
+0
+0
+.
+.
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+.
+0
+0
+0
+0
+.
+.
+.
+0
+0
+.
+.
+.
+.
+.
+.
+.
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.......00...0000..00000..0000000000.0000...00.........
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.
+.
+.
+.
+.
+.
+.
+0
+0
+.
+.
+.
+0
+0
+0
+0
+.
+.
+0
+0
+0
+0
+0
+.
+.
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+.
+0
+0
+0
+0
+.
+.
+.
+0
+0
+.
+.
+.
+.
+.
+.
+.
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+0
+
+0
+
+.
+
+.
+
+.
+
+0
+
+0
+
+0
+
+0
+
+.
+
+.
+
+0
+
+0
+
+0
+
+0
+
+0
+
+.
+
+.
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+.
+
+0
+
+0
+
+0
+
+0
+
+.
+
+.
+
+.
+
+0
+
+0
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.
+.
+.
+.
+.
+.
+.
+0
+0
+.
+.
+.
+0
+0
+0
+0
+.
+.
+0
+0
+0
+0
+0
+.
+.
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+.
+0
+0
+0
+0
+.
+.
+.
+0
+0
+.
+.
+.
+.
+.
+.
+.
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.......00...0000..00000..0000000000.0000...00.........
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+['.', '.', '.', '.', '.', '.']
+......['.', '0', '0', '.', '.', '.']
+.00...['0', '0', '0', '0', '.', '.']
+0000..['0', '0', '0', '0', '0', '.']
+00000.['.', '0', '0', '0', '0', '0']
+.00000['0', '0', '0', '0', '0', '.']
+00000.['0', '0', '0', '0', '.', '.']
+0000..['.', '0', '0', '.', '.', '.']
+.00...['.', '.', '.', '.', '.', '.']
+......
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.......00...0000..00000..0000000000.0000...00.........
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 13, in <module>
+    print (newline)
+NameError: name 'newline' is not defined
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+r
+
+......r
+
+.00...r
+
+0000..r
+
+00000.r
+
+.00000r
+
+00000.r
+
+0000..r
+
+.00...r
+
+......
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+
+
+......
+
+.00...
+
+0000..
+
+00000.
+
+.00000
+
+00000.
+
+0000..
+
+.00...
+
+......
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+
+
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 15, in <module>
+    print(i[0[j[0]]])
+TypeError: 'int' object is not subscriptable
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+
+
+0
+0
+0
+0
+0
+0
+
+
+0
+0
+0
+0
+0
+0
+
+
+.
+.
+.
+.
+.
+.
+
+
+0
+0
+0
+0
+0
+0
+
+
+0
+0
+0
+0
+0
+0
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+.
+.
+.
+.
+.
+.
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.
+.
+.
+.
+.
+.
+.
+0
+0
+.
+.
+.
+0
+0
+0
+0
+.
+.
+0
+0
+0
+0
+0
+.
+.
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+.
+0
+0
+0
+0
+.
+.
+.
+0
+0
+.
+.
+.
+.
+.
+.
+.
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.
+.
+.
+.
+.
+.
+.
+0
+0
+.
+.
+.
+0
+0
+0
+0
+.
+.
+0
+0
+0
+0
+0
+.
+.
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+.
+0
+0
+0
+0
+.
+.
+.
+0
+0
+.
+.
+.
+.
+.
+.
+.
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 15, in <module>
+    print(i[0:8[j]])
+TypeError: 'int' object is not subscriptable
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '0', '0', '.', '.', '.']
+
+
+['0', '0', '0', '0', '.', '.']
+
+
+['0', '0', '0', '0', '0', '.']
+
+
+['.', '0', '0', '0', '0', '0']
+
+
+['0', '0', '0', '0', '0', '.']
+
+
+['0', '0', '0', '0', '.', '.']
+
+
+['.', '0', '0', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 13, in <module>
+    print(i[int(i+1)])
+TypeError: can only concatenate list (not "int") to list
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 13, in <module>
+    print(grid[i])
+TypeError: list indices must be integers or slices, not list
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+
+
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 16, in <module>
+    print(grid[int(i)][0])
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+
+
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 16, in <module>
+    print(grid[str(i)][0])
+TypeError: list indices must be integers or slices, not str
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+
+
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 16, in <module>
+    print(grid[str(int(i))][0])
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 13, in <module>
+    print(i[int[0:8]])
+TypeError: 'type' object is not subscriptable
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+.
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+
+
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+['.', '.', '.', '.', '.', '.']
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+['.', '.', '.', '.', '.', '.']
+
+
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.
+.
+0
+0
+.
+0
+0
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 20, in <module>
+    print(grid[0][0] + end)
+NameError: name 'end' is not defined
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.
+.
+0
+0
+.
+0
+0
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+..
+0
+0
+.
+0
+0
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+..00.00..
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+..00.00...0000000.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+..00.00..
+.0000000.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+..00.00..
+.0000000.
+.0000000.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+
+
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 15, in <module>
+    print(grid[i][j])
+TypeError: list indices must be integers or slices, not list
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+
+
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 15, in <module>
+    print(grid[i][j])
+TypeError: list indices must be integers or slices, not list
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+
+
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 17, in <module>
+    print(i[0:8[j]])
+TypeError: 'int' object is not subscriptable
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+..00.00..
+.0000000.
+.0000000.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.
+.
+0
+0
+.
+0
+0
+.
+.
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+
+
+hi
+hi
+hi
+hi
+hi
+hi
+..00.00..
+.0000000.
+.0000000.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.
+.
+0
+0
+.
+0
+0
+.
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+..00.00..
+.0000000.
+.0000000.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+..00.00..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+..00.00..
+.0000000.
+.0000000.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+.Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py", line 15, in <module>
+    print (grid[i][j], end = '')
+IndexError: list index out of range
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.[y.py 
+..00.00....00.00..
+.0000000.
+.0000000.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00..
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py", line 18, in <module>
+    print('hi')
+  File "C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\lib\idlelib\PyShell.py", line 1344, in write
+    return self.shell.write(s, self.tags)
+KeyboardInterrupt
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.hi
+hi
+hi
+hi
+hi
+hi
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py", line 15, in <module>
+    print (grid[i][j], end = '')
+IndexError: list index out of range
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.hi
+hi
+hi
+hi
+hi
+...0....
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.0
+1
+2
+3
+4
+...0....
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.0
+1
+2
+3
+4
+.....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py", line 15, in <module>
+    print (grid[i][j], end = '')
+  File "C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\lib\idlelib\PyShell.py", line 1344, in write
+    return self.shell.write(s, self.tags)
+KeyboardInterrupt
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py", line 18, in <module>
+    print(j)
+  File "C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\lib\idlelib\PyShell.py", line 1344, in write
+    return self.shell.write(s, self.tags)
+KeyboardInterrupt
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.0
+1
+2
+3
+4
+...0....
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+0
+..00.00..0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py", line 15, in <module>
+    print(j)
+  File "C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\lib\idlelib\PyShell.py", line 1344, in write
+    return self.shell.write(s, self.tags)
+KeyboardInterrupt
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+0
+.0000000.1
+2
+3
+4
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+0
+..00.00..1
+2
+3
+4
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00..0
+1
+2
+3
+4
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py", line 18, in <module>
+    print (grid[i][j], end = '')
+IndexError: list index out of range
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.0
+.1
+.2
+.3
+.4
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.....
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.8
+0
+.8
+1
+.8
+2
+.8
+3
+.8
+4
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00.8
+0
+8
+1
+8
+2
+8
+3
+8
+4
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00.
+7
+0
+0
+7
+1
+0
+7
+2
+.
+7
+3
+.
+7
+4
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00.
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py", line 20, in <module>
+    print('i='+ i)
+TypeError: Can't convert 'int' object to str implicitly
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00.
+i=7
+j=0
+0
+i=7
+j=1
+0
+i=7
+j=2
+.
+i=7
+j=3
+.
+i=7
+j=4
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.i=1
+j=0
+.i=2
+j=0
+0i=3
+j=0
+0i=4
+j=0
+.i=5
+j=0
+0i=6
+j=0
+0i=7
+j=0
+.
+0
+0
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.i=1
+j=0
+.i=2
+j=0
+0i=3
+j=0
+0i=4
+j=0
+.i=5
+j=0
+0i=6
+j=0
+0i=7
+j=0
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.i=1
+j=0
+.i=2
+j=0
+0i=3
+j=0
+0i=4
+j=0
+.i=5
+j=0
+0i=6
+j=0
+0i=7
+j=0
+.
+0
+0
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00.
+i=7
+j=0
+0
+i=7
+j=1
+0
+i=7
+j=2
+.
+i=7
+j=3
+.
+i=7
+j=4
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00.
+j=0
+0
+j=1
+0
+j=2
+.
+j=3
+.
+j=4
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00j=0
+j=1
+j=2
+j=3
+j=4
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00.
+j=0
+0
+j=1
+0
+j=2
+.
+j=3
+.
+j=4
+.
+j=5
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00.
+0
+0
+.
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00..Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py", line 18, in <module>
+    print (grid[i][j])
+IndexError: list index out of range
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00..
+.
+.
+.
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00..
+.
+.
+.
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.done one row
+.done one row
+0done one row
+0done one row
+.done one row
+0done one row
+0done one row
+.done one row
+.
+.
+.
+.
+.
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00.done one row
+.
+done one row
+.
+done one row
+.
+done one row
+.
+done one row
+.
+done one row
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+.
+
+.
+
+0
+
+0
+
+.
+
+0
+
+0
+
+.
+
+done one row
+.
+done one row
+.
+done one row
+.
+done one row
+.
+done one row
+.
+done one row
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00.
+
+done one row
+.
+
+
+done one row
+.
+
+
+done one row
+.
+
+
+done one row
+.
+
+
+done one row
+.
+
+
+done one row
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00.
+
+.
+
+
+.
+
+
+.
+
+
+.
+
+
+.
+
+
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00..
+
+Traceback (most recent call last):
+  File "C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py", line 20, in <module>
+    print (grid[i][j])
+IndexError: list index out of range
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00.
+
+.
+
+
+.
+
+
+.
+
+
+.
+
+
+.
+
+
+.
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00..
+
+
+.
+
+
+.
+
+
+.
+
+
+.
+
+
+.
+
+
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00..
+
+
+done one row
+.
+
+
+done one row
+.
+
+
+done one row
+.
+
+
+done one row
+.
+
+
+done one row
+.
+
+
+done one row
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00..
+
+
+.0000000.
+
+
+.0000000.
+
+
+..00000..
+
+
+...000...
+
+
+....0....
+
+
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00..
+.0000000.
+.0000000.
+..00000..
+...000...
+....0....
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/gridHeart.py 
+..00.00..
+.0000000.
+.0000000.
+..00000..
+...000...
+....0....
+>>> 
+ RESTART: C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\Lessons\Chapter 5 - Dictionaries\tictactoe.py 
+||
+-+-+-
+||
+-+-+-
+||
+>>> 
+ RESTART: C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\Lessons\Chapter 5 - Dictionaries\tictactoe.py 
+ | | 
+-+-+-
+ | | 
+-+-+-
+ | | 
+>>> 
+ RESTART: C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\Lessons\Chapter 5 - Dictionaries\tictactoe.py 
+0|0|0
+-+-+-
+X |X| 
+-+-+-
+ | |X
+>>> 
+ RESTART: C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\Lessons\Chapter 5 - Dictionaries\tictactoe.py 
+0|0|0
+-+-+-
+X|X| 
+-+-+-
+ | |X
+>>> 
+ RESTART: C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\Lessons\Chapter 5 - Dictionaries\tictactoe.py 
+ | | 
+-+-+-
+ | | 
+-+-+-
+ | | 
+Turn for X. Move on which space?
+Traceback (most recent call last):
+  File "C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\Lessons\Chapter 5 - Dictionaries\tictactoe.py", line 16, in <module>
+    move.input()
+NameError: name 'move' is not defined
+>>> 
+ RESTART: C:\Users\Tina\AppData\Local\Programs\Python\Python35-32\Lessons\Chapter 5 - Dictionaries\tictactoe.py 
+ | | 
+-+-+-
+ | | 
+-+-+-
+ | | 
+Turn for X. Move on which space?
+top-L
+X| | 
+-+-+-
+ | | 
+-+-+-
+ | | 
+Turn for O. Move on which space?
+mid-M
+X| | 
+-+-+-
+ |O| 
+-+-+-
+ | | 
+Turn for X. Move on which space?
+low-L
+X| | 
+-+-+-
+ |O| 
+-+-+-
+X| | 
+Turn for O. Move on which space?
+mid-L
+X| | 
+-+-+-
+O|O| 
+-+-+-
+X| | 
+Turn for X. Move on which space?
+mid-R
+X| | 
+-+-+-
+O|O|X
+-+-+-
+X| | 
+Turn for O. Move on which space?
+top-M
+X|O| 
+-+-+-
+O|O|X
+-+-+-
+X| | 
+Turn for X. Move on which space?
+low-M
+X|O| 
+-+-+-
+O|O|X
+-+-+-
+X|X| 
+Turn for O. Move on which space?
+low-R
+X|O| 
+-+-+-
+O|O|X
+-+-+-
+X|X|O
+Turn for X. Move on which space?
+top-R
+X|O|X
+-+-+-
+O|O|X
+-+-+-
+X|X|O
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/Chapter 5 - Dictionaries/totalBrought.py 
+Number of things being brought:
+
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/Chapter 5 - Dictionaries/totalBrought.py 
+Number of things being brought:
+ - Apples      7
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/Chapter 5 - Dictionaries/totalBrought.py 
+Number of things being brought:
+ - Apples      7
+ - Cups      3
+ - Cakes      0
+ - Ham Sandwiches      3
+ - Apple Pies      1
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/Chapter 5 - Dictionaries/totalBrought.py 
+Number of things being brought:
+ - Apples 7
+ - Cups 3
+ - Cakes 0
+ - Ham Sandwiches 3
+ - Apple Pies 1
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/Chapter 5 - Dictionaries/totalBrought.py 
+Number of things being brought:
+ - Apples  7
+ - Cups  3
+ - Cakes  0
+ - Ham Sandwiches  3
+ - Apple Pies  1
+>>> print('Hello, world')
+Hello, world
+>>> phrase = 'Hellow world'
+>>> print(phrase)
+Hellow world
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/Wake Tech/Class 1/hello.py 
+Hello, world!
+>>> 
+ RESTART: C:/Users/Tina/AppData/Local/Programs/Python/Python35-32/Lessons/Wake Tech/Class 1/names.py 
+My name is Tina.
+My husband's name is Ian.
+We are owned by a cat named Kit Kat.
+>>> dictionary = {'key1': 'value1', 'key2': 'value2'}
+>>> dictionary['key1']
+'value1'
+>>> dictionary_name['key1']
+Traceback (most recent call last):
+  File "<pyshell#75>", line 1, in <module>
+    dictionary_name['key1']
+NameError: name 'dictionary_name' is not defined
+>>> dictionary_name = {'key1': 'value1', 'key2': 'value2'}
+>>> dictionary_name['key1']
+'value1'
+>>> dictionary_name['key1'] = 'valuex'
+>>> dictionary_name['key1']
+'valuex'
+>>> dictionary_name = {'key1': 'value1', 'key2': 'value2'}
+>>> for v in dictionary_name.keys():
+	print (v)
+
+	
+key1
+key2
+>>> for v in dictionary_name.values():
+    print (v)
+
+    
+value1
+value2
+>>> for v in dictionary_name.items():
+    print (v)
+
+    
+('key1', 'value1')
+('key2', 'value2')
+>>> dictionary_name = {'key1': 'value1', 'key2': 'value2'}
+>>> 
+>>> dictionary_name['key5'] = 'value5'
+>>> dictionary_name['key5']
+'value5'
+>>> for v in dictionary_name.items():
+    print (v)
+
+    
+('key1', 'value1')
+('key5', 'value5')
+('key2', 'value2')
+>>> 

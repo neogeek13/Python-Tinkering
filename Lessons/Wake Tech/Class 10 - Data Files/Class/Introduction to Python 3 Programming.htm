@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- Google Tag Manager -->
+            <script async="true" type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/event.js" data-owner="criteo-tag"></script><script src="Introduction%20to%20Python%203%20Programming_files/2861.js" async="" type="text/javascript"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/ld.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/conversion.js">
+</script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag"></script><script type="text/javascript" async="" src="Introduction%20to%20Python%203%20Programming_files/ga.js"></script><script async="" src="Introduction%20to%20Python%203%20Programming_files/gtm.htm"></script><script>(function(w,d,s,l,i){try{w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            }catch(e){(console.error || console.log).call(console, e.stack || e);}
+            })(window,document,'script','dataLayer','GTM-P66CZH7');</script>
+            <!-- End Google Tag Manager --><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Python 3 Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-1.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-migrate-1.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom.css" media="all"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/global.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/course.htm"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/patch.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/patch.css" media="all"><link href="Introduction%20to%20Python%203%20Programming_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P66CZH7'
+            height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+    <noscript>
+        <div id="sansjs">
+            Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+        </div>
+    </noscript>
+    <form name="aspnetForm" method="post" action="./PrintLesson.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=10" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource_002.js" type="text/javascript"></script>
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource.js" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7" type="hidden">
+</div>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm('Are you sure you wish to log out?');" id="ctl00_lbLogout" tabindex="4" class="title-bar-login-button" href="javascript:__doPostBack('ctl00$lbLogout','')">
+                        <p role="heading">LOGOUT</p>
+                    </a>
+
+                    <a id="ctl00_hlkHelpInActive" tabindex="2" class="title-bar-help-button" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">
+                            <p role="heading">
+                                HELP
+                            </p>
+                    </a>
+                    
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" tabindex="1" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Introduction to Python 3 Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Mike Orsega
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            10: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Working With External Data Files</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        <span class="accessibility_hide">You are here: </span>
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=10">Lesson 10</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" onclick="showAllImagesPF()" type="radio"><label for="pfImagesOnBtn">Text, images and activities (IE users only)</label></p><p><input name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()" checked="checked" type="radio"><label for="pfInteractivityOffBtn">Text and images</label></p><p><input name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()" type="radio"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer; opacity: 0.22;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_chrome.png" alt="chrome icon" class="pf_visible pf_image" border="0"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer; opacity: 1;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_firefox.png" alt="Firefox icon" class="pf_visible pf_image" border="0"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer; opacity: 0.22;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" class="pf_visible pf_image" border="0"><br><span class="caption">IE 11</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer; opacity: 0.22;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_safari.png" alt="Safari icon" class="pf_visible pf_image" border="0"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input class="pf_hide_directions_btn" style="" value="Hide Directions" type="button"></div><div id="pf_notebox_browser_directions_container" style="display: block;"><p><strong>Firefox</strong></p><p>If
+ you'd like to access the lessons of this course when you're offline, as
+ well as after the course has ended, it's easy to download them. First, 
+you may want to create a folder to put all the lessons in so you have 
+them in one place at the end of the course. Next, just follow the 
+downloading instructions below. </p><ol><li style="margin-bottom: 10px;">Click the <strong>Command</strong> button <span class="NumberedList"><img src="Introduction%20to%20Python%203%20Programming_files/image001a.jpg" alt=""></span> in the upper-right corner, and choose <strong>Save Page</strong>.</li><p align="center"><img src="Introduction%20to%20Python%203%20Programming_files/image002a.jpg" alt=""><br><span class="caption">Choose <strong>Save Page</strong></span></p><!--<li>Choose <strong>Firefox</strong> ><strong>Save Page As</strong>. </li><p align='center'><img src='https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/global/printer_friendly/FF_files/image001a.jpg' alt=''><br><span class='caption'> Choose <strong>Save Page As</strong></span></p>--><li style="margin-bottom: 10px;">Specify the folder you want to save the file in, as you would with any other document.</li><li style="margin-bottom: 10px;">Type
+ a name for the lesson. You can use the long suggested name or make up a
+ shorter name of your own. However, do not add your own extension to 
+that filename.</li><li style="margin-bottom: 10px;">Choose <strong>Web Page, complete</strong> as the file type.</li><p align="center"><img src="Introduction%20to%20Python%203%20Programming_files/image002.jpg" alt=""><br><span class="caption"> Use <strong>Web Page, complete</strong> as the file type</span></p><li style="margin-bottom: 10px;">Click <strong>Save</strong>.</li></ol><p><strong>Viewing Downloaded Lessons</strong></p><p>After
+ you've downloaded a lesson, you can use these steps at any time to 
+open, view, or print it. You don't need to be connected to the Internet.</p><ol><li style="margin-bottom: 10px;">Open the folder you saved the lesson in.</li><li style="margin-bottom: 10px;">You'll likely see two icons per downloaded lesson, as in the example below.</li><p align="center"><img src="Introduction%20to%20Python%203%20Programming_files/image003.jpg" alt=""><br><span class="caption"> Icons for one lesson saved as <strong>Web Page, complete</strong></span></p><li style="margin-bottom: 10px;">To
+ view the lesson, double-click the file with the *.htm extension (the 
+one that looks like a dog-eared piece of paper). Opening the folder icon
+ won't show you the lesson; it will only display icons for extra files 
+that the lesson needs to display properly.</li><li style="margin-bottom: 10px;">If
+ you have multiple programs for opening *.htm files, you can right-click
+ the icon (or CONTROL + click the icon if you're using a Mac) and choose
+ <strong>Open With</strong>. You'll be able to select Firefox to open and view the lesson.</li></ol><p><strong>Missing Pictures</strong></p><p>If
+ you open a downloaded lesson and some pictures are missing, you might 
+not have waited long enough for the pictures to download before clicking
+ Save. Interactive content, such as videos or games, may not save. 
+Another possibility is that you may have downloaded using one browser 
+(like Firefox) but opened using a different browser (like Internet 
+Explorer). Try opening the downloaded lesson with the same browser you 
+used to download the lesson (please see step #4 above).</p></div><div align="center"><input class="pf_hide_directions_btn" style="" value="Hide Directions" type="button"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p>
+<!-- ipy LESSON 10 CHAPTER 1 -->
+<!-- START CHAPTER CONTENT -->
+
+</p><p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/L10_header.jpg" galleryimg="no" alt="Lesson 10 header" class="pf_image" vspace="0" border="0"></p><br>
+<strong>Introduction</strong><p></p><p>So far, all of your Python 
+programs have taken their input from the keyboard and written all of the
+ output to the screen.  However, as I'm sure you've already thought, it 
+would be nice to read from and write to data files.  After all, imagine 
+if you decided to write a program to keep track of orders for your 
+company.  You'd probably need some kind of permanent record of those 
+transactions, right?  </p><p>Therefore, we'll turn our attention to data
+ files. Today, you'll learn how to open data files, read from them, 
+write to them, and close them.  Then we'll take a look at file elements 
+that are more advanced like creating random access files with Python's 
+pickle and shelve functions.</p><p>With that said, let's get to work!<br>
+                </p></div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><!-- ipy LESSON 10 CHAPTER 2 --><!-- START CHAPTER CONTENT --><strong>Python File Basics</strong></p>
+<p>Data files are a wonderful and oftentimes an essential part of 
+programming. I still recall when I first learned to program and the 
+first time I encountered the concept of data files. I immediately 
+started thinking of ways that I could use my programs to keep track of 
+my favorite sports teams. </p>
+<p>Of course, these days, there are plenty of websites that can handle 
+all of the sports data for me. However, the usefulness of data files 
+still exists. After all, how do you think these sites keep up with their
+ data?</p>
+<p>Let's begin our journey by writing data to our files. The first thing
+ you need to know about files is how to open one. Think of a data file 
+like a book. If the book isn't open, there's no way that you can get to 
+the data. </p>
+<p>In Python, when you open the file, you'll use the <em>open( )</em> 
+method, provide the name of the file, and then specify whether you'll be
+ reading from or writing to the file. Note that the open method returns a
+ file object that you'll store in a variable to be used in your output 
+statements.</p>
+<p>The following line of code will open a data file named mydata.txt for
+ output, and then store the file object in a variable named out_file:</p>
+<div class="noscroll">
+<pre>out_file = open('mydata.txt', 'w')</pre>
+</div>
+<p>The 'w' is the way you specify that you're writing to this file. Be 
+aware that if you have a file opened in this mode, you won't be able to 
+read from it until the file is closed.</p>
+<p>It's important to note here that when this line of code is executed 
+directly at the interpreter's prompt, the new file (mydata.txt) is saved
+ in the same directory as your Python executable program (python.exe). 
+However, if you save all of your Python statements into their own source
+ code file, when you run the program, the new file is saved in the same 
+directory as your source code file.</p>
+<p>Confusing? Sure. So if you want to be sure of your file's location, 
+you can simply list the full path instead of just a filename in your 
+open statement. For example, if you wanted this file saved on your 
+Desktop, you could with this:</p>
+<div class="noscroll">
+<pre>out_file = open('C:/Users/Mike/Desktop/mydata.txt', 'w')</pre>
+</div>
+<p>Please make a special note that if you already have a file named 
+mydata.txt in that directory, then the contents of that file will be 
+erased. Now there's a way around this erasing, but for now, we're just 
+going to work with 'w' and always clear out the data that's there.</p>
+<p>Now that we have our file open, let's write some data to it. There are two methods that we can use to write the data: <em>write( )</em> and <em>writelines( )</em>. You can probably guess how these methods differ based on their names. </p>
+<p>The write method writes a single string to a file. Writelines writes a
+ list of strings. But be aware that neither method creates line breaks 
+within a single or multiple lines of string. This will probably make 
+more sense if you try this out with an example on your own. Go ahead and
+ try the following statements:</p>
+<div class="noscroll">
+<pre>out_file.write('Hello')
+out_file.write('world!')</pre>
+</div>
+<p>They'll result in a data file that looks like this:</p>
+<div class="noscroll">
+<pre>Helloworld!</pre>
+</div>
+<p>Next, try to put some text in your file with writelines:</p>
+<div class="noscroll">
+<pre>weekends = ['Saturday', 'Sunday']
+out_file.writelines(weekends)
+out_file.writelines(weekends)</pre>
+</div>
+<p>This code will produce this text in the data file:</p>
+<div class="noscroll">
+<pre>SaturdaySundaySaturdaySunday</pre>
+</div>
+<p>The lack of line breaks can get a little frustrating. But, this is easily fixed if you get in the habit of including the <em>newline character</em>, <em>\n</em>,
+ every time you want to move a string to the next line in a file. For 
+example, the code I wrote above with the write methods would place each 
+word on a different line if it were written like this:</p>
+<div class="noscroll">
+<pre>out_file.write('Hello\n')
+out_file.write('world')</pre>
+</div>
+<p>Please note, however, that if you execute this code, the data might 
+not immediately appear in your file. This is because the file access is a
+ time consuming operation. Therefore, the computer might wait for more 
+data to be written to the file. </p>
+<p>If you want to force the data to be written immediately, you can use the <em>flush( )</em> method. Here's an example of the code:</p>
+<div class="noscroll">
+<pre>out_file.flush( )</pre>
+</div>
+<p>So now you know how to open your files and write data to them. The 
+last important part in this cycle is to close the file. For that, you'll
+ use the <em>close( )</em> method. For example, the following code closes my out_file object:</p>
+<div class="noscroll">
+<pre>out_file.close( )</pre>
+</div>
+<p>I hope at this point, you're getting pretty excited because writing 
+to files in Python is so easy. But you might be wondering how to read 
+data from a file. Well, fortunately, this is easy too. Instead of 
+opening your file for writing with a 'w', you'll just open it with an 
+'r'. For example, this code opens the file used in the previous 
+examples:</p>
+<div class="noscroll">
+<pre>in_file = open('C:/Users/Mike/Desktop/mydata.txt', 'r')</pre>
+</div>
+<p>There's one note about my code here. I've used the variable name 
+in_file for my input variable name and out_file for my output variable 
+name. This is not a Python requirement. It's just something that I've 
+gotten in the habit of doing on my own. I do it mostly to remind myself 
+to not read from a file that is opened for output or write to a file 
+opened for input.</p>
+<p>Once the file is opened, there are three methods you can use to read from a file: <em>read( )</em>, <em>readline( )</em>, <em>readlines( )</em>. Although each method will read from the file, each works a little differently.</p>
+<p>When using the read method, you can provide a number of bytes to be 
+read in. However, Python also allows you to leave the parentheses empty.
+ When you do, the rest of the data from the file will be read.</p>
+<p>In the following example, the first line of code will read in, at the
+ most, 1 byte of data from the file and store the result in a variable 
+named <em>first</em>. The second line of code will read in an entire line and store it in a variable named <em>second</em>:</p>
+<div class="noscroll">
+<pre>first = in_file.read( 1 )
+second = in_file.read( )</pre>
+</div>
+<p>Note here that there's a pointer that keeps track of what has been 
+read in, and this pointer is incremented after each read. So, if your 
+data file was originally like this:</p>
+<div class="noscroll">
+<pre>HelloGoodbye</pre>
+</div>
+<p>The results of my two lines of read code would result in "H" being stored in first and "elloGoodbye" stored in second.</p>
+<p>The next method, readline, works in a similar fashion as the read 
+method call but with no number of bytes provided. That is, readline will
+ read an entire line of data from a file. Similar to read, readline also
+ allows you to specify a maximum number of bytes. </p>
+<p>Basically, this means that read and readline provide the exact same 
+functionality. Personally, I like to use read when I want to read a 
+certain number of characters and readline when I want to get an entire 
+line from a file. This helps to keep my code a little easier to 
+interpret.</p>
+<p>The final file input method is readlines. Once again, readlines gives
+ you the ability to provide a maximum number of bytes to be read. 
+However, if you don't provide a number of bytes, it'll read to the end 
+of the file. Also, this method is different in that it returns a list, 
+with each line from the file as a new item in the list. Take the 
+following data file as an example:</p>
+<div class="noscroll">
+<pre>First line
+Last line</pre>
+</div>
+<p>And here are the printing results of the readlines method:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;print (in_file.readlines())
+['First line\n', 'Last line']</pre>
+</div>
+<p>Finally, just as with output files, you close your file with the following close method:</p>
+<div class="noscroll">
+<pre>in_file.close( )</pre>
+</div>
+<p>Now that you have the basics of file input and output down, I'll show
+ you some more advanced file operations in the next chapter.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><!-- ipy LESSON 10 CHAPTER 3 --><!-- START CHAPTER CONTENT --><strong>More File Operations</strong></p>
+<p>As you can see, basic file output is pretty easy. But you might be 
+concerned about erasing the entire file before writing to it. After all,
+ what if you want to have a file that logs information about the user 
+each time they work with your program? </p>
+<p>You'd certainly want to keep all of the file's information intact 
+before writing the new information. For that, you'll need to open the 
+file in <em>append mode</em> with the 'a' argument. This means that the 
+following code will open that same data file we were using before. But 
+this time, it'll keep all of the existing data and add in the new data 
+at the end of the file:</p>
+<div class="noscroll">
+<pre>out_file = open('C:/Users/Mike/Desktop/mydata.txt', 'a')</pre>
+</div>
+<p>Please note, once again, that when I say that the new output will be 
+added to the end of the file, a line break isn't included. So if the 
+original file had just the word <em>Hello</em>, and I opened this file for append and wrote a line of code to write the word <em>Goodbye</em>, then the file would just have one line of text:</p>
+<div class="noscroll">
+<pre>HelloGoodbye</pre>
+</div>
+<p>Just like before, you can use the newline character to move a newly 
+added string to the next line. But keep in mind that your newline 
+character will need to come first, then your string because text already
+ exists in the file. So, your code would end up looking like this:</p>
+<div class="noscroll">
+<pre>out_file.write('\nGoodbye')</pre>
+</div>
+<p>Another issue you may have thought about is the idea that opening a 
+file for output means you can only write, and opening a file for input 
+means you can only read. Although you can always just close your file 
+and then reopen it in the other mode, this extra set of steps can be a 
+hassle. For this reason, Python allows us to use two other ways of 
+opening our files: 'r+' and 'w+'.</p>
+<p>While both ways give you the ability to both read and write with your
+ files, there is a difference. If you attempt to open your file with 
+'r+' and that file doesn't exist, then Python will generate an IOError 
+exception, and your program will stop. </p>
+<p>On the other hand, if you open a nonexistent file with 'w+', then 
+Python will simply create one for you. Note, however, that if that file 
+did exist, then the data there will be erased, just as if you had opened
+ the file with 'w'.</p>
+<p>Your next question may be about how we're going to handle reading and
+ writing to the same file at the same time. We'll still be using the 
+read and write functions that you learned in the previous chapter. The 
+only difference is that now you have to keep track of your current 
+position in the file as you do your reading and writing.</p>
+<p>You can always find out where you are in your file with the <em>tell( )</em> method. This method will give you your current file position as the number of bytes from the start of the file. </p>
+<p>For example, let's imagine that you have a data file named mydata2.txt that looks like the following:</p>
+<div class="noscroll">
+<pre>First line
+Second line</pre>
+</div>
+<p>Consider the following lines of code and their results when entering them at the interpreter:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;in_file = open('C:/Users/Mike/Desktop/mydata2.txt', 'r+')
+&gt;&gt;&gt;print (in_file.read(1))
+F
+&gt;&gt;&gt;print (in_file.tell())
+1</pre>
+</div>
+<p>This shows that after opening the file and reading the character of 
+text, the file is located at position 1. One thing to realize is that 
+when you read in an entire line of text, the newline character is also 
+read in. And while we call this a character, it's actually two 
+characters inside the file: the '\' and the 'n'. So now consider the 
+results of reopening the file, reading an entire line of text, and then 
+printing the file position:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;in_file = open('C:/Users/Mike/Desktop/mydata2.txt', 'r+')
+&gt;&gt;&gt;print (in_file.readline())
+First line
+
+&gt;&gt;&gt;print (in_file.tell())
+12</pre>
+</div>
+<p>And of course, if there's a way to determine where you're located in a
+ file, there's also a way to actually move this location. You'll do this
+ with the <em>seek( )</em> method. When you use seek, you must provide 
+where in the file you want to move by specifying a number that 
+represents the number of bytes from the beginning of the file. </p>
+<p>Look at the following example. It will print the first line in the 
+file, move back to the start of the file with the seek method, and then 
+print that same first line again:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;in_file = open('C:/Users/Mike/Desktop/mydata2.txt', 'r+')
+&gt;&gt;&gt;print (in_file.readline())
+First line
+
+&gt;&gt;&gt;in_file.seek(0)
+0
+&gt;&gt;&gt;print (in_file.readline())
+First line</pre>
+</div>
+<p>So now that you know how to move around inside a file. You're all 
+ready to start reading and writing to a file at the same time. The last 
+thing to be aware of is that when you're writing to a file that already 
+has data in it, you're going to be overwriting the characters. </p>
+<p>Consider this example, which opens the data file, reads the first 
+line, moves back to the beginning of the file, and writes some text. To 
+better show you the overwriting, this example finishes by moving back to
+ the beginning again, showing you what the file now contains:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;in_file = open('C:/Users/Mike/Desktop/mydata2.txt', 'r+')
+&gt;&gt;&gt;print (in_file.readline())
+First line
+
+&gt;&gt;&gt;in_file.seek(0)
+0
+&gt;&gt;&gt;in_file.write('Hi!')
+2
+&gt;&gt;&gt;in_file.seek(0)
+0
+&gt;&gt;&gt;print (in_file.readline())
+Hi!st line</pre>
+</div>
+<p>I hope from this example, you'll see that Python gives you a lot of 
+power when it comes to working with files. Of course, with power comes 
+great responsibility. What I mean is that because Python gives you the 
+ability to do some very powerful things with your files, you really need
+ to pay close attention to what's going on.</p>
+<p>Now that you understand how to work with basic files, I want to show 
+you how to work with a database-like file. For that you'll need to learn
+ about a couple more Python methods. So when you're ready to see how 
+this works, move over to Chapter 4 where I'll show you about pickle and 
+shelve.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><!-- ipy LESSON 10 CHAPTER 4 --><!-- START CHAPTER CONTENT --><strong>Pickle and Shelve</strong></p>
+<p>The next topic I want to explore is Python's <em>pickle</em>. The 
+pickling process simply converts an object to a stream of bytes. This 
+stream can then be reconverted to the original object later. </p>
+<p>There are two different ways to pickle an object, depending on where 
+you want the result to be stored. Note, however, that in order to use 
+any of the pickling methods, you need to have an import statement to 
+import pickle. You use the first method, <em>dumps( )</em>, if you want to store the result in a string. The other method, <em>dump( )</em>, stores the result in a file. </p>
+<p>Let's look at the following example that pickles a list of letters and stores the result in a string variable, pickled_letters:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;import pickle
+&gt;&gt;&gt;letters = ['a', 'b', 'c'] 
+&gt;&gt;&gt;pickled_letters = pickle.dumps(letters)</pre>
+</div>
+<p>Go ahead and try this example out. You might even consider placing a 
+line of code to print the value of the pickled_letters variable to see 
+what it looks like. One thing's for certain, it isn't something that 
+you'd really want to read. </p>
+<p>Remember, pickling converted our list to a stream of bytes that we 
+just stored as a string. So, it shouldn't be a surprise that it's hard 
+to read. And while it might not make much sense to have such a variable 
+in your program, be aware that putting the result in a data file for use
+ later might be quite helpful.</p>
+<p>Sending the pickled result to a file is very similar to sending it to
+ a string, with two differences. The first is the method name. Remember,
+ we use dump( ) for files. Also, you need to provide the name of the 
+file as a second argument to the method call. And this file needs to be 
+opened such that we can write a set of bytes to it— because our pickled 
+object is now a set of bytes, not characters.&nbsp; This is easy in 
+Python, just use 'wb', instead of 'w' as we were using before.&nbsp; For
+ example, if you want to send the list above to a data file named, 
+data.txt, you'd need to do this:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;import pickle
+&gt;&gt;&gt;outfile = open('data.txt', 'wb')
+&gt;&gt;&gt;letters = ['a', 'b', 'c'] 
+&gt;&gt;&gt;pickle.dump(letters, outfile)
+&gt;&gt;&gt;outfile.close( )</pre>
+</div>
+<p>So now you know how to pickle an object. But what about getting the 
+data back to its original form? For that, you'll need either the <em>loads( )</em> or the <em>load( )</em>
+ method. As you might suspect, the first will unpickle from a string and
+ the second from a file. Here are the two examples of how to pull the 
+data out from our previous pickling examples:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;unpickled_letters = pickle.loads(pickled_letters)
+&gt;&gt;&gt;print (unpickled_letters)
+['a', 'b', 'c']</pre>
+</div>
+<p>Notice how loads( ) works just like dumps( ). That is, you place the 
+variable that's holding the pickled data inside the parentheses. The 
+result is returned, and in this case, we're storing it in another 
+variable.</p>
+<p>The same idea works then with load( ) and data files, except that you
+ need to remember to first open the data file such that it can read 
+bytes.&nbsp; Similar to opening the output file for writing bytes, we'll
+ open the input file for reading bytes with 'rb'.&nbsp; For example:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;infile = open('data.txt', 'rb')
+&gt;&gt;&gt;file_data = pickle.load(infile)
+&gt;&gt;&gt;infile.close()
+&gt;&gt;&gt;print (file_data)
+['a', 'b', 'c']</pre>
+</div>
+<p>A natural question at this point is what if there's more than one 
+pickled object in the data file? The answer is that the load( ) method 
+is only going to read these objects one at a time. So the first call to 
+load will get the first object, the next call will get the second 
+object, and so on.</p>
+<p>As you can see, pickling is a handy way of converting your data into 
+bytes and cramming them into an external data file. But there's more to 
+it than just that. The reason I'm teaching you about pickling is because
+ of our final topic for the lesson—shelves.</p>
+<p>A <em>shelf</em> is a database-like object that can efficiently store
+ pickled values. In actuality, a shelf is an external data file that is 
+used the same way as a Python dictionary. The only difference is that a 
+shelf is required to have its keys be strings and its values must be 
+objects that can be pickled.</p>
+<p>In order to use a shelf in your program, you first need to have the 
+import shelf line. Next, you can open the shelf file by using the open( )
+ method. This works just like the open( ) method for regular files with 
+the name of the file as the first argument and a flag to tell the 
+computer how the file should be opened as the second argument. However, 
+the flags for shelves are a little different.</p>
+<p>Once again, you can use the 'r' and 'w' flags to open your shelf for 
+only reading or writing, respectively. However, one other flag is 'c', 
+which allows you to open the shelf for reading and writing. This will 
+also have the computer create a new file if it doesn't already exist. 
+The last flag is 'n', which will create a new, empty file no matter 
+what.</p>
+<p>So let's try this out with a short example. This code is going to 
+open the file, letters.txt, and write two different records: one with 
+the key 'vowels' that contains 'a', 'e', 'i', 'o', and 'u' and a second 
+record that will have the key 'end' that contains the last three letters
+ of the alphabet:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;import shelve
+&gt;&gt;&gt;db_file = shelve.open('letters.txt', 'c')
+&gt;&gt;&gt;db_file ['vowels'] = ['a', 'e', 'i', 'o', 'u'] 
+&gt;&gt;&gt;db_file ['end'] = ['x', 'y', 'z'] 
+&gt;&gt;&gt;db_file.close()</pre>
+</div>
+<p>Once again, notice how the syntax for adding an item here is the same
+ as adding an item to a regular dictionary. The difference of course is 
+that this data is being sent to a file. Other operations that are 
+possible on our shelf are accessing the value by providing the key, 
+using the in operator and using the keys( ) method. </p>
+<p>Finally, if you decide that you want to remove a record from the 
+file, you can use del, again just like we did with dictionaries. The 
+following example shows the use of all of these methods:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;db_file = shelve.open('letters.txt', 'c')
+&gt;&gt;&gt;print ( list( db_file.keys( ) ) )
+['vowels', 'end'] 
+
+
+&gt;&gt;&gt; print( 'vowels' in db_file )
+True
+&gt;&gt;&gt;del db_file ['vowels'] 
+
+
+&gt;&gt;&gt; print( 'vowels' in db_file )
+False
+&gt;&gt;&gt;db_file.close()</pre>
+</div>
+<p>The final shelf method I want to show you is <em>sync( )</em>. 
+Remember how earlier we said that file operations are time consuming. 
+For that reason, these files don't always write the data to the file 
+immediately. If you want this to be done, you can use sync( ) here.</p>
+<p>Boy, you probably never thought there'd be this much stuff related to
+ files! Hopefully with a little practice, you'll find that this is easy 
+to do. But remember, I'm always available in the Discussion Area if you 
+need help. </p>
+<p>When you're ready to move on, flip to our last chapter where we'll wrap everything up.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p>
+<!-- ipy LESSON 10 CHAPTER 5 -->
+<!-- START CHAPTER CONTENT -->
+
+<strong>Summary</strong></p><p>By now, you're starting to see how all of
+ the stuff we've tackled today comes together.  We started this lesson 
+by talking about external data files.  You learned how to create, open, 
+write, and close a data file.  Then we went on to learn how to open the 
+same file and read the data out of it.</p><p>And although working with 
+simple, sequential files one line at a time can be easy, you also 
+learned that Python gives you the ability to move around in the file 
+wherever you want with some additional methods.</p><p>But I think you 
+probably realized that if you were hoping to work with large amounts of 
+data, these simple data files either take a lot of effort or simply 
+don't work at all.  And that's where the dictionary material from the 
+previous lesson came into play.  All of your hard work from Lesson 9 
+paid off today.  </p><p>We combined the ideas of dictionaries and files 
+with shelves, which are sort of like a mix of the two that gives you the
+ ability to store large amounts of data.  Now you can build your 
+programs to handle lots of data for use over and over again.</p><p>In 
+the next lesson, we'll take a look at exceptions.  So far in this 
+course, we've pretty much ignored this topic.  This wasn't because I 
+don't think the topic is important.  I just wanted you to have a little 
+experience behind you first.  So up next—exceptions: what are they and 
+what can we do with them. See you there!<br>
+                </p></div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.python.org/py3k/library/pickle.html" target="_blank">
+                                Python Tutorial Pickle        </a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.python.org/py3k/library/pickle.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This page from the Python library reference 
+describes the process of pickling and has links to another description 
+of how to use pickle in Python.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <strong>Q:</strong> I'm following your examples in the text 
+by typing these commands at the Python interpreter's prompt.  When I 
+open a new data file, I can see it appear on my computer immediately.  
+However, when I attempt to write something out to the file, nothing 
+appears until I call close.  Why is this and is there a way around it?<br><br><strong>A:</strong>
+ The reason why the data isn't in the file immediately is because file 
+operations consume a lot of resources.  For that reason, the computer 
+won't always do these things immediately.  <br><br>Now when you call 
+close( ), it's going to write out the data immediately because as far as
+ it knows, the program is over and there won't be any more data coming. 
+ However, if you want to force the data to be written immediately, you 
+can use the flush( ) method for simple files and the sync( ) method for 
+shelves.
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            Revise your program from the Lesson 9 Assignment so that it 
+stores the student grades in a shelf file. Remember, this program should
+ prompt the user for the student's name and score. After the user has 
+finished entering grades, allow him or her to search that file for a 
+particular student's score.<br>
+<br>
+<a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/py3-0/PY3_L10_Solution.py" target="_blank">Click here</a> if you would like to download my solution to this assignment: PY3_L10_Solution.py.
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2016
+                            All rights reserved. The material on this 
+site cannot be reproduced or redistributed unless you have obtained 
+prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                py3-0
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB04P (1.2.99.4) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/IncludeResource.js"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.eVar4='';
+s.prop4='';
+s.eVar5='introduction to python 3 programming';
+s.prop5='introduction to python 3 programming';
+s.prop6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.eVar6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.prop7='10';
+s.eVar7='10';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=10';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=10';
+s.prop15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.eVar15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.hier1=',,introduction to python 3 programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript><a href='http://www.Adobe.com' title='Web Analytics'><img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/></a></noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript><iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="jb-overlay" style="opacity: 0.7; display: none;"></div><div id="jb-window" style="display: none;"><div id="jb-window-inner" style="position: fixed; top: 294.5px; left: 484.5px;"><div id="jb-window-content" style="width: auto; height: auto; overflow: hidden; display: none;" tabindex="0"></div></div></div><span id="text-resize" style="position: absolute; left: -9999px; font-size: 100%; font-family: Courier New, mono; margin: 0; padding: 0;">&nbsp;</span><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?random=1482738080562&amp;cv=8&amp;fst=1482738080562&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=920&amp;u_w=1472&amp;u_ah=897&amp;u_aw=1472&amp;u_cd=24&amp;u_his=3&amp;u_tz=-300&amp;u_java=true&amp;u_nplug=9&amp;u_nmime=60&amp;frm=0&amp;url=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FPrintLesson.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26lesson%3D10&amp;ref=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FLessons.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26bc%3DLessons%26lesson%3D10&amp;tiba=Introduction%20to%20Python%203%20Programming" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" width="300" height="13" frameborder="0"></iframe><div id="criteo-tags-div" style="display: none;"><iframe style="display: none;" src="Introduction%20to%20Python%203%20Programming_files/dis.htm" width="0" height="0"></iframe></div></body></html>

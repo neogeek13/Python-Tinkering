@@ -1,0 +1,24 @@
+﻿/* CSS Document */
+
+.styledRadio, .styledCheckbox /* Don't erase - These are needed for the jQuery file */ { display: inline-block; }
+.quizList p:hover { background-color: #eaeae8; }
+.quizList label { vertical-align: middle; padding-left: 5px; cursor: pointer; width: 90%; padding-top: 5px; padding-bottom: 5px; display: inline-block; float: inherit; font-weight: normal; }
+.quizList p { padding-left: 10px; padding-top: 2px; }
+.quizList radio { float: left; display: inline-block; }
+.quizList { font-weight: bold; }
+.quizList li { border-bottom: 1px solid #CCC; padding-top: 10px; }
+.quizList-results li { font-weight: bold; border-bottom: 1px solid #CCC; padding-top: 10px; }
+.quizList-results p { font-weight: normal; }
+.quizList-results-red { color: red; }
+.quizList-results-green { color: green; }
+.quiz-submit-btn-container { padding-top: 10px; padding-bottom: 25px; text-align: center; }
+.quiz-retake-btn-container { border-top: 1px solid #CCC; text-align: center; padding-top: 25px; padding-bottom: 25px; }
+.pretest-submit-btn-container { padding-top: 10px; padding-bottom: 25px; text-align: center; }
+
+.pretest-retake-btn-container { border-top: 1px solid #CCC; text-align: center; padding-top: 25px; padding-bottom: 25px; }
+.final-submit-btn-container { padding-top: 10px; padding-bottom: 25px; text-align: center; }
+
+.final-completion-btn-container { border-top: 1px solid #CCC; text-align: center; padding-top: 25px; padding-bottom: 25px; }
+
+.quizSubmitBtn { /*float: left;*/ display: block; }
+.quizContainer { text-align: left; }

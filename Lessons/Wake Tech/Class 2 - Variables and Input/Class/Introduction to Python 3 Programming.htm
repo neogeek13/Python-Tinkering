@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- Google Tag Manager -->
+            <script async="true" type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/event.js" data-owner="criteo-tag"></script><script src="Introduction%20to%20Python%203%20Programming_files/2861.js" async="" type="text/javascript"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/ld.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/conversion.js">
+</script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag"></script><script type="text/javascript" async="" src="Introduction%20to%20Python%203%20Programming_files/ga.js"></script><script async="" src="Introduction%20to%20Python%203%20Programming_files/gtm.htm"></script><script>(function(w,d,s,l,i){try{w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            }catch(e){(console.error || console.log).call(console, e.stack || e);}
+            })(window,document,'script','dataLayer','GTM-P66CZH7');</script>
+            <!-- End Google Tag Manager --><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Python 3 Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-1.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-migrate-1.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom.css" media="all"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/global.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/course.htm"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/patch.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/patch.css" media="all"><link href="Introduction%20to%20Python%203%20Programming_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P66CZH7'
+            height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+    <noscript>
+        <div id="sansjs">
+            Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+        </div>
+    </noscript>
+    <form name="aspnetForm" method="post" action="./PrintLesson.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=2" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource_002.js" type="text/javascript"></script>
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource.js" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7" type="hidden">
+</div>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm('Are you sure you wish to log out?');" id="ctl00_lbLogout" tabindex="4" class="title-bar-login-button" href="javascript:__doPostBack('ctl00$lbLogout','')">
+                        <p role="heading">LOGOUT</p>
+                    </a>
+
+                    <a id="ctl00_hlkHelpInActive" tabindex="2" class="title-bar-help-button" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">
+                            <p role="heading">
+                                HELP
+                            </p>
+                    </a>
+                    
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" tabindex="1" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Introduction to Python 3 Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Mike Orsega
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            2: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Get Interactive With Variables and User Input</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        <span class="accessibility_hide">You are here: </span>
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=2">Lesson 2</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" onclick="showAllImagesPF()" type="radio"><label for="pfImagesOnBtn">Text, images and activities (IE users only)</label></p><p><input name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()" checked="checked" type="radio"><label for="pfInteractivityOffBtn">Text and images</label></p><p><input name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()" type="radio"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_chrome.png" alt="chrome icon" class="pf_visible pf_image" border="0"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_firefox.png" alt="Firefox icon" class="pf_visible pf_image" border="0"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" class="pf_visible pf_image" border="0"><br><span class="caption">IE 11</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_safari.png" alt="Safari icon" class="pf_visible pf_image" border="0"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input class="pf_hide_directions_btn" style="display:none;" value="Hide Directions" type="button"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input class="pf_hide_directions_btn" style="display:none;" value="Hide Directions" type="button"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p>
+<!-- ipy LESSON 02 CHAPTER 1 -->
+<!-- START CHAPTER CONTENT -->
+
+</p><p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/L02_header.jpg" galleryimg="no" alt="Lesson 2 header" class="pf_image" vspace="0" border="0"></p><p></p><p><strong>Introduction</strong></p><p>Welcome
+ back! In the last lesson, we created a simple Python program and got 
+familiar with IDLE. Today, we'll continue our exploration of Python as 
+we look at how Python stores data and how we can get input from users.</p><p>First,
+ we'll need to talk about variables.  A variable is nothing more than a 
+named place in memory where we can store a value as the program runs.  
+These values can be both numeric values and strings, and Python works 
+with each type differently.  So we'll start there.  I'm also going to 
+show you a few of the more common mathematical operators and some of the
+ special things you can do with Python as you work with numbers.</p><p>Finally,
+ we'll put our new knowledge of number and string variables to use as we
+ learn how to get input from the user.  After all, programs that simply 
+print information aren't nearly as fun as those that interact.  Input in
+ Python may be a little bit different from what you're used to with 
+other high-level languages, so we'll be sure to spend enough time on 
+this to get you comfortable with Python's methods.</p><p>With all that said, let's move on to Chapter 2 and learn about Python variables!
+                </p></div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><!-- ipy LESSON 02 CHAPTER 2 --><!-- START CHAPTER CONTENT --><strong>Variables</strong></p>
+<p>If you've ever written computer code in other high-level languages 
+like C++ or Java, then you're used to first declaring your variable 
+before you use it. That is, you write a line of code that tells the 
+computer to set aside memory to be formatted as a certain data type so 
+that you can use it in your program.</p>
+<p>One of the features of Python is that there's no need to declare your
+ variables. Instead, you just write your code with the name of the 
+variable you want, followed by an equal sign and then the value you want
+ stored in that location. For example, if you want to store the value 10
+ in a variable named shoe_size, you'd write this:</p>
+<div class="noscroll">
+<pre>shoe_size = 10</pre>
+</div>
+<p>Be aware that this is the same whether you want to store a whole 
+number, like I did in the example above, or if you want to store a 
+number with a decimal point, as shown here:</p>
+<div class="noscroll">
+<pre>shoe_size = 10.5</pre>
+</div>
+<p>Notice that there is no need to explicitly tell the computer what 
+kind of value our variable, shoe_size, is storing. In fact, this 
+variable can store a whole number and then immediately switch to storing
+ a decimal. It doesn't make any difference to Python. </p>
+<p>Why don't you try this out? Just go to the interpreter, either using 
+the command line interface or IDLE's command prompt, and type the 
+statements above. Be sure to print the value of shoe_size after each 
+assignment. If you type this directly into the interpreter, your 
+interactions on the display should be something like the following. Note
+ that the commands that you are to type are <strong>bolded</strong>:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt; <strong>shoe_size = 10</strong><br>&gt;&gt;&gt; <strong>print (shoe_size)</strong><br>10<br>&gt;&gt;&gt; <strong>shoe_size = 10.5</strong><br>&gt;&gt;&gt; <strong>print (shoe_size)</strong><br>10.5</pre>
+</div>
+<p>Now is a good time to mention something about variable names. Python allows you to choose pretty much whatever name you want as long as the variable name starts with a letter and only contains letters, digits, or the underscore character (_). You're also allowed to begin your variable name with the underscore character. </p>
+<p>However, doing this has a special meaning in Python. But we'll cover that later in the course. So for now, let's hold off on doing this.</p>
+<p>Another restriction for your variable names is <em>keywords</em> or <em>reserved words</em>. These words have a special meaning in Python. You aren't allowed to use either as your variable names. If you want to see a list of Python's keywords, type the following at the prompt:</p>
+<div class="noscroll">
+<pre>import keyword
+print (keyword.kwlist)</pre>
+</div>
+<p>Also, if you look at my code above, you'll see that I'm using all lowercase letters with an underscore character separating words. This is the style Python programmers typically use when naming their variables. And while this is the way most people do it, you're certainly free to use whatever combination of upper and lowercase letters you want.</p>
+<p>Before we go any further with our numerical variables, let's switch gears and take a quick look at strings. </p>
+<p><strong>Strings</strong></p>
+<p>When I talk about strings, I'm talking about a sequence of zero or more characters. As you learned in the last lesson, we can make string literals by enclosing them in double quotes. We did this when we printed our little message with the print statement. </p>
+<p>And a moment ago, you learned that you can use a variable to store a numeric value. We did this in our shoe_size example when we placed the variable name and followed it with an equal sign and the value that we wanted to store.</p>
+<p>However, Python strings are a bit more complex than that. As you may have discovered, you aren't required to enclose your strings in double quotes. Actually, it's perfectly okay to enclose your strings in single quotes instead. This means that the following two lines of code are the same in Python:</p>
+<div class="noscroll">
+<pre>name = "Python"
+name = 'Python'</pre>
+</div>
+<p>At first, you might think this is a little silly. After all, it seems that one method would suffice. However, by giving you this option, Python is really helping you out. For example, type these lines of code into the interpreter and see what you get:</p>
+<div class="noscroll">
+<pre>quote = 'The women all said, "Hello."'
+print (quote)
+</pre>
+</div>
+<p>You'll find that when the print statement executes, you'll actually get those double quotes in your output. This helps to make our output more attractive.</p>
+<p>Of course, if you've done programming in other languages, you probably already know about <em>escape sequences</em>. This is basically just putting a backslash character( \ ) in your string to give the computer notice that the next character means something different.</p>
+<p>For example, if you prefer using double quotes, then you can always put the backslash character before the double quotes in your string. The result would be this:</p>
+<div class="noscroll">
+<pre>quote = "The women all said, \"Hello\""
+print (quote)
+</pre>
+</div>
+<p>Notice how we're using the backslash character to tell the computer that our double quotes should literally be part of the string and that they're not marking the end of it. So, remember that you have a choice and feel free to use whichever method you want when writing your programs.</p>
+<p>Before we leave the topic of sequences, there are two more that I want to show you, mostly because I tend to use them a lot in my programs. They are the tab character (\t) and the newline character (\n). Type the following code and see how they work:</p>
+<div class="noscroll">
+<pre>text = "1\t2\n3"
+print (text)
+</pre>
+</div>
+<p>From the output, you should see that there is a tab between the 1 and the 2 and then the 3 is on the next line. Again, these are very useful when you want to format your output so that it's easy to read.</p>
+<p>Another interesting and useful twist in Python programming is that you can mix numbers and strings. Remember how I said that you could make a numeric variable hold a whole number at one point and then a number with a decimal? Well, you can actually have a variable followed by a string. This means you could have a program that does something like this:</p>
+<div class="noscroll">
+<pre>data = 4
+data = -12.3
+data = "hello there"
+</pre>
+</div>
+<p>None of these scenarios are a problem for Python, and your code will run without any problems. If you want, go ahead and try it out at the command line. Put a print statement after each time you assign a new value, and you'll see that the value that you store is there, whether it's a whole number, a decimal number, or a string. That's pretty cool, huh?</p>
+<p>I have one final thing to note about variables and assigning them values. Python will actually let you assign multiple variables different values in the same line of code. For example, go to the command prompt and type the following:</p>
+<div class="noscroll">
+<pre>a, b = 1, 2
+print (a)
+print (b)</pre>
+</div>
+<p>You'll see that you just gave <em>a</em> the value 1 and <em>b</em> the value 2. This might not come as much of a shock to you. However, if you've done programming in C#, C++, or Java, you know that this just isn't possible in those languages. </p>
+<p>Personally, I'm not a big fan of syntax like this, but I can appreciate that some people love it. It does cut down on the number of lines of code, which is good. Again, just keep in mind that it's an option you may use.</p>
+<p>Now that you've learned a little bit about the basics of our numeric and string variables, let's turn our attention to user input. In Chapter 3, I'll show you how to get the user's input so that we can work with it. Then we'll get back to our variables and do some interesting things with them.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><!-- ipy LESSON 02 CHAPTER 3 --><!-- START CHAPTER CONTENT --><strong>User Input as Strings</strong></p>
+<p>What fun is a program that just spits out words and data to the user? Sure, there are times when you'll want to present information to your user in the form of output. However, for a really interesting program, you'll want to get data from the user too. So that's what we'll look at next.</p>
+<p>There are two basic ways to get input from the user. Both methods work exactly the same. However, one allows you to read the user's response as a string. The other reads it as a number. Let's start with the string method.</p>
+<p>For string input, Python uses a function called <em>input</em>. One nice feature about this function is that it gives you the ability to print a prompt to your user. This is a really good programming practice and something that I strongly urge you to put into your code. Here's the general form of the input function:</p>
+<div class="noscroll">
+<pre>&lt;variable&gt; = input(&lt;Prompt&gt;)</pre>
+</div>
+<p>Be aware that the &lt; and &gt; aren't part of the code. This is just my way of saying, <em>"put your variable here."</em> Technically, I suppose the variable in the above statement isn't actually part of the input function. However, if you're taking the time to get input from the user, you'll need to put it somewhere. At any rate, let's look at a specific example and let you try it out.</p>
+<p>Now you can use the command line interpreter here, but most likely, you'll want to run this code a few times. So if you'll open a new module window (use the menu system and choose <strong>File &gt; New Window</strong>) and type in the code, you can save yourself a little bit of work. We're going to write a couple lines of code that ask users for their names, and then we'll echo back whatever they enter. This is how the code ends up looking:</p>
+<div class="noscroll">
+<pre># Get the name from the user
+value = input("Please enter your name")
+print (value)</pre>
+</div>
+<p>The first thing you'll probably note about this code is that the first line starts with #. This line is a <em>comment</em>. By putting the pound sign there, we're telling the interpreter to ignore the rest of the line. Although comments aren't required in programs, it's a really good idea to include them because they make it easier to read and understand the code.</p>
+<p>Go ahead and save this code, then run it, and you'll see that the computer will prompt you by printing the message, "Please enter your name." Then it waits for you to type something and press ENTER. When you're done, you'll see whatever you typed printed back on the next line. This should be pretty straightforward. </p>
+<p>Go ahead and run this program a few times and type in different characters. Try putting in a number or a character like a dollar sign ($). The program should always work the same and just give you back whatever you enter. </p>
+<p>That's because the characters you're typing are just stored in a string variable exactly as you type them. You might not think this is a big deal, but wait until we start working with numeric input. You'll see a difference there.</p>
+<p><strong><strong>Numerical Input</strong></strong></p>
+<p>Let's start by trying a small example: We'll ask the&nbsp;user's age and then say how old the user will be in 10 years. Using what you know already, you choose to start with a call to input and then add 10 to the age:</p>
+<div class="noscroll">
+<pre>age = input("Enter your age ")
+future_age = age + 10
+print (future_age)</pre>
+</div>
+<p>This seems like a reasonable approach; however if you try to run this code and enter a number, you'll find there's a problem:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px; border: 0px solid;" alt="Error message when trying to add a number to a string" src="Introduction%20to%20Python%203%20Programming_files/L02-01.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Error message when trying to add a number to a string</font></p>
+<p>The error message here is trying to tell us we cannot add a number to a string.&nbsp;Recall that input( ) gives us back the value as a string, even if that string is storing a numeric value and you cannot add a number to a string.&nbsp;The way to get around this is to make use of the eval( ) function to convert the string into a number before doing the math:</p>
+<div class="noscroll">
+<pre>future_age = eval(age) + 10</pre>
+</div>
+<p>Note that many Python programmers choose to simply wrap the eval( ) function call around the input( ) function call, as in:</p>
+<div class="noscroll">
+<pre>age = eval(input("Enter your age "))
+future_age = age + 10
+print (future_age)</pre>
+</div>
+<p>By including this code, now the value stored in age is a number from the very beginning.</p>
+<p>At this point, you have all the basics for user input and basic use of numeric and string variables. But there's still a lot more we can do with these things. Let's move on to Chapter 4, where I'll show you how to do some basic and more complex math operations with our numeric variables. And we'll look at some of the awesome tools that can be applied to our strings.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><!-- ipy LESSON 02 CHAPTER 4 --><!-- START CHAPTER CONTENT --><strong>Numeric Manipulation</strong></p>
+<p>Now my intention isn't to make you a math wizard. But let's face it, computers came about because people wanted a way to be able to do math quickly and accurately. Besides, there will be times when you'll need to do math operations, even simple ones. So you may as well know what tools are available to you.</p>
+<p>It shouldn't be much of a surprise to know that you can do simple addition, subtraction, multiplication, and division with the +, -, * and / operators, respectively. This is pretty standard in most languages.</p>
+<p>But here's something that is a bit tricky that you need to know. When you do any kind of math operation, the result is going to take on the format of the original operands. This means that if I do something like add the whole number 1 to the whole number 2, the result is the whole number 3. Likewise, if I add the decimal number 1.0 to the decimal number 2.0, I get the decimal number 3.0.</p>
+<p>These are the basic operators that you can use to do math in Python. But there are a few more that you should know about because they may come in handy. One such operator is <em>modulus %</em>. </p>
+<p>This operator gives you the remainder after doing division. This means that 7 % 2 will give you 1, because 7 divided by 2 is 3, with 1 leftover. This is a handy little operator when you need to figure out if a user's value is odd or even—when divided by 2, odd numbers have a remainder of 1, while even numbers have a remainder of 0.</p>
+<p>What if you want to raise one number to a power? Maybe you need to figure out the value of 2 squared or 100 to the 10th power. We can do this in Python with the ** operator. So you can find your answers by typing the following:</p>
+<div class="noscroll">
+<pre>print (2 ** 2)
+print (100 ** 10)</pre>
+</div>
+<p>So have you had enough of numbers? You can do a lot more with them, but I'll just mention them here and let you go out and explore some if you're interested. Python gives you the ability to work with octal, hexadecimal, and even imaginary numbers. In order to do things like this, there's no special library that you need to work with. Just type in these values with the necessary formatting and you've got it!</p>
+<p>Speaking of libraries, there are also some more advanced things that you can do if you decide to use a math library. This is a specific file that has some math functions and constants that you can use in your programs if you need them. But before you can, you need to use an <em>import statement</em>. This is a line of code that tells the computer that you're going to reference something in this library file. The Python files that you downloaded have the math library with them.</p>
+<p>To import this file into your program file, just be sure to make the import statement the first line of your program. Then you can use whatever is available in the library. For example, consider the following program:</p>
+<div class="noscroll">
+<pre>import math
+
+print ("The value of Pi is")
+print (math.pi)
+
+print ("There's even another way to")
+print ("do power, with math.pow")
+print (math.pow(2, 2) )</pre>
+</div>
+<p>Again, there's a whole suite of functions for you to use in the math library. However, I don't want this course to be all about numbers. After all, strings are fun to work with too. And that's what I'd like to turn your attention to next.</p>
+<p><strong>String Manipulation</strong></p>
+<p>I could probably spend an entire lesson in this course talking about the tools that are available to you with strings. However, I think you might prefer a little variety, so I'll give you a little bit here and a little bit more as it comes up in the course.</p>
+<p>Strings are a very important data type, and Python has done its best to make them as easy to work with as possible. Specifically, one common thing you'll want to do with a string is add one to another. Now this isn't adding like math, but instead <em>concatenation</em>, which just means putting one string on the end of another. For example, try this out:</p>
+<div class="noscroll">
+<pre>print ("New " + "York")</pre>
+</div>
+<p>The result will be the string <em>"New York"</em>. Again, we're just putting one string at the end of another. Note that in order to get the blank space between the two words, I placed a blank space before my closing quote after the word <em>New</em>.</p>
+<p>Python takes this a step further, and in addition to being able to use + with strings, you can also use *. Try this one out:</p>
+<div class="noscroll">
+<pre>print ("and over " * 3)</pre>
+</div>
+<p>The result here is going to be <em>"and over and over and over"</em>. You might not think this is a very useful tool. But imagine if you were creating some type of report and you wanted to separate each section some way. Instead of typing out a bunch of "-" characters, you could just use the print statement with "-" * 80. Again you might not ever need it, but it's a tool that Python has for you to use whenever you want.</p>
+<p>In addition, Python has provided a number of tools to help you work with strings. For example, it's quite common to need to know the length of a string. For that, we can use the len( ) function. Try it out at the command prompt by typing the following:</p>
+<div class="noscroll">
+<pre>word = "My words are important!"
+print (len(word))</pre>
+</div>
+<p>The computer should print the length of the string. In this case, it's 23.</p>
+<p>There are also functions that let you search a string for a particular substring (find), break strings into substrings (split), remove white space from the ends of your string (strip), tell if the letters are uppercase (isupper), or convert all letters to lowercase (lower). We don't have the time or space to cover each one of these functions, but be aware that if you're trying to manipulate your strings, there's probably a function that'll make your work easier.</p>
+<p>The last two things I want to cover with strings are <em>indexing</em> and <em>slicing</em>. Strings are just a collection of zero or more characters. For that reason, Python allows us to access individual characters with a number or index. For example, try out the following code:</p>
+<div class="noscroll">
+<pre>phrase = "Python rocks"
+print (phrase [0] )</pre>
+</div>
+<p>By placing the number 0 inside the square brackets, we're asking for the first letter in the phrase variable, which is <em>'P'</em>. Python also allows us to do what's called slicing. That is, if you provide two numbers, separated by a colon, then you can get a range of characters out of the string. You can test this out with the following code:</p>
+<div class="noscroll">
+<pre>phrase = "Python rocks"
+print (phrase [1:3] )</pre>
+</div>
+<p>You're probably looking at an answer you didn't expect. You see, Python will take that first number, 1, and start its slice there. However, the second number isn't a number of characters to take. Instead, it's the end of the slice. But here's where it gets a bit confusing. That last character position, here 3, isn't included in the slice. This means that if you wanted to get the word <em>rock</em>, you'd do this:</p>
+<div class="noscroll">
+<pre>print (phrase [7:11] )</pre>
+</div>
+<p>Now you may be wondering, "How can I get 'rocks' out of this string?" Be aware that Python allows you to omit either of the numbers to get to the ends. This means that the answer to your question is:</p>
+<div class="noscroll">
+<pre>print (phrase [7:] )</pre>
+</div>
+<p>Okay, I realize that this may be a bit of a pain, but I promise that the more you work with this and practice, the more you'll get used to the way Python does things. Also keep in mind how powerful slicing is. Remember, there's no function call here.</p>
+<p>One very important thing to note about indexing strings in Python is that you can only use it to access the characters. That is, you cannot use this method to put a new character in a certain position. So the following will generate an error:</p>
+<div class="noscroll">
+<pre>phrase [0] = 'p'</pre>
+</div>
+<p>But that's okay. We can accomplish the same thing by doing this:</p>
+<div class="noscroll">
+<pre>phrase = 'p' + phrase [1:] </pre>
+</div>
+<p>Again, there are a lot of things we can do with strings. Python is a very powerful language. You may not think all the things we've covered are very useful, but as time passes, you might find a need for them.</p>
+<p>Let's wrap things up in our final chapter.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p>
+<!-- ipy LESSON 02 CHAPTER 5 -->
+<!-- START CHAPTER CONTENT -->
+<strong>Summary</strong></p>
+<p>Wow, did you realize how much material there was to cover when we started this lesson?  You might have thought that there wasn't much to variables and input.  And in some ways, that's right.  </p>
+<p>As you saw, the basic use of numeric and string variables is pretty easy. Even input with the input function is fairly straightforward. But once you get into the language a little bit, you find that it goes pretty deep.  </p>
+<p>Remember, the goal of Python is to give you a full set of simple tools that you can use to do common things.  The best part is that we've only scratched the surface.  Again, if you want more information about some of these functions, the material is out there and shouldn't be too hard to find or understand. I've included links to some information in the Supplementary Material section for this lesson. Please read and explore. But most of all, play with these things and have fun.</p>
+<p>In the next lesson, we'll turn our attention to having our programs make decisions.  You'll then be able to do things like ask users a question and then run one set of code or another, based on the answer they give.  This is really going to make for a personal, interactive program that your users are sure to enjoy.</p>
+                </div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.python.org/py3k/library/math.html" target="_blank">
+                                Math Library Members        </a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.python.org/py3k/library/math.html</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            Here's a link to all of the members of the math library. The page includes the list of members, and some have short examples to show you how to use them.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://docs.python.org/py3k/library/stdtypes.html#string-methods" target="_blank">
+                                String Functions        </a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://docs.python.org/py3k/library/stdtypes.html#string-methods</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This page shows all of the string functions that are available for you to use in your programs. The page shows the list of members, and some have short examples to show you how to use them.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <strong>Q:</strong> I have a string variable that's holding my first and last name. I want to practice the slicing technique and print my last name. The problem is that I can't seem to get the last letter to print. Any ideas about what's going on?<br>
+<br>
+<strong>A:</strong> It sounds like you may be using both a starting position number and an ending position number. For example, if your string code was s = "Pat White", then you might be trying something like:
+<br>
+<br>
+<div class="noscroll">
+<pre>print (s[4:8])</pre>
+</div>
+<br>
+This may seem to work. However, remember that Python won't actually print whatever is at that ending position. Instead, you need to leave that last position out. Try it again like this:<br>
+<br>
+<div class="noscroll">
+<pre>print (s[4:])</pre>
+</div>
+<br>
+This should get things working correctly.
+<br>
+<br>
+<strong><br>
+Q: </strong>Is there a way to use two different print statements and still get the output on the same line?
+<br>
+<br>
+<strong>A: </strong>Yes, Python 3 requires us to make use of the end attribute to replace the standard end (a carriage return) with a blank space.  Consider the following code that will display the numbers 1 and 2 on the same line:
+<br>
+<br>
+<div class="noscroll">
+<pre>value1 = 1
+value2 = 2
+print(value1, end=" ")
+print(value2, end=" ") 
+
+</pre>
+</div>
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            Use your knowledge of string variables and input to write a program that demonstrates how slicing works. Have your program get a word or phrase from the user and two numbers. Use those two numbers to slice the string and print out that slice.<br>
+<br>
+<a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/py3-0/PY3_L02_Solution.py" target="_blank">Click here</a> to download the solution file: PY3_L02_Solution.py.
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2016
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                py3-0
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB04P (1.2.99.4) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/IncludeResource.js"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.eVar4='';
+s.prop4='';
+s.eVar5='introduction to python 3 programming';
+s.prop5='introduction to python 3 programming';
+s.prop6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.eVar6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.prop7='2';
+s.eVar7='2';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=2';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=2';
+s.prop15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.eVar15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.hier1=',,introduction to python 3 programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript><a href='http://www.Adobe.com' title='Web Analytics'><img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/></a></noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript><iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="jb-overlay" style="opacity: 0.7; display: none;"></div><div id="jb-window" style="display: none;"><div id="jb-window-inner" style="position: fixed; top: 280px; left: 469px;"><div id="jb-window-content" style="width: auto; height: auto; overflow: hidden; display: none;" tabindex="0"></div></div></div><span id="text-resize" style="position: absolute; left: -9999px; font-size: 100%; font-family: Courier New, mono; margin: 0; padding: 0;">&nbsp;</span><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?random=1481492220450&amp;cv=8&amp;fst=1481492220450&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;eid=376635470&amp;u_h=860&amp;u_w=1376&amp;u_ah=839&amp;u_aw=1376&amp;u_cd=24&amp;u_his=50&amp;u_tz=-300&amp;u_java=true&amp;u_nplug=9&amp;u_nmime=60&amp;frm=0&amp;url=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FPrintLesson.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26lesson%3D2&amp;ref=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FLessons.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26bc%3DLessons%26lesson%3D2&amp;tiba=Introduction%20to%20Python%203%20Programming" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" width="300" height="13" frameborder="0"></iframe><div id="criteo-tags-div" style="display: none;"><iframe style="display: none;" src="Introduction%20to%20Python%203%20Programming_files/dis.htm" width="0" height="0"></iframe></div></body></html>

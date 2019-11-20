@@ -1,0 +1,27 @@
+﻿/* CSS Document */
+
+/*==============
+1)Printer-friendly View - for print only (media="print")
+=================*/
+
+/* Header pieces */
+
+body { background-color: white; }
+
+.title-bar, .title-bar-centering-container-extra-IE5, .title-bar-centering-container, .title-bar-login-button, .title-bar-help-button, .title-text-block, .classroom-course-name, .classroom-course-instructor { display: none; }
+
+/* Left navigation */
+
+.left-navigation-panel, .left-navigation-links { display: none; }
+
+.main-content { width: 100%; border: 0; float: none; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; }
+
+.classroom-centering-container { }
+
+.classroom-main-container { width: 100%; margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; }
+
+.printer-friendly-lesson-title { display: block; }
+
+.nav-top { display: none; }
+
+.classroom-footer-text-right-align { width: 100%; }

@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- Google Tag Manager -->
+            <script async="true" type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/event.js" data-owner="criteo-tag"></script><script src="Introduction%20to%20Python%203%20Programming_files/2861.js" async="" type="text/javascript"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/ld.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/conversion.js">
+</script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag"></script><script type="text/javascript" async="" src="Introduction%20to%20Python%203%20Programming_files/ga.js"></script><script async="" src="Introduction%20to%20Python%203%20Programming_files/gtm.htm"></script><script>(function(w,d,s,l,i){try{w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            }catch(e){(console.error || console.log).call(console, e.stack || e);}
+            })(window,document,'script','dataLayer','GTM-P66CZH7');</script>
+            <!-- End Google Tag Manager --><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Python 3 Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-1.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-migrate-1.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom.css" media="all"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/global.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/course.htm"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/patch.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/patch.css" media="all"><link href="Introduction%20to%20Python%203%20Programming_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P66CZH7'
+            height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+    <noscript>
+        <div id="sansjs">
+            Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+        </div>
+    </noscript>
+    <form name="aspnetForm" method="post" action="./PrintLesson.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=7" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource_002.js" type="text/javascript"></script>
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource.js" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7" type="hidden">
+</div>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm('Are you sure you wish to log out?');" id="ctl00_lbLogout" tabindex="4" class="title-bar-login-button" href="javascript:__doPostBack('ctl00$lbLogout','')">
+                        <p role="heading">LOGOUT</p>
+                    </a>
+
+                    <a id="ctl00_hlkHelpInActive" tabindex="2" class="title-bar-help-button" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">
+                            <p role="heading">
+                                HELP
+                            </p>
+                    </a>
+                    
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" tabindex="1" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Introduction to Python 3 Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Mike Orsega
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            7: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Creating Graphics With Tkinter</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        <span class="accessibility_hide">You are here: </span>
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=7">Lesson 7</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" onclick="showAllImagesPF()" type="radio"><label for="pfImagesOnBtn">Text, images and activities (IE users only)</label></p><p><input name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()" checked="checked" type="radio"><label for="pfInteractivityOffBtn">Text and images</label></p><p><input name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()" type="radio"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_chrome.png" alt="chrome icon" class="pf_visible pf_image" border="0"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_firefox.png" alt="Firefox icon" class="pf_visible pf_image" border="0"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" class="pf_visible pf_image" border="0"><br><span class="caption">IE 11</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_safari.png" alt="Safari icon" class="pf_visible pf_image" border="0"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input class="pf_hide_directions_btn" style="display:none;" value="Hide Directions" type="button"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input class="pf_hide_directions_btn" style="display:none;" value="Hide Directions" type="button"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p>
+<!-- ipy LESSON 07 CHAPTER 1 -->
+<!-- START CHAPTER CONTENT -->
+
+</p><p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/L07_header.jpg" galleryimg="no" alt="Lesson 7 header" class="pf_image" vspace="0" border="0"></p><br>
+<strong>Introduction</strong><p></p><p>Up to this point, this course has
+ been very conceptual in nature.  You've spent a lot of time learning 
+about variables, functions, decisions, loops, and most recently, 
+classes.  You might be starting to wonder if there's anything that 
+Python can do that's a little more, well, visual. </p><p>So let's take a
+ little break from the world of black text on a white background and put
+ a little spice into life with graphics.  You might be wondering why 
+I've waited so long to introduce this material.  Actually, in order for 
+you to really understand what's going on, it's nice to have a little 
+background with classes and modules.  Plus, once you learn how to create
+ these graphics, it's nice to have the tools to write decisions and 
+loops to make your programs more interesting.</p><p>In this lesson, 
+we'll start by creating a simple graphical application.  We'll then see 
+how to add a Canvas to our program and learn how to place shapes like 
+ovals, rectangles, and lines.  Finally, we'll explore a few extras that 
+will allow you to do some simple animation in Python.</p><p>Hopefully, 
+this will get your creative juices flowing and inspire you to use some 
+of the skills you've learned in this course.  So, when you're ready for 
+more visually creative programs, flip over to Chapter 2, and we'll get 
+started.<br>
+                </p></div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><!-- ipy LESSON 07 CHAPTER 2 --><!-- START CHAPTER CONTENT --><strong>The Frame and Canvas Widgets</strong></p>
+<p>The first thing we need to talk about when it comes to Python 
+graphics is the Tkinter module. This module contains a number of 
+different graphical user interface (GUI) components. The best part is 
+that it comes with the Python language that you downloaded at the start 
+of the course.</p>
+<p>There are also several <em>Windows gadgets</em>, or <em>widgets</em>,
+ that we can use. The first widget we'll look at is the Frame. You've 
+seen this widget many times before, except that you probably called it a
+ <em>window</em>. </p>
+<p>You can think of this component as a container for other widgets. 
+Let's write a short program that creates a very simple Frame and 
+displays it. I'll put up the code first, and then we can discuss each 
+line:</p>
+<div class="noscroll">
+<pre>from&nbsp;tkinter&nbsp; import *
+
+frame01 = Frame()
+frame01.mainloop()</pre>
+</div>
+<p>After the previous lesson, you should be comfortable with the first 
+line of code. This is just an import statement that gives us access to 
+the variables and methods defined inside the Tkinter module. Please note
+ that both the <em>t</em> and the <em>k</em> in <em>tkinter </em>are lowercase in the code.</p>
+<p>The next line of code creates our Frame object. Finally, we use this object to call on a method named <em>mainloop</em>. This mainloop method is very important because it runs a loop to keep the Frame showing until the user chooses to close it.</p>
+<p>Go ahead and run this program. You'll see a simple little Frame open that looks something like this:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px; border: 0px solid;" alt="Simple Python frame" src="Introduction%20to%20Python%203%20Programming_files/L07-01.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Simple Python frame</font></p>
+<p>While this may not be the most exciting program, it is interesting to
+ note that the results look just like every other window you've ever 
+seen on your computer. And we did it with only two lines of code! But 
+remember, this Frame is just a container, which means that our next task
+ is to start placing other widgets into it.</p>
+<p>Adding new widgets is as simple as creating a new widget object and 
+then adding it to your Frame. But we have a problem with the way we've 
+written the code above. It's going to make for a very long program once 
+we start inserting additions. </p>
+<p>So, instead of doing it this way, I want us to practice our 
+object-oriented concepts and write a class to do the work for us. In 
+fact, I want to take this time to teach you a little bit about the idea 
+of <em>inheritance</em>. </p>
+<p><strong>Inheritance</strong></p>
+<p>In object-oriented terms, <em>inheritance</em> is just the ability to take an existing class and add to it. Basically, we'll be defining a brand-new class, called the <em>derived class</em>. This derived class will have everything that the <em>base class</em> has, plus anything else we want to add to it.</p>
+<p>Hopefully, you can see why inheritance is so applicable in our 
+graphics situations. After all, a graphics application is just a regular
+ Frame widget filled with a number of other widgets.</p>
+<p>With this in mind, let's rewrite our simple program above, but this 
+time use inheritance to create a new kind of Frame object. Note that the
+ following code will do the same thing as the two lines of code above. 
+But doing it this way is going to help us better organize our code as we
+ start adding more widgets:</p>
+<div class="noscroll">
+<pre>from tkinter import *
+
+class MyFrame(Frame):
+&nbsp;&nbsp;def __init__(self):
+&nbsp;&nbsp; &nbsp;&nbsp;Frame.__init__(self)
+
+# Now create a MyFrame object and call on mainloop
+frame02 = MyFrame()
+frame02.mainloop()</pre>
+</div>
+<p>Notice here that you're creating a new class called MyFrame with the code <em>class MyFrame</em>.
+ This is just like we did in the previous lesson when we created the 
+Time class. However, this time, in order to tell Python that this class 
+should inherit from another class, we put the base class name inside 
+parentheses.</p>
+<p>The next line of code starts the definition for the class 
+constructor, __init__. Again, this is just like what we had before. 
+Except here, the first line inside the constructor calls the constructor
+ of the base class Frame. </p>
+<p>This should make sense. After all, our MyFrame class is just a 
+specialized version of the Frame class. This means that when we want to 
+build a MyFrame, we first need to build a Frame. After that, we'll place
+ code to create and display other widgets in MyFrame. But for now, we're
+ finished with the class definition.</p>
+<p>The last thing to do in our program is to create a MyFrame object and
+ then call on mainloop so that it'll display. At this point, you may be 
+wondering why we don't just close the MyFrame file and then open a new 
+file to create the object and call mainloop. We certainly could do that.
+ However, you're going to find with the programs we write in this 
+lesson, the bulk of the code is going to be in the class definition. </p>
+<p>In fact, the only lines of code that we'll typically use outside of 
+the class are the two that you just wrote: one to create the object and 
+one to call mainloop. For that reason, we'll just put all of our code in
+ one file this time.</p>
+<p>Now that we have our program code organized, we're ready to add 
+components into our Frame. As mentioned, the Tkinter library gives us a 
+lot of different widgets to work with, but I want to start with the 
+Canvas widget.</p>
+<p>The Canvas widget lets you to create and draw shapes and text, 
+excellent for creating graphs and charts. It also allows the user to 
+have a place to draw. Think of the Canvas as a container that can hold 
+shapes.</p>
+<p>To get the Canvas into your Frame, you need to add the following two lines of code to your class constructor:</p>
+<div class="noscroll">
+<pre>self.myCanvas = Canvas()
+self.myCanvas.grid()</pre>
+</div>
+<p>Once again, the first line should make sense to you. It's creating a 
+new Canvas object. However, the second line, the call to grid( ), might 
+be a little confusing. You see, the Frame widget uses something called a
+ <em>layout manager</em> to determine where to place everything. There 
+are a few different layout managers available, but we'll stick with the 
+grid layout for now. </p>
+<p>Just so you know, the idea with the grid is that the Frame is divided
+ into a number of columns and rows. At any rate, in order to get a 
+widget into a container, you need to register it with the layout 
+manager. In this case, we just need to call grid( ).</p>
+<p>If you run this code now, you won't see much of a difference from 
+what we had before. That's because we're just creating a default Canvas,
+ which has the same background color as the default color for a Frame. 
+But obviously, we aren't required to keep the same colors and shapes. 
+These things can be specified as options when you create the object.</p>
+<p>For example, if you wanted to create a Canvas object that has width 300, height 200, and a blue background, use this code:</p>
+<div class="noscroll">
+<pre>self.myCanvas = Canvas(width=300, height=200, bg="blue")</pre>
+</div>
+<p>There are a variety of different options available for each widget. 
+You can specify as many or as few as you would like. To do this, just 
+place the option name, an equal sign, and then the value in your code. 
+If the value is text, you must place it inside quotes. Also, notice how a
+ comma separates each new option.</p>
+<p>If you haven't tried this already, go ahead and try it now. Here's how the code for the entire program should look:</p>
+<div class="noscroll">
+<pre>from&nbsp;tkinter import *
+
+class MyFrame(Frame):
+&nbsp;&nbsp;def __init__(self):
+&nbsp;&nbsp; &nbsp;&nbsp;Frame.__init__(self)
+
+&nbsp;&nbsp; &nbsp;&nbsp;self.myCanvas = Canvas(width=300, height=200, bg="blue")
+&nbsp;&nbsp; &nbsp;&nbsp;self.myCanvas.grid()
+
+frame02 = MyFrame()
+frame02.mainloop()</pre>
+</div>
+<p>You might try adjusting the different sizes and colors or you might 
+even try out some of the different options. There's a link to the 
+complete list of Canvas options in the Supplementary Material section 
+for this lesson.</p>
+<p>While it's fun to play with the different Canvas options, remember 
+you use the widget to place shapes on the Frame. When you're ready to 
+start doing that, flip over to Chapter 3 and let's see how this is done.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><!-- ipy LESSON 07 CHAPTER 3 --><!-- START CHAPTER CONTENT --><strong>Canvas Shapes</strong></p>
+<p>So far, we have a program that creates a Frame with a simple, empty 
+Canvas. Now it's time to start putting shapes onto the Canvas. There are
+ a variety of shapes, but probably the easiest to start with is the 
+rectangle. </p>
+<p>To get a rectangle onto the Canvas, you need to call on the method, <em>create_rectangle</em>.
+ A rectangle has four required arguments: the x and the y locations of 
+the upper-left corner and the x and the y locations for the lower-right 
+corner. Once again, there are a variety of options, but let's start by 
+creating a simple rectangle.</p>
+<p>Go to the program you ended the last chapter with and add the 
+following line to the end of your class constructor, just after the line
+ that calls grid( ).</p>
+<div class="noscroll">
+<pre>self.myCanvas.create_rectangle(10, 10, 100, 100)</pre>
+</div>
+<p>When you run this program, you'll have a Frame that contains a blue 
+Canvas. In the upper-left corner of that Canvas, there'll be a black 
+outline of a rectangle. One thing to note about graphics is that the 
+coordinate system has the x values increasing from left to right as you 
+would expect. However, the y values increase from top to bottom. For 
+this reason, it might be helpful to think of the x value as a distance 
+from the left edge and the y value as a distance from the top edge.</p>
+<p>Now, as you can see, the default rectangle gives you an outline of 
+the shape. There are actually three different options that I'd like you 
+to play with: outline, fill, and width. The outline and fill options 
+will allow you to choose the color for the rectangle's outline and fill,
+ respectively. The width option allows you to choose the width of the 
+rectangle's outline. Take some time to play with these and get 
+comfortable with them before moving ahead.</p>
+<p>The next shape I want to show you is the oval. As you might guess, you'll need to use the method <em>create_oval</em>. Actually, the oval shape is very similar to the rectangle. </p>
+<p>To create one, you again need to specify four coordinates. However, this time, these will be the coordinates of the oval's <em>bounding box</em>. That is, the smallest rectangle that can enclose the oval. Below is an example:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px; border: 0px solid;" alt="Solid oval with its dashed bounding box" src="Introduction%20to%20Python%203%20Programming_files/L07-02.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Solid oval with its dashed bounding box</font></p>
+<p>Other than the concept of the bounding box, drawing ovals is exactly 
+the same as drawing rectangles, including the options available to you. </p>
+<p>Once you start drawing multiple shapes on your Canvas, Python 
+displays them in the order that you add them. Take, for example, the 
+following statements:</p>
+<div class="noscroll">
+<pre>self.myCanvas.create_rectangle(10, 10, 200, 100, fill="blue")
+self.myCanvas.create_oval(10, 10, 200, 100, fill="white")</pre>
+</div>
+<p>This displays a blue-filled rectangle and then a white-filled oval on
+ top of it. With this code, you'll be able to see both shapes. However, 
+if you swap the order of these statements, then you'll just see a blue 
+rectangle because the oval is covered up. </p>
+<p>You may be thinking that the next two shapes we'll tackle are the 
+square and circle. But we don't need to because the methods you just 
+learned are what you'll use to create these shapes. You see, Tkinter 
+doesn't include a standard method called create_square. That's because a
+ square is just a special case of a rectangle where both the length and 
+width are the same. The same idea holds for the bounding box of an oval.
+ So you just mastered creating four shapes for the price of two. Not 
+bad.</p>
+<p>The next shape I want to discuss really isn't a shape at all. It's 
+the line. As you probably guessed, the method to create a line is <em>create_line</em>. </p>
+<p>To create one of these, you need to provide four numbers. Again, the 
+starting and ending x and y positions. Plus, similar to the rectangle 
+and oval shapes, the line shape has the width and fill options that 
+allow you to choose the line width and color, respectively. </p>
+<p>Additionally, there's an option for <em>arrow</em>. You use this 
+option to specify if you want to display an arrowhead at the end of a 
+line. Possible values for this option are "first," "last," and "both." 
+Please note that <em>first </em>refers to the first coordinate pair listed and <em>second </em>refers to the second one.</p>
+<p>For example, to draw a line from the point (1, 1) to the point (200, 
+200) with an arrowhead at point (1, 1), your code would look like this:</p>
+<div class="noscroll">
+<pre>self.myCanvas.create_line(1, 1, 200, 200, arrow="first")</pre>
+</div>
+<p>The last shape I want to discuss is made using the <em>create_text</em>
+ method. This method lets you add a creative punch to words. So, as you 
+can imagine, there's a little more involved with this method's options.</p>
+<p>As you might expect, the create_text method requires you to give an x
+ and y position and the text you want to display. Don't overlook that 
+text is an option. So, in order to display the text "Hello World" at 
+location (50, 50), you'd use the following code:</p>
+<div class="noscroll">
+<pre>self.myCanvas.create_text(50, 50, text="Hello World")</pre>
+</div>
+<p>As you've seen before, this shape also gives you the fill option to 
+choose the text's color. However, this shape's width property isn't like
+ the others. Instead, width specifies the width of the bounding box for 
+the text. This means that if the text is longer than this width, the 
+text will wrap to the next line.</p>
+<p>Another option related to the width is <em>justify</em>. Possible 
+values for this option include, "left," "center," or "right." These 
+control where Python will display the text in the bounding box .</p>
+<p>And while we're discussing how the text is placed, we should also discuss the <em>anchor</em>
+ option. This property determines where the text should be placed with 
+respect to the point you specify. By default, the value for this option 
+is "center," which means that the center of the text is to be placed at 
+the x, y location you specify. Other possible options come from compass 
+locations as shown below:</p>
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px; border: 0px solid;" alt="Anchor locations" src="Introduction%20to%20Python%203%20Programming_files/L07-03.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">Anchor locations</font></p>
+<p>And of course, the text shape has a <em>font</em> option. To change your font, you need to specify the font name and size in the following format:</p>
+<div class="noscroll">
+<pre>( &lt; Font name &gt; , &lt; size &gt; )</pre>
+</div>
+<p>Please note that the name of the font must be enclosed in quotes and 
+that the name and the size must be enclosed in parentheses and separated
+ by a comma. For example, the following two lines of code use all of 
+these options to create the blue text "Hello World." at location (1, 1) 
+with the anchor in the upper-left corner, a width of 70 pixels, the text
+ centered, and with 16 point Times font:</p>
+<div class="noscroll">
+<pre>self.myCanvas.create_text(1, 1, text="Hello World",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width=70, fill="blue", anchor="nw",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;justify="center", font=("Times", 16))</pre>
+</div>
+<p>I strongly suggest that you type in this example code and run it to 
+see exactly what it does. I'd also recommend that you make some 
+modifications to these options (especially the anchor) to get some 
+experience with how they work.</p>
+<p>Now, in addition to the rectangles, ovals, lines, and text, there are
+ also methods that allow you to create arcs, polygons, and images. We 
+could certainly take an entire lesson or even more to go through each of
+ these shapes. However, I think in the end, it's all pretty much the 
+same thing. </p>
+<p>With what we've already covered, I know you'll easily pick up the 
+other shapes on your own. And, of course, there's always the Discussion 
+Area. Just give me a holler if you need any help. I've also included a 
+link to a Web page that lists each of the shapes and all of the options 
+available for each of them in the Supplementary Material section for 
+this lesson.</p>
+<p>What I want to talk about next is how to create simple animations 
+with your shapes. Python gives us two ways to do this. One involves 
+pausing our program and the other uses function calls that return a 
+value. When you're ready, move over to the next chapter, and I'll show 
+you how to animate shapes using both tactics.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><!-- ipy LESSON 07 CHAPTER 4 --><!-- START CHAPTER CONTENT --><strong>Simple Animation</strong></p>
+<p>As I said before, one way to simulate animation is pausing the 
+program. The idea is to draw a shape on the Canvas, have the program 
+pause, and then draw another shape. By doing this, we give the effect of
+ animating our shapes. While you may be comfortable with&nbsp;drawing at
+ this point, you might not be aware of how we're going to pause our 
+program.</p>
+<p>Python includes a module called <em>time</em> that has some handy methods inside it. One such method is <em>sleep</em>.
+ The sleep method does just that. It has the program pause or sleep for 
+the number of seconds specified inside the parentheses of the method 
+call. Here's an example of how to have the program pause for one-half 
+second:</p>
+<div class="noscroll">
+<pre>sleep(0.5)</pre>
+</div>
+<p>Of course, in order to gain access to this method, we'll need to have an import statement at the top of our program.</p>
+<p>One other critical part of our animation is the Canvas method, <em>update</em>. When you call this method, Python will go ahead and draw the Canvas as it is specified so far in the program code.</p>
+<p>So let's try this out and write a program that draws a rectangle, 
+pauses one second, and then draws another rectangle in a different 
+location:</p>
+<div class="noscroll">
+<pre>from tkinter import *
+from time import *
+
+class MyFrame(Frame):
+&nbsp;&nbsp;def __init__(self):
+&nbsp;&nbsp; &nbsp;&nbsp;Frame.__init__(self)
+
+&nbsp;&nbsp; &nbsp;&nbsp;self.myCanvas = Canvas(width=300, height=200, bg="white")
+&nbsp;&nbsp; &nbsp;&nbsp;self.myCanvas.grid()
+
+&nbsp;&nbsp; &nbsp;&nbsp;self.myCanvas.create_rectangle(10, 10, 50, 50)
+&nbsp;&nbsp; &nbsp;&nbsp;self.myCanvas.update()
+
+&nbsp;&nbsp; &nbsp;&nbsp;sleep(1)
+
+&nbsp;&nbsp; &nbsp;&nbsp;self.myCanvas.create_rectangle(20, 20, 60, 60)
+
+frame02 = MyFrame()
+frame02.mainloop()</pre>
+</div>
+<p>This program creates the Frame, then the Canvas, and then places a 
+rectangle from (10, 10) to (50, 50). Next, the update method is called 
+so that the Canvas will be displayed. Then, the program is asked to 
+pause for 1 second, and last, the second rectangle is drawn.</p>
+<p>Now, I'd like you to use some of what you've already learned to make 
+things more interesting. Think about how a loop structure might be 
+useful here. For example, how about creating a rectangle on this Canvas 
+in the upper-left corner. Then add rectangles, moving them down and to 
+the right. Here's what your code might look like (as always, please pay 
+careful attention to the indenting to keep our Python interpreter 
+happy):</p>
+<div class="noscroll">
+<pre>for count in range(10):
+&nbsp;&nbsp;increment = 10*count
+&nbsp;&nbsp;self.myCanvas.create_rectangle(10 + increment,
+&nbsp;&nbsp; &nbsp;&nbsp;10 + increment, 50 + increment, 50 + increment)
+&nbsp;&nbsp;self.myCanvas.update()
+&nbsp;&nbsp;sleep(1)</pre>
+</div>
+<p>Now you end up with 10 rectangles on your Canvas. But how can we make
+ it so that only one is showing at the end? That is, think of how we can
+ make it look like only one rectangle is moving across the Canvas.</p>
+<p>Well, what would happen if we just drew over the previous rectangle 
+with the background color and then put the new rectangle on the Canvas? 
+This would work, right? </p>
+<p>Here's our example again:</p>
+<div class="noscroll">
+<pre>for count in range(10):
+&nbsp;&nbsp;increment = 10*count
+&nbsp;&nbsp;self.myCanvas.create_rectangle(10 + increment,
+&nbsp;&nbsp; &nbsp;&nbsp;10 + increment, 50 + increment, 50 + increment)
+&nbsp;&nbsp;self.myCanvas.update()
+&nbsp;&nbsp;sleep(1)
+
+&nbsp;&nbsp;# Now color over the previous rectangle
+&nbsp;&nbsp;self.myCanvas.create_rectangle(10 + increment,
+&nbsp;&nbsp; &nbsp;&nbsp;10 + increment, 50 + increment, 50 + increment,
+&nbsp;&nbsp; &nbsp;&nbsp;outline="white")</pre>
+</div>
+<p>Now you might be looking at this code and thinking that this is 
+terribly inefficient. After all, we don't have a single rectangle on the
+ Canvas that we're moving around. Instead, we're creating 20! Ten black 
+ones and 10 white ones. </p>
+<p>And of course, there's a better way. And this leads us into the 
+second way Python allows you to do animation. You see, when we're 
+creating our shapes, we're actually using function calls that return a 
+value. If we store that value, we can use it to manipulate the shape 
+later. So, using this alternate method, our code from above reads like 
+so:</p>
+<div class="noscroll">
+<pre>my_rect_id = self.myCanvas.create_rectangle(10, 10, 50, 50)
+self.myCanvas.update()
+
+for count in range(10):
+&nbsp;&nbsp;increment = 10*count
+&nbsp;&nbsp;self.myCanvas.coords(my_rect_id,
+&nbsp;&nbsp; &nbsp;&nbsp;10 + increment, 10 + increment,
+&nbsp;&nbsp; &nbsp;&nbsp;50 + increment, 50 + increment)
+&nbsp;&nbsp;self.myCanvas.update()
+&nbsp;&nbsp;sleep(1)</pre>
+</div>
+<p>Notice how we've used the variable my_rect_id to store the rectangle 
+shape that we've drawn. Later on, we pass this value to the <em>coords</em> method. This method will accept the specific shape object and then the new coordinates where this shape should be located.</p>
+<p>And that's the two ways of adding a little motion to your graphics. 
+Be sure to learn both, because each has its own specific uses. For 
+example, if you want to move a single shape across the Canvas, the 
+second way is preferred because you're creating a minimal number of 
+shapes. </p>
+<p>On the other hand, if your animation requires the use of each 
+successive shape, then you'll need the first method. For example, to 
+animate the drawing of a face, you may want to show the head being 
+drawn, then the eyes, then the nose, and finally the mouth. Here, you'd 
+want each of these shapes to be drawn over the previous one. Of course, 
+you wouldn't be able to use a loop in this example, but multiple 
+drawings would be necessary.</p>
+<p>Now there are plenty of advanced features of the Canvas and these 
+shapes. Today, I've given you a taste of what you can do. Although 
+you're not going to go create a Python animated program that looks like a
+ Pixar film, hopefully, you've found that graphics are pretty easy to 
+create with Tkinter. And maybe you've found a new outlet for your 
+creativity. I hope so.</p>
+<p>At any rate, that's all the time we have to talk about graphics. The 
+next chapter will summarize what we've learned and give you a preview of
+ what's to come.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p>
+<!-- ipy LESSON 07 CHAPTER 5 -->
+<!-- START CHAPTER CONTENT -->
+
+<strong>Summary</strong></p><p>As you've seen, this lesson was all about
+ graphics.  We started out by breaking away from the plain world of 
+black text on a white background and learned how to create a Frame.  You
+ saw how these Frames look just like the windows you're used to seeing 
+and using. </p><p>Next, you learned about the Canvas widget.  This 
+object was one of many objects that we could place inside our Frame.  
+You also found out that the Canvas is used as a container for shapes. 
+And you learned how to draw things like rectangles, ovals, lines, and 
+even text.</p><p>Finally, we finished up the lesson by learning how to 
+simulate animation. We saw how to use the sleep method to pause our 
+programs and the update method, which forced the Canvas to be drawn.  By
+ using the update to draw and the sleep to pause, we simulated movement 
+of the objects on the Canvas.</p><p>In the next lesson, we'll move back 
+to the world of programming concepts and discuss some of Python's 
+built-in data structures: arrays, lists, and tuples.  So far, we've been
+ working with variables that are able to store a single value.  But 
+these new structures will give us the opportunity to group our data 
+together in a more meaningful way so that our programs are easier to 
+write.  You'll see that there are many times when Python's standard 
+modules work with these structures, so it'll be essential that we learn 
+how they work so that we can make the most of Python. </p><p>See you there!<br>
+                </p></div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://effbot.org/tkinterbook/canvas.htm" target="_blank">
+                                Canvas Methods</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://effbot.org/tkinterbook/canvas.htm</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This page lists all of the methods available
+ for the Canvas widget, including all of the shapes that you can create.</p>
+                    </div>
+                </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="http://infohost.nmt.edu/tcc/help/pubs/tkinter.pdf" target="_blank">
+                                Tkinter Reference</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        http://infohost.nmt.edu/tcc/help/pubs/tkinter.pdf</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This large PDF file is a complete reference 
+for the Tkinter module.  It includes a listing of all the options for 
+each of the Canvas shapes.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <p><b>Q:</b> I have all the code in my __init__ method that 
+creates the Frame, Canvas, and shapes; however, when I run the program, 
+nothing shows, and I just get the &gt;&gt;&gt; prompt back. Here's the 
+program code. Can you tell me what's missing? </p>
+<div class="noscroll">
+<pre>from tkinter import *
+
+class MyFrame(Frame):
+&nbsp;&nbsp;def __init__(self):
+&nbsp;&nbsp; &nbsp;&nbsp;Frame.__init__(self)
+
+&nbsp;&nbsp; &nbsp;&nbsp;self.myCanvas = Canvas(width=150, height=150, bg="red")
+&nbsp;&nbsp; &nbsp;&nbsp;self.myCanvas.grid()
+
+&nbsp;&nbsp; &nbsp;&nbsp;self.myCanvas.create_rectangle(10, 10, 50, 50)
+&nbsp;&nbsp; &nbsp;&nbsp;self.myCanvas.create_text(50, 50, text="Hi there!",
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;anchor="nw")</pre>
+</div>
+<br>
+<p><strong>A:</strong> Well, the good news is that this code to create 
+your MyFrame class looks great. The reason why your program isn't 
+showing anything is because you forgot to include the code outside the 
+class, at the bottom of your program, to create a MyFrame object and 
+then use this object to call mainloop( ). Just try adding the following 
+to the bottom of your file, and make sure that it is left justified so 
+that it lines up with the "c" in your class statement: </p>
+<div class="noscroll">
+<pre>frame02 = MyFrame()
+frame02.mainloop()</pre>
+</div>
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            Use the Tkinter module and your creativity to draw a picture
+ composed of at least five shapes. Use the animation techniques 
+described in the lesson to move at least one of the shapes on your 
+Canvas.<br>
+<br>
+If you're having problems coming up with an idea of what to draw, 
+consider making a face, drawing a house, or just creating some abstract 
+art image. Or, if you'd like to try to copy something I've created, you 
+can work on the following:
+<p style="text-align: center;"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img style="margin-top: 5px; margin-bottom: 5px; border: 0px solid;" alt="My rainbow image" src="Introduction%20to%20Python%203%20Programming_files/L07-04.gif" galleryimg="no" class="pf_image"><br>
+<font size="1">My rainbow image</font></p>
+Note that this requires the use of the create_arc method, which you can 
+read about using the link in the Supplementary Material section.<br>
+<br>
+<a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/py3-0/PY3_L07_Solution.py" target="_blank">Click here</a> to download the solution file: PY3_L07_Solution.py.
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2016
+                            All rights reserved. The material on this 
+site cannot be reproduced or redistributed unless you have obtained 
+prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                py3-0
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB04P (1.2.99.4) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/IncludeResource.js"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.eVar4='';
+s.prop4='';
+s.eVar5='introduction to python 3 programming';
+s.prop5='introduction to python 3 programming';
+s.prop6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.eVar6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.prop7='7';
+s.eVar7='7';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=7';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=7';
+s.prop15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.eVar15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.hier1=',,introduction to python 3 programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript><a href='http://www.Adobe.com' title='Web Analytics'><img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/></a></noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript><iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="jb-overlay" style="opacity: 0.7; display: none;"></div><div id="jb-window" style="display: none;"><div id="jb-window-inner" style="position: fixed; top: 301px; left: 503.5px;"><div id="jb-window-content" style="width: auto; height: auto; overflow: hidden; display: none;" tabindex="0"></div></div></div><span id="text-resize" style="position: absolute; left: -9999px; font-size: 100%; font-family: Courier New, mono; margin: 0; padding: 0;">&nbsp;</span><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?random=1481492643327&amp;cv=8&amp;fst=1481492643327&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;eid=376635470&amp;u_h=920&amp;u_w=1472&amp;u_ah=897&amp;u_aw=1472&amp;u_cd=24&amp;u_his=50&amp;u_tz=-300&amp;u_java=true&amp;u_nplug=9&amp;u_nmime=60&amp;frm=0&amp;url=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FPrintLesson.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26lesson%3D7&amp;ref=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FLessons.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26bc%3DLessons%26lesson%3D7&amp;tiba=Introduction%20to%20Python%203%20Programming" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" width="300" height="13" frameborder="0"></iframe><div id="criteo-tags-div" style="display: none;"><iframe style="display: none;" src="Introduction%20to%20Python%203%20Programming_files/dis.htm" width="0" height="0"></iframe></div></body></html>

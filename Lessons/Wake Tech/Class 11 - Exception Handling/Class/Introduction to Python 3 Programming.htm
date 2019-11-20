@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- Google Tag Manager -->
+            <script async="true" type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/event.js" data-owner="criteo-tag"></script><script src="Introduction%20to%20Python%203%20Programming_files/2861.js" async="" type="text/javascript"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/ld.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/conversion.js">
+</script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag"></script><script type="text/javascript" async="" src="Introduction%20to%20Python%203%20Programming_files/ga.js"></script><script async="" src="Introduction%20to%20Python%203%20Programming_files/gtm.htm"></script><script>(function(w,d,s,l,i){try{w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            }catch(e){(console.error || console.log).call(console, e.stack || e);}
+            })(window,document,'script','dataLayer','GTM-P66CZH7');</script>
+            <!-- End Google Tag Manager --><meta http-equiv="CACHE-CONTROL" content="NO-CACHE"><meta http-equiv="PRAGMA" content="NO-CACHE"><meta http-equiv="Expires" content="-1"><meta name="robots" content="noindex, nofollow"><title>
+	Introduction to Python 3 Programming
+</title>
+    <style type="text/css">
+        .demobanner
+        {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 825px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function ClearHtmlTags() {
+            for (var i = 0; i < document.forms[0].elements.length; i++) {
+                if (document.forms[0].elements[i].type == "text" || document.forms[0].elements[i].type == "textarea") {
+                    if (document.forms[0].elements[i].value.indexOf("<") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace("<", "&lt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf("<") >= 0);
+                    }
+
+                    if (document.forms[0].elements[i].value.indexOf(">") >= 0) {
+                        do {
+                            document.forms[0][i].value = document.forms[0].elements[i].value.replace(">", "&gt;")
+                        }
+                        while (document.forms[0].elements[i].value.indexOf(">") >= 0);
+                    }
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-1.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery-migrate-1.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/global.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/course.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom_facelift_standards.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_view.css" media="all"><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/printer-friendly_print.css" media="print"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/jquery_classroom.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/classroom.css" media="all"><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/global.js"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/course.htm"></script><script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/patch.js"></script><link type="text/css" rel="stylesheet" href="Introduction%20to%20Python%203%20Programming_files/patch.css" media="all"><link href="Introduction%20to%20Python%203%20Programming_files/printer_friendly.css" rel="stylesheet" type="text/css" media="print"></head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-P66CZH7'
+            height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+    <noscript>
+        <div id="sansjs">
+            Your Browser does not have javascript enabled. Your viewing of this site will be
+                greatly limited. Please utilize a javascript-enabled browser to optimally view our
+                website. Thank you.
+        </div>
+    </noscript>
+    <form name="aspnetForm" method="post" action="./PrintLesson.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=11" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzQ0MDYwMjIyZGQKpWb08X9kD8acEhmPFmV5aiDezhlElk/9rp8C08HEGA==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource_002.js" type="text/javascript"></script>
+<script src="Introduction%20to%20Python%203%20Programming_files/ScriptResource.js" type="text/javascript"></script>
+<!-- //**** Start SiteCatalyst code version: H.25.2 Click**** -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).bind('OMNITURE_CLICK', $.proxy(function(e, data){
+OmnitureClick(data.actionName);
+}, this));
+});
+</script>
+<!-- //**** End SiteCatalyst code version: H.25.2 Click**** -->
+
+
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BB9FCF" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAKSnK8h/e1fIZuNq+WPJ1pEOX+dEEEO/5YcOBANMTmI2c+OBlQdfQf7VJDDO4uecvulRhtjf9uzeR545q+xeby7" type="hidden">
+</div>
+        
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$smMain', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+
+        <!-- ================ Start header content ================== -->
+        <div class="title-bar" id="title-bar">
+            <!-- Title bar that spans entire width -->
+            <div class="title-bar-centering-container-extra-IE5">
+                <!-- extra centering div for IE Quirks -->
+                <div class="title-bar-centering-container">
+                    <!-- Title section that centers with the classroom -->
+                    <a onclick="return confirm('Are you sure you wish to log out?');" id="ctl00_lbLogout" tabindex="4" class="title-bar-login-button" href="javascript:__doPostBack('ctl00$lbLogout','')">
+                        <p role="heading">LOGOUT</p>
+                    </a>
+
+                    <a id="ctl00_hlkHelpInActive" tabindex="2" class="title-bar-help-button" href="https://www.ed2go.com/Classroom/Help.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">
+                            <p role="heading">
+                                HELP
+                            </p>
+                    </a>
+                    
+                    <div class="title-text-block">
+                        <!-- Holds the title text - Course and instructor name  -->
+                        <div id="ctl00_divTitleHyperlink">
+                            <h1 class="classroom-course-name">
+                                <a id="ctl00_hlkTitle" tabindex="1" href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Introduction to Python 3 Programming</a></h1>
+                        </div>
+                        
+                        <p class="classroom-course-instructor">
+                            Mike Orsega
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================ End header content ================== -->
+        <!-- ================ Start main content ================== -->
+        <div class="classroom-centering-container">
+            <!-- extra centering div for IE Quirks -->
+            <div class="classroom-main-container">
+                <!-- Main content window on the right -->
+                <!-- ================ Start left navigation ================== -->
+                <a href="#skipheader" tabindex="1" accesskey="1" title="Skip repetitive navigation links"></a>
+                <!-- Skip link option for accessibility - lets users with screen readers skip reading navigation names -->
+                <div class="left-navigation-panel">
+                    <!-- Start entire left panel -->
+                    <div class="left-navigation-links">
+                        <!-- Start section of navigation links -->
+                        <ul id="ctl00_ulNavigation">
+                        <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li class="current">Lessons</li></a><a href="https://www.ed2go.com/Classroom/Resources.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Resources</li></a><a href="https://www.ed2go.com/Classroom/QuizOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Quizzes</li></a><a href="https://www.ed2go.com/Classroom/Assignments.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Assignments</li></a><a href="https://www.ed2go.com/Classroom/Discussion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Discussion</li></a><a href="https://www.ed2go.com/Classroom/Completion.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL"><li>Completion</li></a></ul>
+                    </div>
+                    <!-- End section of navigation links -->
+                </div>
+                <!-- End entire left panel -->
+                <!-- ================ End left navigation ================== -->
+                <div id="skipheader">
+                    <!-- Anchor link for skipping navigation for accessibility - the link takes them here -->
+                    <div class="main-content">
+                        <!-- Start main-content -->
+                        <!-- ****************************************
+*********************************************
+ Main content STARTS here
+*********************************************
+********************************************* -->
+                        
+    
+<div class="printer-friendly-view">
+    <!-- Start printer-friendly-view.css -->
+    <!-- ==== Start h2 header block - normal view ==== -->
+    <div class="classroom-section-title">
+        <h2>
+            Lesson
+            11: Printer Friendly</h2>
+    </div>
+    <!-- ==== End h2 header block - normal view ==== -->
+    <!-- ==== Start h2 header block - print view only  ==== -->
+    <div class="printer-friendly-lesson-title">
+        <h2>
+            Handling Python Exceptions</h2>
+    </div>
+    <!-- ==== End h2 header block - print view only  ==== -->
+    
+<!-- ==== Start nav top block  ==== -->
+<div id="nav-top" class="template_back-next-buttons">
+	
+    <div id="breadcrumbs">
+        <span class="accessibility_hide">You are here: </span>
+        
+                <a href="https://www.ed2go.com/Classroom/LessonsOverview.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL">Lessons</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <a href="https://www.ed2go.com/Classroom/Lessons.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL&amp;lesson=11">Lesson 11</a>
+            
+                <div class="hollow-arrow hollow-right-arrow">
+                    <div class="second">
+                    </div>
+                    <div class="first">
+                    </div>
+                </div>
+            
+                <span class="breadcrumb-inactive">Printer Friendly</span>
+            
+    </div>
+    
+    
+
+</div>
+<!-- ==== End nav top block  ==== -->
+    <div class="main-paragraph-text">
+        <div id="pf_notebox_container"><div id="pf_notebox" align="center"><div class="roundednotebox_pf browser_notebox"><p><strong>Printing This Lesson</strong></p><p>Select what you’d like to include when you print, and then click the <strong>Print Lesson</strong> button:</p><p><input name="radio" id="pfImagesOnBtn" value="pfImagesOnBtn" checked="checked" onclick="showAllImagesPF()" type="radio"><label for="pfImagesOnBtn">Text, images and activities (IE users only)</label></p><p><input name="radio" id="pfInteractivityOffBtn" value="pfInteractivityOffBtn" onclick="hideInteractivityPF()" type="radio"><label for="pfInteractivityOffBtn">Text and images</label></p><p><input name="radio" id="pfImagesOffBtn" value="pfImagesOffBtn" onclick="hideAllImagesPF()" type="radio"><label for="pfImagesOffBtn">Text only</label></p><p><input onclick="printlessonPF()" value="Print Lesson" type="button"></p><p><strong>Saving This Lesson</strong></p><p>For instructions on saving this lesson (shown below), please select the browser you're using.</p><div id="pf_notebox_browser_buttons_container" align="center"><table width="100%" border="0" align="center"><tbody><tr><td align="center"><div id="pf_chrome" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_chrome.png" alt="chrome icon" class="pf_visible pf_image" border="0"><br><span class="caption">Chrome</span></div></div></td><td align="center"><div id="pf_firefox" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_firefox.png" alt="Firefox icon" class="pf_visible pf_image" border="0"><br><span class="caption">Firefox</span></div></div></td><td align="center"><div id="pf_ie10" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_ie_10.png" alt="Internet Explorer 10 icon" class="pf_visible pf_image" border="0"><br><span class="caption">IE 11</span></div></div></td><td align="center"><div id="pf_safari" style="cursor: pointer;"><div class="browser_notebox_icon_div"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/browser_b_safari.png" alt="Safari icon" class="pf_visible pf_image" border="0"><br><span class="caption">Safari</span></div></div></td></tr></tbody></table></div><div align="center"><input class="pf_hide_directions_btn" style="display:none;" value="Hide Directions" type="button"></div><div id="pf_notebox_browser_directions_container" style="display: none;"></div><div align="center"><input class="pf_hide_directions_btn" style="display:none;" value="Hide Directions" type="button"></div></div></div></div>
+        <!-- Start main paragraph text -->
+        
+                <div class="location_name_printer_friendly_chp01">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 1</h3>
+                    </div>
+                    <p>
+<!-- ipy LESSON 11 CHAPTER 1 -->
+<!-- START CHAPTER CONTENT -->
+
+</p><p align="center"><img style="display:none" class="pf_placeholder_image" title="hidden image or multimedia element" alt="hidden image or multimedia element" src="Introduction%20to%20Python%203%20Programming_files/pf_placeholder_a.png" border="0"><img src="Introduction%20to%20Python%203%20Programming_files/L11_header.jpg" galleryimg="no" alt="Lesson 11 header" class="pf_image" vspace="0" border="0"></p><br>
+<strong>Introduction</strong><p></p><p>Up to this point in the course, 
+we've pretty much ignored runtime errors.  For example, when you learned
+ about input( ), we said that the user would need to enter a number.  If
+ the user instead chose to enter something non-numeric, then your 
+program would produce a runtime error and stop.  </p><p>The easy way to 
+deal with this problem is to assume that the user enters what he or she 
+is supposed to.  However, in general, this isn't the proper way to 
+program.  After all, what if your user simply misinterprets what he or 
+she is being asked?  We wouldn't want the entire program to stop because
+ of a simple mistake.</p><p>The great news is that there's an easy way to handle this problem.  It's called <em>exception handling</em>.
+ Today, you'll learn what exceptions are, how they come up, and how they
+ can be handled.  Once you have a basic knowledge of how these things 
+work, we'll explore more advanced features of Python's exceptions like 
+else clauses, finally blocks, and other interesting functions.</p><p>But
+ before we can get to all of that, you need to get the basics down 
+first, which is where we'll start in Chapter 2.  See you there!<br>
+                </p></div>
+            
+                <div class="location_name_printer_friendly_chp02">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 2</h3>
+                    </div>
+                    <p><!-- ipy LESSON 11 CHAPTER 2 --><!-- START CHAPTER CONTENT --><strong>Exception Basics</strong></p>
+<p>The first thing I always like to start with when discussing 
+exceptions is the name itself: exception. The idea is that as a rule, 
+your program is always going to run perfectly. However, there's an 
+exception to every rule. This means that there may be unusual 
+circumstances that cause your program to not function the way it was 
+intended. So an <em>exception</em> is an error that occurs when the program is running.</p>
+<p>At the start of this lesson, I brought up the situation of when you 
+prompt your user for a number and he or she enters a non-numeric value. 
+When this happens, your program will stop running and Python will 
+display a <em>NameError</em> exception. Consider the following code typed at the interpreter's prompt:</p>
+<div class="noscroll">
+<pre>&gt;&gt;&gt;value = eval( input("Enter a number: ") )
+Enter a number: Mike 
+
+Traceback (most recent call last):
+&nbsp; File "&lt;pyshell#0&gt;", line 1, in &lt;module&gt;
+&nbsp;&nbsp;&nbsp; value = eval( input("Enter a number: ") )
+&nbsp; File "&lt;string&gt;", line 1, in &lt;module&gt;
+NameError: name 'Mike' is not defined</pre>
+</div>
+<p>Notice how the last line of the error message starts with NameError. 
+This is the name of the exception, which is important, because if you 
+know the name of the exception, you can write code to handle the 
+situation.</p>
+<p>To handle exceptions, Python gives us <em>try blocks</em> and <em>except blocks</em>.
+ The idea is that we're going to put the portion of our code that might 
+generate an exception inside the try block. Remember, we expect that the
+ bulk of the time this code is going to run without any issues. </p>
+<p>However, since it's possible that something may come up during the 
+execution of the statements in the try block, we'll also include an 
+except block immediately following the last statement of the try. This 
+code will tell the computer what to do if something happens.</p>
+<p>The general syntax of these blocks is this:</p>
+<div class="noscroll">
+<pre>try:
+&nbsp;&nbsp;&nbsp;&lt; statements that may raise an exception &gt;
+except &lt; Exception Type &gt;:
+&nbsp;&nbsp;&nbsp;&lt; statements to be run should the exception occur &gt;</pre>
+</div>
+<p>As was the case with the if statements and while loops, note that 
+both the try and the except statements end with a colon and the 
+statements inside the block are indented. Also, be aware that you can 
+place as many statements as you like inside each block. And as always, 
+the indenting is important because it marks which statements are part of
+ the block.</p>
+<p>Consider the following example. The user is prompted for his or her 
+age and then how old he or she will be in 10 years is displayed. Note 
+that while this code can be typed in at the interpreter's prompt, it 
+might be easier to create a Python program file. This will save you time
+ as you run the code a few different times to see how it functions.</p>
+<div class="noscroll">
+<pre>try:
+&nbsp;&nbsp;&nbsp;age = eval( input('Please enter your age: ') )
+&nbsp;&nbsp;&nbsp;ten_years = age + 10
+&nbsp;&nbsp;&nbsp;print ("In 10 years, you'll be", ten_years)
+except NameError:
+&nbsp;&nbsp;&nbsp;print ("You must enter a number for your age")
+
+print ("Have a nice day. Goodbye.")</pre>
+</div>
+<p>Go ahead and run this program twice. The first time I want you to 
+enter your age. The program should run just as expected, print your age 
+in 10 years, and then print the goodbye message. The code inside the 
+except block will never run. That's because you'll enter a valid number.</p>
+<p>Next, run the program again, and when asked for your age, enter your 
+name. This time, you won't see the message telling you how old you'll be
+ in 10 years. That's because once an exception is raised, Python stops 
+executing the code in the try block and immediately begins executing the
+ code in the except block. </p>
+<p>Now, the error message prints. Note that the goodbye message also 
+gets displayed. That's because this code isn't in either the try block 
+or the except block, therefore, it's always executed.</p>
+<p>So this exception handling code might be making sense, but you may be
+ wondering why we're given a NameError when we entered a word instead of
+ a number. It seems to me that this should be some kind of numeric 
+conversion error. This is an interesting thing that Python does for us. </p>
+<p>A NameError is an exception that comes up when Python encounters a 
+variable name that it doesn't recognize. This means that when you enter 
+your name instead of your age, Python is actually checking through its 
+list of variables for one with that name. Since it didn't find one, the 
+NameError came up. However, if you had created such a variable and 
+assigned it a numeric value, then the program would have run without any
+ exceptions coming up. </p>
+<p>Here's an interesting implication of exceptions. Let's say you enter 
+something that starts with a number but also contains letters, something
+ like 10ten. If you run the program and enter a value like this, you 
+should get an error message that ends with "SyntaxError: unexpected EOF 
+while parsing." At first, this may seem confusing. After all, we wrote 
+code in our except block to handle the exceptions, right?</p>
+<p>Well, the answer to that question is yes and no. Yes, we did write 
+code to handle an exception. However, since we wrote "except: 
+NameError", this code will only run if a NameError exception is raised. 
+The input that we gave generated a SyntaxError, and because this is a 
+different kind of exception, Python didn't run our code.</p>
+<p>I hope all of this is making sense to you. One way to check is to ask
+ yourself how you might handle the situation when the user enters a 
+value that starts with a number and also contains letters. One way that 
+may come to mind is to change the program code so that instead of 
+"except NameError:" we make it say, "except SyntaxError:".</p>
+<p>This would certainly work to fix this problem. In fact, go ahead and 
+try it out to prove to yourself. But this solution also puts you right 
+back where you started. That is, while this code now handles the case 
+when the user enters 10ten, it still generates a NameError if you enter a
+ word.</p>
+<p>The next natural question is this: Is there some way to handle 
+multiple exceptions? And the answer is absolutely. And that's what we'll
+ discuss in Chapter 3. So when you're ready to move on, I'll show you a 
+couple ways to handle multiple exceptions and some other interesting 
+extras.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp03">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 3</h3>
+                    </div>
+                    <p><!-- ipy LESSON 11 CHAPTER 3 --><!-- START CHAPTER CONTENT --><strong>More Advanced Exception Features</strong></p>
+<p>So these try and except blocks are fairly easy to understand and 
+write. However, as I showed you at the end of the last chapter, we need 
+some way to handle it when one line of code can generate multiple 
+exceptions.</p>
+<p>Fortunately, Python gives us the ability to have more than one except
+ block for each try block. So let's restructure our program from the 
+previous chapter like so:</p>
+<div class="noscroll">
+<pre>try:
+&nbsp;&nbsp;&nbsp;age = eval( input("Please enter your age: ") )
+&nbsp;&nbsp;&nbsp;ten_years = age + 10
+&nbsp;&nbsp;&nbsp;print ("In 10 years, you'll be", ten_years)
+except NameError:
+&nbsp;&nbsp;&nbsp;print ("You must enter a number for your age")
+except SyntaxError:
+&nbsp;&nbsp;&nbsp;print ("You must enter a number for your age")
+
+print ("Have a nice day. Goodbye.")</pre>
+</div>
+<p>Now when you run your program, it won't matter if you enter a word like, <em>me</em>
+ or a number and then a word like, 10ten. Either way, your program will 
+handle the situation, print the error message that we came up with, and 
+then finish with the goodbye message.</p>
+<p>The only problem you might have with the code above is the fact that 
+the code inside both except blocks is exactly the same. Now, with one 
+line of code that might not be a big deal. However, what if you had 100 
+lines of code that you wanted to run if either of these exceptions came 
+up? Sure, we could copy and paste the code or we could just write a 
+method and have the except block code call the method. But Python gives 
+us another way.</p>
+<p>If you want the exact same code to run for two or more exception 
+types, you can simply place the exception list inside parentheses after 
+the keyword except. For example, our program can be rewritten like this:</p>
+<div class="noscroll">
+<pre>try:<br>
+&nbsp;&nbsp;&nbsp;age = eval( input("Please enter your age: ") )
+&nbsp;&nbsp;&nbsp;ten_years = age + 10
+&nbsp;&nbsp;&nbsp;print ("In 10 years, you'll be", ten_years)
+except (NameError, SyntaxError):
+&nbsp;&nbsp;&nbsp;print ("You must enter a number for your age")
+
+print ("Have a nice day. Goodbye.")</pre>
+</div>
+<p>Once again, our program will be able to gracefully handle any input the user chooses to give us.</p>
+<p>But before we proceed any further with the different things you can do with exceptions, I want to discuss the Python exception hierarchy. You've probably already started to wonder how many exceptions there are and what kinds of exceptions are possible.</p>
+<p>Instead of taking the time to give you the name of every exception, I've included a link in the Supplementary Material section for this lesson to the complete hierarchy. Which brings up another point. You may have noticed that I'm using the word hierarchy instead of list.</p>
+<p>That's because exceptions are just like almost everything else in Python. They're objects. This means that there are classes written for NameError, SyntaxError, and all the other exceptions. </p>
+<p>However, earlier in the course, we said that it's possible to have one class inherit from another. You did this when we worked through the GUI lesson and you created your Frame class. You did this by inheriting from the basic Python Frame class. </p>
+<p>It's important to keep this hierarchy in mind when developing your programs for a couple reasons. First, you need to be aware that all exceptions inherit from the Exception class. This means that we could've written the program we've been working with in this lesson as shown below:</p>
+<div class="noscroll">
+<pre>try:<br>
+&nbsp;&nbsp;&nbsp;age = eval( input("Please enter your age: ") )
+&nbsp;&nbsp;&nbsp;ten_years = age + 10
+&nbsp;&nbsp;&nbsp;print ("In 10 years, you'll be", ten_years)
+except Exception:
+&nbsp;&nbsp;&nbsp;print ("You must enter a number for your age")
+
+print ("Have a nice day. Goodbye.")&nbsp;</pre>
+</div>
+<p>This code will handle either the NameError or the SyntaxError exceptions. However, it also handles any possible exception that Python can generate. ZeroDivisionError, KeyError, SystemError, or anything else. </p>
+<p>While you might initially think that this is all you'll ever need to do for exception handling, consider the fact that simply using Exception doesn't give you much detail about what's going on. It also forces you to handle every exception with the exact same code.</p>
+<p>Your next thought might be that we can just put a second except block to handle the situation when NameError or SyntaxError comes up. In fact, this will work. But you need to be careful about the ordering of your blocks because Python will check them in the order that they're written. And once an except block is matched with the exception raised, that code will run and the rest of the blocks will be skipped.</p>
+<p>It's probably easiest to demonstrate this point by looking again at our example program. To make it easier to see, we'll write two except blocks. The first will handle the situation when a NameError occurs, the second will handle all other exceptions. To make it easier to see which except block is running, we'll make the output messages different:</p>
+<div class="noscroll">
+<pre>try:
+&nbsp;&nbsp;&nbsp;age = eval( input("Please enter your age: ") )
+&nbsp;&nbsp;&nbsp;ten_years = age + 10
+&nbsp;&nbsp;&nbsp;print ("In 10 years, you'll be", ten_years)
+except NameError:
+&nbsp;&nbsp;&nbsp;print ("A NameError has occurred")
+except Exception:
+&nbsp;&nbsp;&nbsp;print ("Something unexpected has happened")
+
+print ("Have a nice day. Goodbye.")&nbsp;</pre>
+</div>
+<p>When you run this program and enter a word for the age, then you'll get the message saying that a NameError occurred. And if you enter a value that starts with a number and contains letters, the one that generates the SyntaxError, then the message explaining that something unexpected happened is shown.</p>
+<p>This is exactly how your program should be written. That is, you should always list your most specific except blocks first and then list the more general ones. To show you what happens if you don't, go ahead and swap your except blocks so that the program code looks like this:</p>
+<div class="noscroll">
+<pre>try:
+&nbsp;&nbsp;&nbsp;age = eval( input("Please enter your age: ") )
+&nbsp;&nbsp;&nbsp;ten_years = age + 10
+&nbsp;&nbsp;&nbsp;print ("In 10 years, you'll be", ten_years)
+except Exception:
+&nbsp;&nbsp;&nbsp;print ("Something unexpected has happened")
+except NameError:
+&nbsp;&nbsp;&nbsp;print ("A NameError has occurred")
+
+print ("Have a nice day. Goodbye.")</pre>
+</div>
+<p>Now when you run the program, if you enter a word, you'll still get the generic message about something unexpected happening. This clearly isn't what you would want to happen in your program. So be careful to always check the exception hierarchy and list the most specific exceptions first and then the more general ones.</p>
+<p>With this in mind, let's explore a few other features of Python exceptions. We'll cover things like exception arguments, else clauses, and finally blocks in the next chapter.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp04">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 4</h3>
+                    </div>
+                    <p><!-- ipy LESSON 11 CHAPTER 4 --><!-- START CHAPTER CONTENT --><strong>Exception Arguments</strong></p>
+<p>As I said earlier, Python exceptions are objects. However, you haven't really used this fact to your advantage yet. Up until now, you've only placed the exception type after the keyword except. But you also have the option of including a variable name. You can then use this variable later on to get more details about the exception. </p>
+<p>Let's try this out with another example. This time, we'll attempt to access a list element that doesn't exist. For example, let's try to print element 5 in a 3 element list. Doing so will result in an IndexError, so be sure to handle it and store the details in a variable named, ie:</p>
+<div class="noscroll">
+<pre>try:
+&nbsp;&nbsp;&nbsp;my_list = [0, 1, 2] 
+&nbsp;&nbsp;&nbsp;print (my_list [4]) 
+except IndexError as ie:
+&nbsp;&nbsp;&nbsp;print (ie)</pre>
+</div>
+<p>Notice here that we're creating our exception argument named ie, and then inside the except block, we print the value of ie that displays a message describing the exception. Run this code. You'll see Python's description of the exception: </p>
+<div class="noscroll">
+<pre>list index out of range</pre>
+</div>
+<p>As you work with the different exception types more, you'll find that each one is a little different. For example, the IndexError and NameError arguments contain a message that give you a single line of text to describe what happened. </p>
+<p>On the other hand, the IOError will give you a variety of properties to give us details about what's going on. To see this, type in the following code at the interpreter's prompt:</p>
+<div class="noscroll">
+<pre>try:
+&nbsp;&nbsp;&nbsp;infile = open('C:\Documents and Settings\Mike\Desktop\myfile.txt', 'r')
+&nbsp;&nbsp;&nbsp;infile.write("hello")
+
+&nbsp;&nbsp; infile.close()
+except IOError as ioe:
+&nbsp;&nbsp;&nbsp;print (ioe.filename)
+&nbsp;&nbsp;&nbsp;print (ioe.strerror)</pre>
+</div>
+<p>To get a complete list of all of the attributes of this IOError object, use the <em>dir( )</em> method. This can be done either in your program or at the interpreter's prompt after you've run your code:</p>
+<div class="noscroll">
+<pre>dir(IOError )</pre>
+</div>
+<p>The point of using an exception argument in your code is to give a more personalized description of what happened to your user. Again, we could simply print the standard error message or we could customize it so that it's friendlier. The choice is yours.</p>
+<p>Now that you have an idea of how to work with exception arguments, next, I want to talk about two more blocks that you can write to go along with your exceptions: the else block and the finally block.</p>
+<p><strong>The else and finally Blocks</strong></p>
+<p>You've written your try block and except block and everything is ready to go. However, I want you to consider creating an else block. The code in the else block will be executed if and only if no exception occurs while the program is running.</p>
+<p>Consider the following example that reads in a number from the user and attempts to divide 10 by that value. In this example, there are a few problems that could come up. The first problem is that the user's input might not be a valid number. For that, you'll need to handle the NameError and SyntaxError exceptions. You also need to worry about whether the user enters the value 0, because if you attempt to divide any number by zero, you'll come up with a ZeroDivisionError.</p>
+<p>So you'll definitely need two except blocks in this example. However, also realize that it's quite possible that our user will actually enter a valid number other than 0. In that case, you'll want to do the division and print the answer. Since this code can be run in the event that no exception comes up, you can place it inside an else block. This example would look something like this:</p>
+<div class="noscroll">
+<pre>try:
+&nbsp;&nbsp;&nbsp;user_num = eval( input("Please enter a number: ") )
+&nbsp;&nbsp;&nbsp;result = 10 / user_num
+except (NameError, SyntaxError):
+&nbsp;&nbsp;&nbsp;print ("The value you entered was not a number")
+except ZeroDivisionError:
+&nbsp;&nbsp;&nbsp;print ("You cannot divide by zero")
+else:
+&nbsp;&nbsp;&nbsp;print ("The result of dividing 10 by your number is", result)</pre>
+</div>
+<p>Of course, the code here could've just as easily been placed after the code that does the division in the try block. However, I just wanted to be sure to use an example that made sense first. </p>
+<p>Now let's imagine that you want to keep track of the number of times your program runs without encountering any exceptions. For that, you'll have to use the else block. Remember, the code in the else block will only run if no exception occurs when the program runs.</p>
+<p>The last block that I want to address here is the finally block. This block is where you'll place code that you want to be run whether an exception occurs or not.</p>
+<p>So how are we ever going to be able to use a finally block? Python programmers typically just nest one try block inside another. Take a look at the following program:</p>
+<div class="noscroll">
+<pre>try:
+&nbsp;&nbsp;&nbsp;infile = open('data.txt', 'r')
+&nbsp;&nbsp;&nbsp;try:
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;value = infile.readline()
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;number = int(value)
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;print (number)
+&nbsp;&nbsp;&nbsp;finally:
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;infile.close()
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;print ("the data file was closed")
+except IOError as io:
+&nbsp;&nbsp;&nbsp;print ("Could not open file:", io.filename)
+except ValueError:
+&nbsp;&nbsp;&nbsp;print ("Could not convert", value, "to a number")</pre>
+</div>
+<p>The purpose of this program is to open a data file, read in a line of data, convert that data to a number, and then print the number to the screen. Be aware that there are a couple of things that could go wrong when attempting to do this. First, there might be some problem opening the file. If so, then we'll skip right to the except statement that handles the IOError, print the message, and we're done. But if this file is okay, then the file is opened, and we read in the first line from the file. </p>
+<p>The next statement presents us with the second possible problem. What if the data can't be converted to a valid number? In this case, the program generates a ValueError. But remember, our data file is still open. And since it's not a good idea to open a file and not close it, we'll want to do this first. That's where the finally block comes in.</p>
+<p>Remember that the rule about exceptions is that once an exception occurs, the program stops execution at that exact point, and then the except block code is run. Although we could move the infile.close( ) statement over to the except block, I think keeping it where it is makes the code easier to read. </p>
+<p>Again, the finally code runs whether there's an exception or not. This means that when the value can't be converted, the file is closed, the output message saying the file is closed runs, and then the error message saying that the value wasn't a number is printed.</p>
+<p>This is a great program for you to try out. Just to be sure you're following what's going on with these statements. I'd suggest running the program before you create the data file. This way, you'll see that only the IOError exception code runs. </p>
+<p>Next, make a file containing a single number. Run the program to be sure that none of the exceptions come up. Finally, change the data inside the file so that the number is replaced with some word. Perhaps your name. Run it again, and you'll see the file closed message, followed by a could not convert message.</p>
+<p>As you can see, there are a lot of different configurations you can make with Python exceptions. The key is to start small and make sure you understand how to handle exceptions in simple situations. Then work your way up to the more complex versions.</p>
+<p>Well, that's all the time we have for exceptions today. If you'll turn to Chapter 5, I'll wrap up everything we learned.</p>
+                </div>
+            
+                <div class="location_name_printer_friendly_chp05">
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Chapter 5</h3>
+                    </div>
+                    <p>
+<!-- ipy LESSON 11 CHAPTER 5 -->
+<!-- START CHAPTER CONTENT -->
+
+<strong>Summary</strong></p><p>We would all like to believe that our programs are going to run without any problems. No matter what data is given to it for input.  The fact of the matter is that stuff happens, and we need our programs to be prepared for this.  So Python gives us the ability to handle these exceptions.</p><p>In this lesson, you learned what an exception is and how to use try blocks and except blocks to handle the exceptions that come up.  You saw that it's possible to handle multiple exceptions within the same try block.  There's even a way to capture the exception object itself through the exception argument.  Then you could use this object to get more details about the problem and give better information to your user.</p><p>Finally, you learned about else blocks, where you can place code to be run in the event that no exception takes place. And you discovered the finally blocks, where you can place code to be run whether an exception occurred or not.</p><p>All of this talk of exceptions has sort of rained on my parade.  It seems the more I think about exceptions, the more I think that my code will never run the way I want.  Well, that's certainly not the case. I hope you know that your programs will run without error more often than not. But it's nice to know you will have things under control even when things don't run as planned. </p><p>At any rate, I want to end the course by returning to graphical programs.  However, this time, I don't want to just draw lines and shapes on the frame. Instead, I want to show you how to develop an actual graphical user interface (GUI) in Python.</p><p>We'll talk about some of the common graphical elements that you see in programs every day.  Things like buttons, labels, and text fields.  This way, you can practice all the great things you've learned along the way in a pretty, graphical program.</p><p>See you in Lesson 12!<br>
+                </p></div>
+            
+        
+                <div class="location_name_printer_friendly_supp-material">
+                    <!-- Start Supplementary Material -->
+                    <div class="printer-friendly-location-name">
+                        <h3>
+                            Supplementary Material</h3>
+                    </div>
+            
+                <div id="lesson-components">
+                    <div class="lesson-components-link">
+                        <h3 style="border-top: 0px;">
+                            <a href="https://doughellmann.com/blog/?s=python+exception+handling" target="_blank">
+                                Exceptions and Data Files</a></h3>
+                    </div>
+                    <div class="supplementary-material-address">
+                        https://doughellmann.com/blog/?s=python+exception+handling</div>
+                    <div class="lesson-components-link-description">
+                        <p>
+                            This page explains exceptions and how they're used when working with external data files and discusses re-raising exceptions and some other things we didn't have space to cover here in the course.</p>
+                    </div>
+                </div>
+            
+                </div>
+        <div id="ctl00_cphMain_ctl00_pnlFAQs" class="location_name_printer_friendly_faqs">
+	
+            <div class="printer-friendly-location-name">
+                <h3>
+                    FAQs</h3>
+            </div>
+            <strong>Q:</strong> I noticed in your examples that you always use the initials of the exception type for your exception argument. For example, your IOError argument is called, ioe. And your IndexError is named, ie. Is this required?<br>
+<br>
+<strong>A:</strong> No, there's nothing special about the names I've chosen for my exception arguments. This is just a personal convention that I've come up with. By using the initials, it helps me to keep track of which exception I'm working with and makes my code a little easier to read.<br>
+<br>
+<br>
+<strong>Q:</strong> I never got an OverflowError in my program from the assignment. Why is this?<br>
+<br>
+<strong>A:</strong> Double check your code and make sure that you're using floating point numbers—numbers with a decimal point.&nbsp; Know that Python gives us the ability to store an infinite number of digits in our whole numbers, however we are restricted to a finite set of floating point numbers due to the way these values are stored.&nbsp; Forcing the number's data type to holding a fractional value will cause an OverflowError to eventually occur.
+        
+</div>
+        <div id="ctl00_cphMain_ctl00_pnlAssignments" class="location_name_printer_friendly_assignment">
+	
+            <!-- Start assignment -->
+            <div class="printer-friendly-location-name">
+                <h3>
+                    Assignment</h3>
+            </div>
+            Two other exception types Python gives us are the <i>OverflowError</i>, which happens when a floating point number (a number with a decimal point) is too big to be stored in memory, and the <i>KeyboardInterrupt</i>, which occurs when the user presses CTRL + C.<br>
+<br>
+Use the following infinite loop code segment inside a try block. Write two except statements: one for each of OverflowError and KeyboardInterrupt. Have the code inside your except statements print the value of number so that the user will know how far the loop progressed before the exception occurred. <br>
+<br>
+<div class="noscroll">
+<pre>counter = 1
+while (counter &gt;= 1):
+&nbsp;&nbsp; number = 2.0 ** counter
+&nbsp;&nbsp;&nbsp;counter = counter + 0.001</pre>
+</div>
+<br>
+<strong>Note:</strong> It is important here to use 2.0 ** counter and not 2 ** counter.&nbsp; That's because Python is set up to store integers (whole numbers) of any size, but that's not the case with floating point numbers.&nbsp; Also, feel free to experiment with the increment value.&nbsp; I used 0.001 here because it gave me enough time to press Ctrl + C to interrupt, but not too long for the OverflowError to occur if I didn't stop the program in the middle.&nbsp;<br>
+<br>
+<a href="https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/py3-0/PY3_L11_Solution.py" target="_blank">Click here</a> if you would like to download my solution to this assignment: PY3_L11_Solution.py.
+        
+</div>
+        <!-- ==== Start nav bottom block  ==== -->
+        <!-- Only back button in Printer-Friendly, no next -->
+        <div class="template_back-next-buttons">
+            <p class="printer-friendly-link-to-top">
+                <a href="#title-bar">Back to top</a></p>
+        </div>
+        <!-- ==== End nav bottom block  ==== -->
+    </div>
+</div>
+
+                        <!-- *****************************************
+**********************************************
+ Main content ENDS here
+**********************************************
+********************************************** -->
+                    </div>
+                    <!-- End main-content -->
+                </div>
+                <!-- Ending classroom-main-container -->
+            </div>
+            <!-- Ending classroom-centering-container -->
+            <!-- ================ Footer content ================== -->
+            <div class="classroom-footer">
+                <!-- Footer bar that spans entire width -->
+                <div class="classroom-footer-centering-text">
+                    <!-- extra centering div for IE Quirks -->
+                    <div class="classroom-footer-text">
+                        <!-- Footer section that centers with the classroom -->
+                        <div class="classroom-footer-text-right-align">
+                            <!-- One more div inside that keeps it the width of the right content portion -->
+                            <p>
+                                Copyright © 1997 -
+                            2016
+                            All rights reserved. The material on this site cannot be reproduced or redistributed unless you have obtained prior written permission from Cengage Learning.
+                            </p>
+                            <p align="right">
+                                py3-0
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ================ End footer content ================== -->
+        
+        <script type="text/javascript">$(document).ready(function() {var k=0;var o=0;var p=0;var pq=0;var z=0;function f(q){pqz(false);l(false);if(z==1){h(1);z=0}else{p=1}d(true)}function fl(q){l(true);h(4);a(false);z=1}function a(q){if(!q){i(false);d(false)}else{i(true)}}function h(q,r){$.post('https://www.ed2go.com/Classroom/SessionActivity.aspx?classroom=eom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL',{av:q,af:r,u:window.location.href,v:document.referrer})}function g(){h(2,p);p=0}function m(){return k>0&&o>0}function e(){l(true);h(3);a(false);z=1}function d(q){if(o!=0){clearTimeout(o);o=0}if(q){if(0>0){o=setTimeout(e,0)}i(true)}}function i(q){if(q&&k==0){k=setInterval(g,300000)}else{if(!q&&k!=0){clearInterval(k);k=0}}}function l(q){var b=$('#divInactivity');if(0>0){b.toggle(q)}else{b.hide()}}function pqz(q){if(!q&&pq!=0){clearTimeout(pq);pq=0}if(q&&pq==0){pq=setTimeout(fl,500)}}function fz(q){if(z==0){f(q)}}d(true);$(document).focusout(function(q){pqz(true)});$(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f);$(window).focusin(f);$('iframe').contents().focusout(function(q){pqz(true)});$('iframe').contents().add(document).click(f).dblclick(f).mousedown(f).scroll(f).keypress(f).keydown(f).focusin(fz);});</script>
+        <!-- WHCINNE2GWEB04P (1.2.99.4) -->
+    
+<!-- SiteCatalyst code version: H.25.2
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/IncludeResource.js"></script>
+<script type="text/javascript"><!--
+s.pageName='classroom print lesson';
+s.channel='classroom';
+s.server='www.ed2go.com';
+s.eVar3='';
+s.prop3='';
+s.eVar4='';
+s.prop4='';
+s.eVar5='introduction to python 3 programming';
+s.prop5='introduction to python 3 programming';
+s.prop6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.eVar6='eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol';
+s.prop7='11';
+s.eVar7='11';
+s.eVar11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=11';
+s.prop11='https://www.ed2go.com/classroom/printlesson.aspx?classroom=eom3zgiwtdgz3dxlcioynbbmlwugdoclngyghwv6wvsvezgq4tfr2lmvwxp10bol&lesson=11';
+s.prop15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.eVar15='fb8b10d2-91de-4bde-965e-37fbfb4375ba';
+s.hier1=',,introduction to python 3 programming';
+s.hier2='member,student,no purchase';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript><a href='http://www.Adobe.com' title='Web Analytics'><img src='https://thed2go.122.2o7.net/b/ss/thed2go/1/H.20.3-NS/0' height='1' width='1' border='0' alt=''/></a></noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version:  H.25.2 -->
+</form>
+    
+    
+<!-- //**** Start Google Analytics**** -->
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5274086-1']);
+_gaq.push(['_setDomainName', '.ed2go.com']);
+_gaq.push(['_trackPageview', ]);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<!-- //**** End Google Analytics**** -->
+
+
+    <!-- //**** Start BrightTag **** -->
+<script type="text/javascript" src="Introduction%20to%20Python%203%20Programming_files/tag.js">{ site: "5dwhpeh" }</script>
+<noscript><iframe src="//s.thebrighttag.com/iframe?c=5dwhpeh" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></noscript>
+<!-- //**** End BrightTag **** -->
+
+<div id="jb-overlay" style="opacity: 0.7; display: none;"></div><div id="jb-window" style="display: none;"><div id="jb-window-inner" style="position: fixed; top: 294.5px; left: 484.5px;"><div id="jb-window-content" style="width: auto; height: auto; overflow: hidden; display: none;" tabindex="0"></div></div></div><span id="text-resize" style="position: absolute; left: -9999px; font-size: 100%; font-family: Courier New, mono; margin: 0; padding: 0;">&nbsp;</span><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+
+
+
+
+<iframe name="google_conversion_frame" title="Google conversion frame" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1064464732/?random=1482738266235&amp;cv=8&amp;fst=1482738266235&amp;num=1&amp;fmt=1&amp;label=QNhhCNj1mAQQ3OLJ-wM&amp;guid=ON&amp;u_h=920&amp;u_w=1472&amp;u_ah=897&amp;u_aw=1472&amp;u_cd=24&amp;u_his=6&amp;u_tz=-300&amp;u_java=true&amp;u_nplug=9&amp;u_nmime=60&amp;frm=0&amp;url=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FPrintLesson.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26lesson%3D11&amp;ref=https%3A%2F%2Fwww.ed2go.com%2FClassroom%2FLessons.aspx%3Fclassroom%3Deom3ZgIWTDgz3dXlcioynBBmLWUGdoCLnGYGHwv6wvsvEZgQ4Tfr2lmVWXp10BoL%26bc%3DLessons%26lesson%3D11&amp;tiba=Introduction%20to%20Python%203%20Programming" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" width="300" height="13" frameborder="0"></iframe><div id="criteo-tags-div" style="display: none;"><iframe style="display: none;" src="Introduction%20to%20Python%203%20Programming_files/dis.htm" width="0" height="0"></iframe></div></body></html>
